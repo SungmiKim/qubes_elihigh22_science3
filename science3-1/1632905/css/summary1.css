@@ -1,0 +1,37 @@
+.content {
+  background: url(../img/gap/gap0.webp) no-repeat center / 100%;
+}
+
+.bubble {
+  top: 112px;
+  left: 129px;
+}
+
+.txt {
+  top: 164px;
+  left: 733px;
+}
+
+.name_list li,
+.name_list .has_guide,
+.name_list .obj,
+.name_list .name_tag,
+.name_list .txt {
+  position: absolute;
+}
+
+.name_list .txt {
+  opacity: 0;
+}
+.name_list li.on .txt {
+  opacity: 1;
+  transition: all 1s;
+}
+.name_tag.on {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.name_list li.on {
+  pointer-events: none;
+}

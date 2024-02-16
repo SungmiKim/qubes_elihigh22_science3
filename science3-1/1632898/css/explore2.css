@@ -1,0 +1,92 @@
+.content {
+  background: url(../img/explore2/explore2_bg.png) no-repeat center / 100%;
+}
+
+.init_obj {
+  position: absolute;
+  top: 186px;
+  left: 598px;
+}
+
+.init_obj img {
+  width: 876px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 1;
+}
+
+.init_obj img.on {
+  width: 649px;
+  transition-property: top, left, width;
+  transition-duration: 1s, 1s, 1s;
+}
+
+.init_obj .obj1.on {
+  top: 468px;
+  left: -307px;
+}
+.init_obj .obj2.on {
+  top: 468px;
+  left: 563px;
+}
+.init_obj .obj3.on {
+  top: 764px;
+  left: -307px;
+}
+.init_obj .obj4.on {
+  top: 764px;
+  left: 563px;
+}
+
+.name_list li {
+  position: absolute;
+  top: 555px;
+  left: 457px;
+}
+.name_list li::before {
+  content: "";
+  width: 595px;
+  height: 102px;
+  background: url(../img/explore2/prev_obj.png) no-repeat center / 100%;
+  position: absolute;
+  top: 109px;
+  left: -152px;
+}
+.name_list li.on::before {
+  /* display: none; */
+}
+.name_list li.obj2 {
+  top: 555px;
+  left: 1326px;
+}
+
+.name_list li.obj3 {
+  top: 850px;
+  left: 457px;
+}
+
+.name_list li.obj4 {
+  top: 850px;
+  left: 1326px;
+}
+.name_list li .obj_name {
+  font-family: "NanumSquareRoundEB";
+  font-size: 46px;
+  font-weight: bold;
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.05), inset 0px -6px 0px 0px rgba(238, 238, 238, 0.8);
+  width: 310px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.name_list li.on .obj_name {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}

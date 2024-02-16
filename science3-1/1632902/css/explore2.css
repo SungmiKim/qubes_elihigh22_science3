@@ -1,0 +1,36 @@
+.content {
+  background: url(../img/explore2/explore2_bg.png) no-repeat center / 100%;
+}
+.ani {
+  position: absolute;
+  top: 100px;
+  left: 266px;
+}
+
+.container.on .blink {
+  animation: camera 1s ease forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes camera {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  width: 63%;
+  height: 55%;
+  position: absolute;
+  top: 62.5%;
+  left: 50.5%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  opacity: 0;
+}

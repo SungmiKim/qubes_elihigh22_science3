@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>[과학] 31_2단원 04</title>
+    <!--공통 -->
+    <link href="../common/css/font.css" rel="stylesheet" />
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="./css/explore2.css" rel="stylesheet" />
+    <script src="./js/pageInfo.js"></script>
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap" data-page="explore2">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <header class="header"></header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <!-- 내용 -->
+          <div class="screen screen1">
+            <img src="./img/explore2/start.png" alt="시작하기" class="start" />
+            <div class="has_guide hide">
+              <img src="../common/images/icon/icon_hand.png" alt="guide" />
+            </div>
+          </div>
+
+          <div class="screen screen2 hide">
+            <div class="page_title title4">대화에 참여하기 전에 사진을 찍거나 마음에 드는 얼굴을 골라 주세요.</div>
+            <div class="inner">
+              <div class="camera_wrap">
+                <div id="camera">
+                  <div class="cover"></div>
+                  <video id="camera--view" autoplay playsinline></video>
+                </div>
+
+                <button class="btn pic" id="picStartBtn">사진 찍기</button>
+              </div>
+              <ul class="cha_list">
+                <li><img src="./img/explore2/cha1.png" alt="프로필" /></li>
+                <li><img src="./img/explore2/cha2.png" alt="프로필" /></li>
+                <li><img src="./img/explore2/cha3.png" alt="프로필" /></li>
+                <li><img src="./img/explore2/cha4.png" alt="프로필" /></li>
+              </ul>
+            </div>
+          </div>
+          <div class="screen screen3 hide">
+            <div class="page_title title4">아래 사진으로 대화에 참여할까요?</div>
+            <div class="inner">
+              <div class="profile">
+                <img src="./img/explore2/camera.png" alt="프로필" />
+                <canvas width="940" height="705"></canvas>
+              </div>
+              <img src="./img/explore2/camera_line.png" alt="카메라 커버" class="cover" />
+              <div class="btn_wrap">
+                <button class="btn_reply"><img src="./img/explore2/btn_replay.png" alt="" /></button>
+                <button class="btn_finish"><img src="./img/explore2/btn_chk.png" alt="" /></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="screen screen4 hide">
+            <div class="chat_area">
+              <div class="hide chat chat1 ella">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">새로운 친구가 왔네~ 반가워!</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat2 lizzy">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">우리 지금 물질에 대한 이야기를 하고 있었어.</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat3 eo">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">친구도 물질에 대해 알고 있어?</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat4 chat4-0 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">물론이지! 물체를 만드는 재료를 물질이라고 하잖아.</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+              <div class="hide chat chat4 chat4-1 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">으음... 잘 모르겠어. 누가 좀 알려 줄래?</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+              <div class="hide chat chat5 chat5-0 haro">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">오! 잘 알고 있구나!</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat5 chat5-1 haro">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">내가 잘 설명해 줄게!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat5 chat5-1 haro ing">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">물체를 만드는 재료를 물질이라고 해.</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat6 lizzy">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">그러면 이 책상을 이루는 물질은 나무겠네?</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat6 lizzy ing">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble pop" onclick="openPop(1);">
+                      <img src="./img/explore2/desk1.png" alt="책상" />
+                    </div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat7 ella">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">아니야. 이 책상은 금속으로 이루어져 있잖아.</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat8 chat8-0 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">으음... 나도 나무로 만들어진 게 맞는 것 같은데?</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+              <div class="hide chat chat8 chat8-1 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">내 생각에도 금속으로 만들어진 게 맞는 것 같아.</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+              <div class="hide chat chat8 chat8-2 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">이 책상은 여러 가지 물질로 이루어져 있어.</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+              <div class="hide chat chat9 chat9-0 haro">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">이 책상을 잘 보면 각 부분을 이루는 물질이 달라.</div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="hide chat chat9 chat9-0 haro ing">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble pop" onclick="openPop(2);"><img src="./img/explore2/desk2.png" alt="책상상판" /></div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div> -->
+              <div class="hide chat chat9 chat9-1 haro">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">맞아.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat9 chat9-1 haro ing">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble pop" onclick="openPop(2);"><img src="./img/explore2/desk2.png" alt="책상상판" /></div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat10 ella">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">책상 상판이네.</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat11 chat11-0 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">나무로 만든 부분이 이 상판이야. 고유의 무늬가 있잖아.</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+              <div class="hide chat chat11 chat11-1 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">상판은 뭘로 만들어져 있는 거야?</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+
+              <div class="hide chat chat12 chat12-0 eo">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">오~ 그렇구나!</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat12 chat12-1 eo">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble r2">고유의 무늬가 있는 것을 보니 상판은 나무로 <br />만들어져 있는 것 같아.</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat13 ella">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">그리고 나무라서 금속보다 가벼울 거야.</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat14 haro">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble pop" onclick="openPop(3);"><img src="./img/explore2/desk3.png" alt="책상 다리" /></div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat14 haro ing mt19">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">그럼 이 몸체는?</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat15 chat15-0 user img">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble"><img src="./img/explore2/t_img1.png" alt="" /></div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+
+              <div class="hide chat chat15 chat15-1 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">아! 이 부분이 금속으로 만들어져 있어!</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+
+              <div class="hide chat chat16 chat16-0 ella">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">내가 금속으로 만들어졌다고 한 부분이 여기였어!</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat16 chat16-1 ella">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">맞아!</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat17 lizzy">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble r2">
+                      아~ 몸체가 금속으로 만들어져 있어서 단단하고 <br />
+                      잘 부러지지 않겠구나.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat17 lizzy ing mt19">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble pop" onclick="openPop(4);"><img src="./img/explore2/desk4.png" alt="책상 다리" /></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat17 lizzy ing mt19">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">이 부분은 어떤 물질로 만든 걸까?</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat18 chat18-0 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">글쎄 잘 모르겠네.</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+
+              <div class="hide chat chat18 chat18-1 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">바닥이 긁히지 않도록 플라스틱으로 만들었을 거야.</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+
+              <div class="hide chat chat19 chat19-0 haro">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">받침은 플라스틱으로 만들어져 있어.</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat19 chat19-0 eo">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">아! 바닥이 긁히지 않게 하려고 그런 거구나!</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat19 chat19-1 haro">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">오! 친구 정말 잘 알고 있는데?</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat20 ella">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">물체를 만들 때, 부분마다 사용하는 물질이 다르구나.</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat21 chat21-0 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble r2">물질의 성질이 서로 다르니까 각 부분에 알맞은 물질을 <br />사용하는 거지.</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+
+              <div class="hide chat chat21 chat21-1 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble r2">한 가지 물질로 만드는 것보다 편리하게 사용할 수 <br />있겠어.</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+
+              <div class="hide chat chat22 eo">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">친구야, 잘 알려 줘서 고마워.</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat23 ella">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble r2">나는 주위에 있는 물체들이 어떤 물질로 만들어져 있는지 <br />더 찾아보러 갈래~</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat24 haro">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">오늘 즐거웠어~</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat25 eo">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">친구, 안녕~</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat26 chat26-0 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">나도 즐거웠어~ 안녕~</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+
+              <div class="hide chat chat26 chat26-1 user img">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble"><img src="./img/explore2/t_img2.png" alt="" /></div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+
+              <!-- 선택지 -->
+              <div class="select_wrap">
+                <ul class="s1">
+                  <li><img src="./img/explore2/t1_1.png" alt="" /></li>
+                  <li><img src="./img/explore2/t1_2.png" alt="" /></li>
+                </ul>
+                <ul class="s2">
+                  <li><img src="./img/explore2/t2_1.png" alt="" /></li>
+                  <li><img src="./img/explore2/t2_2.png" alt="" /></li>
+                  <li><img src="./img/explore2/t2_3.png" alt="" /></li>
+                </ul>
+                <ul class="s3">
+                  <li><img src="./img/explore2/t3_1.png" alt="" /></li>
+                  <li><img src="./img/explore2/t3_2.png" alt="" /></li>
+                </ul>
+                <ul class="s4">
+                  <li><img src="./img/explore2/t4_1.png" alt="" /></li>
+                  <li><img src="./img/explore2/t4_2.png" alt="" /></li>
+                </ul>
+                <ul class="s5">
+                  <li><img src="./img/explore2/t5_1.png" alt="" /></li>
+                  <li><img src="./img/explore2/t5_2.png" alt="" /></li>
+                </ul>
+                <ul class="s6">
+                  <li><img src="./img/explore2/t6_1.png" alt="" /></li>
+                  <li><img src="./img/explore2/t6_2.png" alt="" /></li>
+                </ul>
+                <ul class="s7">
+                  <li><img src="./img/explore2/t7_1.png" alt="" /></li>
+                  <li><img src="./img/explore2/t7_2.png" alt="" /></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="completeStamp">
+            <img src="" alt="stamp" />
+          </div>
+        </div>
+        <div class="blank hide"></div>
+        <!-- 가변 컨텐츠 End -->
+
+        <div class="fixed bottom">
+          <!-- 페이지 이동 버튼 -->
+          <a class="btn move btn_prev"> </a>
+          <a class="btn move btn_next"> </a>
+          <!-- 페이지 이동 버튼 End -->
+        </div>
+
+        <!-- 10초 Popup -->
+        <div class="pop_ct pop_next">
+          <img src="../common/images/pop/pop_next.png" alt="pop_next" />
+        </div>
+        <!-- 30초 Popup -->
+        <div class="pop_ct pop_wait">
+          <img src="../common/images/pop/pop_wait.png" alt="pop_wait" />
+        </div>
+
+        <!-- Layer Popup -->
+        <div class="pop_bg"></div>
+        <div class="pop_ct pop_card pop_ct1">
+          <div class="close" data-num="1">
+            <img src="./img/explore2/icon_close.png" alt="닫기" />
+          </div>
+          <img src="./img/explore2/pop1.png" alt="책상" />
+        </div>
+        <div class="pop_ct pop_card pop_ct2">
+          <div class="close" data-num="2">
+            <img src="./img/explore2/icon_close.png" alt="닫기" />
+          </div>
+          <img src="./img/explore2/pop2.png" alt="책상 상판" />
+        </div>
+        <div class="pop_ct pop_card pop_ct3">
+          <div class="close" data-num="3">
+            <img src="./img/explore2/icon_close.png" alt="닫기" />
+          </div>
+          <img src="./img/explore2/pop3.png" alt="책상 다리" />
+        </div>
+        <div class="pop_ct pop_card pop_ct4">
+          <div class="close" data-num="4">
+            <img src="./img/explore2/icon_close.png" alt="닫기" />
+          </div>
+          <img src="./img/explore2/pop4.png" alt="책상 다리" />
+        </div>
+      </div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="./js/explore2.js"></script>
+    <script></script>
+  </body>
+</html>

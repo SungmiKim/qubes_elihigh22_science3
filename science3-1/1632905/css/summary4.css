@@ -1,0 +1,63 @@
+@import url(./summary1.css);
+.content {
+  background: url(../img/summary4/bg.png) no-repeat center / 100%;
+}
+
+.page_title span {
+  color: #fff834;
+}
+.img_left {
+  top: 559px;
+  left: 86px;
+}
+.img_right {
+  bottom: 0;
+  right: 14px;
+}
+.img_frog {
+  top: 660px;
+  left: 1092px;
+  width: 319px;
+}
+.name_list .has_guide {
+  top: 47px;
+  left: 151px;
+}
+.name_list .name1 {
+  top: 314px;
+  left: 412px;
+}
+.name_list .name2 {
+  top: 314px;
+  left: 1340px;
+}
+.name_list .name_tag {
+  width: 248px;
+  height: 94px;
+  background: url(../img/summary4/name1_off.png) no-repeat center / 100%;
+}
+
+.name_list .name2 .name_tag {
+  background-image: url(../img/summary4/name2_off.png);
+}
+
+.name_list .name3 .name_tag {
+  background-image: url(../img/summary4/name3_off.png);
+}
+
+.name_list .txt {
+  top: 114px;
+  left: -279px;
+  pointer-events: none;
+}
+.name_list .name2 .txt {
+  top: 114px;
+  left: -195px;
+}
+.name_list .name1.on .name_tag {
+  background-image: url(../img/summary4/name1_on.png);
+}
+
+.name_list .name2.on .name_tag {
+  background-image: url(../img/summary4/name2_on.png);
+}

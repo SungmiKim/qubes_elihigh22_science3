@@ -1,0 +1,115 @@
+.quiz_area.on .drag_box img {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.quiz_area.on .drag_box.on img {
+  animation: none;
+}
+
+.drop_box {
+  height: 100%;
+}
+
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept2_h/screen1.png) no-repeat center / 100%;
+}
+.screen1 .page_title span {
+  color: #55edff;
+}
+
+.screen1 .box_wrap {
+  opacity: 0.7;
+  position: absolute;
+  width: 695px;
+  height: 368px;
+  top: 730px;
+  left: 695px;
+  background: url(../img/concept2_h/drop1_1.png) no-repeat center / 100%;
+}
+.screen1 .box_wrap.on {
+  opacity: 1;
+  background-image: url(../img/concept2_h/drop1_1_o.png);
+}
+
+.screen1 .drag_box {
+  position: absolute;
+  top: 485px;
+  left: 117px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.screen1 .drag_box.d2 {
+  top: 485px;
+  left: 1162px;
+}
+
+.screen1 .ui-draggable-dragging .obj_name {
+  display: none;
+}
+
+.screen1 .obj_name.txt {
+  width: 240px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: none;
+  color: #fff;
+  margin-top: -29px;
+  margin-left: 127px;
+}
+
+.screen1 .d2 .obj_name.txt {
+  margin-top: -22px;
+  margin-left: -132px;
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept2_h/screen2.png) no-repeat center / 100%;
+}
+.screen2 .page_title span {
+  color: #fff667;
+}
+
+.screen2 .box_wrap {
+  position: absolute;
+  width: 632px;
+  height: 222px;
+  top: 420px;
+  left: 818px;
+  background: url(../img/concept2_h/drop2_1.png) no-repeat center / 100%;
+}
+.screen2 .box_wrap.d2 {
+  width: 601px;
+  height: 277px;
+  top: 642px;
+  left: 565px;
+  background-image: url(../img/concept2_h/drop2_2.png);
+}
+.screen2 .box_wrap.on {
+  background-image: url(../img/concept2_h/drop2_1_o.png);
+}
+.screen2 .box_wrap.d2.on {
+  background-image: url(../img/concept2_h/drop2_2_o.png);
+}
+.screen2 .drag_area::before {
+  content: "";
+  background-color: rgb(15, 58, 26);
+  width: 100%;
+  height: 376px;
+  opacity: 0.302;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.screen2 .drag_box {
+  position: absolute;
+  top: 148px;
+  left: 398px;
+}
+
+.screen2 .drag_box.d2 {
+  left: 1096px;
+}

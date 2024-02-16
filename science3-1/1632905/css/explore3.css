@@ -1,0 +1,101 @@
+.screen1 {
+  background-image: url(../img/explore3/screen1.png);
+}
+
+.screen1 .ani_area {
+  position: absolute;
+  top: 133px;
+  left: 372px;
+}
+
+.screen1 .ani_area > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.screen1 .ani_area .has_guide {
+  position: absolute;
+  top: 673px;
+  left: 650px;
+}
+
+.screen1 .ani_area > img.scale {
+  animation: 2s eggBigAndSmall ease-in infinite;
+}
+
+.screen1.zoom {
+  transform: scale(2, 2);
+  transition: all 2s;
+}
+
+.screen1 .click_box {
+  width: 636px;
+  height: 163px;
+  position: absolute;
+  top: 600px;
+  left: 300px;
+}
+@keyframes eggBigAndSmall {
+  0% {
+    transform-origin: center;
+    transform: scale(1, 1);
+  }
+  50% {
+    transform-origin: center;
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform-origin: center;
+    transform: scale(1, 1);
+  }
+}
+
+.screen2 {
+  background-image: url(../img/explore3/screen2.png);
+}
+.screen2 .point {
+  position: absolute;
+  top: 628px;
+  left: 1378px;
+  opacity: 0;
+  transform: rotate(15deg);
+}
+
+.screen2 .egg {
+  width: 642px;
+  height: 613px;
+  background: url(../img/explore3/egg2_1.png) no-repeat center / 100%;
+  position: absolute;
+  top: 386px;
+  left: 738px;
+}
+
+.screen2 .egg .egg2_2 {
+  opacity: 0;
+}
+
+.screen2 .chick {
+  position: absolute;
+  top: 202px;
+  left: 450px;
+  opacity: 0;
+}
+.screen2[data-num="1"] .point {
+  opacity: 1;
+  animation: blink-effect 1.5s linear infinite;
+}
+.screen2[data-num="1"] .egg {
+  opacity: 1;
+}
+.screen2[data-num="2"] .egg {
+  background: none;
+  top: 413px;
+  left: 714px;
+}
+
+.screen2[data-num="2"] .egg .egg2_2 {
+  opacity: 1;
+}
+.screen2[data-num="3"] .chick {
+  opacity: 1;
+}

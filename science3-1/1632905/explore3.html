@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>[과학] 31_3단원 10</title>
+    <!--공통 -->
+    <link href="../common/css/font.css" rel="stylesheet" />
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="./css/explore.css" rel="stylesheet" />
+    <link href="./css/explore3.css" rel="stylesheet" />
+    <script src="./js/pageInfo.js"></script>
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap" data-page="explore3">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <header class="header"></header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <!-- 내용 -->
+          <div class="screen screen1">
+            <div class="page_title title4 hide">알을 눌러 자세히 관찰해 봅시다.</div>
+            <div class="ani_area">
+              <img src="./img/explore3/nest1.png" alt="둥지" class="nest" />
+              <img src="./img/explore3/egg1.png" alt="알" class="egg" />
+              <img src="./img/explore3/chicken1.png" alt="닭" class="chicken" />
+              <div class="click_box"></div>
+
+              <div class="has_guide hide">
+                <img src="../common/images/icon/icon_hand.png" alt="guide" />
+              </div>
+            </div>
+          </div>
+          <div class="screen screen2 hide" data-num="0">
+            <div class="point">
+              <img src="./img/explore3/effect.png" alt="강조" />
+            </div>
+            <div class="egg">
+              <img src="./img/explore3/egg2_2.png" alt="egg" class="egg2_2" />
+            </div>
+
+            <div class="chick" id="seqGif1" data-option="chicken2//7//forever//100">
+              <img src="./img/explore3/chicken2/1.webp" class="gif" />
+            </div>
+          </div>
+
+          <div class="completeStamp">
+            <img src="" alt="stamp" />
+          </div>
+        </div>
+        <div class="blank"></div>
+        <!-- 가변 컨텐츠 End -->
+
+        <div class="fixed bottom">
+          <!-- 페이지 이동 버튼 -->
+          <a class="btn move btn_prev"> </a>
+          <a class="btn move btn_next"> </a>
+          <!-- 페이지 이동 버튼 End -->
+        </div>
+
+        <!-- 10초 Popup -->
+        <div class="pop_ct pop_next">
+          <img src="../common/images/pop/pop_next.png" alt="pop_next" />
+        </div>
+        <!-- 30초 Popup -->
+        <div class="pop_ct pop_wait">
+          <img src="../common/images/pop/pop_wait.png" alt="pop_wait" />
+        </div>
+      </div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="./js/explore.js"></script>
+    <script src="./js/explore3.js"></script>
+    <script>
+      var cnt1 = 0;
+      function playAni() {
+        id1 = setInterval(playChicken, 300);
+
+        function playChicken() {
+          if (cnt1 > 1) {
+            cnt1 = 0;
+            $(".screen1 .chicken").attr("src", "./img/explore3/chicken" + cnt1 + ".png");
+          } else {
+            $(".screen1 .chicken").attr("src", "./img/explore3/chicken" + cnt1 + ".png");
+          }
+          cnt1++;
+        }
+      }
+      playAni();
+    </script>
+  </body>
+</html>

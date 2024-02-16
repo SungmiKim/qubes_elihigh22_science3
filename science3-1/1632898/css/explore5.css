@@ -1,0 +1,35 @@
+.content {
+  background: url(../img/explore5/explore5_bg.png) no-repeat center / 100%;
+}
+
+.ct_arrow {
+  position: absolute;
+  top: 92px;
+  right: -100%;
+}
+
+.ct_arrow.on {
+  right: 0%;
+  transition: right 2s ease;
+}
+
+.obj_list li {
+  position: absolute;
+  top: 342px;
+  left: 180px;
+  opacity: 0;
+}
+
+.obj_list li.on {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+.obj_list li.obj2 {
+  left: 621px;
+}
+.obj_list li.obj3 {
+  left: 1064px;
+}
+.obj_list li.obj4 {
+  left: 1504px;
+}

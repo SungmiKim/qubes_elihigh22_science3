@@ -1,0 +1,43 @@
+.content {
+  background: url(../img/explore3/explore3_bg.png) no-repeat center / 100%;
+}
+
+.scratch {
+  position: absolute;
+  top: 843px;
+  left: 931px;
+  opacity: 0;
+}
+.hand {
+  position: absolute;
+  top: 160px;
+  left: 956px;
+}
+
+.content.on .scratch {
+  opacity: 1;
+  transition: opacity 10s ease;
+}
+
+.content.on .hand {
+  animation: scratcHand 2s forwards;
+  animation-iteration-count: 4;
+}
+
+@keyframes scratcHand {
+  0% {
+    left: 956px;
+  }
+  50% {
+    left: 1093px;
+  }
+  100% {
+    left: 956px;
+  }
+}
+
+.ani {
+  position: absolute;
+  top: 180px;
+  left: 101px;
+}

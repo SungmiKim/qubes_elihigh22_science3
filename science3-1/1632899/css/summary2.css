@@ -1,0 +1,121 @@
+.content {
+  background: url(../img/summary2/summary2_bg.png) no-repeat center / 100%;
+}
+
+.name_list .has_guide,
+.name_list .obj,
+.name_list .name_tag,
+.name_list .txt,
+.bubble {
+  position: absolute;
+}
+.name_list .has_guide {
+  top: 241px;
+  left: 1282px;
+}
+
+.name_list .name_tag {
+  width: 268px;
+  height: 107px;
+  background: url(../img/summary2/name1_off.png) no-repeat center / 100%;
+  top: 757px;
+  left: 1410px;
+}
+.name_list .name2 .name_tag {
+  background-image: url(../img/summary2/name2_off.png);
+  top: 203px;
+  left: 1119px;
+}
+.name_list .name3 .name_tag {
+  background-image: url(../img/summary2/name3_off.png);
+  top: 757px;
+  left: 150px;
+}
+.name_list .obj {
+  width: 679px;
+  height: 514px;
+  background: url(../img/summary2/obj1.png) no-repeat center / 100%;
+  top: 592px;
+  left: 659px;
+}
+.name_list .name2 .obj {
+  width: 840px;
+  height: 221px;
+  background: url(../img/summary2/obj2.png) no-repeat center / 100%;
+  top: 462px;
+  left: 539px;
+}
+.name_list .name3 .obj {
+  width: 701px;
+  height: 313px;
+  background: url(../img/summary2/obj3.png) no-repeat center / 100%;
+  top: 816px;
+  left: 641px;
+}
+.name_list .txt2 {
+  opacity: 0;
+}
+.name_list li.on .txt2 {
+  opacity: 1;
+  transition: all 1s;
+}
+.name_list .name1 .txt1 {
+  top: 630px;
+  left: 1320px;
+}
+.name_list .name2 .txt1 {
+  top: 204px;
+  left: 905px;
+}
+.name_list .name3 .txt1 {
+  top: 630px;
+  left: 150px;
+}
+.name_list .name1 .txt2 {
+  top: 873px;
+  left: 1458px;
+}
+.name_list .name2 .txt2 {
+  top: 320px;
+  left: 1167px;
+}
+.name_list .name3 .txt2 {
+  top: 872px;
+  left: 198px;
+}
+
+.name_list .name1.on .name_tag {
+  background-image: url(../img/summary2/name1_on.png);
+}
+
+.name_list .name1.on .obj {
+  background-image: url(../img/summary2/obj1_o.png);
+}
+.name_list .name2.on .name_tag {
+  background-image: url(../img/summary2/name2_on.png);
+}
+
+.name_list .name2.on .obj {
+  background-image: url(../img/summary2/obj2_o.png);
+}
+.name_list .name3.on .name_tag {
+  background-image: url(../img/summary2/name3_on.png);
+}
+
+.name_list .name3.on .obj {
+  background-image: url(../img/summary2/obj3_o.png);
+}
+
+.bubble {
+  top: 391px;
+  left: 480px;
+}
+
+.name_tag.on {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.name_list li.on {
+  pointer-events: none;
+}

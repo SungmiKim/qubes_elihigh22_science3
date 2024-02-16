@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>[과학] 31_3단원 10</title>
+    <!--공통 -->
+    <link href="../common/css/font.css" rel="stylesheet" />
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="./css/explore.css" rel="stylesheet" />
+    <link href="./css/explore4.css" rel="stylesheet" />
+    <script src="./js/pageInfo.js"></script>
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap" data-page="explore4">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <header class="header"></header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <!-- 내용 -->
+          <div class="screen screen1" data-num="1">
+            <div class="page_title title4 hide"><span></span>&nbsp;눌러 자세히 관찰해 봅시다.</div>
+            <ul class="chickens">
+              <li class="chick_gif c1 off">
+                <img src="./img/explore/chick1.png" alt="암탉" />
+              </li>
+              <li class="c2">
+                <img src="./img/explore4/chicken2.gif" alt="병아리" />
+              </li>
+              <li class="c3 off">
+                <img src="./img/explore4/chicken3.png" alt="어린닭" />
+              </li>
+
+              <li class="c4 off" id="seqGif1" data-option="chicken4//12//forever//100">
+                <img src="./img/explore4/chicken4/1.webp" class="gif" />
+              </li>
+              <li class="c5 off">
+                <img src="./img/explore4/egg.png" alt="알" />
+              </li>
+            </ul>
+            <div class="has_guide hide">
+              <img src="../common/images/icon/icon_hand.png" alt="guide" />
+            </div>
+          </div>
+          <div class="screen screen2 hide">
+            <img src="./img/explore4/chicken2_1/1.webp" class="ani" />
+            <div class="obj_name txt t1">병아리</div>
+          </div>
+          <div class="screen screen3 hide">
+            <img src="./img/explore4/chicken3_1/1.webp" class="ani" />
+            <div class="obj_name txt t1">어린 닭</div>
+          </div>
+          <div class="screen screen4 hide">
+            <div class="ani a1" id="seqGif3" data-option="chicken1_1//12//forever//100">
+              <img src="./img/explore4/chicken1_1/1.webp" class="gif" />
+            </div>
+            <div class="ani a2" id="seqGif2" data-option="chicken4_1//40//forever//100">
+              <img src="./img/explore4/chicken4_1/1.webp" class="gif" />
+            </div>
+          </div>
+
+          <div class="completeStamp">
+            <img src="" alt="stamp" />
+          </div>
+        </div>
+        <div class="blank"></div>
+        <!-- 가변 컨텐츠 End -->
+
+        <div class="fixed bottom">
+          <!-- 페이지 이동 버튼 -->
+          <a class="btn move btn_prev"> </a>
+          <a class="btn move btn_next"> </a>
+          <!-- 페이지 이동 버튼 End -->
+        </div>
+
+        <!-- 10초 Popup -->
+        <div class="pop_ct pop_next">
+          <img src="../common/images/pop/pop_next.png" alt="pop_next" />
+        </div>
+        <!-- 30초 Popup -->
+        <div class="pop_ct pop_wait">
+          <img src="../common/images/pop/pop_wait.png" alt="pop_wait" />
+        </div>
+      </div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="./js/explore.js"></script>
+    <script src="./js/explore4.js"></script>
+  </body>
+</html>

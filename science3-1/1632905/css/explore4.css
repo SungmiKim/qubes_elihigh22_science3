@@ -1,0 +1,158 @@
+.screen1 {
+  background-image: url(../img/explore4/screen1.png);
+}
+.screen1[data-num="4"] {
+  background-image: url(../img/explore4/screen5.png);
+}
+.screen1 .page_title span {
+  color: #fff;
+}
+.screen1[data-num="1"] .page_title span::before {
+  content: "병아리를";
+}
+.screen1 .chickens li {
+  position: absolute;
+  top: 458px;
+  left: 152px;
+}
+
+.screen1 .chickens li.c2 {
+  top: 743px;
+  left: 351px;
+}
+.screen1 .chickens li.c3 {
+  width: 470px;
+  top: 288px;
+  left: 608px;
+}
+.screen1 .chickens li.c4 {
+  top: 172px;
+  left: 1191px;
+}
+.screen1 .chickens li.c5 {
+  top: 453px;
+  left: 355px;
+  display: none;
+}
+.screen1[data-num="4"] .chickens li.c5 {
+  display: block;
+}
+.screen1 .chickens li.scale {
+  animation: 2s bigAndSmall3 ease-in infinite;
+}
+
+.screen1 .chickens li.c2.scale {
+  animation: 2s bigAndSmall ease-in infinite;
+}
+.screen1 .chickens li.c5.scale {
+  animation: 2s eggBigAndSmall ease-in infinite;
+}
+.screen1 .chickens li.off {
+  pointer-events: none;
+  animation: none !important;
+}
+@keyframes eggBigAndSmall {
+  0% {
+    transform-origin: bottom center;
+    transform: scale(1);
+  }
+  50% {
+    transform-origin: bottom center;
+    transform: scale(1.05);
+  }
+  100% {
+    transform-origin: bottom center;
+    transform: scale(1);
+  }
+}
+.screen1 .chickens li > img {
+  width: 100%;
+}
+.screen1 .chickens li.c1 > img {
+  transform: scaleX(-1);
+}
+
+.screen1 .has_guide {
+  position: absolute;
+  top: 993px;
+  left: 758px;
+}
+.screen1[data-num="2"] .page_title span::before {
+  content: "어린 닭을";
+}
+.screen1[data-num="2"] .chickens li.c1 {
+  top: 404px;
+  left: 550px;
+  width: 368px;
+}
+.screen1[data-num="2"] .chickens li.c3 {
+  width: auto;
+  top: 433px;
+  left: 860px;
+}
+
+.screen1[data-num="2"] .has_guide {
+  top: 829px;
+  left: 1150px;
+}
+
+.screen1[data-num="3"] .page_title span::before {
+  content: "다 자란 닭을";
+}
+.screen1[data-num="3"] .chickens li.c1 {
+  top: 448px;
+  left: 908px;
+  z-index: 1;
+}
+
+.screen1[data-num="3"] .has_guide {
+  top: 737px;
+  left: 1570px;
+}
+.screen1[data-num="4"] .page_title {
+  display: none;
+}
+.screen1[data-num="4"] .chickens li.c1 {
+  top: 400px;
+  left: 1118px;
+  transform: scaleX(-1);
+}
+.screen1[data-num="4"] .chickens li.c1.scale {
+  animation: 2s revBigAndSmall ease-in infinite;
+}
+@keyframes revBigAndSmall {
+  0% {
+    transform: scaleX(-1) scale(1);
+  }
+  50% {
+    transform: scaleX(-1) scale(1.05);
+  }
+  100% {
+    transform: scaleX(-1) scale(1);
+  }
+}
+.screen2 {
+  background-image: url(../img/explore4/screen2.png);
+}
+.screen3 .obj_name {
+  position: absolute;
+  top: 1010px;
+  left: 860px;
+  width: 280px;
+  height: 110px;
+  font-size: 56px;
+  border-radius: 110px;
+}
+.screen4 {
+  background-image: url(../img/explore4/screen4.png);
+}
+.screen4 .ani {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.screen4 .ani.a2 {
+  top: 0;
+  right: 0;
+  left: unset;
+}

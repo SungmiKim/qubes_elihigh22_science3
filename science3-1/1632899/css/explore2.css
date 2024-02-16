@@ -1,0 +1,385 @@
+.has_guide {
+  position: absolute;
+  top: 670px;
+  left: 1500px;
+}
+/* screen 1 */
+.screen1 {
+  background: url(../img/explore2/screen1.png) no-repeat center / 100%;
+}
+.screen1 .start {
+  position: absolute;
+  top: 397px;
+  left: 1217px;
+}
+
+.screen1 .start.on {
+  animation: bigAndSmall3 2s infinite;
+}
+
+/* screen 2 */
+.screen2 {
+  background: url(../img/explore2/screen2.png) no-repeat center / 100%;
+}
+.screen2 .inner {
+  display: flex;
+  align-items: center;
+  padding-top: 195px;
+  padding-left: 198px;
+}
+.screen2 .camera_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.screen2 #camera {
+  width: auto;
+  height: auto;
+  margin-bottom: 34px;
+}
+.screen2 #camera .cover {
+  width: 729px;
+  height: 751px;
+  background: url(../img/explore2/camera.png) no-repeat center / 100%;
+}
+.screen2 #camera .cover.off {
+  background-image: url(../img/explore2/camera_line.png);
+  box-shadow: 0px 16px 0px 0px rgba(255, 255, 255, 0.004);
+}
+.screen2 #camera--view {
+  background-color: #fff;
+  width: 699px;
+  height: 705px;
+  border-radius: 238px 238px 242px 242px;
+  bottom: unset;
+  top: 12px;
+  left: 15px;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+.screen2 .cha_list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 690px;
+  margin-left: 190px;
+}
+
+.screen2 .cha_list li {
+  display: flex;
+  align-items: center;
+}
+.screen2 .cha_list li:nth-child(2n) {
+  margin-left: 30px;
+}
+
+.screen2 .cha_list li:nth-child(n + 3) {
+  margin-top: 14px;
+}
+.screen2 .cha_list.on li img {
+  animation: bigAndSmall3 2s infinite;
+}
+
+/* screen 3 */
+.screen3 {
+  background: url(../img/explore2/screen3.png) no-repeat center / 100%;
+}
+.screen3 .inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 190px;
+}
+.screen3 .profile {
+  position: relative;
+  width: 699px;
+  height: 705px;
+  border-radius: 238px 238px 242px 242px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.screen3 .profile img,
+.screen3 .profile canvas {
+  width: 100%;
+  display: none;
+}
+.screen3 .profile.img {
+  width: 729px;
+  height: 751px;
+}
+.screen3 .profile.img img {
+  display: block;
+  width: 100%;
+}
+.screen3 .profile + .cover {
+  position: absolute;
+  top: 177px;
+  left: 635px;
+}
+.screen3 .profile.pic canvas {
+  display: block;
+  width: 940px;
+  height: 705px;
+  border-radius: 238px 238px 242px 242px;
+  position: absolute;
+  bottom: unset;
+  top: 0;
+  left: -20%;
+  transform: translate(-50%, 0%);
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+.screen3 .btn_wrap {
+  margin-top: 39px;
+}
+.screen3 .btn_wrap.on button {
+  animation: bigAndSmall3 2s infinite;
+}
+/* screen 4 */
+.screen4 {
+  background: #c6e7ff;
+  /* background: url(../img/explore2/1111.png) no-repeat center / 100%; */
+}
+
+.screen4 .chat_area {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 90px 0;
+  /* padding: 90px 140px 0; */
+}
+.screen4 .chat_area.on {
+  padding-bottom: 0;
+}
+.screen4 .chat_area .chat {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 90px;
+}
+
+.screen4 .chat_area .chat.user {
+  justify-content: flex-end;
+}
+.screen4 .chat_area .chat + .chat {
+  margin-top: 40px;
+}
+.screen4 .chat_area .chat + .chat.ing {
+  margin-top: 0;
+}
+.screen4 .chat_area .chat.mt19 {
+  margin-top: 19px !important;
+}
+.screen4 .chat_area .chat .left {
+  width: 193px;
+  height: 200px;
+  background: url(../img/explore2/user1.png) no-repeat center / 100%;
+  margin-right: 18px;
+}
+.screen4 .chat_area .chat.ing .left {
+  opacity: 0;
+}
+.screen4 .chat_area .chat.user .right {
+  margin-right: 50px;
+}
+.screen4 .chat_area .chat.lizzy .left {
+  background-image: url(../img/explore2/user2.png);
+}
+.screen4 .chat_area .chat.eo .left {
+  background-image: url(../img/explore2/user3.png);
+}
+.screen4 .chat_area .chat.haro .left {
+  background-image: url(../img/explore2/user4.png);
+}
+.screen4 .chat_area .chat.user .left {
+  background-image: url(../img/explore2/cha1.png);
+  margin-right: 0;
+}
+.screen4 .chat_area .chat.user .left.pic {
+  background: none;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.screen4 .chat_area .chat.user .left.pic::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../img/explore2/camera_line.png) no-repeat center / 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.screen4 .chat_area .chat.user .left.pic .img {
+  width: 185px;
+  height: 189px;
+  margin-top: 4px;
+  border-radius: 66px 66px 70px 70px;
+  background-size: cover;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+.screen4 .chat .right .nick {
+  margin-top: 15px;
+  margin-left: 30px;
+  margin-bottom: 22px;
+}
+.screen4 .chat.ing .right .nick {
+  display: none;
+}
+.screen4 .chat .right .nick::before {
+  content: "엘라";
+  font-family: "JALNAN";
+  display: block;
+  font-size: 38px;
+  color: #324856;
+}
+.screen4 .chat.lizzy .right .nick::before {
+  content: "리지";
+}
+.screen4 .chat.eo .right .nick::before {
+  content: "이오";
+}
+.screen4 .chat.haro .right .nick::before {
+  content: "하로";
+}
+.screen4 .chat.user .right .nick::before {
+  content: "user";
+  text-align: right;
+  opacity: 0;
+}
+
+.screen4 .chat .right .txt {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 1px;
+}
+.screen4 .chat .right .txt + .txt {
+  margin-top: 20px;
+}
+.screen4 .chat .right .txt + .txt::before {
+  display: none;
+}
+
+.screen4 .chat .right .bubble_list {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.screen4 .chat .right .txt .bubble {
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0px 6px 0px 0px #e0e0e0;
+  font-family: "NanumSquareRoundEB";
+  font-size: 46px;
+  color: #333333;
+  padding: 30px 58px;
+  margin-left: 33px;
+  display: inline-block;
+}
+.screen4 .chat .right .txt .bubble.pop {
+  position: relative;
+  padding: 60px 58px 30px;
+}
+.screen4 .chat .right .txt .bubble.pop::before {
+  content: "";
+  width: 55px;
+  height: 55px;
+  background: url(../img/explore2/zoom.png) no-repeat center / 100%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.screen4 .chat .right .txt .bubble.r2 {
+  line-height: 60px;
+}
+.screen4 .chat.img .right .txt .bubble {
+  padding-bottom: 0;
+  margin-top: 15px;
+}
+.screen4 .chat.img .right .txt .bubble img {
+  display: block;
+}
+.screen4 .chat.img .right .nick {
+  display: none;
+}
+.screen4 .chat .right .txt .bubble + .bubble {
+  margin-top: 20px;
+}
+.screen4 .chat.user .right .txt .bubble {
+  margin-left: 20px;
+  background-color: #fff59e;
+  box-shadow: 0px 6px 0px 0px #e0d892;
+}
+
+.screen4 .chat .right .txt::before {
+  content: "";
+  width: 34px;
+  height: 35px;
+  background: url(../img/explore2/tail1.png) no-repeat center / 100%;
+  position: absolute;
+  top: 60px;
+  left: 3px;
+}
+.screen4 .chat.ing .right .txt::before {
+  display: none;
+}
+.screen4 .chat.user .right .txt::before {
+  left: unset;
+  right: -30px;
+  background-image: url(../img/explore2/tail2.png);
+}
+
+.screen4 .chat .right .txt .time {
+  font-family: "NanumSquareRoundB";
+  color: #737373;
+  font-size: 30px;
+  margin: 0 0 13px 16px;
+}
+.select_wrap {
+  width: 100%;
+  background: #afddfe;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  padding: 90px 0;
+  margin-top: 60px;
+  display: none;
+}
+.chat_area.on .select_wrap {
+  display: block;
+}
+.select_wrap ul {
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.select_wrap ul.on {
+  display: flex;
+}
+.select_wrap ul li + li {
+  margin-left: 45px;
+}
+.select_wrap ul.on li {
+  animation: bigAndSmall3 2s infinite;
+}
+.pop_card {
+  background: none;
+}
+
+.pop_card .close {
+  padding: 20px;
+  display: inline;
+  position: absolute;
+  top: 42px;
+  right: 42px;
+}

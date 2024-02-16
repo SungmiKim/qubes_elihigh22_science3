@@ -1,0 +1,87 @@
+.click_obj.scale {
+  animation: 3s card_scale ease-in infinite;
+}
+
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept3_h/screen1.png) no-repeat center / 100%;
+}
+.screen1 .page_title span {
+  color: #55edff;
+}
+
+.screen1 .click_obj {
+  position: absolute;
+  top: 227px;
+  left: 136px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.screen1 .click_obj .bubble {
+  width: 828px;
+  height: 323px;
+  background: url(../img/concept3_h/bubble1_1.png) no-repeat center / 100%;
+}
+.screen1 .on .click_obj.c2 .bubble {
+  background-image: url(../img/concept3_h/bubble1_1_o.png);
+}
+.screen1 .click_obj .obj {
+  margin: -110px 230px 0 0px;
+}
+
+.screen1 .click_obj.c2 {
+  left: 1030px;
+}
+
+.screen1 .click_obj.c2 .obj {
+  margin: -138px -179px 0 0px;
+}
+.screen1 .click_obj.c2 .bubble {
+  background: url(../img/concept3_h/bubble1_2.png) no-repeat center / 100%;
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept3_h/screen2.png) no-repeat center / 100%;
+}
+.screen2 .page_title span {
+  color: #87fed3;
+}
+
+.screen2 .click_obj {
+  position: absolute;
+  top: 241px;
+  left: -3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.screen2 .click_obj .bubble {
+  width: 768px;
+  height: 283px;
+  background: url(../img/concept3_h/bubble2_1.png) no-repeat center / 100%;
+}
+.screen2 .on .click_obj.c1 .bubble {
+  background-image: url(../img/concept3_h/bubble2_1_o.png);
+}
+.screen2 .click_obj .obj {
+  margin: 21px 210px 0 0px;
+}
+
+.screen2 .click_obj.c2 {
+  left: 1088px;
+}
+
+.screen2 .click_obj.c2 .obj {
+  margin: -9px -240px 0 0px;
+  position: absolute;
+  top: 252px;
+  right: 85px;
+}
+.screen2 .click_obj.c2 .bubble {
+  width: 758px;
+  background: url(../img/concept3_h/bubble2_2.png) no-repeat center / 100%;
+}

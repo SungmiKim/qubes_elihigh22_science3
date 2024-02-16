@@ -1,0 +1,13 @@
+.content {
+  background: url(../img/summary1/summary1_bg.png) no-repeat center / 100%;
+}
+
+.txt {
+  top: 176px;
+  left: 795px;
+}
+
+.bubble {
+  top: 153px;
+  left: 125px;
+}

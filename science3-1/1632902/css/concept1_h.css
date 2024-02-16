@@ -1,0 +1,180 @@
+.quiz_area.on .drag_box {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.quiz_area.on .drag_box.on {
+  animation: none;
+}
+
+.drop_box {
+  height: 100%;
+}
+
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept1_h/screen1.png) no-repeat center / 100%;
+}
+.screen1 .page_title .s1 {
+  color: #ffd05f;
+}
+.screen1 .page_title .s2 {
+  color: #84ff9e;
+}
+
+.screen1 .box_wrap {
+  position: absolute;
+  width: 802px;
+  height: 447px;
+  top: 647px;
+  left: 170px;
+  background: url(../img/concept1_h/drop1_1.png) no-repeat center / 100%;
+  z-index: 1;
+}
+.screen1 .box_wrap.d2 {
+  left: 1031px;
+  background: url(../img/concept1_h/drop1_2.png) no-repeat center / 100%;
+}
+.screen1 .box_wrap.d1.on {
+  background-image: url(../img/concept1_h/drop1_1_o.png);
+}
+.screen1 .box_wrap.d2.on {
+  background-image: url(../img/concept1_h/drop1_2_o.png);
+}
+.screen1 .drag_box {
+  position: absolute;
+  top: 310px;
+  left: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.screen1 .drag_box.d2 {
+  top: 345px;
+  left: 1250px;
+}
+.screen1 .drag_box.d3 {
+  top: 621px;
+  left: 1424px;
+}
+.screen1 .ui-draggable-dragging .obj_name {
+  display: none;
+}
+
+.screen1 .has_guide {
+  position: absolute;
+  top: 500px;
+  left: 600px;
+}
+
+.screen1 .has_guide.on {
+  animation: guideHand1 1.5s forwards;
+  animation-iteration-count: 2;
+}
+
+@keyframes guideHand1 {
+  0% {
+    top: 500px;
+    left: 600px;
+  }
+
+  100% {
+    top: 900px;
+    left: 600px;
+  }
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+}
+.screen2 .page_title .s1 {
+  color: #ffabac;
+}
+.screen2 .page_title .s2 {
+  color: #ffea77;
+}
+
+.screen2 .box_wrap {
+  width: 802px;
+  height: 447px;
+  position: absolute;
+  top: 652px;
+  left: 169px;
+  background: url(../img/concept1_h/drop2_1.png) no-repeat center / 100%;
+  z-index: 1;
+}
+.screen2 .box_wrap.d2 {
+  left: 1030px;
+  background-image: url(../img/concept1_h/drop2_2.png);
+}
+.screen2 .box_wrap.on {
+  background-image: url(../img/concept1_h/drop2_1_o.png);
+}
+.screen2 .box_wrap.d2.on {
+  background-image: url(../img/concept1_h/drop2_2_o.png);
+}
+.screen2 .drag_box {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.screen2 .drag_box.d1 {
+  width: 367px;
+  height: 324px;
+  background-image: url(../img/concept1_h/drag2_1.png);
+  top: 324px;
+  left: 256px;
+}
+.screen2 .drag_box.d1.on {
+  width: 389px;
+  height: 349px;
+  background-image: url(../img/concept1_h/drag2_1_o.png);
+  top: 753px;
+  left: 1031px;
+}
+.screen2 .drag_box.d2 {
+  width: 266px;
+  height: 278px;
+  background-image: url(../img/concept1_h/drag2_2.png);
+  top: 366px;
+  left: 571px;
+}
+.screen2 .drag_box.d2.on {
+  width: 319px;
+  height: 320px;
+  background-image: url(../img/concept1_h/drag2_2_o.png);
+  top: 766px;
+  left: 180px;
+}
+.screen2 .drag_box.on {
+  z-index: 1 !important;
+}
+.screen2 .drag_box.d3 {
+  width: 906px;
+  height: 481px;
+  background-image: url(../img/concept1_h/drag2_3.png);
+  top: 236px;
+  left: 980px;
+}
+.screen2 .drag_box.d3.on {
+  width: 511px;
+  height: 399px;
+  background-image: url(../img/concept1_h/drag2_3_o.png);
+  top: 710px;
+  left: 1320px;
+}
+.screen2 .drag_box.d4 {
+  width: 571px;
+  height: 283px;
+  background-image: url(../img/concept1_h/drag2_4.png);
+  top: 438px;
+  left: 1341px;
+}
+.screen2 .drag_box.d4.on {
+  width: 449px;
+  height: 241px;
+  background-image: url(../img/concept1_h/drag2_4_o.png);
+  top: 808px;
+  left: 483px;
+}

@@ -1,0 +1,26 @@
+.content {
+  background: url(../img/explore4/bg.png) no-repeat center / 100%;
+}
+
+.click_wrap {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  top: 176px;
+  left: 90px;
+}
+
+.click_wrap .click_obj.c2 {
+  margin-left: -18px;
+}
+.click_wrap .click_obj .obj_name {
+  margin-left: 246px;
+}
+
+.click_wrap .click_obj .obj {
+  margin-top: 14px;
+}
+.click_wrap.on .obj {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}

@@ -1,0 +1,316 @@
+.screen0 {
+  background: url(../img/explore2/explore2_bg.png) no-repeat center / 100%;
+}
+.screen0.finish {
+  background-image: url(../img/explore2/explore2_bg_o.png);
+}
+.page_title {
+  display: none;
+}
+.screen[data-num="1"] .page_title.t1 {
+  display: flex;
+}
+.screen[data-num="2"] .page_title.t2 {
+  display: flex;
+}
+.screen[data-num="3"] .page_title.t3 {
+  display: flex;
+}
+.screen[data-num="4"] .page_title.t4 {
+  display: flex;
+}
+.screen[data-num="5"] .page_title.t5 {
+  display: flex;
+}
+
+.page_title span {
+  color: #36dcff;
+}
+.zoom {
+  position: absolute;
+  top: 226px;
+  left: -258px;
+}
+.zoom.finish {
+  filter: brightness(0.5);
+  width: 526px;
+  top: 334px;
+  left: -87px;
+}
+.drag_area {
+  width: 1668px;
+  height: 282px;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 78px;
+  left: 162px;
+  display: flex;
+  align-items: center;
+}
+
+.drag_area .d1 {
+  margin-left: 229px;
+}
+.drag_area .d2 {
+  margin-left: 158px;
+}
+.drag_area .d3 {
+  margin-left: 162px;
+}
+
+.drag_area .d4 {
+  margin-left: 185px;
+}
+.drag_area .drag_box {
+  pointer-events: none;
+  filter: brightness(0.5);
+}
+.drag_area .drag_box.start {
+  pointer-events: all;
+  filter: none;
+}
+
+.drop_area {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 186px;
+  left: 156px;
+}
+.box_wrap {
+  position: relative;
+}
+.box_wrap + .box_wrap {
+  margin-left: -17px;
+}
+
+.box_wrap.start::before {
+  content: "";
+  width: 568px;
+  height: 568px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../img/explore2/drop_line.png) no-repeat center / 100%;
+}
+.box_wrap.on::before {
+  content: "";
+  width: 568px;
+  height: 568px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../img/explore2/drop_line_o.png) no-repeat center / 100%;
+}
+
+.box_wrap.finish::before {
+  display: none;
+}
+
+.box_wrap .drop_box {
+  width: 568px;
+  height: 568px;
+  background: url(../img/explore2/drop1.png) no-repeat center / 100%;
+}
+.screen[data-num="2"] .box_wrap.d2 {
+  margin-left: -198px;
+}
+.box_wrap.d2 .drop_box {
+  background: url(../img/explore2/drop2.png) no-repeat center / 320px auto;
+}
+.box_wrap.d2.start .drop_box {
+  background: url(../img/explore2/drop2_s.png) no-repeat center / 100%;
+}
+.box_wrap.d2.finish {
+  margin-left: -237px;
+}
+.screen[data-num="4"] .box_wrap.d2.finish {
+  margin-left: -199px;
+}
+.box_wrap.d3 {
+  margin-left: -202px;
+}
+.screen[data-num="2"] .box_wrap.d3 {
+  margin-left: -19px;
+}
+.screen[data-num="3"] .box_wrap.d3 {
+  margin-left: -155px;
+}
+.box_wrap.d3 .drop_box {
+  background: url(../img/explore2/drop3.png) no-repeat center / 167px auto;
+}
+.box_wrap.d3.start .drop_box {
+  background: url(../img/explore2/drop3_s.png) no-repeat center / 100%;
+}
+
+.box_wrap.d4 {
+  margin-left: -254px;
+}
+.screen[data-num="3"] .box_wrap.d4 {
+  margin-left: -80px;
+}
+.screen[data-num="4"] .box_wrap.d4 {
+  margin-left: -190px;
+}
+.box_wrap.d4 .drop_box {
+  background: url(../img/explore2/drop4.png) no-repeat center / 267px auto;
+}
+.box_wrap.d4.start .drop_box {
+  background: url(../img/explore2/drop4_s.png) no-repeat center / 100%;
+}
+
+.box_wrap.on .drop_box {
+  background-image: url(../img/explore2/drop1_o.png);
+}
+
+.box_wrap.d2.on .drop_box {
+  background: url(../img/explore2/drop2_o.png) no-repeat center / 100%;
+}
+.box_wrap.d3.on .drop_box {
+  background: url(../img/explore2/drop3_o.png) no-repeat center / 100%;
+}
+.box_wrap.d4.on .drop_box {
+  background: url(../img/explore2/drop4_o.png) no-repeat center / 100%;
+}
+.box_wrap.finish .drop_box {
+  filter: brightness(0.5);
+  background: url(../img/explore2/drop1_f.png) no-repeat 97px center / 105px auto;
+}
+.box_wrap.d2.finish .drop_box {
+  background: url(../img/explore2/drop2_f.png) no-repeat 0px center / 391px auto;
+}
+.box_wrap.d3.finish .drop_box {
+  background: url(../img/explore2/drag3.png) no-repeat 97px center / 200px auto;
+}
+.box_wrap.d4.finish .drop_box {
+  filter: none;
+  background: url(../img/explore2/drag4.png) no-repeat 0px center / 512px auto;
+}
+
+.has_guide {
+  position: absolute;
+}
+
+.screen[data-num="1"] .has_guide.on {
+  top: 931px;
+  left: 421px;
+  animation: guideHand1 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand1 {
+  0% {
+    top: 931px;
+    left: 421px;
+  }
+
+  100% {
+    top: 448px;
+    left: 421px;
+  }
+}
+
+.screen[data-num="2"] .has_guide.on {
+  top: 931px;
+  left: 769px;
+  animation: guideHand2 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand2 {
+  0% {
+    top: 931px;
+    left: 769px;
+  }
+
+  100% {
+    top: 458px;
+    left: 758px;
+  }
+}
+
+.screen[data-num="3"] .has_guide.on {
+  top: 969px;
+  left: 1148px;
+  animation: guideHand3 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand3 {
+  0% {
+    top: 969px;
+    left: 1148px;
+  }
+
+  100% {
+    top: 464px;
+    left: 1210px;
+  }
+}
+
+.screen[data-num="4"] .has_guide.on {
+  top: 960px;
+  left: 1548px;
+  animation: guideHand4 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand4 {
+  0% {
+    top: 960px;
+    left: 1548px;
+  }
+
+  100% {
+    top: 478px;
+    left: 1608px;
+  }
+}
+
+.obj {
+  position: absolute;
+  top: 148px;
+  left: 102px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quiz_area.on .drag_box.start:not(.on) {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.screen[data-num="5"] .zoom.finish {
+  width: 830px;
+  top: 359px;
+  left: -254px;
+  opacity: 1;
+  filter: none;
+}
+.screen[data-num="5"] .drop_area {
+  top: 303px;
+}
+.screen[data-num="5"] .box_wrap.finish .drop_box {
+  filter: none;
+}
+.screen[data-num="5"] .box_wrap.finish.d1 .drop_box {
+  background: url(../img/explore2/drop1_f.png) no-repeat 131px center / 163px auto;
+}
+.screen[data-num="5"] .box_wrap.d2.finish {
+  margin-left: -121px;
+}
+.screen[data-num="5"] .box_wrap.d2.finish .drop_box {
+  background: url(../img/explore2/drop2_f.png) no-repeat 0px center / 540px auto;
+}
+.screen[data-num="5"] .box_wrap.d3 {
+  margin-left: -102px;
+}
+.screen[data-num="5"] .box_wrap.d3.finish .drop_box {
+  background: url(../img/explore2/drag3.png) no-repeat 46px center / 302px auto;
+}
+.screen[data-num="5"] .box_wrap.d4.finish .drop_box {
+  background: url(../img/explore2/drag4.png) no-repeat 30px center / 450px auto;
+}
+.screen[data-num="5"] .box_wrap.on {
+  animation: bigAndSmall 1s forwards;
+  animation-iteration-count: 1;
+}

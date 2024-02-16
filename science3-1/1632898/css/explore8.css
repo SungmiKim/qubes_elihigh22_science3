@@ -1,0 +1,22 @@
+.content .ani_img.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.content .eo {
+  position: absolute;
+  top: 91px;
+  left: 251px;
+}
+
+.content .txt {
+  position: absolute;
+  top: 188px;
+  left: 56%;
+  transform: translate(-50%, 0%);
+}
+.content .txt_arrow {
+  position: absolute;
+  top: 288px;
+  left: 1106px;
+}

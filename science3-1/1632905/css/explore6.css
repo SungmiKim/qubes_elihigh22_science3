@@ -1,0 +1,102 @@
+.op0 {
+  opacity: 0;
+  z-index: -1;
+}
+.screen,
+.screen .ani {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.has_guide {
+  position: absolute;
+}
+.screen .arrow {
+  position: absolute;
+}
+.screen .arrow.scale {
+  animation: bigAndSmall2 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.content[data-num="1"] .has_guide {
+  top: 992px;
+  left: 578px;
+}
+.content[data-num="2"] .has_guide {
+  top: 585px;
+  left: 1665px;
+}
+.screen1 {
+  background-image: url(../img/explore6/screen1.png);
+}
+.screen1 .ani1_1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.screen1 .frog {
+  position: absolute;
+  top: 737px;
+  left: 684px;
+  opacity: 0;
+}
+.screen1 .frog.on {
+  opacity: 1;
+}
+.screen1 .frog.play {
+  transition: all 2s;
+  transform: scale(0.5);
+  opacity: 0.5;
+}
+.screen1 .egg {
+  position: absolute;
+  top: 539px;
+  left: 109px;
+}
+
+.screen1 .egg.scale {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.screen1 .ani2 {
+  opacity: 0;
+}
+.screen1 .ani2.on {
+  opacity: 1;
+}
+.screen2 .ani2_2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.screen1 .arrow.a1 {
+  top: 900px;
+  left: 549px;
+}
+.screen2 .arrow.a2 {
+  top: 535px;
+  left: 1612px;
+}
+.screen3 .ani3_1 {
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+.screen3 .ani3_2 {
+  position: absolute;
+  top: 0px;
+  left: 1032px;
+}
+.screen3 .ani3_3 {
+  position: absolute;
+  top: 130px;
+  left: 1388px;
+}
+.screen3 .txt {
+  position: absolute;
+  top: 138px;
+  left: 1214px;
+}

@@ -1,0 +1,86 @@
+.blank {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.blank img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.blank .txt {
+  top: 806px;
+  left: 50%;
+}
+.content {
+  background: url(../img/explore9/explore9_bg.png) no-repeat center / 100%;
+}
+
+.slope img.active {
+  position: absolute;
+  top: 441px;
+  left: 778px;
+  opacity: 0;
+}
+.slope.on img.prev {
+  display: none;
+}
+
+.slope.on img.active {
+  opacity: 1;
+  left: 453px;
+  transition: left 2s ease;
+}
+.slope .obj_name {
+  position: absolute;
+  top: 629px;
+  left: 107px;
+  opacity: 0;
+}
+.slope.on .obj_name {
+  opacity: 1;
+  transition: opacity 1s;
+  transition-delay: 2s;
+}
+
+.test {
+  position: absolute;
+  top: 441px;
+  left: 778px;
+  font-size: 40px;
+}
+
+.name_list img {
+  position: absolute;
+  opacity: 0;
+}
+
+.name_list .name1 {
+  top: 629px;
+  left: 110px;
+}
+.name_list .name2 {
+  top: 629px;
+  left: 1354px;
+}
+.name_list .name3 {
+  top: 919px;
+  left: 110px;
+}
+.name_list .name4 {
+  top: 919px;
+  left: 1354px;
+}
+.name_list.on img {
+  opacity: 1;
+  transition: opacity 1s;
+  transition-delay: 3s;
+}
+.name_list.on .name1 {
+  transition-delay: 4s;
+}
+.name_list.on .name3 {
+  transition-delay: 7s;
+}
+.name_list.on .name4 {
+  transition-delay: 8s;
+}

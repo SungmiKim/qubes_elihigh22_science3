@@ -1,0 +1,93 @@
+@import url(./summary1.css);
+.content {
+  background: url(../img/summary2/bg.png) no-repeat center / 100%;
+}
+
+.page_title span {
+  color: #ffb4d0;
+}
+
+.name_list .has_guide {
+  top: 47px;
+  left: 151px;
+}
+.name_list .name1 {
+  top: 547px;
+  left: 119px;
+}
+.name_list .name2 {
+  top: 424px;
+  left: 1402px;
+}
+.name_list .name3 {
+  top: 869px;
+  left: 275px;
+}
+.name_list .name4 {
+  top: 867px;
+  left: 1140px;
+}
+.name_list .name_tag {
+  width: 248px;
+  height: 94px;
+  background: url(../img/summary2/name1_off.png) no-repeat center / 100%;
+}
+
+.name_list .name2 .name_tag {
+  background-image: url(../img/summary2/name2_off.png);
+}
+
+.name_list .name3 .name_tag {
+  background-image: url(../img/summary2/name3_off.png);
+}
+
+.name_list .name4 .name_tag {
+  background-image: url(../img/summary2/name4_off.png);
+}
+
+.name_list .txt {
+  top: 114px;
+  left: 26px;
+}
+
+.name_list .name1.on .name_tag {
+  background-image: url(../img/summary2/name1_on.png);
+}
+
+.name_list .name2.on .name_tag {
+  background-image: url(../img/summary2/name2_on.png);
+}
+
+.name_list .name3.on .name_tag {
+  background-image: url(../img/summary2/name3_on.png);
+}
+
+.name_list .name4.on .name_tag {
+  background-image: url(../img/summary2/name4_on.png);
+}
+
+.img_list li {
+  position: absolute;
+  top: 338px;
+  left: 334px;
+}
+.img_list li:nth-child(2) {
+  top: 756px;
+  left: 546px;
+}
+.img_list li:nth-child(3) {
+  top: 772px;
+  left: 858px;
+}
+.img_list li:nth-child(4) {
+  top: 224px;
+  left: 816px;
+}
+
+.img_list li .ani {
+  width: 110%;
+}
+.txt {
+  top: -16px;
+  left: -86px;
+}

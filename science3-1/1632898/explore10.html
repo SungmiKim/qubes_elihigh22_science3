@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>[과학] 31_2단원 03</title>
+    <!--공통 -->
+    <link href="../common/css/font.css" rel="stylesheet" />
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="./css/explore10.css" rel="stylesheet" />
+    <script src="./js/pageInfo.js"></script>
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap" data-page="explore10">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <header class="header"></header>
+
+          <div class="page_title title4">물이 담긴 수조에 막대를 끌어 놓아 어떤 막대가 물에 뜨는지 살펴봅시다.</div>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <div class="quiz_area fix">
+            <div class="has_guide">
+              <img src="../common/images/icon/icon_hand.png" alt="guide" />
+            </div>
+            <div class="drop_area">
+              <div class="drop_box" data-name="1"></div>
+              <div class="drop_box" data-name="2"></div>
+              <div class="drop_box" data-name="3"></div>
+              <div class="drop_box" data-name="4"></div>
+            </div>
+
+            <div class="drag_area">
+              <div class="drag_box d1" data-name="1">
+                <img src="./img/explore10/obj1.png" alt="금속 막대" />
+              </div>
+              <div class="drag_box d2" data-name="2">
+                <img src="./img/explore10/obj2.png" alt="플라스틱 막대" />
+              </div>
+              <div class="drag_box d3" data-name="3">
+                <img src="./img/explore10/obj3.png" alt="나무 막대" />
+              </div>
+              <div class="drag_box d4" data-name="4">
+                <img src="./img/explore10/obj4.png" alt="고무 막대" />
+              </div>
+
+              <ul class="name_list">
+                <li class="obj_name n1">금속 막대</li>
+                <li class="obj_name n2">플라스틱 막대</li>
+                <li class="obj_name n3">나무 막대</li>
+                <li class="obj_name n4">고무 막대</li>
+              </ul>
+            </div>
+
+            <div class="ani_area">
+              <img src="./img/explore10/ani.png" alt="frame" class="ani_frame" />
+              <!-- Gif -->
+              <img src="./img/explore10/ani1.png" alt="ani" class="gif" />
+
+              <img src="./img/explore10/ani_obj1.png" alt="금속 막대" class="ani_obj a1 hide" />
+              <img src="./img/explore10/ani_obj2.png" alt="플라스틱 막대" class="ani_obj a2 hide" />
+              <img src="./img/explore10/ani_obj3.png" alt="나무 막대" class="ani_obj a3 hide" />
+              <img src="./img/explore10/ani_obj4.png" alt="고무 막대" class="ani_obj a4 hide" />
+
+              <img src="./img/explore10/cover.png" alt="cover" class="ani_cover" />
+
+              <img src="./img/explore10/ani_finish.png" alt="활동 종료" class="ani_finish" />
+            </div>
+          </div>
+
+          <div class="name_list">
+            <img src="./img/explore10/name1.png" alt="플라스틱" class="name1" />
+            <img src="./img/explore10/name2.png" alt="나무" class="name2" />
+            <img src="./img/explore10/name3.png" alt="금속" class="name3" />
+            <img src="./img/explore10/name4.png" alt="고무" class="name4" />
+          </div>
+          <div class="completeStamp">
+            <img src="" alt="stamp" />
+          </div>
+        </div>
+        <div class="blank"></div>
+        <!-- 가변 컨텐츠 End -->
+
+        <div class="fixed bottom">
+          <!-- 페이지 이동 버튼 -->
+          <a class="btn move btn_prev"> </a>
+          <a class="btn move btn_next"> </a>
+          <!-- 페이지 이동 버튼 End -->
+        </div>
+
+        <!-- 10초 Popup -->
+        <div class="pop_ct pop_next">
+          <img src="../common/images/pop/pop_next.png" alt="pop_next" />
+        </div>
+      </div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/jquery-ui.js"></script>
+    <script src="../common/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../common/js/drag.js"></script>
+    <script src="./js/explore10.js"></script>
+  </body>
+</html>

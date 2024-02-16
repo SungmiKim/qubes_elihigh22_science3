@@ -1,0 +1,60 @@
+.content {
+  background: url(../img/summary3/summary3_bg.png) no-repeat center / 100%;
+}
+
+.name_list .has_guide,
+.name_list .obj,
+.name_list .name_tag,
+.name_list .txt,
+.bubble {
+  position: absolute;
+}
+.name_list .has_guide {
+  top: 263px;
+  left: 382px;
+}
+
+.name_list .name_tag {
+  width: 318px;
+  height: 107px;
+  background: url(../img/summary3/name1_off.png) no-repeat center / 100%;
+  top: 200px;
+  left: 336px;
+}
+.name_list .name2 .name_tag {
+  background-image: url(../img/summary3/name2_off.png);
+  top: 462px;
+  left: 1318px;
+}
+.name_list .txt1 {
+  opacity: 0;
+}
+.name_list li.on .txt1 {
+  opacity: 1;
+  transition: all 1s;
+}
+.name_list .name1 .txt1 {
+  top: 316px;
+  left: 332px;
+}
+.name_list .name2 .txt1 {
+  top: 578px;
+  left: 1327px;
+}
+
+.name_list .name1.on .name_tag {
+  background-image: url(../img/summary3/name1_on.png);
+}
+
+.name_list .name2.on .name_tag {
+  background-image: url(../img/summary3/name2_on.png);
+}
+
+.name_tag.on {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.name_list li.on {
+  pointer-events: none;
+}

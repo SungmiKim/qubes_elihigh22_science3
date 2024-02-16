@@ -1,0 +1,30 @@
+.content {
+  background: url(../img/explore6/explore6_bg.png) no-repeat center / 100%;
+}
+
+.obj_list li {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.obj_list.on li {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.obj_list li.obj2 {
+  transition-delay: 1.5s;
+}
+.obj_list li.obj3 {
+  transition-delay: 3s;
+}
+.obj_list li.obj4 {
+  opacity: 1;
+  transition: none;
+}
+
+.eo {
+  position: absolute;
+  top: 149px;
+  left: 294px;
+}

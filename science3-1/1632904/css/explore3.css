@@ -1,0 +1,226 @@
+.screen .name_list .obj_name {
+  position: absolute;
+  width: 240px;
+  background-color: rgba(255, 255, 255, 0.078);
+  box-shadow: none;
+  color: #fff;
+  border-radius: 80px;
+  display: none;
+}
+.screen .name_list .obj_name.on {
+  display: flex;
+}
+.screen .obj_list .obj {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.screen .obj_list .obj.scale {
+  animation: bigAndSmall 1s;
+  animation-iteration-count: 1;
+}
+
+.content .arrow {
+  opacity: 0;
+  position: absolute;
+}
+.content .arrow.on {
+  opacity: 1;
+  transition: all 1s;
+}
+canvas {
+  border-radius: 100%;
+  /* box-shadow: 5px 8.66px 10px 0px rgba(0, 0, 0, 0.3); */
+}
+.has_guide {
+  position: absolute;
+  display: none;
+}
+/* screen1 */
+.screen1 {
+  background: url(../img/explore3/screen1.png) no-repeat center / 100%;
+}
+.screen1 .scratch_content {
+  position: absolute;
+  top: 643px;
+  left: 244px;
+}
+.screen1 .scratch_content.s2 {
+  top: 733px;
+  left: 745px;
+}
+.screen1 .scratch_content.s3 {
+  top: 554px;
+  left: 1237px;
+}
+/* .screen1 canvas {
+  background: url(../img/explore3/scratch1_1.png) no-repeat center / 100%;
+}
+.screen1 .scratch_content.s3 canvas {
+  background: url(../img/explore3/scratch1_3.png) no-repeat center / 100%;
+} */
+
+.screen1 .name_list .obj_name.t1 {
+  top: 935px;
+  left: 321px;
+}
+.screen1 .name_list .obj_name.t2 {
+  top: 1036px;
+  left: 827px;
+}
+.screen1 .name_list .obj_name.t3 {
+  top: 976px;
+  left: 1367px;
+}
+.screen1 .name_list .obj_name.t4 {
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 185px;
+  left: 1011px;
+}
+.screen1 .obj_list .obj.o1 {
+  top: 778px;
+  left: 390px;
+}
+.screen1 .obj_list .obj.o2 {
+  top: 868px;
+  left: 848px;
+}
+.screen1 .obj_list .obj.o3 {
+  top: 576px;
+  left: 1258px;
+}
+.screen1 .obj_list .obj.o4 {
+  top: 202px;
+  left: 578px;
+}
+.screen1 .obj_list .obj.scale.o4 {
+  animation: bigAndSmall3 1s;
+}
+.screen1 .arrow.a1 {
+  top: 850px;
+  left: 598px;
+}
+.screen1 .arrow.a2 {
+  top: 895px;
+  left: 1106px;
+}
+.screen1 .arrow.a3 {
+  top: 505px;
+  left: 1538px;
+}
+
+/* screen2 */
+.screen2 {
+  background: url(../img/explore3/screen2.png) no-repeat center / 100%;
+}
+.screen2 .scratch_content {
+  position: absolute;
+  top: 761px;
+  left: 860px;
+}
+.screen2 .scratch_content.s2 {
+  top: 221px;
+  left: 1269px;
+}
+/* .screen2 canvas {
+  background: url(../img/explore3/scratch2_1.png) no-repeat center / 100%;
+}
+.screen2 .scratch_content.s2 canvas {
+  background: url(../img/explore3/scratch2_2.png) no-repeat center / 100%;
+} */
+
+.screen2 .name_list .obj_name.t1 {
+  top: 966px;
+  left: 1143px;
+}
+.screen2 .name_list .obj_name.t2 {
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 339px;
+  left: 1460px;
+}
+.screen2 .name_list .obj_name.t3 {
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 346px;
+  left: 251px;
+}
+
+.screen2 .obj_list .obj.o1 {
+  top: 912px;
+  left: 932px;
+}
+.screen2 .obj_list .obj.o2 {
+  top: 372px;
+  left: 1364px;
+}
+.screen2 .obj_list .obj.o3 {
+  top: 154px;
+  left: 454px;
+}
+.screen2 .obj_list .obj.scale.o3 {
+  animation: bigAndSmall3 1s;
+}
+.screen2 .arrow.a1 {
+  top: 716px;
+  left: 1231px;
+}
+.screen2 .arrow.a2 {
+  top: 259px;
+  left: 1056px;
+}
+
+.screen1 .has_guide {
+  top: 690px;
+  left: 435px;
+}
+.screen2 .has_guide {
+  top: 835px;
+  left: 1115px;
+}
+
+.screen1 .has_guide.on {
+  animation: scratchGuide1 1.5s forwards;
+  animation-iteration-count: 2;
+  display: block;
+}
+@-webkit-keyframes scratchGuide1 {
+  0% {
+    top: 690px;
+    left: 435px;
+  }
+  33% {
+    top: 808px;
+    left: 275px;
+  }
+  66% {
+    top: 774px;
+    left: 497px;
+  }
+  100% {
+    top: 923px;
+    left: 360px;
+  }
+}
+
+.screen2 .has_guide.on {
+  animation: scratchGuide2 1.5s forwards;
+  animation-iteration-count: 2;
+  display: block;
+}
+@-webkit-keyframes scratchGuide2 {
+  0% {
+    top: 835px;
+    left: 1115px;
+  }
+  33% {
+    top: 933px;
+    left: 955px;
+  }
+  66% {
+    top: 899px;
+    left: 1177px;
+  }
+  100% {
+    top: 1048px;
+    left: 1040px;
+  }
+}

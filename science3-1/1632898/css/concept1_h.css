@@ -1,0 +1,271 @@
+.w1920 .page_title {
+  width: calc(100% - 80px - 80px);
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+}
+
+.has_guide {
+  position: absolute;
+}
+.drop_area,
+.drag_box {
+  position: absolute;
+}
+.name_list li {
+  position: absolute;
+  top: 987px;
+}
+.name_list li .obj_name {
+  font-family: "NanumSquareRoundEB";
+  font-size: 42px;
+  font-weight: bold;
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.05), inset 0px -6px 0px 0px rgba(238, 238, 238, 0.8);
+  width: 217px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bubble {
+  z-index: 1;
+}
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept1_h/screen1.png) no-repeat center / 100%;
+}
+
+.screen1 .has_guide {
+  top: 856px;
+  left: 596px;
+  z-index: 1;
+}
+.screen1 .has_guide.on {
+  animation: guideHand1 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand1 {
+  0% {
+    top: 856px;
+    left: 596px;
+  }
+
+  100% {
+    top: 556px;
+    left: 896px;
+  }
+}
+
+.screen1 .bubble {
+  top: 300px;
+  left: 1033px;
+}
+.screen1 .drop_area {
+  position: absolute;
+  top: 307px;
+  left: 237px;
+  width: 1529px;
+  height: 354px;
+  background: url(../img/concept1_h/drop1_1.png) no-repeat center / 100%;
+}
+.screen1 .drop_area .box_wrap {
+  width: 1529px;
+  height: 354px;
+  background: url(../img/concept1_h/drop1_2.png) no-repeat center / 100%;
+}
+.screen1 .drop_area.on {
+  background-image: url(../img/concept1_h/drop1_o.png);
+}
+.screen1 .drop_box {
+  width: 1100px;
+  height: 205px;
+  position: absolute;
+  top: 140px;
+  left: 380px;
+}
+.screen1 .drag_box {
+  top: 855px;
+  left: 277px;
+  z-index: 2;
+}
+.screen1 .drag_box.d2 {
+  left: 1076px;
+}
+
+.screen1 .name_list .obj1 {
+  left: 490px;
+}
+.screen1 .name_list .obj2 {
+  left: 1290px;
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+}
+
+.screen2 .has_guide {
+  top: 427px;
+  left: 530px;
+  z-index: 1;
+}
+.screen2 .has_guide.on {
+  animation: guideHand2 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand2 {
+  0% {
+    top: 427px;
+    left: 530px;
+  }
+
+  100% {
+    top: 527px;
+    left: 1230px;
+  }
+}
+
+.screen2 .bubble {
+  top: 248px;
+  left: 1133px;
+}
+.screen2 .drop_area {
+  top: 387px;
+  left: 978px;
+  width: 907px;
+  height: 622px;
+  background: url(../img/concept1_h/drop2.png) no-repeat center / 100%;
+}
+.screen2 .drop_area.on {
+  background-image: url(../img/concept1_h/drop2_o.png);
+}
+.screen2 .drop_box {
+  width: 100%;
+  height: 100%;
+}
+.screen2 .drag_box {
+  top: 419px;
+  left: 229px;
+  z-index: 2;
+}
+.screen2 .drag_box.d2 {
+  top: 750px;
+}
+.screen2 .name_list li {
+  left: 442px;
+}
+.screen2 .name_list .obj1 {
+  top: 550px;
+}
+.screen2 .name_list .obj2 {
+  top: 884px;
+}
+
+/* 활동 3 */
+.screen3 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+}
+
+.screen3 .has_guide {
+  top: 369px;
+  left: 1592px;
+  z-index: 1;
+}
+.screen3 .has_guide.on {
+  animation: guideHand3 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand3 {
+  0% {
+    top: 369px;
+    left: 1592px;
+  }
+
+  100% {
+    top: 495px;
+    left: 792px;
+  }
+}
+
+.screen3 .bubble {
+  top: 237px;
+  left: 138px;
+}
+.screen3 .bubble2 {
+  top: 947px;
+  left: 139px;
+}
+.screen3 .drop_area {
+  top: 287px;
+  left: 210px;
+  width: 1123px;
+  height: 737px;
+  background: url(../img/concept1_h/drop3.png) no-repeat center / 100%;
+}
+.screen3 .drop_area.on {
+  background-image: url(../img/concept1_h/drop3_o.png);
+}
+.screen3 .drop_area .box_wrap {
+  position: absolute;
+  z-index: 1;
+}
+.screen3 .drop_area .box_wrap.d1 {
+  width: 853px;
+  height: 379px;
+  background: url(../img/concept1_h/drop3_1.png) no-repeat center / 100%;
+  top: -1px;
+  left: 130px;
+}
+.screen3 .drop_area .box_wrap.d1.on {
+  background-image: url(../img/concept1_h/drop3_1_o.png);
+}
+.screen3 .drop_area .box_wrap.d2 {
+  width: 853px;
+  height: 277px;
+  background: url(../img/concept1_h/drop3_2.png) no-repeat center / 100%;
+  top: 409px;
+  left: 130px;
+}
+.screen3 .drop_area .box_wrap.d2.on {
+  background-image: url(../img/concept1_h/drop3_2_o.png);
+}
+.screen3 .drop_area .box_wrap.on {
+  z-index: 0;
+}
+.screen3 .cover {
+  position: absolute;
+  top: 288px;
+  left: 211px;
+}
+
+.screen3 .drop_box {
+  width: 100%;
+  height: 100%;
+}
+.screen3 .drag_box {
+  top: 287px;
+  left: 1515px;
+  z-index: 2;
+}
+.screen3 .drag_box.d2 {
+  top: 706px;
+  left: 1373px;
+}
+.screen3 .name_list li {
+  left: 1488px;
+}
+.screen3 .name_list .obj1 {
+  top: 480px;
+}
+.screen3 .name_list .obj2 {
+  top: 993px;
+}
+
+.quiz_area.on .drag_box {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}

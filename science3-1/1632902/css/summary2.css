@@ -1,0 +1,88 @@
+.content {
+  background: url(../img/summary2/summary2_bg.png) no-repeat center / 100%;
+}
+
+.page_title span {
+  color: #ffe244;
+}
+.name_list .has_guide,
+.name_list .obj,
+.name_list .name_tag,
+.name_list .txt,
+.bubble {
+  position: absolute;
+}
+.name_list .has_guide {
+  top: 241px;
+  left: 282px;
+}
+
+.name_list .name_tag {
+  width: 249px;
+  height: 95px;
+  background: url(../img/summary2/name1_off.png) no-repeat center / 100%;
+  top: 181px;
+  left: 162px;
+}
+.name_list .name2 .name_tag {
+  background-image: url(../img/summary2/name2_off.png);
+  top: 179px;
+  left: 939px;
+}
+.name_list .name3 .name_tag {
+  background-image: url(../img/summary2/name3_off.png);
+  top: 690px;
+  left: 364px;
+}
+.name_list .name4 .name_tag {
+  background-image: url(../img/summary2/name4_off.png);
+  top: 690px;
+  left: 1026px;
+}
+
+.name_list .txt {
+  opacity: 0;
+}
+.name_list li.on .txt {
+  opacity: 1;
+  transition: all 1s;
+}
+.name_list .name1 .txt {
+  top: 295px;
+  left: 172px;
+}
+.name_list .name2 .txt {
+  top: 295px;
+  left: 951px;
+}
+.name_list .name3 .txt {
+  top: 806px;
+  left: 375px;
+}
+.name_list .name4 .txt {
+  top: 806px;
+  left: 1038px;
+}
+
+.name_list .name1.on .name_tag {
+  background-image: url(../img/summary2/name1_on.png);
+}
+
+.name_list .name2.on .name_tag {
+  background-image: url(../img/summary2/name2_on.png);
+}
+.name_list .name3.on .name_tag {
+  background-image: url(../img/summary2/name3_on.png);
+}
+.name_list .name4.on .name_tag {
+  background-image: url(../img/summary2/name4_on.png);
+}
+
+.name_tag.on {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.name_list li.on {
+  pointer-events: none;
+}

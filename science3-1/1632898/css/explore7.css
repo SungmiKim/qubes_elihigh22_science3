@@ -1,0 +1,98 @@
+.content {
+  background: url(../img/explore7/explore7_bg.png) no-repeat center / 100%;
+}
+.obj_name {
+  font-family: "NanumSquareRoundEB";
+  font-size: 46px;
+  font-weight: bold;
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.05), inset 0px -6px 0px 0px rgba(238, 238, 238, 0.8);
+  width: 310px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 265px;
+  left: 844px;
+}
+.touch_area {
+  position: absolute;
+  top: 384px;
+  left: 778px;
+  z-index: 1;
+  width: 440px;
+  height: 440px;
+}
+.touch_area::before {
+  content: "";
+  width: 358px;
+  height: 358px;
+  background: url(../img/explore7/circle_inner.png) no-repeat center / 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.has_guide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle_progress_wrap {
+  width: 440px;
+  height: 440px;
+  background: url(../img/explore7/circle_bg.png) no-repeat center / 100%;
+}
+
+.circle_progress {
+  transform: rotate(-90deg);
+}
+.bar {
+  fill: none;
+}
+
+.bar {
+  stroke: #fde542;
+  stroke-linecap: round;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background: url(../img/explore7/circle_point.png) no-repeat center / 47px 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* animation: circle 2s linear forwards; */
+}
+@keyframes circle {
+  0% {
+    transform: rotate(90deg) translate(-207px) rotate(-90deg);
+  }
+  100% {
+    transform: rotate(450deg) translate(-207px) rotate(-450deg);
+  }
+}
+.w1920 .circle {
+  opacity: 1;
+  transition: opacity 0s;
+  transition-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.ani_area {
+  position: absolute;
+  bottom: 0;
+}

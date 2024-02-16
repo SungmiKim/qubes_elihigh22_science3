@@ -1,0 +1,162 @@
+.quiz_area.on .drag_box img {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.quiz_area.on .drag_box.on img {
+  animation: none;
+}
+
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept2_h/screen1.png) no-repeat center / 100%;
+}
+.screen1 .page_title span {
+  color: #97e8ff;
+}
+.drop_box {
+  height: 100%;
+}
+
+.screen1 .box_wrap {
+  position: absolute;
+  width: 428px;
+  height: 428px;
+  top: 396px;
+  left: 537px;
+  background: url(../img/concept2_h/drop1_1.png) no-repeat center / 100%;
+}
+.screen1 .box_wrap.on {
+  background-image: url(../img/concept2_h/drop1_1_o.png);
+}
+
+.screen1 .drag_box {
+  position: absolute;
+  top: 208px;
+  left: 1240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.screen1 .drag_box.d2 {
+  top: 220px;
+  left: 1603px;
+}
+.screen1 .drag_box.d3 {
+  top: 621px;
+  left: 1424px;
+}
+.screen1 .ui-draggable-dragging .obj_name {
+  display: none;
+}
+
+.screen1 .has_guide {
+  position: absolute;
+  top: 800px;
+  left: 1600px;
+}
+
+.screen1 .has_guide.on {
+  animation: guideHand1 1.5s forwards;
+  animation-iteration-count: 2;
+}
+
+@keyframes guideHand1 {
+  0% {
+    top: 800px;
+    left: 1600px;
+  }
+
+  100% {
+    top: 600px;
+    left: 800px;
+  }
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept2_h/screen2.png) no-repeat center / 100%;
+}
+.screen2 .page_title span {
+  color: #83ffba;
+}
+.screen2 .ani {
+  position: absolute;
+  top: 513px;
+  left: 55px;
+}
+.screen2 .ani2 {
+  top: 500px;
+  left: 1367px;
+}
+.drop_box {
+  height: 100%;
+}
+
+.screen2 .box_wrap {
+  position: absolute;
+  width: 308px;
+  height: 308px;
+  top: 411px;
+  left: 137px;
+  background: url(../img/concept2_h/drop2_1.png) no-repeat center / 100%;
+}
+.screen2 .box_wrap.d2 {
+  left: 1423px;
+}
+.screen2 .box_wrap.on {
+  width: 334px;
+  height: 335px;
+  top: 387px;
+  left: 137px;
+  background-image: url(../img/concept2_h/drop2_1_o.png);
+}
+.screen2 .box_wrap.d2.on {
+  left: 1423px;
+  background-image: url(../img/concept2_h/drop2_2_o.png);
+}
+
+.screen2 .drag_box {
+  position: absolute;
+  top: 142px;
+  left: 621px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.screen2 .drag_box.d2 {
+  top: 136px;
+
+  left: 1034px;
+}
+
+.screen2 .name_list li {
+  width: 340px;
+  position: absolute;
+  top: 1021px;
+  left: 330px;
+}
+.screen2 .name_list li:nth-child(2) {
+  left: 1330px;
+}
+.screen2 .has_guide {
+  position: absolute;
+  top: 319px;
+  left: 1235px;
+}
+
+.screen2 .has_guide.on {
+  animation: guideHand1 1.5s forwards;
+  animation-iteration-count: 2;
+}
+
+@keyframes guideHand1 {
+  0% {
+    top: 319px;
+    left: 1235px;
+  }
+
+  100% {
+    top: 539px;
+    left: 1546px;
+  }
+}

@@ -1,0 +1,76 @@
+.screen1 .book_wrap {
+  position: absolute;
+}
+.screen1 .book_wrap .book {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.screen1 .book_wrap .book.b3 {
+  left: 700px;
+}
+
+.screen1 .book_wrap .book.b2,
+.screen1 .book_wrap .book.b4 {
+  opacity: 0;
+}
+.screen1 .book_wrap.on .book.b2 {
+  opacity: 1;
+}
+.screen1 .book_wrap .index {
+  position: absolute;
+  top: 564px;
+  left: 1700px;
+  display: none;
+}
+.screen1 .book_wrap .book.b4.on {
+  opacity: 1;
+}
+.screen1 .book_wrap.on .index {
+  display: block;
+}
+.screen1 .book_wrap .index.scale {
+  animation: 2s IndexbigAndSmall ease-in infinite;
+}
+@keyframes IndexbigAndSmall {
+  0% {
+    transform-origin: 0 100%;
+    transform: scale(1, 1);
+  }
+  50% {
+    transform-origin: 0 100%;
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform-origin: 0 100%;
+    transform: scale(1, 1);
+  }
+}
+.screen1 .book_wrap .has_guide {
+  position: absolute;
+  top: 56px;
+  left: 24px;
+}
+
+.screen1.zoom .book {
+  transform: scale(1.4, 1.4);
+  transition: all 2s;
+}
+.screen2 {
+  background-image: url(../img/explore5/ani1.png);
+}
+.screen2 .ani1 {
+  background: url(../img/explore5/ani1_bg.png) no-repeat center / 100%;
+}
+.screen2 .ani2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.screen2 .ani1.on > img {
+  opacity: 0;
+}
+.screen2 .ani2.on {
+  opacity: 1;
+}

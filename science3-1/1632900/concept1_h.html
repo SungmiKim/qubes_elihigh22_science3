@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>[과학] 31_2단원 05</title>
+    <!--공통 -->
+    <link href="../common/css/font.css" rel="stylesheet" />
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="./css/concept1_h.css" rel="stylesheet" />
+    <script src="./js/pageInfo.js"></script>
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap" data-page="concept1_h">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <header class="header"></header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <div class="top_area not_title">
+            <div class="quiz_cnt pen cnt1"></div>
+          </div>
+          <div class="screen screen1">
+            <div class="page_title title4"><span>물질을 관찰하여 특징에 따라</span>&nbsp;알맞은 것을 각각 끌어 놓아 봅시다.</div>
+
+            <div class="quiz_area fix">
+              <div class="drop_area">
+                <div class="box_wrap d1">
+                  <div class="drop_box" data-name="2"></div>
+                </div>
+                <div class="box_wrap d2">
+                  <div class="drop_box" data-name="3"></div>
+                </div>
+                <div class="box_wrap d3">
+                  <div class="drop_box" data-name="1"></div>
+                </div>
+              </div>
+
+              <div class="drag_area">
+                <div class="drag_box d1" data-name="1">
+                  <img src="./img/concept1_h/drag1_1.png" alt="물" />
+                  <div class="obj_name txt">물</div>
+                </div>
+                <div class="drag_box d2" data-name="2">
+                  <img src="./img/concept1_h/drag1_2.png" alt="알긴산 나트륨" />
+                  <div class="obj_name txt">알긴산 나트륨</div>
+                </div>
+                <div class="drag_box d3" data-name="3">
+                  <img src="./img/concept1_h/drag1_3.png" alt="젖산 칼슘" />
+                  <div class="obj_name txt">젖산 칼슘</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="screen screen2 hide">
+            <div class="page_title title4"><span>물주머니를 관찰한 내용</span>으로 알맞은 것을 빈 곳에 끌어 놓아 봅시다.</div>
+
+            <div class="quiz_area fix">
+              <img src="./img/concept1_h/drop2_bg.png" alt="bg" class="drop_bg" />
+              <div class="drop_area">
+                <div class="box_wrap d1">
+                  <div class="drop_box" data-name="4"></div>
+                </div>
+                <div class="box_wrap d2">
+                  <div class="drop_box" data-name="4"></div>
+                </div>
+              </div>
+
+              <div class="drag_area">
+                <div class="drag_box d1" data-name="4" data-num="4">
+                  <img src="./img/concept1_h/drag2_1.png" alt="말랑말랑함" />
+                </div>
+                <div class="drag_box d2" data-name="5" data-num="5">
+                  <img src="./img/concept1_h/drag2_2.png" alt="하얀색임" />
+                </div>
+                <div class="drag_box d3" data-name="5" data-num="6">
+                  <img src="./img/concept1_h/drag2_3.png" alt="까끌까끌함" />
+                </div>
+                <div class="drag_box d4" data-name="4" data-num="7">
+                  <img src="./img/concept1_h/drag2_4.png" alt="투명함" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="screen screen3 hide">
+            <div class="page_title title4"><span>서로 다른 물질을 섞었을 때 물질의 성질 변화</span>를 바르게 설명한 친구를 눌러 봅시다.</div>
+
+            <div class="click_wrap">
+              <div class="click_obj c1">
+                <div class="bubble"></div>
+                <img src="./img/concept1_h/obj1_1.png" alt="이오" class="obj" />
+              </div>
+              <div class="click_obj c2">
+                <div class="bubble"></div>
+                <img src="./img/concept1_h/obj1_2.png" alt="엘라" class="obj" />
+              </div>
+            </div>
+          </div>
+
+          <div class="completeStamp">
+            <img src="" alt="stamp" />
+          </div>
+        </div>
+        <div class="blank"></div>
+        <!-- 가변 컨텐츠 End -->
+
+        <div class="fixed bottom">
+          <!-- 페이지 이동 버튼 -->
+          <a class="btn move btn_prev"> </a>
+          <a class="btn move btn_next"> </a>
+          <!-- 페이지 이동 버튼 End -->
+        </div>
+
+        <!-- 10초 Popup -->
+        <div class="pop_ct pop_next">
+          <img src="../common/images/pop/pop_next.png" alt="pop_next" />
+        </div>
+        <!-- 30초 Popup -->
+        <div class="pop_ct pop_wait">
+          <img src="../common/images/pop/pop_wait.png" alt="pop_wait" />
+        </div>
+      </div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/jquery-ui.js"></script>
+    <script src="../common/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../common/js/drag.js"></script>
+    <script src="./js/concept1_h.js"></script>
+  </body>
+</html>

@@ -1,0 +1,204 @@
+.container.on .tablet .blink {
+  animation: camera 1s ease forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes camera {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  width: 87%;
+  height: 78%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  opacity: 0;
+}
+
+.content {
+  background: url(../img/explore3/explore3_bg.png) no-repeat center / 100%;
+}
+.has_guide {
+  position: absolute;
+  top: 530px;
+  left: 590px;
+}
+
+.pop_card {
+  background: none;
+}
+
+.fixed.top[data-num="1"] .page_title2 {
+  display: none;
+}
+.fixed.top[data-num="2"] .page_title1 {
+  display: none;
+}
+.page_title span {
+  color: #fffc01;
+}
+
+.obj_list li .img_ani,
+.obj_list li .img_bg {
+  position: absolute;
+}
+.obj_list.on li img.on {
+  animation: none !important;
+}
+.obj_list.on li .img_ani.scale {
+  animation: 3s zoom_in_out ease-in infinite;
+}
+.obj_list.on li .img_bg.scale {
+  animation: 3s zoom_in_out ease-in infinite;
+}
+.obj_list li.on .img_ani {
+  width: auto !important;
+  z-index: 1;
+}
+.obj_list li .click_box {
+  position: absolute;
+}
+.obj_list li.on .click_box {
+  display: none;
+}
+.obj_list li.obj1 .img_bg {
+  bottom: 7px;
+  right: 0;
+}
+.obj_list li.obj1 .img_ani {
+  width: 655px;
+  top: 315px;
+  right: 192px;
+}
+.obj_list li.obj1.on .img_ani {
+  top: 302px;
+  right: 124px;
+}
+.obj_list li.obj1 .click_box {
+  width: 655px;
+  height: 305px;
+  top: 315px;
+  right: 192px;
+}
+.obj_list li.obj2 .img_bg {
+  bottom: 0;
+  left: 0;
+}
+.obj_list li.obj2 .img_ani {
+  width: 759px;
+  top: 415px;
+  left: 135px;
+}
+
+.obj_list li.obj2.on .img_ani {
+  top: 322px;
+  left: 83px;
+}
+.obj_list li.obj2 .click_box {
+  width: 759px;
+  height: 309px;
+  top: 415px;
+  left: 135px;
+}
+.obj_list li.obj3 .img_bg {
+  bottom: 0;
+  left: 114px;
+}
+.obj_list li.obj3 .img_ani {
+  width: 534px;
+  top: 867px;
+  left: 262px;
+}
+.obj_list li.obj3.on .img_ani {
+  top: 743px;
+  left: 207px;
+}
+.obj_list li.obj3 .click_box {
+  width: 479px;
+  height: 202px;
+  top: 867px;
+  left: 262px;
+}
+.obj_list li.obj4 .img_bg {
+  width: 842px;
+  height: 562px;
+  bottom: 0;
+  right: 0;
+  background: url(../img/explore3/bg4.png) no-repeat center / 100%;
+}
+.obj_list li.obj4.on .img_bg {
+  background: url(../img/explore3/bg4_o.png) no-repeat center / 100%;
+}
+
+.obj_list li.obj4 .img_ani {
+  top: 930px;
+  left: 1225px;
+}
+.obj_list li.obj4 .click_box {
+  width: 872px;
+  height: 560px;
+  bottom: 0;
+  right: 0;
+  border-radius: 75% 0 0 0;
+}
+.tablet {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1451px;
+  height: 848px;
+  background: url(../img/explore3/camera1.png) no-repeat center / 100%;
+  display: none;
+}
+.tablet.on {
+  display: block;
+  z-index: 2;
+}
+.tablet[data-num="2"] {
+  background-image: url(../img/explore3/camera2.png);
+}
+.tablet[data-num="3"] {
+  background-image: url(../img/explore3/camera3.png);
+}
+.tablet[data-num="4"] {
+  background-image: url(../img/explore3/camera4.png);
+}
+.tablet .btn,
+.tablet .loading {
+  position: absolute;
+  top: 396px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tablet img.btn {
+  top: 664px;
+}
+
+.tablet .has_guide {
+  top: 655px;
+  left: 707px;
+}
+
+.click_box {
+  z-index: 1;
+}
+
+.obj_list .ani.on {
+  pointer-events: none;
+}
+.tablet .btn.scale {
+  animation: 3s tablet_scale ease-in infinite;
+}

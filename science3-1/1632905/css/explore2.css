@@ -1,0 +1,137 @@
+.screen1 .book_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.screen1.zoom .book_wrap {
+  transform: scale(1.4, 1.4);
+  transition: all 2s;
+}
+
+.screen1 .book_wrap .book.b1 {
+  position: absolute;
+  top: 98px;
+  left: 636px;
+}
+.screen1 .book_wrap .book.b2 {
+  opacity: 0;
+  position: absolute;
+  top: -400px;
+  left: -326px;
+}
+
+.screen1 .book_wrap .index_dim {
+  position: absolute;
+  top: 564px;
+  left: 1700px;
+  width: 87px;
+  height: 128px;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+.screen1 .book_wrap .index_dim.on {
+  opacity: 1;
+}
+.screen1 .book_wrap.on .book.b1 {
+  opacity: 0;
+}
+
+.screen1 .book_wrap.on .book.b2 {
+  opacity: 1;
+  animation: 1s bookAni linear forwards;
+}
+
+@keyframes bookAni {
+  0% {
+    left: -326px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.screen1 .book_wrap .index {
+  position: absolute;
+  top: 243px;
+  right: 14px;
+}
+.screen1 .book_wrap .index li {
+  position: relative;
+}
+.screen1 .book_wrap .index li.scale > img {
+  animation: 2s IndexbigAndSmall ease-in infinite;
+}
+.screen1 .book_wrap .index li.off {
+  pointer-events: none;
+}
+.screen1 .book_wrap .index li.off > img {
+  pointer-events: none;
+  animation: none;
+}
+.screen1 .book_wrap .index li + li {
+  margin-top: 97px;
+}
+
+.screen1 .book_wrap .index li.off::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.screen1 .book_wrap .index li .has_guide {
+  position: absolute;
+  top: 82px;
+  right: -47px;
+}
+@keyframes IndexbigAndSmall {
+  0% {
+    transform-origin: 0 100%;
+    transform: scale(1, 1);
+  }
+  50% {
+    transform-origin: 0 100%;
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform-origin: 0 100%;
+    transform: scale(1, 1);
+  }
+}
+.screen2 {
+  background-image: url(../img/explore2/screen2.png);
+}
+.screen2 .ani {
+  position: absolute;
+  top: 406px;
+  left: 1118px;
+}
+
+.screen2 .ani.a2 {
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.screen2[data-num="2"] .ani.a1 {
+  display: none;
+}
+.screen2[data-num="2"] .ani.a2 {
+  opacity: 1;
+}
+.screen2 .shadow {
+  top: 841px;
+  left: 1181px;
+}
+.screen2 .male {
+  top: 333px;
+  left: 1042px;
+}
+.screen2 .chicken {
+  top: 844px;
+  left: 450px;
+}

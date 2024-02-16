@@ -1,0 +1,167 @@
+.drag_box {
+  position: absolute;
+}
+
+.screen1 .quiz_area.on .drag_box {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.screen1 .quiz_area.on .drag_box.on {
+  animation: none;
+}
+.quiz_area.on .ui-draggable-dragging img {
+  animation: none;
+}
+
+/* screen1 */
+.screen1 {
+  background: url(../img/concept1_h/screen1.png) no-repeat center / 100%;
+}
+.screen1 .page_title span {
+  color: #ffcb78;
+}
+.screen1 .page_title span.s2 {
+  color: #64f2ff;
+}
+.screen1 .box_wrap {
+  width: 860px;
+  height: 513px;
+  position: absolute;
+  top: 207px;
+  left: 106px;
+  background: url(../img/concept1_h/drop1_1.png) no-repeat center / 100%;
+}
+.screen1 .box_wrap.d2 {
+  left: 1035px;
+  background-image: url(../img/concept1_h/drop1_2.png);
+}
+.screen1 .box_wrap.on {
+  background-image: url(../img/concept1_h/drop1_1_o.png);
+}
+.screen1 .box_wrap.d2.on {
+  background-image: url(../img/concept1_h/drop1_2_o.png);
+}
+.screen1 .drag_box {
+  position: absolute;
+  bottom: 59px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.screen1 .drag_box.d1 {
+  left: 184px;
+}
+.screen1 .drag_box.d2 {
+  left: 628px;
+  bottom: 108px;
+}
+.screen1 .drag_box.d3 {
+  left: 1017px;
+  bottom: 97px;
+}
+.screen1 .drag_box.d4 {
+  left: 1522px;
+  bottom: 97px;
+}
+.screen1 .drag_box.on.d1 {
+  bottom: 504px;
+  left: 156px;
+}
+.screen1 .drag_box.on.d2 {
+  bottom: 560px;
+  left: 1137px;
+}
+.screen1 .drag_box.on.d3 {
+  bottom: 543px;
+  left: 467px;
+}
+.screen1 .drag_box.on.d4 {
+  bottom: 557px;
+  left: 1462px;
+}
+.screen1 .drag_box.d1 {
+  width: 282px;
+  height: 383px;
+  background-image: url(../img/concept1_h/drag1_1.png);
+}
+.screen1 .drag_box.d1.on {
+  width: 325px;
+  height: 380px;
+  background-image: url(../img/concept1_h/drag1_1_o.png);
+}
+.screen1 .drag_box.d2 {
+  width: 252px;
+  height: 204px;
+  background-image: url(../img/concept1_h/drag1_2.png);
+}
+.screen1 .drag_box.d2.on {
+  width: 301px;
+  height: 245px;
+  background-image: url(../img/concept1_h/drag1_2_o.png);
+}
+.screen1 .drag_box.d3 {
+  width: 424px;
+  height: 269px;
+  background-image: url(../img/concept1_h/drag1_3.png);
+}
+.screen1 .drag_box.d3.on {
+  width: 443px;
+  height: 301px;
+  background-image: url(../img/concept1_h/drag1_3_o.png);
+}
+.screen1 .drag_box.d4 {
+  width: 337px;
+  height: 249px;
+  background-image: url(../img/concept1_h/drag1_4.png);
+}
+.screen1 .drag_box.d4.on {
+  width: 345px;
+  height: 271px;
+  background-image: url(../img/concept1_h/drag1_4_o.png);
+}
+.screen1 .drop_box {
+  height: 100%;
+}
+
+/* screen2 */
+.screen2 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+}
+.screen2 .page_title span {
+  color: #fff838;
+}
+.screen2 .page_title span.s2 {
+  color: #ffa2bc;
+}
+.screen2 .click_obj {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  top: 250px;
+  left: 458px;
+}
+
+.screen2 .click_obj.c2 {
+  left: 1329px;
+}
+
+.screen2 .click_obj .obj {
+  margin: -12px 0 0 -98px;
+}
+.screen2 .click_obj.c2 .obj {
+  margin: 70px 0 0 -130px;
+}
+.screen2 .click_wrap.finish .click_obj.c1 {
+  opacity: 0.7;
+}
+
+.click_wrap.on .obj {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}

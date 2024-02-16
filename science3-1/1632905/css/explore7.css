@@ -1,0 +1,43 @@
+.screen1 {
+  background-image: url(../img/explore7/screen1.png);
+}
+.po_ab {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.op0 {
+  opacity: 0;
+}
+.water1 {
+  position: 2;
+}
+.frog1 {
+  top: 132px;
+  left: 1140px;
+}
+.frog2 {
+  top: 246px;
+  left: 1500px;
+}
+
+.tadpole {
+  top: 556px;
+  left: 634px;
+}
+
+.egg {
+  top: 538px;
+  left: 110px;
+}
+.txt {
+  top: 140px;
+  left: 500px;
+}
+.egg.scale,
+.frog.scale,
+.tadpole.scale {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: 1;
+}

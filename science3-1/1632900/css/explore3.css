@@ -1,0 +1,370 @@
+.screen {
+  background: url(../img/explore3/explore3_bg.png) no-repeat center / 100%;
+}
+
+.drop_area .box_wrap,
+.drop_bg,
+.drag_box,
+.has_guide,
+.ani_area {
+  position: absolute;
+}
+
+.has_guide {
+  top: 939px;
+  left: 1371px;
+  display: none;
+}
+.has_guide.on {
+  animation: guideHand1 1.5s forwards;
+  animation-iteration-count: 2;
+  display: block;
+}
+@keyframes guideHand1 {
+  0% {
+    top: 939px;
+    left: 1371px;
+  }
+
+  100% {
+    top: 839px;
+    left: 971px;
+  }
+}
+
+.drop_area .box_wrap {
+  width: 428px;
+  height: 428px;
+  background: url(../img/explore3/drop1.png) no-repeat center / 100%;
+  top: 600px;
+  left: 787px;
+}
+
+.obj_list {
+  position: absolute;
+  bottom: 79px;
+  left: 246px;
+  display: flex;
+  align-items: center;
+}
+
+.zoom .obj_list {
+  left: 539px;
+  transition: all 2s;
+}
+
+.drag_area .obj_list {
+  left: 1413px;
+}
+.zoom .obj_list .drop {
+  display: none;
+}
+.ani_area .obj_list {
+  left: 535px;
+}
+.screen3 .quiz_area .obj_list {
+  left: 1278px;
+}
+.screen3.zoom .quiz_area .obj_list {
+  left: 444px;
+}
+.screen3 .ani_area .obj_list {
+  left: 449px;
+}
+.obj_list .obj_name {
+  width: 342px;
+}
+
+.screen3 .drop_bg .obj_name,
+.screen3 .ani_area .obj_name {
+  width: 504px;
+}
+.screen3 .obj_name.drop {
+  margin-left: 154px;
+}
+
+.obj_list .obj_name + .obj_name {
+  margin-left: 239px;
+}
+.screen3 .obj_list .obj_name + .obj_name {
+  margin-left: 75px;
+}
+.drop_box {
+  width: 100%;
+  height: 100%;
+}
+.ani_area {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.ani_area img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.screen.finish .ani_area {
+  opacity: 1;
+}
+
+.screen.finish .quiz_area {
+  display: none;
+}
+.drop_bg .obj_name {
+  position: absolute;
+  bottom: -95px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 342px;
+}
+/* 활동 1 */
+.screen1 .drop_bg {
+  bottom: 173px;
+  left: 265px;
+}
+.screen1 .drop_bg.b2 {
+  bottom: 190px;
+  left: 772px;
+}
+.screen1 .drop_bg.b2 .obj_name {
+  bottom: -112px;
+}
+.screen1.zoom .drop_bg {
+  bottom: 173px;
+  left: 531px;
+  transition: all 2s;
+}
+.screen1.zoom .drop_bg.b1 img {
+  width: 350px;
+}
+.screen1.zoom .drop_bg.b2 {
+  bottom: 190px;
+  left: 1058px;
+  transition: all 2s;
+}
+.screen.zoom .box_wrap,
+.screen.zoom .drag_area {
+  display: none;
+}
+.screen1 .drop_gif {
+  position: absolute;
+  bottom: 140px;
+  left: 193px;
+}
+.screen1 .drag_box,
+.screen2 .drag_box {
+  width: 587px;
+  height: 81px;
+  background: url(../img/explore3/drag1.png) no-repeat center / 100%;
+  top: 898px;
+  left: 1256px;
+}
+
+/* 활동 2 */
+.screen2 .drop_area .box_wrap {
+  left: 817px;
+}
+
+.screen2 .drop_bg {
+  bottom: 189px;
+  left: 118px;
+}
+.screen2 .drop_bg.b1 .obj_name {
+  bottom: -110px;
+}
+.screen2 .drop_bg.b2 {
+  bottom: 174px;
+  left: 802px;
+}
+.screen2 .drop_bg.b2 .obj_name {
+  left: 251px;
+}
+.screen2.zoom .drop_bg {
+  bottom: 189px;
+  left: 362px;
+  transition: all 2s;
+}
+.screen2.zoom .drop_bg.b1 img {
+  width: 687px;
+}
+.screen2.zoom .drop_bg.b2 {
+  bottom: 174px;
+  left: 1036px;
+}
+.screen2.zoom .drop_bg.b2 img {
+  width: 507px;
+}
+
+/* 활동 3 */
+
+.screen3 .has_guide.on {
+  top: 887px;
+  left: 1339px;
+  animation: guideHand2 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand2 {
+  0% {
+    top: 887px;
+    left: 1339px;
+  }
+
+  100% {
+    top: 629px;
+    left: 998px;
+  }
+}
+
+.screen3 .drop_area .box_wrap {
+  left: 787px;
+  top: 376px;
+}
+
+.screen3 .drop_bg {
+  bottom: 181px;
+  left: 118px;
+}
+.screen3 .drop_bg.b1 .obj_name {
+  bottom: -110px;
+}
+
+.screen3 .drop_bg.b2 {
+  bottom: 165px;
+  left: 835px;
+}
+.screen3 .drop_bg.b2 .obj_name {
+  bottom: -88px;
+  left: 170px;
+}
+.screen3.zoom .drop_bg {
+  bottom: 188px;
+  left: 348px;
+  transition: all 2s;
+}
+.screen3.zoom .drop_bg.b2 {
+  bottom: 167px;
+  left: 1110px;
+}
+.screen3.zoom .drop_bg.b2 img {
+  width: 314px;
+}
+
+.screen3 .drag_box {
+  width: 646px;
+  height: 214px;
+  background: url(../img/explore3/drag3.png) no-repeat center / 100%;
+  top: 780px;
+  left: 1264px;
+}
+/* 활동 4 */
+.screen4 {
+  background: url(../img/explore3/explore3_bg.png) no-repeat center / 100%;
+}
+.screen4 .ani_area {
+  opacity: 1;
+}
+.screen4 .ani_area .clock_bg {
+  opacity: 0;
+}
+
+.screen4 .ani_area .clock {
+  bottom: 189px;
+  right: 260px;
+}
+.screen4 .ani_area .clock.on {
+  animation: 2s bigAndSmall3 ease-in infinite;
+}
+
+.screen4 .ani_area.on .clock_bg {
+  opacity: 1;
+}
+.screen4 .ani_area.on .clock {
+  opacity: 0;
+}
+
+.screen4 .has_guide {
+  top: 939px;
+  left: 1739px;
+  display: block;
+}
+.screen4 .click_box {
+  width: 207px;
+  height: 468px;
+  position: absolute;
+  top: 534px;
+  left: 1530px;
+}
+.screen4 .ani {
+  position: absolute;
+  top: 422px;
+  left: 256px;
+}
+.screen4 .ani2 {
+  top: 783px;
+  left: 628px;
+  opacity: 0.1;
+}
+.screen4 .ani2.on {
+  opacity: 1;
+  transition: opacity 4s ease;
+  transition-delay: 2s;
+}
+
+.screen4 .ani3 {
+  top: 557px;
+  left: 256px;
+}
+
+/* 활동 5 */
+.screen5 .has_guide {
+  top: 897px;
+  left: 1096px;
+}
+.screen5 .has_guide.on {
+  animation: guideHand3 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand3 {
+  0% {
+    top: 897px;
+    left: 1096px;
+  }
+
+  100% {
+    top: 397px;
+    left: 1096px;
+  }
+}
+
+.screen5 .drop_area .box_wrap {
+  left: 887px;
+  top: 169px;
+}
+.screen5 .drop_bg {
+  bottom: 53px;
+  left: 431px;
+  width: 1242px;
+}
+
+.screen5 .drag_box {
+  width: 438px;
+  height: 374px;
+  background: url(../img/explore3/drag5.png) no-repeat center / 100%;
+  top: 717px;
+  left: 899px;
+}
+.screen5 .ani_area img {
+  position: absolute;
+  bottom: unset;
+  right: unset;
+  top: 0;
+  left: 0;
+}
+
+.screen5 .ani_area img.ani2 {
+  display: none;
+}
+
+.quiz_area.on .drag_box {
+  animation: 3s zoom_in_out ease-in infinite;
+}
