@@ -1,0 +1,111 @@
+.w1920 .page_title {
+  width: calc(100% - 80px - 80px);
+}
+.screen {
+  width: 100%;
+  height: 100%;
+}
+.drop_area .box_wrap {
+  position: absolute;
+}
+.drag_box {
+  position: absolute;
+}
+
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept1_h/screen1.png) no-repeat center / 100%;
+}
+.screen1 .drop_area .box_wrap {
+  width: 688px;
+  height: 456px;
+  background: url(../img/concept1_h/drop1_1.png) no-repeat center / 100%;
+  top: 651px;
+  left: 245px;
+}
+.screen1 .drop_area .box_wrap.d2 {
+  background-image: url(../img/concept1_h/drop1_2.png);
+  left: 1067px;
+}
+.screen1 .drop_area .box_wrap.d1.on {
+  background-image: url(../img/concept1_h/drop1_1_o.png);
+}
+.screen1 .drop_area .box_wrap.d2.on {
+  background-image: url(../img/concept1_h/drop1_2_o.png);
+}
+.screen1 .drop_area .box_wrap .drop_box {
+  width: 66%;
+  height: 66%;
+  margin: 115px auto 0;
+}
+.screen1 .drag_box {
+  top: 365px;
+  left: 1220px;
+}
+.screen1 .drag_box.d2 {
+  top: 279px;
+  left: 376px;
+}
+.screen1 .name_list .obj_name {
+  position: absolute;
+  top: 195px;
+  left: 490px;
+  width: 200px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 8px 4px 0px rgb(0 0 0 / 5%), inset 0px -6px 0px 0px rgb(238 238 238 / 80%);
+  color: #000;
+}
+
+.screen1 .name_list .obj_name.t2 {
+  left: 1310px;
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+}
+.screen2 .drop_area .box_wrap {
+  width: 518px;
+  height: 466px;
+  background: url(../img/concept1_h/drop2_1.png) no-repeat center / 100%;
+  top: 224px;
+  left: 153px;
+}
+.screen2 .drop_area .box_wrap.d2 {
+  background-image: url(../img/concept1_h/drop2_2.png);
+  left: 743px;
+}
+.screen2 .drop_area .box_wrap.d3 {
+  background-image: url(../img/concept1_h/drop2_3.png);
+  left: 1329px;
+}
+.screen2 .drop_area .box_wrap.d1.on {
+  background-image: url(../img/concept1_h/drop2_1_o.png);
+}
+.screen2 .drop_area .box_wrap.d2.on {
+  background-image: url(../img/concept1_h/drop2_2_o.png);
+}
+.screen2 .drop_area .box_wrap.d3.on {
+  background-image: url(../img/concept1_h/drop2_3_o.png);
+}
+.screen2 .drop_area .box_wrap .drop_box {
+  width: 60%;
+  height: 60%;
+  margin: 132px auto 0;
+}
+.screen2 .drag_box {
+  top: 731px;
+  left: 332px;
+}
+.screen2 .drag_box.d2 {
+  top: 711px;
+  left: 824px;
+}
+.screen2 .drag_box.d3 {
+  top: 775px;
+  left: 1364px;
+}
+.quiz_area.on .drag_box {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}

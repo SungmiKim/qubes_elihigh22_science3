@@ -1,0 +1,15 @@
+.txt {
+  top: 118px;
+  left: 141px;
+  opacity: 0;
+}
+
+.txt.on {
+  opacity: 1;
+  transition: opacity 1s;
+}
+.btn_intro {
+  top: 965px;
+  left: 123px;
+  display: none;
+}

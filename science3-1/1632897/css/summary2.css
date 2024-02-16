@@ -1,0 +1,54 @@
+.content {
+  background: url(../img/summary2/summary2_bg.png) no-repeat center / 100%;
+}
+
+.name_list .has_guide,
+.name_list .txt,
+.name_list .name_tag,
+.ex_box {
+  position: absolute;
+}
+
+.name_list .name_tag {
+  width: 228px;
+  height: 107px;
+  background: url(../img/summary2/name1_off.png) no-repeat center / 100%;
+  top: 194px;
+  left: 887px;
+}
+.name_list .name1.on .name_tag {
+  background-image: url(../img/summary2/name1_on.png);
+}
+
+.name_list .txt {
+  font-size: 44px;
+  font-family: "NanumSquareRoundEB";
+  color: #be0642;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  top: 320px;
+  left: 832px;
+  opacity: 0;
+}
+.name_list li.on .txt {
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+.name_list .has_guide {
+  top: 251px;
+  left: 1031px;
+  z-index: 1;
+}
+.ex_box {
+  top: 422px;
+  left: 253px;
+}
+.name_tag.on {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.name_list li.on {
+  pointer-events: none;
+}

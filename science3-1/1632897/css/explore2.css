@@ -1,0 +1,368 @@
+.ani_area {
+  top: 0;
+  left: 0;
+}
+.ani_area .eo {
+  position: absolute;
+  top: 116px;
+  left: 200px;
+}
+.ani_area .eo[data-num="ing1"] {
+  animation: load1 5s linear forwards;
+}
+.ani_area .eo[data-num="fail1"] {
+  top: 330px;
+  left: 618px;
+  animation: loadfail1 3s linear forwards;
+}
+.ani_area .eo[data-num="return1"] {
+  top: 516px;
+  left: 387px;
+  animation: return1 3s linear forwards;
+}
+
+.ani_area .eo[data-num="ing2"] {
+  top: 330px;
+  left: 818px;
+  animation: load2 5s linear forwards !important;
+}
+.ani_area .eo[data-num="fail2"] {
+  top: 68px;
+  left: 1363px;
+  animation: loadfail2 3s linear forwards;
+}
+.ani_area .eo[data-num="return2"] {
+  top: 129px;
+  left: 1615px;
+  animation: return2 3s linear forwards;
+}
+
+.ani_area .eo[data-num="ing3"] {
+  top: 170px;
+  left: 1234px;
+  animation: load3 3s linear forwards;
+}
+.ani_area .eo[data-num="fail3"] {
+  top: 706px;
+  left: 895px;
+  animation: loadfail3 2.5s linear forwards;
+}
+.ani_area .eo[data-num="return3"] {
+  top: 735px;
+  left: 591px;
+  animation: return3 2.5s linear forwards;
+}
+.ani_area .eo[data-num="ing4"] {
+  top: 706px;
+  left: 1068px;
+  animation: load4 3s linear forwards;
+}
+@keyframes load1 {
+  0% {
+    top: 116px;
+    left: 200px;
+  }
+  33% {
+    top: 116px;
+    left: 470px;
+  }
+  66% {
+    top: 215px;
+    left: 577px;
+  }
+  100% {
+    top: 330px;
+    left: 618px;
+  }
+}
+@keyframes load2 {
+  0% {
+    top: 330px;
+    left: 818px;
+  }
+  25% {
+    top: 298px;
+    left: 934px;
+  }
+  50% {
+    top: 98px;
+    left: 934px;
+  }
+  75% {
+    top: 46px;
+    left: 1034px;
+  }
+  100% {
+    top: 70px;
+    left: 1134px;
+  }
+}
+
+@keyframes load3 {
+  0% {
+    top: 170px;
+    left: 1234px;
+  }
+  50% {
+    top: 270px;
+    left: 1196px;
+  }
+  100% {
+    top: 406px;
+    left: 1095px;
+  }
+}
+
+@keyframes load4 {
+  0% {
+    top: 706px;
+    left: 1068px;
+  }
+  100% {
+    top: 747px;
+    left: 1304px;
+  }
+}
+@keyframes loadfail1 {
+  0% {
+    top: 330px;
+    left: 618px;
+  }
+  50% {
+    top: 458px;
+    left: 547px;
+  }
+  100% {
+    top: 516px;
+    left: 387px;
+  }
+}
+@keyframes loadfail2 {
+  0% {
+    top: 68px;
+    left: 1363px;
+  }
+
+  50% {
+    top: 68px;
+    left: 1527px;
+  }
+  100% {
+    top: 129px;
+    left: 1615px;
+  }
+}
+@keyframes loadfail3 {
+  0% {
+    top: 706px;
+    left: 895px;
+  }
+  100% {
+    top: 735px;
+    left: 591px;
+  }
+}
+@keyframes return1 {
+  0% {
+    top: 516px;
+    left: 387px;
+  }
+  50% {
+    top: 458px;
+    left: 547px;
+  }
+  100% {
+    top: 330px;
+    left: 618px;
+  }
+}
+@keyframes return2 {
+  0% {
+    top: 129px;
+    left: 1615px;
+  }
+
+  50% {
+    top: 68px;
+    left: 1527px;
+  }
+  100% {
+    top: 68px;
+    left: 1363px;
+  }
+}
+@keyframes return3 {
+  0% {
+    top: 735px;
+    left: 591px;
+  }
+  100% {
+    top: 706px;
+    left: 895px;
+  }
+}
+.pop_card {
+  width: 1402px;
+  height: 988px;
+  background: transparent url(../img/explore2/pop_bg.png) no-repeat center / 100%;
+}
+.pop_card .title {
+  height: 126px;
+  margin-top: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "NanumSquareRoundEB";
+  font-size: 40px;
+  color: #4c4c4c;
+  padding: 0 142px;
+}
+.pop_card .title span {
+  font-family: "NanumSquareRoundEB";
+  font-size: 40px;
+  color: #00b544;
+}
+.pop_card .search_box {
+  width: 1120px;
+  height: 110px;
+  padding: 8px 40px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 4px solid #18ce5f;
+  margin: auto;
+}
+
+.pop_card .obj_name {
+  flex: 1;
+  font-family: "NanumSquareRoundEB";
+  font-size: 52px;
+  font-weight: 800;
+}
+.pop_card .icon_search.on {
+  animation: bigAndSmall2 2s infinite;
+}
+
+.pop_card .ex_box {
+  position: relative;
+  width: 1120px;
+  height: 502px;
+  margin: auto;
+}
+.pop_card .ex_box .ex1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pop_card .ex_box.on .ex1 {
+  display: none;
+}
+.pop_card.pop_ct2 .ex1 img {
+  margin-top: 103px;
+}
+.pop_card.pop_ct3 .ex1 img {
+  margin-top: 92px;
+}
+.pop_card .ex_box .ex2 {
+  display: none;
+}
+.pop_card .ex_box.on .ex2 {
+  display: block;
+}
+.pop_card .ex_box .ex2 .ani {
+  position: absolute;
+  top: -8px;
+  left: -66px;
+}
+.pop_card.pop_ct2 .ex_box .ex2 .ani {
+  top: 129px;
+  left: -16px;
+}
+.pop_card.pop_ct3 .ex_box .ex2 .ani {
+  top: 40px;
+  left: 13px;
+}
+.pop_card .ex_box .ex2 .help_txt {
+  position: absolute;
+  font-family: "NanumSquareRoundEB";
+  font-size: 48px;
+  top: 70px;
+  left: 426px;
+  line-height: 1.4;
+  width: 100%;
+}
+.pop_card .ex_box .ex2 .help_txt span {
+  font-family: "NanumSquareRoundEB";
+  color: #00b544;
+}
+
+.pop_card .help {
+  top: 330px;
+  right: 196px;
+}
+
+.pop_card .has_guide {
+  position: absolute;
+  top: 30px;
+  left: 600px;
+  z-index: 1;
+}
+
+.pop_card .btn_wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pop_card .btn_wrap .btn {
+  width: 274px;
+  height: 110px;
+  background: url(../img/explore2/btn1_1.png) no-repeat center / 100%;
+}
+.pop_card .btn_wrap.ani .btn {
+  animation: bigAndSmall 2s infinite;
+}
+.pop_card .btn_wrap.on .btn {
+  animation: none;
+}
+.pop_card .btn_wrap .btn2 {
+  background-image: url(../img/explore2/btn1_2.png);
+}
+.pop_card .btn_wrap .btn1.on {
+  background-image: url(../img/explore2/btn1_1_o.png);
+}
+.pop_card .btn_wrap .btn2.on {
+  background-image: url(../img/explore2/btn1_2_o.png);
+}
+
+.pop_card.pop_ct2 .btn_wrap .btn1 {
+  background-image: url(../img/explore2/btn2_1.png);
+}
+.pop_card.pop_ct2 .btn_wrap .btn1.on {
+  background-image: url(../img/explore2/btn2_1_o.png);
+}
+.pop_card.pop_ct2 .btn_wrap .btn2 {
+  background-image: url(../img/explore2/btn2_2.png);
+}
+.pop_card.pop_ct2 .btn_wrap .btn2.on {
+  background-image: url(../img/explore2/btn2_2_o.png);
+}
+
+.pop_card.pop_ct3 .btn_wrap .btn1 {
+  background-image: url(../img/explore2/btn3_1.png);
+}
+.pop_card.pop_ct3 .btn_wrap .btn2 {
+  background-image: url(../img/explore2/btn3_2.png);
+}
+.pop_card.pop_ct3 .btn_wrap .btn1.on {
+  background-image: url(../img/explore2/btn3_1_o.png);
+}
+.pop_card.pop_ct3 .btn_wrap .btn2.on {
+  background-image: url(../img/explore2/btn3_2_o.png);
+}
+
+.pop_card .btn_wrap .btn + .btn {
+  margin-left: 50px;
+}

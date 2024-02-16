@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>[과학] 31_1단원 01</title>
+    <!--공통 -->
+    <link href="../common/css/font.css" rel="stylesheet" />
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="./css/concept3_h.css" rel="stylesheet" />
+    <script src="./js/pageInfo.js"></script>
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap" data-page="concept3_h" class="single">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <header class="header"></header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <div class="top_area not_title">
+            <div class="quiz_cnt pen2 cnt1"></div>
+          </div>
+          <div class="screen screen1">
+            <div class="page_title title4">이오가 설명하는 동물을 그려 봅시다.</div>
+            <div class="inner">
+              <div class="top">
+                <div class="ani_area">
+                  <div class="bubble"></div>
+                  <img src="./img/concept3_h/ani_eo.png" alt="eo" />
+                </div>
+                <div class="drawing_area">
+                  <div class="canvas_area">
+                    <div class="canvas_wrap">
+                      <canvas class="drawing_canvas" width="1188" height="757"></canvas>
+                    </div>
+                    <div class="drawing_controller">
+                      <div class="paint box_wrap">
+                        <div class="select_btn">배경 변경</div>
+                        <ul class="select_box">
+                          <li class="on"><span class="white" style="background-color: #ffffff"></span></li>
+                          <li><span style="background-color: #f9e936"></span></li>
+                          <li><span style="background-color: #49b638"></span></li>
+                          <li><span style="background-color: #08a8e8"></span></li>
+                          <li><span style="background-color: #000000"></span></li>
+                        </ul>
+                      </div>
+
+                      <div class="pen box_wrap">
+                        <div class="select_btn on">펜 변경</div>
+                        <ul class="select_box">
+                          <li><span class="white" style="background-color: #ffffff"></span></li>
+                          <li><span style="background-color: #ff1b36"></span></li>
+                          <li><span style="background-color: #f9e936"></span></li>
+                          <li><span style="background-color: #49b638"></span></li>
+                          <li><span style="background-color: #08a8e8"></span></li>
+                          <li><span style="background-color: #6652fe"></span></li>
+                          <li class="on"><span style="background-color: #000000"></span></li>
+                        </ul>
+                      </div>
+
+                      <div class="eraser box_wrap">
+                        <div class="select_btn">지우개</div>
+                      </div>
+                      <div class="sticker box_wrap">
+                        <div class="select_btn">스티커</div>
+                        <ul class="select_box">
+                          <li><img src="./img/concept3_h/canvas/sticker/1.png" /></li>
+                          <li><img src="./img/concept3_h/canvas/sticker/2.png" /></li>
+                          <li><img src="./img/concept3_h/canvas/sticker/3.png" /></li>
+                          <li><img src="./img/concept3_h/canvas/sticker/4.png" /></li>
+                          <li><img src="./img/concept3_h/canvas/sticker/5.png" /></li>
+                          <li><img src="./img/concept3_h/canvas/sticker/6.png" /></li>
+                          <li><img src="./img/concept3_h/canvas/sticker/7.png" /></li>
+                          <li><img src="./img/concept3_h/canvas/sticker/8.png" /></li>
+                          <li><img src="./img/concept3_h/canvas/sticker/9.png" /></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn_wrap">
+                <div class="btn replay off"></div>
+                <div class="btn complete off"></div>
+              </div>
+            </div>
+          </div>
+          <div class="screen screen2 hide">
+            <div class="page_title title4"><span class="point5">카드에 그려진 동물의 생김새</span>를 보고&nbsp;<span class="point8">엘라에게 설명할 말</span>을 눌러 봅시다.</div>
+            <div class="ani_wrap">
+              <img src="./img/concept3_h/chair.png" alt="엘라" class="chair" />
+              <img src="./img/concept3_h/ani.png" alt="엘라" class="ani" />
+              <img src="./img/concept3_h/ani_bottom.png" alt="엘라" class="ani_bottom" />
+            </div>
+
+            <div class="quiz_area">
+              <div class="result">
+                <img src="./img/concept3_h/122.png" alt="결과" />
+              </div>
+              <div class="chk_wrap" data-quiz="1">
+                <ul class="chk_list1">
+                  <li data-num="1">
+                    <div class="box"></div>
+                    <span>얼굴이 동그란 모양이야.</span>
+                  </li>
+                  <li data-num="2">
+                    <div class="box"></div>
+                    <span>얼굴이 네모 모양이야.</span>
+                  </li>
+                  <li data-num="3">
+                    <div class="box"></div>
+                    <span>얼굴이 세모 모양이야.</span>
+                  </li>
+                </ul>
+                <ul class="chk_list2">
+                  <li data-num="1">
+                    <div class="box"></div>
+                    <span>귀가 작고 동그란 모양이야. </span>
+                  </li>
+                  <li data-num="2">
+                    <div class="box"></div>
+                    <span>귀가 작고 세모 모양이야. </span>
+                  </li>
+                  <li data-num="3">
+                    <div class="box"></div>
+                    <span>귀가 길어. </span>
+                  </li>
+                </ul>
+                <ul class="chk_list3">
+                  <li data-num="1">
+                    <div class="box"></div>
+                    <span>얼굴에 수염이 있어. </span>
+                  </li>
+                  <li data-num="2">
+                    <div class="box"></div>
+                    <span>갈기가 있어. </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="completeStamp">
+            <img src="" alt="stamp" />
+          </div>
+        </div>
+        <div class="blank"></div>
+        <!-- 가변 컨텐츠 End -->
+
+        <div class="fixed bottom">
+          <!-- 페이지 이동 버튼 -->
+          <a class="btn move btn_prev"> </a>
+          <a class="btn move btn_next"> </a>
+          <!-- 페이지 이동 버튼 End -->
+
+          <ul class="page_dots">
+            <li></li>
+            <li></li>
+            <li class="on"></li>
+          </ul>
+        </div>
+
+        <!-- 10초 Popup -->
+        <div class="pop_ct pop_next">
+          <img src="../common/images/pop/pop_next.png" alt="pop_next" />
+        </div>
+        <!-- 30초 Popup -->
+        <div class="pop_ct pop_wait">
+          <img src="../common/images/pop/pop_wait.png" alt="pop_wait" />
+        </div>
+      </div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/jquery-ui.js"></script>
+    <script src="../common/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../common/js/drag.js"></script>
+    <script src="./js/concept3_h.js"></script>
+  </body>
+</html>
