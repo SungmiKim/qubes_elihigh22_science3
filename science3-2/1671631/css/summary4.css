@@ -1,0 +1,66 @@
+.content {
+  background: url(../img/summary4/bg.png) no-repeat center / 100%;
+}
+.page_title span {
+  color: #bbfd2f;
+}
+.name_list,
+.name_list li,
+.name_list .has_guide,
+.name_list .name_tag,
+.name_list .txt {
+  position: absolute;
+}
+.name_list .has_guide {
+  top: 48px;
+  left: 380px;
+  /* display: none; */
+}
+.name_list li {
+  top: 197px;
+  left: 168px;
+}
+.name_list li.name2 {
+  top: 850px;
+  left: 1100px;
+}
+
+.name_list .name_tag {
+  width: 558px;
+  height: 94px;
+  background: url(../img/summary4/name1_off.png) no-repeat center / 100%;
+}
+.name_list .name2 .name_tag {
+  width: 188px;
+  background: url(../img/summary4/name2_off.png) no-repeat center / 100%;
+}
+.name_list .name1.on .name_tag {
+  background: url(../img/summary4/name1_on.png) no-repeat center / 100%;
+}
+.name_list .name1.on .txt.t2 {
+  top: 207px;
+}
+.name_list .name2.on .name_tag {
+  background: url(../img/summary4/name2_on.png) no-repeat center / 100%;
+}
+
+.name_list .txt {
+  opacity: 0;
+  pointer-events: none;
+  top: 121px;
+  left: 6px;
+}
+
+.name_list li.on .txt {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.name_tag.on {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.name_list li.on {
+  pointer-events: none;
+}

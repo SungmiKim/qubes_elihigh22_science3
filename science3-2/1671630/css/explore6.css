@@ -1,0 +1,74 @@
+.content {
+  background: url(../img/explore6/bg.png) no-repeat center / 100%;
+}
+.screen2 {
+  background: url(../img/explore6/bg2.png) no-repeat center / 100%;
+}
+.has_guide {
+  position: absolute;
+  top: 630px;
+  left: 405px;
+  pointer-events: none;
+}
+
+.click_wrap.scale > .obj {
+  animation: 1.5s bigAndSmall3 ease-in infinite;
+}
+
+.center {
+  position: absolute;
+  top: 156px;
+  left: 190px;
+}
+.center .prev {
+  position: absolute;
+  top: 368px;
+  left: 260px;
+}
+.center .prev.p2 {
+  top: 250px;
+  left: 1049px;
+}
+.center .prev.tag {
+  top: 888px;
+  left: 126px;
+}
+
+.center .next {
+  position: absolute;
+  display: none;
+}
+.center .next2 {
+  display: none;
+  position: absolute;
+  top: 250px;
+  left: 1049px;
+}
+.center .next2.on {
+  display: block;
+  animation: 2s toCenter ease forwards;
+}
+@keyframes toCenter {
+  0% {
+    left: 1049px;
+  }
+  100% {
+    left: 640px;
+  }
+}
+
+.center.on {
+  animation: none;
+  pointer-events: none;
+}
+
+/* 임시 */
+.center.on .prev {
+  display: none;
+}
+
+.center.on .next.on {
+  display: block;
+  top: -156px;
+  left: -202px;
+}

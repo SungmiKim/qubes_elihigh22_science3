@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>[과학] 32_1단원 02</title>
+    <!--공통 -->
+    <link href="../common/css/font.css" rel="stylesheet" />
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="./css/concept3_h.css" rel="stylesheet" />
+    <script src="./js/pageInfo.js"></script>
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap" data-page="concept3_h" class="single">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <header class="header"></header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <div class="top_area not_title">
+            <div class="quiz_cnt pen2 cnt1"></div>
+          </div>
+          <div class="screen screen1">
+            <div class="page_title title4">하로가 설명하는 내용을 보고&nbsp;<span>발자국의 주인을 추리</span>해 그려 봅시다.</div>
+            <div class="inner">
+              <div class="top">
+                <div class="ani_area">
+                  <img src="./img/concept3_h/ani_haro.png" alt="haro" />
+                  <div class="info"></div>
+                </div>
+                <div class="drawing_area">
+                  <div class="canvas_area">
+                    <div class="canvas_wrap">
+                      <canvas class="drawing_canvas" width="1188" height="757"></canvas>
+                    </div>
+                    <div class="drawing_controller">
+                      <div class="paint box_wrap">
+                        <div class="select_btn">배경 변경</div>
+                        <ul class="select_box">
+                          <li class="on"><span class="white" style="background-color: #ffffff"></span></li>
+                          <li><span style="background-color: #f9e936"></span></li>
+                          <li><span style="background-color: #49b638"></span></li>
+                          <li><span style="background-color: #08a8e8"></span></li>
+                          <li><span style="background-color: #000000"></span></li>
+                        </ul>
+                      </div>
+
+                      <div class="pen box_wrap">
+                        <div class="select_btn on">펜 변경</div>
+                        <ul class="select_box">
+                          <li><span class="white" style="background-color: #ffffff"></span></li>
+                          <li><span style="background-color: #ff1b36"></span></li>
+                          <li><span style="background-color: #f9e936"></span></li>
+                          <li><span style="background-color: #49b638"></span></li>
+                          <li><span style="background-color: #08a8e8"></span></li>
+                          <li><span style="background-color: #6652fe"></span></li>
+                          <li class="on"><span style="background-color: #000000"></span></li>
+                        </ul>
+                      </div>
+
+                      <div class="eraser box_wrap">
+                        <div class="select_btn">지우개</div>
+                      </div>
+                      <div class="sticker box_wrap">
+                        <div class="select_btn">스티커</div>
+                        <ul class="select_box">
+                          <li><img src="./img/concept3_h/canvas/sticker/1.png" /></li>
+                          <li><img src="./img/concept3_h/canvas/sticker/2.png" /></li>
+                          <li><img src="./img/concept3_h/canvas/sticker/3.png" /></li>
+                          <li><img src="./img/concept3_h/canvas/sticker/4.png" /></li>
+                          <li><img src="./img/concept3_h/canvas/sticker/5.png" /></li>
+                          <li><img src="./img/concept3_h/canvas/sticker/6.png" /></li>
+                          <li><img src="./img/concept3_h/canvas/sticker/7.png" /></li>
+                          <li><img src="./img/concept3_h/canvas/sticker/8.png" /></li>
+                          <li><img src="./img/concept3_h/canvas/sticker/9.png" /></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn_wrap">
+                <div class="btn replay off"></div>
+                <div class="btn complete off"></div>
+              </div>
+            </div>
+          </div>
+          <div class="screen screen2 hide">
+            <div class="page_title title4"><span>의사소통</span>에 대해 바르게 설명한 친구를 눌러 봅시다.</div>
+
+            <div class="click_wrap">
+              <div class="click_obj c1">
+                <div class="bubble"></div>
+                <div class="obj" id="seqGif1" data-option="gif2//60//once//50">
+                  <img src="./img/concept3_h/gif2/1.webp" class="gif" alt="ella" />
+                </div>
+              </div>
+              <div class="click_obj c2">
+                <div class="bubble"></div>
+                <div class="obj" id="seqGif2" data-option="gif3//60//once//50">
+                  <img src="./img/concept3_h/gif3/1.webp" class="gif" alt="haro" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="completeStamp">
+            <img src="" alt="stamp" />
+          </div>
+        </div>
+        <div class="blank"></div>
+        <!-- 가변 컨텐츠 End -->
+
+        <div class="fixed bottom">
+          <!-- 페이지 이동 버튼 -->
+          <a class="btn move btn_prev"> </a>
+          <a class="btn move btn_next"> </a>
+          <!-- 페이지 이동 버튼 End -->
+
+          <ul class="page_dots">
+            <li></li>
+            <li></li>
+            <li class="on"></li>
+          </ul>
+        </div>
+
+        <!-- 10초 Popup -->
+        <div class="pop_ct pop_next">
+          <img src="../common/images/pop/pop_next.png" alt="pop_next" />
+        </div>
+        <!-- 30초 Popup -->
+        <div class="pop_ct pop_wait">
+          <img src="../common/images/pop/pop_wait.png" alt="pop_wait" />
+        </div>
+      </div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/jquery-ui.js"></script>
+    <script src="../common/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../common/js/drag.js"></script>
+    <script src="./js/concept3_h.js"></script>
+  </body>
+</html>

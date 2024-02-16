@@ -1,0 +1,152 @@
+/* 활동 1 */
+
+.screen1 {
+  background: url(../img/concept1_h/screen1.png) no-repeat center / 100%;
+}
+.screen1 .page_title span {
+  color: #ffb5fc;
+}
+.top_area.not_title {
+  pointer-events: none;
+}
+.screen1 .quiz_area.on .drag_box {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.screen1 .quiz_area.on .drag_box.on {
+  animation: none;
+}
+
+.screen1 .box_wrap {
+  width: 328px;
+  height: 174px;
+  position: absolute;
+  top: 730px;
+  left: 1440px;
+  background: url(../img/concept1_h/drop.png) no-repeat center / 100%;
+}
+.screen1 .box_wrap.on {
+  background-image: url(../img/concept1_h/drag3.png);
+}
+.screen1 .box_wrap .drop_box {
+  width: 110%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.screen1 .drag_area {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 388px;
+  background: rgba(0, 0, 0, 0.25);
+}
+.screen1 .drag_box {
+  position: absolute;
+  top: 160px;
+}
+.screen1 .drag_box.d1 {
+  left: 376px;
+}
+.screen1 .drag_box.d2 {
+  left: 838px;
+}
+.screen1 .drag_box.d3 {
+  left: 1298px;
+}
+
+.screen1 .drag_box.on {
+  animation: none;
+}
+.screen1 .drop_box {
+  height: 100%;
+}
+.screen1 .quiz_area.finish .drag_area {
+  display: none;
+}
+
+.screen1 .num_wrap .qmark {
+  width: 30px;
+  height: 42px;
+  position: absolute;
+  bottom: 100px;
+  left: 332px;
+  background: url(../img/concept1_h/qmark.png) no-repeat center/100%;
+}
+.screen1 .quiz_area.finish .qmark {
+  opacity: 0;
+}
+.screen1 .num_wrap .result {
+  opacity: 0;
+  width: 131px;
+  height: 48px;
+  position: absolute;
+  bottom: 95px;
+  left: 300px;
+  background: url(../img/concept1_h/result.png) no-repeat center/100%;
+}
+.screen1 .quiz_area.finish .num_wrap .result {
+  opacity: 1;
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+}
+.screen2 .page_title span {
+  color: #97ff77;
+}
+
+.screen2 .click_wrap {
+  position: relative;
+}
+.screen2 .click_wrap .click_obj {
+  position: absolute;
+  top: 250px;
+  left: 99px;
+}
+.screen2 .click_obj .obj {
+  position: absolute;
+  top: 200px;
+  left: 70px;
+}
+.screen2 .click_wrap .click_obj.c2 {
+  left: 1038px;
+}
+.screen2 .click_obj.c2 .obj {
+  top: 310px;
+  left: 182px;
+}
+
+.screen2 .click_obj .bubble {
+  width: 859px;
+  height: 263px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/concept1_h/bubble1.png) no-repeat center / 100%;
+}
+.screen2 .click_obj.c2 .bubble {
+  background: url(../img/concept1_h/bubble2.png) no-repeat center / 100%;
+}
+.screen2 .on .click_obj.c1 .bubble {
+  background-image: url(../img/concept1_h/bubble1_o.png);
+}
+
+.screen2 .click_wrap.scale .click_obj .obj {
+  animation: bigAnd_small 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes bigAnd_small {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,156 @@
+.quiz_area.on .drag_box img {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.quiz_area.on .drag_box.on img {
+  animation: none;
+  pointer-events: none;
+}
+.box_wrap .drop_box {
+  width: 100%;
+  height: 100%;
+}
+
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept1_h/screen1.png) no-repeat center / 100%;
+  /* background: url(../img/concept1_h/11.png) no-repeat center / 100%; */
+}
+.screen1 .page_title span {
+  color: #ffcd7c;
+}
+
+.screen1 .box_wrap {
+  position: absolute;
+  width: 808px;
+  height: 453px;
+  top: 647px;
+  left: 114px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.screen1 .box_wrap.d1 {
+  background-image: url(../img/concept1_h/drop1_1.png);
+}
+.screen1 .box_wrap.d2 {
+  left: 1075px;
+  background-image: url(../img/concept1_h/drop1_2.png);
+}
+
+.screen1 .box_wrap.d1.on {
+  background-image: url(../img/concept1_h/drop1_1_o.png);
+}
+.screen1 .box_wrap.d2.on {
+  background-image: url(../img/concept1_h/drop1_2_o.png);
+}
+
+.screen1 .drag_box {
+  position: absolute;
+  top: 183px;
+  left: 240px;
+}
+
+.screen1 .drag_box.d2 {
+  left: 1286px;
+}
+
+/* 활동 2 */
+
+.screen2 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+}
+.screen2 .page_title span {
+  color: #9df733;
+}
+.screen2 .center {
+  position: absolute;
+  top: 150px;
+  left: 0px;
+}
+
+.screen2 .box_wrap {
+  position: absolute;
+  top: 252px;
+  left: 1208px;
+  width: 629px;
+  height: 113px;
+  background: url(../img/concept1_h/drop.png) no-repeat center / 100%;
+}
+.screen2 .box_wrap.d2 {
+  top: 622px;
+  left: 156px;
+}
+.screen2 .box_wrap.on {
+  background: none;
+}
+
+.screen2 .box_wrap .arrow {
+  position: absolute;
+  top: -24px;
+  left: -109px;
+  width: 118px;
+  height: 75px;
+  background: url(../img/concept1_h/arrow1.png) no-repeat center / 100%;
+}
+.screen2 .box_wrap.d2 .arrow {
+  top: 2px;
+  left: 627px;
+  background: url(../img/concept1_h/arrow2.png) no-repeat center / 100%;
+}
+
+.screen2 .drag_area {
+  width: 100%;
+  height: 396px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.screen2 .drag_box {
+  position: absolute;
+  width: 627px;
+  height: 111px;
+}
+.screen2 .drag_box.d1,
+.screen2 .drag_box.d2 {
+  top: 68px;
+}
+.screen2 .drag_box.d3,
+.screen2 .drag_box.d4 {
+  top: 207px;
+}
+.screen2 .drag_box.d1,
+.screen2 .drag_box.d3 {
+  left: 299px;
+}
+.screen2 .drag_box.d2,
+.screen2 .drag_box.d4 {
+  left: 1069px;
+}
+
+.screen2 .quiz_area .box_wrap.on2 {
+  background: url(../img/concept1_h/drag2_2.png) no-repeat center / 100%;
+}
+.screen2 .quiz_area .box_wrap.on3 {
+  background: url(../img/concept1_h/drag2_3.png) no-repeat center / 100%;
+}
+.screen2 .quiz_area .box_wrap.on2 .arrow {
+  background: url(../img/concept1_h/arrow1_2.png) no-repeat center / 100%;
+}
+.screen2 .quiz_area .box_wrap.on3 .arrow {
+  background: url(../img/concept1_h/arrow1_3.png) no-repeat center / 100%;
+}
+.screen2 .quiz_area .box_wrap.d2.on2 .arrow {
+  background: url(../img/concept1_h/arrow2_2.png) no-repeat center / 100%;
+}
+.screen2 .quiz_area .box_wrap.d2.on3 .arrow {
+  background: url(../img/concept1_h/arrow2_3.png) no-repeat center / 100%;
+}
+.drop_box {
+  height: 100%;
+}
+.screen2 .quiz_area.finish .drag_area {
+  display: none;
+}

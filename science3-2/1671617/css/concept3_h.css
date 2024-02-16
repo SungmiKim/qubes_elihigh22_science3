@@ -1,0 +1,135 @@
+.screen {
+  width: 100%;
+  height: 100%;
+}
+
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept3_h/screen1.png) no-repeat center / 100%;
+}
+.screen1 .page_title span {
+  color: #78f1ff;
+}
+
+.screen1 .drop_area .box_wrap {
+  width: 466px;
+  height: 132px;
+  position: absolute;
+  top: 396px;
+  left: 226px;
+  background-image: url(../img/concept3_h/drop.png);
+}
+.screen1 .drop_area .box_wrap.d2 {
+  top: 597px;
+}
+.screen1 .drop_area .box_wrap.d3 {
+  top: 787px;
+}
+.screen1 .drop_area .box_wrap .drop_box {
+  width: 100%;
+  height: 100%;
+}
+
+.screen1 .drag_box {
+  position: absolute;
+}
+.screen1 .drag_box.d1,
+.screen1 .drag_box.d2 {
+  top: 454px;
+}
+.screen1 .drag_box.d3,
+.screen1 .drag_box.d4 {
+  top: 690px;
+}
+.screen1 .drag_box.d1,
+.screen1 .drag_box.d3 {
+  left: 880px;
+}
+.screen1 .drag_box.d2,
+.screen1 .drag_box.d4 {
+  left: 1402px;
+}
+
+/* 정답처리시 */
+.screen1 .drag_box.on1,
+.screen1 .drag_box.on2,
+.screen1 .drag_box.on3 {
+  pointer-events: none;
+  animation: none !important;
+  left: 226px;
+}
+.screen1 .drag_box.on1 {
+  top: 396px;
+}
+.screen1 .drag_box.on2 {
+  top: 597px;
+}
+.screen1 .drag_box.on3 {
+  top: 787px;
+}
+
+.screen1 .quiz_area.scale .drag_box {
+  animation: 3s card_scale_3 ease-in infinite;
+}
+@keyframes card_scale_3 {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.04);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.screen1 .quiz_area.finish .drag_area .drag_box.d2 {
+  display: none;
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept3_h/screen2.png) no-repeat center / 100%;
+}
+.screen2 .page_title span {
+  color: #fde802;
+}
+
+.click_obj.scale {
+  animation: 3s card_scale ease-in infinite;
+}
+
+.screen2 .click_obj {
+  position: absolute;
+  top: 216px;
+  left: 182px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.screen2 .click_obj .bubble {
+  width: 758px;
+  height: 263px;
+  background: url(../img/concept3_h/bubble1.png) no-repeat center / 100%;
+}
+.screen2 .click_obj .obj {
+  margin: -64px 102px 0 0;
+}
+.screen2 .click_obj.c2 {
+  left: 1062px;
+}
+.screen2 .click_obj.c2 .obj {
+  margin: -70px -140px 0 0;
+}
+.screen2 .click_obj.c2 .bubble {
+  background: url(../img/concept3_h/bubble2.png) no-repeat center / 100%;
+}
+.screen2 .on .click_obj.c2 .bubble {
+  background-image: url(../img/concept3_h/bubble2_o.png);
+}

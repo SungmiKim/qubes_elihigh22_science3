@@ -1,0 +1,346 @@
+.screen .name_list .obj_name {
+  position: absolute;
+  z-index: 2;
+  width: 240px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: none;
+  color: #fff;
+  border-radius: 80px;
+  display: none;
+}
+.screen .name_list .obj_name.on {
+  display: flex;
+}
+.screen .obj_list .obj {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.screen .obj_list .obj.scale {
+  animation: bigAndSmall 1s;
+  animation-iteration-count: 1;
+}
+canvas {
+  border-radius: 100%;
+  /* box-shadow: 5px 8.66px 10px 0px rgba(0, 0, 0, 0.3); */
+}
+.has_guide {
+  position: absolute;
+  display: none;
+}
+/* screen1 */
+.screen1 {
+  background: url(../img/explore2/screen1.png) no-repeat center / 100%;
+}
+.screen1 .scratch_content {
+  position: absolute;
+  top: 120px;
+  left: 474px;
+}
+.screen1 .scratch_content.s2 {
+  top: 788px;
+  left: 380px;
+}
+.screen1 .scratch_content.s3 {
+  top: 522px;
+  left: 1336px;
+}
+/* .screen1 canvas {
+  background: url(../img/explore2/scratch1_1.png) no-repeat center / 100%;
+}
+.screen1 .scratch_content.s2 canvas {
+  background: url(../img/explore2/scratch1_2.png) no-repeat center / 100%;
+}
+.screen1 .scratch_content.s3 canvas {
+  background: url(../img/explore2/scratch1_2.png) no-repeat center / 100%;
+} */
+
+.screen1 .name_list .obj_name.t1 {
+  top: 652px;
+  left: 674px;
+}
+.screen1 .name_list .obj_name.t2 {
+  top: 544px;
+  left: 1234px;
+}
+.screen1 .name_list .obj_name.t3 {
+  top: 1048px;
+  left: 448px;
+  background-color: rgba(255, 255, 255, 0.078);
+}
+.screen1 .name_list .obj_name.t4 {
+  top: 996px;
+  left: 922px;
+  background-color: rgba(255, 255, 255, 0.078);
+}
+.screen1 .name_list .obj_name.t5 {
+  top: 765px;
+  left: 1418px;
+  background-color: rgba(255, 255, 255, 0.078);
+}
+
+.screen1 .obj_list .obj.o1 {
+  top: 208px;
+  left: 518px;
+}
+.screen1 .obj_list .obj.o2 {
+  top: 122px;
+  left: 1186px;
+}
+.screen1 .obj_list .obj.o3 {
+  top: 884px;
+  left: 412px;
+}
+.screen1 .obj_list .obj.o4 {
+  top: 822px;
+  left: 948px;
+}
+.screen1 .obj_list .obj.o5 {
+  top: 668px;
+  left: 1396px;
+}
+.screen1 .obj_list .obj.o6 {
+  top: 926px;
+  left: 1172px;
+}
+.screen1 .img_wrap .weeds {
+  position: absolute;
+  top: 582px;
+  left: 474px;
+}
+.screen1 .img_wrap .weeds.w2 {
+  top: 508px;
+  left: 1260px;
+}
+.screen1 .has_guide {
+  top: 336px;
+  left: 622px;
+}
+
+/* screen2 */
+.screen2 {
+  background: url(../img/explore2/screen2.png) no-repeat center / 100%;
+}
+.screen2 .scratch_content {
+  position: absolute;
+  top: 120px;
+  left: 144px;
+}
+.screen2 .scratch_content.s2 {
+  top: 620px;
+  left: 888px;
+}
+.screen2 .scratch_content.s3 {
+  top: 656px;
+  left: 1444px;
+}
+/* .screen2 canvas {
+  background: url(../img/explore2/scratch2_1.png) no-repeat center / 100%;
+}
+.screen2 .scratch_content.s2 canvas {
+  background: url(../img/explore2/scratch2_2.png) no-repeat center / 100%;
+}
+.screen2 .scratch_content.s3 canvas {
+  background: url(../img/explore2/scratch2_3.png) no-repeat center / 100%;
+} */
+
+.screen2 .name_list .obj_name.t1 {
+  top: 547px;
+  left: 338px;
+}
+.screen2 .name_list .obj_name.t2 {
+  top: 466px;
+  left: 1530px;
+}
+.screen2 .name_list .obj_name.t3 {
+  top: 858px;
+  left: 310px;
+}
+.screen2 .name_list .obj_name.t4 {
+  top: 1006px;
+  left: 1040px;
+}
+.screen2 .name_list .obj_name.t5 {
+  top: 942px;
+  left: 1516px;
+}
+
+.screen2 .obj_list .obj.o1 {
+  top: 134px;
+  left: 220px;
+}
+.screen2 .obj_list .obj.o2 {
+  top: 280px;
+  left: 1528px;
+}
+.screen2 .obj_list .obj.o3 {
+  top: 582px;
+  left: 216px;
+}
+.screen2 .obj_list .obj.o4 {
+  top: 510px;
+  left: 844px;
+}
+.screen2 .obj_list .obj.o5 {
+  top: 610px;
+  left: 1362px;
+}
+.screen2 .has_guide {
+  top: 286px;
+  left: 254px;
+}
+
+/* screen3 */
+.screen3 {
+  background: url(../img/explore2/screen3.png) no-repeat center / 100%;
+}
+.screen3 .scratch_content {
+  position: absolute;
+  top: 118px;
+  left: 502px;
+}
+.screen3 .scratch_content.s2 {
+  top: 582px;
+  left: 234px;
+}
+.screen3 .scratch_content.s3 {
+  top: 572px;
+  left: 830px;
+}
+/* .screen3 canvas {
+  background: url(../img/explore2/scratch3_1.png) no-repeat center / 100%;
+}
+.screen3 .scratch_content.s2 canvas {
+  background: url(../img/explore2/scratch3_2.png) no-repeat center / 100%;
+}
+.screen3 .scratch_content.s3 canvas {
+  background: url(../img/explore2/scratch3_3.png) no-repeat center / 100%;
+} */
+
+.screen3 .name_list .obj_name.t1 {
+  top: 420px;
+  left: 270px;
+}
+.screen3 .name_list .obj_name.t2 {
+  top: 400px;
+  left: 624px;
+}
+.screen3 .name_list .obj_name.t3 {
+  top: 949px;
+  left: 427px;
+}
+.screen3 .name_list .obj_name.t4 {
+  top: 1036px;
+  left: 906px;
+}
+.screen3 .name_list .obj_name.t5 {
+  top: 1079px;
+  left: 1368px;
+}
+
+.screen3 .obj_list .obj.o1 {
+  top: 268px;
+  left: 248px;
+}
+.screen3 .obj_list .obj.o2 {
+  top: 172px;
+  left: 540px;
+}
+.screen3 .obj_list .obj.o3 {
+  top: 540px;
+  left: 222px;
+}
+.screen3 .obj_list .obj.o4 {
+  top: 432px;
+  left: 586px;
+}
+.screen3 .obj_list .obj.o5 {
+  top: 808px;
+  left: 1140px;
+}
+.screen3 .has_guide {
+  top: 266px;
+  left: 620px;
+}
+
+/* 손가락 가이드 */
+.screen1 .has_guide.on {
+  animation: scratchGuide1 1.5s forwards;
+  animation-iteration-count: 2;
+  display: block;
+}
+@-webkit-keyframes scratchGuide1 {
+  0% {
+    top: 336px;
+    left: 622px;
+  }
+  33% {
+    top: 242px;
+    left: 826px;
+  }
+  66% {
+    top: 470px;
+    left: 708px;
+  }
+  100% {
+    top: 367px;
+    left: 884px;
+  }
+}
+
+.screen2 .has_guide.on {
+  animation: scratchGuide2 1.5s forwards;
+  animation-iteration-count: 2;
+  display: block;
+}
+@-webkit-keyframes scratchGuide2 {
+  0% {
+    top: 286px;
+    left: 254px;
+  }
+  33% {
+    top: 198px;
+    left: 454px;
+  }
+  66% {
+    top: 376px;
+    left: 290px;
+  }
+  100% {
+    top: 310px;
+    left: 488px;
+  }
+}
+
+.screen3 .has_guide.on {
+  animation: scratchGuide3 1.5s forwards;
+  animation-iteration-count: 2;
+  display: block;
+}
+@-webkit-keyframes scratchGuide3 {
+  0% {
+    top: 266px;
+    left: 620px;
+  }
+  33% {
+    top: 200px;
+    left: 754px;
+  }
+  66% {
+    top: 360px;
+    left: 662px;
+  }
+  100% {
+    top: 312px;
+    left: 808px;
+  }
+}
+
+/* .scratch_content.scale {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+} */
+
+.blank {
+  background-color: #fff;
+}

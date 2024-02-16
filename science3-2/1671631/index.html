@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>[과학] 32_3단원 15</title>
+    <!--공통 -->
+    <link href="../common/css/font.css" rel="stylesheet" />
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <script src="./js/pageInfo.js"></script>
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap" data-page="index">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top hide">
+          <header class="header"></header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <img src="../common/images/ani/loading.gif" alt="loading" />
+        </div>
+        <!-- 가변 컨텐츠 End -->
+      </div>
+    </div>
+
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script>
+      setTimeout(function () {
+        if (PreelemBridge.getInitialStepIndex() == 1) {
+          window.location.href = "explore1.html";
+        } else if (PreelemBridge.getInitialStepIndex() == 2) {
+          window.location.href = "concept1_a.html";
+        } else if (PreelemBridge.getInitialStepIndex() == 3) {
+          window.location.href = "summary1.html";
+        } else {
+          window.location.href = "intro.html";
+        }
+      }, 4000);
+    </script>
+  </body>
+</html>

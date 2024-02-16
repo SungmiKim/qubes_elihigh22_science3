@@ -1,0 +1,63 @@
+.content {
+  background: url(../img/summary3/bg.png) no-repeat center / 100%;
+}
+.page_title span {
+  color: #ffc53a;
+}
+.name_list,
+.name_list li,
+.name_list .has_guide,
+.name_list .name_tag,
+.name_list .txt {
+  position: absolute;
+}
+.name_list .has_guide {
+  top: 48px;
+  left: 80px;
+  /* display: none; */
+}
+.name_list li {
+  top: 254px;
+  left: 150px;
+}
+.name_list li.name2 {
+  left: 1050px;
+}
+
+.name_list .name_tag {
+  width: 558px;
+  height: 94px;
+  background: url(../img/summary3/name1_off.png) no-repeat center / 100%;
+}
+.name_list .name2 .name_tag {
+  width: 479px;
+  height: 95px;
+  background: url(../img/summary3/name2_off.png) no-repeat center / 100%;
+}
+.name_list .name1.on .name_tag {
+  background: url(../img/summary3/name1_on.png) no-repeat center / 100%;
+}
+.name_list .name2.on .name_tag {
+  background: url(../img/summary3/name2_on.png) no-repeat center / 100%;
+}
+
+.name_list .txt {
+  opacity: 0;
+  pointer-events: none;
+  top: 121px;
+  left: 6px;
+}
+
+.name_list li.on .txt {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.name_tag.on {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.name_list li.on {
+  pointer-events: none;
+}

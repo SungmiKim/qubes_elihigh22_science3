@@ -1,0 +1,25 @@
+.content {
+  background: url(../img/explore4/bg.png);
+  /* background: url(../img/explore4/11.png); */
+}
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.ani {
+  position: absolute;
+  top: 40px;
+  left: 194px;
+  display: flex;
+  align-items: flex-start;
+}
+.ani > .gif {
+  width: 256px;
+  height: 292px;
+}
+.ani .txt {
+  margin: 157px 0 0 -16px;
+}

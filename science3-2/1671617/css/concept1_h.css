@@ -1,0 +1,84 @@
+.w1920 .page_title {
+  width: calc(100% - 80px - 80px);
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+}
+
+.click_obj.scale {
+  animation: 3s card_scale ease-in infinite;
+}
+
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept1_h/screen1.png) no-repeat center / 100%;
+  /* background: url(../img/concept1_h/11.png) no-repeat center / 100%; */
+}
+.screen1 .page_title span {
+  color: #ffbb7e;
+}
+.screen1 .click_obj {
+  position: absolute;
+  top: 152px;
+  left: 144px;
+}
+.screen1 .click_obj.c2 {
+  top: 256px;
+  left: 1073px;
+}
+
+.screen1 .click_wrap .click_obj .next {
+  display: none;
+}
+.screen1 .click_wrap.on .click_obj .next {
+  display: block;
+}
+.screen1 .click_wrap.on .click_obj .prev {
+  display: none;
+}
+
+.screen1 .click_wrap.off .click_obj.c2 .next {
+  display: block;
+}
+.screen1 .click_wrap.off .click_obj.c2 .prev {
+  display: none;
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept1_h/screen_2.png) no-repeat center / 100%;
+}
+
+.screen2 .page_title .s1 {
+  color: #ffbd55;
+}
+.screen2 .page_title .s2 {
+  color: #55ffd5;
+}
+
+.screen2 .click_obj {
+  position: absolute;
+  top: 221px;
+  left: 143px;
+}
+.screen2 .click_obj.c2 {
+  left: 1061px;
+}
+
+.screen2 .click_obj .bubble {
+  width: 798px;
+  height: 282px;
+  background: url(../img/concept1_h/bubble1_1.png) no-repeat center / 100%;
+}
+.screen2 .click_obj.c2 .bubble {
+  background: url(../img/concept1_h/bubble1_2.png) no-repeat center / 100%;
+}
+
+.screen2 .click_wrap.on .c1 .bubble {
+  background: url(../img/concept1_h/bubble1_1_o.png) no-repeat center / 100%;
+}
+.screen2 .click_wrap.on .c2 {
+  opacity: 0.4;
+}

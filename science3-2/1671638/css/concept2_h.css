@@ -1,0 +1,113 @@
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept2_h/screen1.png) no-repeat center / 100%;
+}
+.screen1 .page_title span {
+  color: #cdfd0e;
+}
+
+.screen1 .click_wrap.scale .obj {
+  animation: 3s card_scale3 ease-in infinite;
+}
+@keyframes card_scale3 {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.04);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.screen1 .click_obj {
+  position: absolute;
+  top: 238px;
+  left: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.screen1 .click_obj .bubble {
+  width: 859px;
+  height: 263px;
+  background: url(../img/concept2_h/bubble1.png) no-repeat center / 100%;
+}
+.screen1 .on .click_obj.c1 .bubble {
+  background-image: url(../img/concept2_h/bubble1_o.png);
+}
+.screen1 .click_obj .obj {
+  position: absolute;
+  top: 198px;
+  left: 14px;
+}
+.screen1 .click_obj .obj > img {
+  width: 100%;
+}
+.screen1 .click_obj.c2 {
+  left: 1038px;
+}
+.screen1 .click_obj.c2 .obj {
+  top: 200px;
+  left: 162px;
+}
+.screen1 .click_obj.c2 .bubble {
+  background: url(../img/concept2_h/bubble2.png) no-repeat center / 100%;
+}
+
+.screen1 .click_wrap.off .obj,
+.screen1 .click_wrap.on .obj {
+  animation: none;
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept2_h/screen2.png) no-repeat center / 100%;
+}
+
+.screen2 .page_title span {
+  color: #f3a1ff;
+}
+.screen2 .click_wrap.scale .obj {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.screen2 .click_wrap {
+  position: relative;
+}
+.screen2 .click_wrap .click_obj {
+  position: absolute;
+  top: 264px;
+  left: 154px;
+}
+.screen2 .click_wrap .click_obj.c2 {
+  left: 1072px;
+}
+
+.screen2 .click_obj .tag {
+  width: 524px;
+  height: 91px;
+  position: absolute;
+  top: 628px;
+  left: 130px;
+  background: url(../img/concept2_h/obj_tag3.png) no-repeat center / 100%;
+}
+.screen2 .click_obj.c2 .tag {
+  width: 484px;
+  left: 146px;
+  background: url(../img/concept2_h/obj_tag4.png) no-repeat center / 100%;
+}
+
+/* 정답일때 */
+.screen2 .click_wrap.on .c2 {
+  opacity: 0.4;
+}

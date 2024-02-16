@@ -1,0 +1,119 @@
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept1_h/screen1.png) no-repeat center / 100%;
+  /* background: url(../img/concept1_h/11.png) no-repeat center / 100%; */
+}
+.screen1 .page_title .s1 {
+  color: #fff838;
+}
+.screen1 .page_title .s2 {
+  color: #49f9ff;
+}
+
+.click_wrap.scale .obj {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.screen1 .click_obj {
+  position: absolute;
+  top: 510px;
+  left: 1248px;
+}
+.screen1 .click_obj.c2 {
+  top: 703px;
+  left: 395px;
+}
+.screen1 .click_obj .obj {
+  top: 0;
+  left: 0;
+}
+.screen1 .click_obj .tag {
+  position: absolute;
+  width: 302px;
+  height: 139px;
+  top: -144px;
+  left: 52px;
+  background: url(../img/concept1_h/obj_tag1.png) no-repeat center / 100%;
+}
+.screen1 .click_obj.c2 .tag {
+  top: -196px;
+  left: 153px;
+  background: url(../img/concept1_h/obj_tag2.png) no-repeat center / 100%;
+}
+
+.screen1 .click_wrap .c1 .next {
+  display: none;
+}
+.screen1 .click_wrap.on .c1 .next {
+  display: block;
+}
+.screen1 .click_wrap.on .c1 .prev {
+  display: none;
+}
+.screen1 .click_wrap.on .c1 .tag {
+  opacity: 0.55;
+}
+.screen1 .click_wrap.on .obj {
+  animation: none;
+}
+
+/* 활동 2 */
+
+.screen2 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+  /* background: url(../img/concept1_h/11.png) no-repeat center / 100%; */
+}
+.screen2 .page_title span {
+  color: #55edff;
+}
+
+.screen2 .click_wrap {
+  position: relative;
+}
+.screen2 .click_wrap .click_obj {
+  position: absolute;
+  top: 230px;
+  left: 84px;
+}
+.screen2 .click_obj .obj {
+  margin: -77px 0px 0 114px;
+}
+.screen2 .click_wrap .click_obj.c2 {
+  left: 1016px;
+}
+.screen2 .click_obj.c2 .obj {
+  margin: -82px 0 0 108px;
+}
+
+.screen2 .click_obj .bubble {
+  width: 898px;
+  height: 283px;
+  background: url(../img/concept1_h/bubble1.png) no-repeat center / 100%;
+}
+.screen2 .click_obj.c2 .bubble {
+  width: 888px;
+  background: url(../img/concept1_h/bubble2.png) no-repeat center / 100%;
+}
+.screen2 .on .click_obj.c1 .bubble {
+  background-image: url(../img/concept1_h/bubble1_o.png);
+}
+
+/* 정답일때 (임시) */
+.screen2 .click_wrap .click_obj .next {
+  display: none;
+}
+.screen2 .click_wrap.on .click_obj .next {
+  display: block;
+}
+.screen2 .click_wrap.on .click_obj .prev {
+  display: none;
+}
+
+/* 틀렸을때 (임시) */
+
+.screen2 .click_wrap.off .click_obj.c2 .next {
+  display: block;
+}
+.screen2 .click_wrap.off .click_obj.c2 .prev {
+  display: none;
+}

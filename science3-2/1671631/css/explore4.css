@@ -1,0 +1,217 @@
+.quiz_area.scale .drag_box img {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.quiz_area.finish .drag_area,
+.quiz_area.finish .center,
+.quiz_area.finish .tag {
+  display: none;
+}
+
+.has_guide {
+  position: absolute;
+  top: 204px;
+  left: 194px;
+  display: none;
+}
+.has_guide.on {
+  display: block;
+  animation: guideHand1 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand1 {
+  0% {
+    top: 204px;
+    left: 194px;
+  }
+  100% {
+    top: 480px;
+    left: 800px;
+  }
+}
+
+.tag {
+  width: 374px;
+  height: 91px;
+  position: absolute;
+  top: 1010px;
+  left: 812px;
+  background: url(../img/explore4/tag1.png) no-repeat center/100%;
+}
+
+.screen {
+  background: url(../img/explore4/bg.png) no-repeat center / 100%;
+}
+
+.center {
+  position: absolute;
+  top: 424px;
+  left: 505px;
+}
+
+.box_wrap {
+  width: 748px;
+  height: 464px;
+  position: absolute;
+  top: 366px;
+  left: 628px;
+  background: url(../img/explore4/drop1.png) no-repeat center / 100%;
+}
+.box_wrap .drop_box.prev {
+  width: 100%;
+  height: 120%;
+  position: absolute;
+  top: -49px;
+  left: 0px;
+}
+.box_wrap .drop_box.next {
+  position: absolute;
+  top: -366px;
+  left: -627px;
+}
+.box_wrap .next {
+  display: none;
+}
+.box_wrap.on {
+  background: none;
+}
+.box_wrap.on .prev {
+  display: none;
+}
+.box_wrap .next.on {
+  display: block;
+}
+
+.drag_area {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: 176px;
+  left: 170px;
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.09);
+}
+.drag_box {
+  position: absolute;
+  top: 54px;
+  left: 72px;
+}
+
+.ani_img {
+  position: absolute;
+  top: 160px;
+  left: 354px;
+}
+
+.effect {
+  position: absolute;
+}
+.screen1 .effect.e1 {
+  top: 758px;
+  left: 1064px;
+}
+.screen1 .effect.e2 {
+  top: 568px;
+  left: 1456px;
+}
+
+.screen2 .effect.e1 {
+  top: 516px;
+  left: 1064px;
+}
+.screen2 .effect.e2 {
+  top: 604px;
+  left: 1466px;
+}
+.effect {
+  opacity: 0;
+}
+.effect.on {
+  animation: blink_effect 1.2s forwards;
+  animation-iteration-count: 3;
+}
+
+.screen3 {
+  background: url(../img/explore4/screen3.png) no-repeat center / 100%;
+}
+.screen3 .left,
+.screen3 .right,
+.screen3 .dim {
+  position: absolute;
+}
+
+.screen3 .on .dim {
+  width: 99.8%;
+  height: 100%;
+  top: 0;
+  left: -3px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.screen3 .right .dim {
+  left: 4px;
+}
+
+.screen3 .appear {
+  position: absolute;
+  z-index: 0;
+}
+.screen3 .left .appear.a1 {
+  top: 666px;
+  left: 404px;
+}
+.screen3 .left .appear.a2 {
+  top: 650px;
+  left: 870px;
+}
+
+.screen3 .right {
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.screen3 .right .appear.a3 {
+  top: 658px;
+  left: 412px;
+}
+.screen3 .right .appear.a4 {
+  top: 900px;
+  left: 313px;
+}
+
+.screen3 .appear {
+  opacity: 0;
+}
+.screen3 .left .appear.a2.on {
+  animation: blink_effect 1.2s forwards;
+  animation-iteration-count: 3;
+}
+@keyframes blink_effect {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.screen3 .left .appear.a1.on,
+.screen3 .right .appear.a3.on,
+.screen3 .right .appear.a4.on {
+  animation: appear 1.2s forwards;
+}
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+.screen3 .tag {
+  position: absolute;
+  top: 80px;
+}
+.screen3 .left .tag {
+  left: 126px;
+}
+.screen3 .right .tag {
+  left: 204px;
+}

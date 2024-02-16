@@ -1,0 +1,289 @@
+.quiz_area.scale .drag_box img {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.quiz_area.finish .drag_area {
+  display: none;
+}
+.quiz_area.finish .center {
+  display: none;
+}
+
+/* 활동1 */
+.screen1 {
+  background: url(../img/explore2/bg.png) no-repeat center / 100%;
+}
+
+.screen1 .center {
+  position: absolute;
+  top: 458px;
+  left: 926px;
+}
+
+.screen1 .box_wrap {
+  width: 628px;
+  height: 628px;
+  position: absolute;
+  top: 248px;
+  left: 686px;
+  background: url(../img/explore2/drop1.png) no-repeat center / 100%;
+}
+.screen1 .box_wrap .drop_box.prev {
+  width: 100%;
+  height: 120%;
+  position: absolute;
+  top: -49px;
+  left: 0px;
+}
+.screen1 .box_wrap .drop_box.next {
+  position: absolute;
+  top: 134px;
+  left: 88px;
+}
+.screen1 .box_wrap .next {
+  display: none;
+}
+.screen1 .box_wrap.on {
+  background: none;
+}
+.screen1 .box_wrap.on .prev {
+  display: none;
+}
+.screen1 .box_wrap.on .next {
+  display: block;
+}
+
+.screen1 .tag {
+  width: 254px;
+  height: 91px;
+  position: absolute;
+  top: 1012px;
+  left: 872px;
+  background: url(../img/explore2/tag1.png) no-repeat center/100%;
+}
+
+.screen1 .drag_area {
+  width: 378px;
+  height: 350px;
+  position: absolute;
+  top: 176px;
+  left: 128px;
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.screen1 .drag_box {
+  position: absolute;
+  top: 50px;
+  left: 64px;
+}
+
+.screen1 .has_guide {
+  position: absolute;
+  top: 216px;
+  left: 236px;
+  display: none;
+}
+.screen1 .has_guide.on {
+  display: block;
+  animation: guideHand1 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand1 {
+  0% {
+    top: 216px;
+    left: 236px;
+  }
+  100% {
+    top: 333px;
+    left: 743px;
+  }
+}
+
+/* 활동2 */
+.screen2 {
+  background: url(../img/explore2/bg.png) no-repeat center / 100%;
+}
+
+.screen2 .center {
+  position: absolute;
+  top: 458px;
+  left: 902px;
+}
+
+.screen2 .box_wrap {
+  width: 628px;
+  height: 628px;
+  position: absolute;
+  top: 248px;
+  left: 686px;
+  background: url(../img/explore2/drop1.png) no-repeat center / 100%;
+}
+.screen2 .box_wrap .drop_box.prev {
+  width: 100%;
+  height: 120%;
+  position: absolute;
+  top: -49px;
+  left: 0px;
+}
+.screen2 .box_wrap .drop_box.next {
+  position: absolute;
+  top: -36px;
+  left: -680px;
+}
+.screen2 .box_wrap .next {
+  display: none;
+}
+.screen2 .box_wrap.on {
+  background: none;
+}
+.screen2 .box_wrap.on .prev {
+  display: none;
+}
+.screen2 .box_wrap.on .next {
+  display: block;
+}
+
+.screen2 .tag {
+  width: 254px;
+  height: 91px;
+  position: absolute;
+  top: 1012px;
+  left: 872px;
+  background: url(../img/explore2/tag1.png) no-repeat center/100%;
+}
+.screen2 .drag_area {
+  width: 420px;
+  height: 350px;
+  position: absolute;
+  top: 176px;
+  left: 140px;
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.screen2 .drag_box {
+  position: absolute;
+  top: 92px;
+  left: 40px;
+}
+
+.screen2 .ani_img {
+  position: absolute;
+  top: 160px;
+  left: 354px;
+}
+.screen2 .has_guide {
+  position: absolute;
+  top: 132px;
+  left: 178px;
+  display: none;
+}
+.screen2 .has_guide.on {
+  display: block;
+  animation: guideHand2 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand2 {
+  0% {
+    top: 132px;
+    left: 178px;
+  }
+  100% {
+    top: 428px;
+    left: 820px;
+  }
+}
+
+/* 활동2 */
+.screen3 {
+  background: url(../img/explore2/bg.png) no-repeat center / 100%;
+  /* background: url(../img/explore2/33.png) no-repeat center / 100%; */
+}
+
+.screen3 .center {
+  position: absolute;
+  top: 348px;
+  left: 832px;
+}
+
+.screen3 .box_wrap {
+  width: 628px;
+  height: 628px;
+  position: absolute;
+  top: 248px;
+  left: 686px;
+  background: url(../img/explore2/drop3.png) no-repeat center / 100%;
+}
+.screen3 .box_wrap .drop_box.prev {
+  width: 100%;
+  height: 120%;
+  position: absolute;
+  top: -49px;
+  left: 0px;
+}
+.screen3 .box_wrap .drop_box.next {
+  position: absolute;
+  top: 100px;
+  left: -649px;
+}
+.screen3 .box_wrap .next {
+  display: none;
+}
+.screen3 .box_wrap.on {
+  background: none;
+}
+.screen3 .box_wrap.on .prev {
+  display: none;
+}
+.screen3 .box_wrap.on .next {
+  display: block;
+}
+
+.screen3 .tag {
+  width: 254px;
+  height: 91px;
+  position: absolute;
+  top: 1012px;
+  left: 872px;
+  background: url(../img/explore2/tag3.png) no-repeat center/100%;
+}
+.screen3 .drag_area {
+  width: 380px;
+  height: 350px;
+  position: absolute;
+  top: 176px;
+  left: 140px;
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.screen3 .drag_box {
+  position: absolute;
+  top: 44px;
+  left: 34px;
+}
+
+.screen3 .ani_img {
+  position: absolute;
+  top: 160px;
+  left: 354px;
+}
+.screen3 .has_guide {
+  position: absolute;
+  top: 132px;
+  left: 178px;
+  display: none;
+}
+.screen3 .has_guide.on {
+  display: block;
+  animation: guideHand2 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand2 {
+  0% {
+    top: 132px;
+    left: 178px;
+  }
+  100% {
+    top: 428px;
+    left: 820px;
+  }
+}

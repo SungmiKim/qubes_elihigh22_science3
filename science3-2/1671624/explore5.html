@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>[과학] 32_3단원 08</title>
+    <!--공통 -->
+    <link href="../common/css/font.css" rel="stylesheet" />
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="./css/explore5.css" rel="stylesheet" />
+    <script src="./js/pageInfo.js"></script>
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap" data-page="explore5">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <header class="header"></header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <div class="screen screen1">
+            <div class="page_title title4">페트병 윗부분에 거즈를 끌어 놓아 물 빠짐 장치를 만들어 봅시다.</div>
+            <div class="quiz_area fix">
+              <div class="center">
+                <img src="./img/explore5/center.png" alt="sand" />
+              </div>
+              <div class="drop_area">
+                <div class="box_wrap d1">
+                  <div class="drop_box prev" data-name="1"></div>
+                  <div class="drop_box next n1">
+                    <div class="ani1 ani" id="seqGif1" data-option="gif5//55//once//60">
+                      <img src="./img/explore5/gif5/1.webp" class="gif" />
+                    </div>
+                  </div>
+                  <div class="drop_box next n2">
+                    <div class="ani2 ani" id="seqGif2" data-option="gif6//78//once//60">
+                      <img src="./img/explore5/gif6/1.webp" class="gif" />
+                    </div>
+                  </div>
+                  <div class="drop_box next n3">
+                    <div class="ani3 ani" id="seqGif3" data-option="gif7//69//once//60">
+                      <img src="./img/explore5/gif7/1.webp" class="gif" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="drag_area">
+                <div class="drag_box d1" data-name="1">
+                  <img src="./img/explore5/drag1.png" />
+                  <div class="name_tag">
+                    <img src="./img/explore5/name_tag.png" alt="name_tag" class="tag1" />
+                  </div>
+                </div>
+                <div class="has_guide">
+                  <img src="../common/images/icon/hand/1.png" alt="guide" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="screen screen2 hide">
+            <div class="page_title title4">물 빠짐 장치에 화단 흙과 운동장 흙을 끌어 놓아 봅시다.</div>
+            <div class="quiz_area fix">
+              <div class="drop_area">
+                <div class="center c1"></div>
+                <div class="box_wrap d1">
+                  <div class="drop_box prev" data-name="2"></div>
+                </div>
+
+                <div class="next_wrap n1">
+                  <div class="area a1">
+                    <div class="ani1" id="seqGif4" data-option="gif8//43//once//70">
+                      <img src="./img/explore5/gif8/1.webp" class="gif" alt="화단흙" />
+                    </div>
+                  </div>
+                  <div class="area a2">
+                    <div class="ani2" id="seqGif5" data-option="gif9//43//once//70">
+                      <img src="./img/explore5/gif9/1.webp" class="gif" alt="운동장흙" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="center c2"></div>
+                <div class="box_wrap d2">
+                  <div class="drop_box prev" data-name="2"></div>
+                </div>
+
+                <div class="next_wrap n2">
+                  <div class="area a1">
+                    <div class="ani1" id="seqGif4" data-option="gif8//43//once//70">
+                      <img src="./img/explore5/gif8/1.webp" class="gif" alt="화단흙" />
+                    </div>
+                  </div>
+                  <div class="area a2">
+                    <div class="ani2" id="seqGif5" data-option="gif9//43//once//70">
+                      <img src="./img/explore5/gif9/1.webp" class="gif" alt="운동장흙" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="drag_area">
+                <div class="drag_box d1" data-name="2" data-num="2">
+                  <img src="./img/explore5/drag2.png" />
+                  <!-- <div class="name_tag"></div> -->
+                  <div class="has_guide">
+                    <img src="../common/images/icon/hand/1.png" alt="guide" />
+                  </div>
+                </div>
+                <div class="drag_box d2" data-name="2" data-num="3">
+                  <img src="./img/explore5/drag3.png" />
+                  <!-- <div class="name_tag"></div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blank"></div>
+        <!-- 가변 컨텐츠 End -->
+
+        <div class="fixed bottom">
+          <!-- 페이지 이동 버튼 -->
+          <a class="btn move btn_prev"> </a>
+          <a class="btn move btn_next"> </a>
+          <!-- 페이지 이동 버튼 End -->
+        </div>
+
+        <!-- 10초 Popup -->
+        <div class="pop_ct pop_next">
+          <img src="../common/images/pop/pop_next.png" alt="pop_next" />
+        </div>
+        <!-- 30초 Popup -->
+        <div class="pop_ct pop_wait">
+          <img src="../common/images/pop/pop_wait.png" alt="pop_wait" />
+        </div>
+      </div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/jquery-ui.js"></script>
+    <script src="../common/js/jquery.ui.touch-punch.min.js"></script>
+    <!-- <script src="../common/js/drag.js"></script> -->
+    <script src="./js/explore5.js"></script>
+  </body>
+</html>

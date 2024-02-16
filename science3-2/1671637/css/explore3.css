@@ -1,0 +1,115 @@
+.content {
+  background: url(../img/explore3/bg.png) no-repeat center / 100%;
+}
+
+.has_guide {
+  position: absolute;
+  left: 270px;
+  top: 72px;
+}
+.click_area.scale .click_box > img {
+  animation: 3s card_scale3 ease-in infinite;
+}
+@keyframes card_scale3 {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  25% {
+    transform: scale(1.05) translate(15px, -5px);
+  }
+  50% {
+    transform: scale(1) translate(0, 0);
+  }
+  75% {
+    transform: scale(1.05) translate(15px, -5px);
+  }
+  100% {
+    transform: scale(1) translate(0, 0);
+  }
+}
+
+.drop_bg {
+  position: absolute;
+  top: 140px;
+  left: 102px;
+}
+
+.click_box {
+  position: absolute;
+  top: 396px;
+  left: 682px;
+}
+
+.quiz_area.finish .click_area {
+  display: none;
+}
+
+.answer_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.answer_box.on {
+  opacity: 1;
+}
+.answer_box .sound_wrap > li {
+  opacity: 0;
+  position: absolute;
+  top: 606px;
+  left: 608px;
+}
+.answer_box .sound_wrap > li.s2 {
+  top: 522px;
+  left: 442px;
+}
+.answer_box .sound_wrap > li.s3 {
+  top: 429px;
+  left: 275px;
+}
+
+.answer_box .sound_wrap.on .s1 {
+  animation: blink_effect1 3.5s backwards;
+  animation-iteration-count: 2;
+}
+@keyframes blink_effect1 {
+  1% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.answer_box .sound_wrap.on .s2 {
+  animation: blink_effect2 3.5s backwards;
+  animation-iteration-count: 2;
+}
+@keyframes blink_effect2 {
+  30% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.answer_box .sound_wrap.on .s3 {
+  animation: blink_effect3 3.5s backwards;
+  animation-iteration-count: 2;
+}
+@keyframes blink_effect3 {
+  60% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

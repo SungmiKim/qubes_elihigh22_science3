@@ -1,0 +1,92 @@
+.content {
+    background: url(../img/summary3/bg.png) no-repeat center / 100%;
+ 
+  }
+  .page_title span {
+    color: #2aef8c;
+  }
+  .name_list,
+  .name_list li,
+  .name_list .has_guide,
+  .name_list .name_tag,
+  .name_list .txt {
+    position: absolute;
+  }
+  .name_list .has_guide {
+    top: 47px;
+    left: 84px;
+    /* display: none; */
+  }
+  .name_list li {
+    top: 237px;
+    left: 187px;
+  }
+  .name_list .name2 {
+    top: 655px;
+    left: 1164px;
+  }
+  
+  .name_list .name_tag {
+    width:270px;
+    height: 104px;
+    background: url(../img/summary3/name1_off.png) no-repeat center / 100%;
+  }
+  .name_list .name2 .name_tag {
+    width: 309px;
+    height: 102px;
+    background: url(../img/summary3/name2_off.png) no-repeat center / 100%;
+  }
+  
+  .name_list .txt {
+    opacity: 0;
+    pointer-events: none;
+    top: 123px;
+    left: 21px;
+  }
+  .name_list .name2 .txt {
+    top: 129px;
+    left: 20px;
+  }
+
+  .name_list .txt.t2 {
+    top: 470px;
+    left: 728px;
+  }
+  .name_list .txt.t3 {
+    top: 392px;
+    left: 1208px;
+  }
+  .name_list .txt.t5 {
+    top: 180px;
+    left: 808px;
+  }
+  .name_list .txt.t6 {
+    top: 170px;
+    left: 1150px;
+  }
+  .name_list .txt.t7 {
+    top: -32px;
+    left: 1564px;
+  }
+  
+  .name_list li.on .txt {
+    opacity: 1;
+    transition: all 1s;
+  }
+  .name_list .name1.on .name_tag {
+    background-image: url(../img/summary3/name1_on.png);
+  }
+  .name_list .name2.on .name_tag {
+    background-image: url(../img/summary3/name2_on.png);
+  }
+  
+  
+  .name_tag.on {
+    animation: bigAndSmall 1.5s forwards;
+    animation-iteration-count: infinite;
+  }
+  
+  .name_list li.on {
+    pointer-events: none;
+  }
+  

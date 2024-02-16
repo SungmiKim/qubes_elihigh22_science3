@@ -1,0 +1,20 @@
+.screen {
+  background: url(../img/explore3/bg.png);
+}
+.header > span {
+  color: #55ffd5;
+}
+
+.ani {
+  position: absolute;
+  top: 96px;
+  left: 300px;
+  display: flex;
+  align-items: flex-start;
+}
+.ani .gif {
+  width: 244px;
+}
+.ani .txt {
+  margin: 92px 0 0 -32px;
+}

@@ -1,0 +1,64 @@
+.content {
+  background: url(../img/summary3/bg.png) no-repeat center / 100%;
+}
+.page_title span {
+  color: #61d8ff;
+}
+.name_list,
+.name_list li,
+.name_list .has_guide,
+.name_list .name_tag,
+.name_list .txt {
+  position: absolute;
+}
+.name_list .has_guide {
+  top: 50px;
+  left: 188px;
+  /* display: none; */
+}
+.name_list li {
+  top: 179px;
+  left: 164px;
+}
+.name_list .name_tag {
+  width: 308px;
+  height: 94px;
+  background: url(../img/summary3/name1_off.png) no-repeat center / 100%;
+}
+.name_list .txt {
+  opacity: 0;
+  pointer-events: none;
+  top: 118px;
+  left: 10px;
+  opacity: 0;
+}
+
+.name_list .t_name {
+  top: 810px;
+}
+.name_list .t_name.n1 {
+  left: 270px;
+}
+.name_list .t_name.n2 {
+  left: 866px;
+}
+.name_list .t_name.n3 {
+  left: 1326px;
+}
+
+.name_list li.on .txt {
+  opacity: 1;
+  transition: all 1s;
+}
+.name_list .name1.on .name_tag {
+  background-image: url(../img/summary3/name1_on.png);
+}
+
+.name_tag.on {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.name_list li.on {
+  pointer-events: none;
+}

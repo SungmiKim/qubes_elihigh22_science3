@@ -1,0 +1,142 @@
+.screen {
+  background: url(../img/explore2/bg.png) no-repeat center / 100%;
+}
+
+.page_title > span {
+  color: #fff838;
+}
+
+.has_guide {
+  position: absolute;
+  top: 400px;
+  left: 200px;
+}
+
+.click_obj.scale .obj {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.click_obj {
+  position: absolute;
+  top: 399px;
+  left: 326px;
+}
+.click_obj .next {
+  display: none;
+}
+.click_obj.off {
+  animation: none;
+  pointer-events: none;
+}
+.click_obj.off .obj.next {
+  display: block;
+}
+.click_obj.off .obj.prev {
+  display: none;
+}
+
+.click_obj.c2 {
+  top: 407px;
+  left: 1096px;
+}
+.click_obj.c2 > img {
+  width: 97%;
+  height: 97%;
+}
+
+.click_obj.on.c1 {
+  animation: moveToCenter1 2s forwards;
+  animation-iteration-count: 1;
+}
+@keyframes moveToCenter1 {
+  0% {
+    left: 326px;
+  }
+  100% {
+    left: 684px;
+  }
+}
+.click_obj.on.c2 {
+  animation: moveToCenter2 2s forwards;
+  animation-iteration-count: 1;
+}
+@keyframes moveToCenter2 {
+  0% {
+    left: 1096px;
+  }
+  100% {
+    left: 684px;
+  }
+}
+
+.click_obj .tag {
+  position: absolute;
+  width: 343px;
+  height: 91px;
+  top: 630px;
+  left: 111px;
+  background: url(../img/explore2/tag1.png) no-repeat center / 100%;
+}
+.click_obj.c2 .tag {
+  top: 620px;
+  left: 116px;
+  background: url(../img/explore2/tag2.png) no-repeat center / 100%;
+}
+.click_obj.off.c1 .tag {
+  background: url(../img/explore2/tag1_o.png) no-repeat center / 100%;
+}
+.click_obj.off.c2 .tag {
+  background: url(../img/explore2/tag2_o.png) no-repeat center / 100%;
+}
+
+/* 레이어 */
+.ani_area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.ani_area .ani_img {
+  display: none;
+}
+.ani_area.on .ani_img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  z-index: 2;
+  background: url(../img/explore2/bg.png) no-repeat center / 100%;
+}
+
+.ani_area.on .ani_img .point {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.ani_area.on .ani_img[data-num="1"] .wood {
+  opacity: 1;
+}
+.ani_area.on .ani_img[data-num="2"] .plastic {
+  opacity: 1;
+}
+
+.ani_area .tag {
+  width: 343px;
+  height: 91px;
+  position: absolute;
+  top: 1021px;
+  left: 795px;
+  background: url(../img/explore2/tag1.png) no-repeat center / 100%;
+}
+.ani_area .plastic .tag {
+  top: 1019px;
+  left: 801px;
+  background: url(../img/explore2/tag2.png) no-repeat center / 100%;
+}

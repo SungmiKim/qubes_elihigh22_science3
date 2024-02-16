@@ -1,0 +1,247 @@
+.quiz_area.scale .drag_box > img {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.content {
+  background: url(../img/explore4/bg.png) no-repeat center / 100%;
+}
+
+.has_guide {
+  position: absolute;
+  top: 322px;
+  left: 318px;
+  display: none;
+}
+.has_guide.on {
+  display: block;
+  animation: guideHand1 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand1 {
+  0% {
+    top: 322px;
+    left: 318px;
+  }
+  100% {
+    top: 600px;
+    left: 818px;
+  }
+}
+
+.center {
+  position: absolute;
+  top: 394px;
+  left: 507px;
+}
+.box_wrap {
+  width: 788px;
+  height: 568px;
+  position: absolute;
+  top: 380px;
+  left: 610px;
+  background: url(../img/explore4/drop.png) no-repeat center/100%;
+}
+.box_wrap .drop_box.next {
+  position: absolute;
+  top: -382px;
+  left: -610px;
+}
+.box_wrap .next {
+  display: none;
+}
+.box_wrap.on {
+  background: none;
+}
+.box_wrap.on .prev {
+  display: none;
+}
+.box_wrap.on .next {
+  display: block;
+}
+
+.drag_area {
+  width: 338px;
+  height: 290px;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 176px;
+  left: 111px;
+  border-radius: 38px;
+}
+.drag_box {
+  position: absolute;
+  left: 56px;
+  top: 48px;
+}
+
+.tag {
+  position: absolute;
+  top: 972px;
+  left: 832px;
+}
+
+.quiz_area.finish .center,
+.quiz_area.finish .drag_area,
+.quiz_area.finish .tag {
+  display: none;
+}
+
+.drop_box {
+  height: 100%;
+}
+.drop_box .ani.off {
+  display: none;
+}
+.drop_box .sound_wrap > li {
+  opacity: 0;
+  position: absolute;
+  top: 684px;
+  left: 420px;
+}
+.drop_box .sound_wrap > li.s2 {
+  top: 650px;
+  left: 356px;
+}
+.drop_box .sound_wrap > li.s3 {
+  top: 613px;
+  left: 294px;
+}
+
+.drop_box .sound_wrap.on .s1 {
+  animation: blink_effect1 3.2s backwards;
+  animation-iteration-count: 2;
+}
+@keyframes blink_effect1 {
+  1% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.drop_box .sound_wrap.on .s2 {
+  animation: blink_effect2 3.2s backwards;
+  animation-iteration-count: 2;
+}
+@keyframes blink_effect2 {
+  30% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.drop_box .sound_wrap.on .s3 {
+  animation: blink_effect3 3.2s backwards;
+  animation-iteration-count: 2;
+}
+@keyframes blink_effect3 {
+  50% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* screen2 */
+.screen2 {
+  width: 100%;
+  height: 100%;
+  background: url(../img/explore4/11.png) no-repeat center/100%;
+}
+.screen2 .air .bg {
+  position: absolute;
+  top: -2px;
+  left: 0;
+}
+.screen2 .air_dim {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+.screen2 .air_dim.on {
+  background: rgba(0, 0, 0, 0.6);
+}
+.screen2 .sound_wrap > li {
+  opacity: 0;
+}
+.screen2 .air .sound_wrap > li {
+  position: absolute;
+  top: 684px;
+  left: 420px;
+}
+.screen2 .air .sound_wrap > li.s2 {
+  top: 650px;
+  left: 356px;
+}
+.screen2 .air .sound_wrap > li.s3 {
+  top: 612px;
+  left: 294px;
+}
+.screen2 .air .sound_wrap.on2 .s1 {
+  animation: blink_effect1 2.5s backwards;
+  animation-iteration-count: 1;
+}
+.screen2 .air .sound_wrap.on2 .s2 {
+  animation: blink_effect2 2.5s backwards;
+  animation-iteration-count: 1;
+}
+.screen2 .air .sound_wrap.on2 .s3 {
+  animation: blink_effect3 2.5s backwards;
+  animation-iteration-count: 1;
+}
+
+.screen2 .water {
+  position: absolute;
+  left: 506px;
+  top: 392px;
+}
+.screen2 .water .next {
+  display: none;
+}
+.screen2 .water.on .next {
+  display: block;
+}
+.screen2 .water.on .prev {
+  display: none;
+}
+
+.screen2 .water .sound_wrap > li {
+  position: absolute;
+  top: 286px;
+  left: 242px;
+}
+.screen2 .water .sound_wrap > li.s2 {
+  top: 254px;
+  left: 180px;
+}
+.screen2 .water .sound_wrap > li.s3 {
+  top: 216px;
+  left: 116px;
+}
+.screen2 .water .sound_wrap.on2 .s1 {
+  animation: blink_effect1 2.3s backwards;
+  animation-iteration-count: 1;
+}
+.screen2 .water .sound_wrap.on2 .s2 {
+  animation: blink_effect2 2.3s backwards;
+  animation-iteration-count: 1;
+}
+.screen2 .water .sound_wrap.on2 .s3 {
+  animation: blink_effect3 2.3s backwards;
+  animation-iteration-count: 1;
+}

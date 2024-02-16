@@ -1,0 +1,189 @@
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept1_h/screen1.png) no-repeat center / 100%;
+  /* background: url(../img/concept1_h/11.png) no-repeat center / 100%; */
+}
+
+.screen1 .page_title span {
+  color: #63d4ff;
+}
+.screen1 .click_wrap.scale .obj {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.screen1 .click_wrap {
+  position: relative;
+}
+.screen1 .click_wrap .click_obj {
+  position: absolute;
+  top: 212px;
+  left: 180px;
+}
+.screen1 .click_obj .obj {
+  margin: -106px 0px 0 14px;
+}
+.screen1 .click_wrap .click_obj.c2 {
+  left: 1112px;
+}
+.screen1 .click_obj.c2 .obj {
+  margin: -92px 0 0 2px;
+}
+
+.screen1 .click_obj .bubble {
+  width: 708px;
+  height: 263px;
+  background: url(../img/concept1_h/bubble1.png) no-repeat center / 100%;
+}
+.screen1 .click_obj.c2 .bubble {
+  background: url(../img/concept1_h/bubble2.png) no-repeat center / 100%;
+}
+.screen1 .on .click_obj.c2 .bubble {
+  background-image: url(../img/concept1_h/bubble2_o.png);
+}
+
+.desk {
+  width: 100%;
+  height: 364px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: url(../img/concept1_h/desk.png);
+  animation: none;
+  pointer-events: none;
+}
+.desk_block {
+  width: 100%;
+  height: 146px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/* 정답일때 (임시) */
+.screen1 .click_wrap .click_obj .next {
+  display: none;
+}
+.screen1 .click_wrap.on .click_obj .next {
+  display: block;
+}
+.screen1 .click_wrap.on .click_obj .prev {
+  display: none;
+}
+
+/* 틀렸을때 (임시) */
+.screen1 .click_wrap.off .click_obj.c1 .next {
+  display: block;
+}
+.screen1 .click_wrap.off .click_obj.c1 .prev {
+  display: none;
+}
+
+/* 활동 2 */
+.ui-draggable-dragging {
+  z-index: 5 !important;
+}
+
+.screen2 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+  /* background: url(../img/concept1_h/11.png) no-repeat center / 100%; */
+}
+
+.screen2 .page_title span {
+  color: #b8ff74;
+}
+
+.screen2 .quiz_area.scale .drag_box .img {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.screen2 .box_wrap {
+  width: 399px;
+  height: 398px;
+  position: absolute;
+  top: 734px;
+  left: 246px;
+  background: url(../img/concept1_h/drop.png) no-repeat center / 100%;
+}
+.screen2 .box_wrap.d2 {
+  left: 798px;
+}
+.screen2 .box_wrap.d3 {
+  left: 1350px;
+}
+.screen2 .quiz_area .box_wrap.on {
+  background: url(../img/concept1_h/drag2_o.png) no-repeat center / 100%;
+}
+.screen2 .quiz_area .box_wrap.d2.on {
+  background: url(../img/concept1_h/drag3_o.png) no-repeat center / 100%;
+}
+.screen2 .quiz_area .box_wrap.d3.on {
+  background: url(../img/concept1_h/drag1_o.png) no-repeat center / 100%;
+}
+
+.screen2 .drag_area {
+  width: 100%;
+  height: 590px;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute;
+}
+
+.screen2 .drag_box {
+  position: absolute;
+  width: 305px;
+  height: 305px;
+  top: 148px;
+  left: 398px;
+}
+.screen2 .drag_box.d2 {
+  left: 848px;
+}
+.screen2 .drag_box.d3 {
+  left: 1300px;
+}
+.screen2 .drag_box .img {
+  width: 100%;
+  height: 100%;
+  background: url(../img/concept1_h/drag1.png) no-repeat center / 100%;
+}
+.screen2 .drag_box.d2 .img {
+  background: url(../img/concept1_h/drag2.png) no-repeat center / 100%;
+}
+.screen2 .drag_box.d3 .img {
+  background: url(../img/concept1_h/drag3.png) no-repeat center / 100%;
+}
+
+.screen2 .drag_box .name_tag {
+  width: 184px;
+  height: 80px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 40px;
+  font-family: "NanumSquareRoundEB";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  position: absolute;
+  top: 324px;
+  left: 64px;
+}
+.screen2 .drag_box.d2 .name_tag {
+  left: 60px;
+}
+.screen2 .drag_box.d3 .name_tag {
+  left: 60px;
+}
+.screen2 .drag_box.on .name_tag {
+  display: none;
+}
+.quiz_area.finish .drag_area {
+  background: none;
+}
+.drag_box.ui-draggable.ui-draggable-dragging .name_tag {
+  display: none;
+}
+.drop_box {
+  height: 100%;
+}

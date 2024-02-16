@@ -1,0 +1,20 @@
+.content {
+  background: url(../img/explore2/bg.png) no-repeat center/100%;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ani {
+  position: absolute;
+  top: 170px;
+  left: 318px;
+  display: flex;
+  align-items: flex-start;
+}
+.ani .txt {
+  margin: 32px 0 0 8px;
+}

@@ -1,0 +1,109 @@
+.quiz_area.scale .drag_box img {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.content {
+  background: url(../img/explore4/bg.png) no-repeat center / 100%;
+}
+
+.center {
+  position: absolute;
+  top: 402px;
+  left: 852px;
+}
+
+.box_wrap {
+  width: 498px;
+  height: 498px;
+  position: absolute;
+  top: 517px;
+  left: 758px;
+  background: url(../img/explore4/drop.png) no-repeat center / 100%;
+}
+.box_wrap .drop_box.prev {
+  width: 100%;
+  height: 120%;
+  position: absolute;
+  top: -49px;
+  left: 0px;
+}
+.box_wrap .drop_box.next {
+  position: absolute;
+  top: -116px;
+  left: 95px;
+}
+.box_wrap .next {
+  display: none;
+}
+.drop_area .tag {
+  position: absolute;
+  width: 167px;
+  height: 91px;
+  top: 1052px;
+  left: 920px;
+  background: url(../img/explore4/tag.png) no-repeat center / 100%;
+}
+
+.box_wrap.on {
+  top: 116px;
+  left: -97px;
+  background: none;
+}
+.box_wrap.on .prev {
+  display: none;
+}
+.box_wrap.on .next {
+  display: block;
+}
+.box_wrap.on .tag {
+  top: 929px;
+  left: 1023px;
+}
+
+.drag_area {
+  width: 240px;
+  height: 520px;
+  position: absolute;
+  top: 197px;
+  left: 170px;
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.drag_box {
+  position: absolute;
+  top: 58px;
+  left: 94px;
+}
+
+.quiz_area.finish .drag_area {
+  display: none;
+}
+
+.ani_img {
+  position: absolute;
+  top: 160px;
+  left: 354px;
+}
+
+.has_guide {
+  position: absolute;
+  top: 228px;
+  left: 90px;
+  display: none;
+}
+.has_guide.on {
+  display: block;
+  animation: guideHand1 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand1 {
+  0% {
+    top: 228px;
+    left: 90px;
+  }
+  100% {
+    top: 528px;
+    left: 790px;
+  }
+}

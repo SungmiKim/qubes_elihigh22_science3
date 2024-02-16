@@ -1,0 +1,190 @@
+.quiz_area.on .drag_box {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.quiz_area .drag_box.on {
+  animation: none;
+  pointer-events: none;
+}
+.quiz_area .drag_box.on img {
+  width: 100%;
+}
+
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept1_h/screen1.png) no-repeat center / 100%;
+}
+.screen1 .page_title span {
+  color: #ffd53b;
+}
+.screen1 .center {
+  position: absolute;
+  top: 228px;
+  left: 736px;
+}
+
+.screen1 .box_wrap {
+  position: absolute;
+  top: 225px;
+  left: 166px;
+  width: 528px;
+  height: 138px;
+  background: url(../img/concept1_h/drop1.png) no-repeat center / 100%;
+}
+.screen1 .box_wrap.d2 {
+  top: 531px;
+  left: 1300px;
+  background: url(../img/concept1_h/drop1.png) no-repeat center / 100%;
+}
+.screen1 .box_wrap.on {
+  background: none;
+}
+
+.screen1 .box_wrap .arrow {
+  position: absolute;
+  top: 148px;
+  left: 446px;
+  width: 81px;
+  height: 91px;
+  background: url(../img/concept1_h/arrow1_1.png) no-repeat center / 100%;
+}
+.screen1 .box_wrap.d2 .arrow {
+  top: -108px;
+  left: 4px;
+  background: url(../img/concept1_h/arrow2_1.png) no-repeat center / 100%;
+}
+
+.screen1 .drag_area {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.screen1 .drag_box {
+  position: absolute;
+  width: 526px;
+  height: 141px;
+}
+.screen1 .drag_box.d1,
+.screen1 .drag_box.d2 {
+  top: 786px;
+}
+.screen1 .drag_box.d3,
+.screen1 .drag_box.d4 {
+  top: 946px;
+}
+.screen1 .drag_box.d1,
+.screen1 .drag_box.d3 {
+  left: 374px;
+}
+.screen1 .drag_box.d2,
+.screen1 .drag_box.d4 {
+  left: 1094px;
+}
+
+.screen1 .quiz_area .box_wrap.on3 {
+  background: url(../img/concept1_h/drag1_3.png) no-repeat center / 100%;
+}
+.screen1 .quiz_area .box_wrap.on2 {
+  background: url(../img/concept1_h/drag1_2.png) no-repeat center / 100%;
+}
+.screen1 .quiz_area .box_wrap.on3 .arrow {
+  background: url(../img/concept1_h/arrow1_2.png) no-repeat center / 100%;
+}
+.screen1 .quiz_area .box_wrap.on2 .arrow {
+  background: url(../img/concept1_h/arrow1_3.png) no-repeat center / 100%;
+}
+.screen1 .quiz_area .box_wrap.d2.on3 .arrow {
+  background: url(../img/concept1_h/arrow2_2.png) no-repeat center / 100%;
+}
+.screen1 .quiz_area .box_wrap.d2.on2 .arrow {
+  background: url(../img/concept1_h/arrow2_3.png) no-repeat center / 100%;
+}
+.drop_box {
+  height: 100%;
+}
+.screen1 .quiz_area.finish .drag_area {
+  display: none;
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+}
+
+.screen2 .page_title span {
+  color: #4affc5;
+}
+
+.screen2 .box_wrap {
+  width: 808px;
+  height: 446px;
+  position: absolute;
+  top: 372px;
+  left: 153px;
+  background: url(../img/concept1_h/drop2_1.png) no-repeat center / 100%;
+}
+.screen2 .box_wrap.d2 {
+  left: 1033px;
+  background-image: url(../img/concept1_h/drop2_2.png);
+}
+.screen2 .box_wrap.on {
+  background-image: url(../img/concept1_h/drop2_1_o.png);
+}
+.screen2 .box_wrap.d2.on {
+  background-image: url(../img/concept1_h/drop2_2_o.png);
+}
+.screen2 .drop_box {
+  height: 100%;
+}
+
+.screen2 .drag_box {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 318px;
+  height: 256px;
+  top: 862px;
+  left: 400px;
+  background-image: url(../img/concept1_h/drag2_1.png);
+}
+.screen2 .drag_box.d1.on {
+  width: 391px;
+  height: 308px;
+  top: 494px !important;
+  left: 186px !important;
+  background-image: url(../img/concept1_h/drag2_1_o.png);
+}
+
+.screen2 .drag_box.d2 {
+  width: 299px;
+  height: 257px;
+  left: 874px;
+  background-image: url(../img/concept1_h/drag2_2.png);
+}
+.screen2 .drag_box.d2.on {
+  width: 373px;
+  height: 305px;
+  top: 491px !important;
+  left: 1260px !important;
+  background-image: url(../img/concept1_h/drag2_2_o.png);
+}
+
+.screen2 .drag_box.d3 {
+  width: 283px;
+  height: 256px;
+  left: 1314px;
+  background-image: url(../img/concept1_h/drag2_3.png);
+}
+.screen2 .drag_box.d3.on {
+  width: 339px;
+  height: 307px;
+  top: 494px !important;
+  left: 570px !important;
+  background-image: url(../img/concept1_h/drag2_3_o.png);
+}
+
+.screen2 .quiz_area.on .drag_box:not(.on) .img {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}

@@ -1,0 +1,9 @@
+.content {
+  background: url(../img/explore4/bg.png) no-repeat center / 100%;
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

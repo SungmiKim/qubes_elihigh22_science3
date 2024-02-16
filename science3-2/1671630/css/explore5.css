@@ -1,0 +1,93 @@
+.content {
+  background: url(../img/explore5/bg.png) no-repeat center / 100%;
+}
+.screen3 {
+  background: url(../img/explore5/bg2.png) no-repeat center / 100%;
+}
+
+.screen1 .has_guide {
+  position: absolute;
+  top: 545px;
+  left: 180px;
+  pointer-events: none;
+}
+
+.screen1 .has_guide {
+  position: absolute;
+  top: 545px;
+  left: 180px;
+}
+
+.click_wrap.scale > .obj {
+  animation: 1.5s bigAndSmall3 ease-in infinite;
+}
+
+.center {
+  position: absolute;
+  top: 156px;
+  left: 190px;
+}
+.center .prev {
+  position: absolute;
+  top: 249px;
+  left: 57px;
+}
+.center .prev.p2 {
+  top: 285px;
+  left: 476px;
+}
+.center .prev.p3 {
+  top: 370px;
+  left: 1214px;
+}
+
+.center .prev.tag {
+  top: 914px;
+  left: 126px;
+}
+
+.center .next {
+  position: absolute;
+  display: none;
+}
+.center.on {
+  animation: none;
+  pointer-events: none;
+}
+
+.shape {
+  position: absolute;
+  top: 570px;
+  left: 197px;
+  opacity: 0;
+}
+.shape.on {
+  animation: blinkEffect 1.2s 5s forwards;
+  animation-iteration-count: 3;
+}
+@keyframes blinkEffect {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.center.on .prev {
+  display: none;
+}
+
+.screen1 .center.on .next.on {
+  display: block;
+  top: -154px;
+  left: -190px;
+}
+.screen2 .center.on .next.on {
+  display: block;
+  top: -154px;
+  left: -190px;
+}

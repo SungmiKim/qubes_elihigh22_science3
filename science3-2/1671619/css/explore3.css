@@ -1,0 +1,419 @@
+.screen {
+  width: 100%;
+  height: 100%;
+}
+
+.click_obj.scale {
+  animation: 3s card_scale ease-in infinite;
+}
+
+.select_wrap ul.on li {
+  animation: bigAndSmall3 2s infinite;
+}
+
+.select_wrap ul.no_scale li {
+  animation: none;
+}
+
+.has_guide {
+  position: absolute;
+  top: 855px;
+  left: 580px;
+  pointer-events: none;
+}
+
+/* screen1 */
+.screen {
+  background: url(../img/explore3/bg.png) no-repeat center / 100%;
+}
+.screen1 .click_obj {
+  position: absolute;
+  top: 250px;
+  left: 114px;
+  width: 828px;
+  height: 826px;
+  transition: all 2s ease;
+  background: url(../img/explore3/obj1.png) no-repeat center / 100%;
+}
+.screen1 .click_obj.c2 {
+  left: 1063px;
+  background: url(../img/explore3/obj2.png) no-repeat center / 100%;
+}
+
+/* obj 클릭시 가운데로 이동 */
+.screen1 .click_obj.on {
+  animation: obj1 2s forwards;
+  animation-iteration-count: 1;
+}
+@keyframes obj1 {
+  0% {
+    width: 828px;
+    height: 826px;
+  }
+  100% {
+    width: 655px;
+    height: 658px;
+    top: 49.9%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.screen1 .click_obj.c2.on {
+  animation: obj2 2s forwards;
+  animation-iteration-count: 1;
+}
+@keyframes obj2 {
+  0% {
+    width: 828px;
+    height: 843px;
+  }
+  100% {
+    width: 655px;
+    height: 665px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* screen 2, screen3 */
+.screen2 .page_title,
+.screen3 .page_title {
+  display: none;
+}
+.screen2 .page_title.on {
+  display: flex;
+}
+.screen3 .page_title.on {
+  display: flex;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+}
+#seqGif2 {
+  display: none;
+}
+#seqGif5 {
+  display: none;
+}
+
+.center {
+  /* opacity: 0.5; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.screen3 .q_mark {
+  position: absolute;
+  top: 627px;
+  left: 940px;
+}
+.cha_back {
+  position: absolute;
+  bottom: -2px;
+  left: 232px;
+}
+.chat_area {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 90px 0;
+}
+.bubble {
+  position: absolute;
+  height: 110px;
+}
+.bubble img:first-child {
+  position: relative;
+  z-index: 2;
+}
+
+.chat1 .bubble.question {
+  top: 178px;
+  left: 130px;
+}
+.chat1.on .bubble.question {
+  left: 1410px;
+}
+.chat2 .bubble.answer {
+  top: 320px;
+  left: 383px;
+}
+.chat2.on .bubble.answer {
+  left: 1372px;
+}
+.chat3 .bubble.question {
+  top: 538px;
+  left: 130px;
+}
+.chat3.on .bubble.question {
+  left: 1410px;
+}
+.chat4 .bubble.answer {
+  top: 680px;
+  left: 380px;
+}
+.chat4.on .bubble.answer {
+  left: 1372px;
+}
+
+/* 말풍선 꼬리 */
+.l_tail,
+.r_tail {
+  position: absolute;
+  z-index: 0;
+  top: 5px;
+}
+.r_tail.t1 {
+  left: 451px;
+}
+.l_tail.t1,
+.r_tail.t2 {
+  left: -32px;
+}
+.l_tail.t2 {
+  left: 245px;
+}
+
+.chat .l_tail {
+  opacity: 1;
+}
+.chat .r_tail {
+  opacity: 0;
+}
+.chat.on .l_tail {
+  opacity: 0;
+}
+.chat.on .r_tail {
+  opacity: 1;
+}
+
+/* 리스트 사라지는 효과 */
+.chat.on .bubble.off {
+  animation: awayRight1 1.5s forwards;
+  animation-iteration-count: 1;
+}
+@keyframes awayRight1 {
+  from {
+    left: 1410px;
+  }
+  to {
+    left: 2800px;
+  }
+}
+.chat .bubble.off {
+  animation: awayLeft1 2s forwards;
+  animation-iteration-count: 1;
+}
+@keyframes awayLeft1 {
+  from {
+    left: 100px;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+/* 선택지 고를 때 */
+.select_wrap {
+  width: 100%;
+  background: #b2dffe;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: 66px;
+  display: block;
+}
+
+.select_wrap ul {
+  padding: 44px 0;
+  gap: 49px;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.select_wrap ul.on {
+  display: flex;
+}
+
+/* 최종 선택 후 정답화면 */
+.ani_area {
+  /* opacity: 0.5; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: url(../img/explore3/bg.png) no-repeat center / 100%;
+}
+
+/* 엘라 */
+.screen2 .ani_area .ani_img {
+  width: 655px;
+  height: 658px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: answer_obj1 2s forwards 3s;
+  animation-iteration-count: 1;
+}
+@keyframes answer_obj1 {
+  0% {
+    width: 655px;
+    height: 658px;
+  }
+  100% {
+    width: 828px;
+    height: 826px;
+  }
+}
+
+.screen2 .ani_area .ani_img .obj_name {
+  opacity: 0;
+  width: 364px;
+  height: 314px;
+  position: absolute;
+  top: 290px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../img/explore3/obj1_o_1.png) no-repeat center / 100%;
+}
+.screen2 .ani_area.on .ani_img .obj_name {
+  animation: answer_name1 1.5s forwards 1s, answer_center1 2s forwards 3s;
+  animation-iteration-count: 1;
+}
+@keyframes answer_name1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes answer_center1 {
+  0% {
+    width: 364px;
+    height: 314px;
+    top: 290px;
+  }
+  100% {
+    width: 461px;
+    height: 390px;
+    top: 365px;
+  }
+}
+.screen2 .ani_area .ani_img .obj_qmark {
+  /* opacity: 1; */
+  width: 121px;
+  height: 194px;
+  position: absolute;
+  top: 353px;
+  left: 49.1%;
+  transform: translateX(-50%);
+  background: url(../img/explore3/q_mark1.png) no-repeat center / 100%;
+  animation: qmark_fadeOut1 0.5s forwards 1s;
+  animation-iteration-count: 1;
+}
+
+/* 하로 */
+.screen3 .ani_area .ani_img {
+  width: 655px;
+  height: 665px;
+  opacity: 0;
+  position: absolute;
+  top: 49.9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: answer_obj2 2s forwards 3s;
+  animation-iteration-count: 1;
+}
+@keyframes answer_obj2 {
+  0% {
+    width: 655px;
+    height: 665px;
+  }
+  100% {
+    width: 828px;
+    height: 843px;
+  }
+}
+.ani_area.on .ani_img .obj_img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.ani_area.on .ani_img {
+  opacity: 1;
+}
+
+.screen3 .ani_area .ani_img .obj_name {
+  opacity: 0;
+  width: 299px;
+  height: 301px;
+  position: absolute;
+  top: 304px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../img/explore3/obj2_o_2.png) no-repeat center / 100%;
+}
+.screen3 .ani_area.on .ani_img .obj_name {
+  animation: answer_name2 1.5s forwards 1s, answer_center2 2s forwards 3s;
+  animation-iteration-count: 1;
+}
+@keyframes answer_name2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes answer_center2 {
+  0% {
+    width: 299px;
+    height: 301px;
+    top: 304px;
+  }
+  100% {
+    width: 376px;
+    height: 382px;
+    top: 383px;
+  }
+}
+.screen3 .ani_area .ani_img .obj_qmark {
+  width: 121px;
+  height: 194px;
+  position: absolute;
+  top: 360px;
+  left: 49%;
+  transform: translateX(-50%);
+  background: url(../img/explore3/q_mark2.png) no-repeat center / 100%;
+  animation: qmark_fadeOut1 0.5s forwards 1s;
+  animation-iteration-count: 1;
+}
+@keyframes qmark_fadeOut1 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 파티클 효과 */
+.ani_area .seq_img {
+  display: none;
+}
+.ani_area .seq_img.on {
+  display: block;
+}

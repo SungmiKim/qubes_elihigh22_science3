@@ -1,0 +1,75 @@
+.click_wrap.scale .obj {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept2_h/screen1.png) no-repeat center / 100%;
+}
+.screen1 .page_title .s1 {
+  color: #53ffa4;
+}
+.screen1 .page_title img {
+  display: inline-block;
+  margin: 0 6px 0 12px;
+}
+
+.screen1 .click_obj {
+  position: absolute;
+  top: 530px;
+  left: 118px;
+}
+.screen1 .click_obj.c2 {
+  left: 1000px;
+}
+.screen1 .click_obj .obj {
+  top: 0;
+  left: 0;
+}
+.screen1 .click_wrap.on .c2 {
+  opacity: 0.5;
+}
+
+/* 활동 2 */
+
+.screen2 {
+  background: url(../img/concept2_h/screen2.png) no-repeat center / 100%;
+}
+.screen2 .page_title span {
+  color: #0ff1ff;
+}
+
+.screen2 .click_wrap {
+  position: relative;
+}
+.screen2 .click_wrap .click_obj {
+  position: absolute;
+  top: 222px;
+  left: 84px;
+}
+.screen2 .click_wrap .click_obj.c2 {
+  left: 1016px;
+}
+
+.screen2 .click_obj .obj {
+  position: absolute;
+  top: 220px;
+  left: 28px;
+}
+.screen2 .click_obj.c2 .obj {
+  top: 280px;
+  left: 214px;
+}
+
+.screen2 .click_obj .bubble {
+  width: 898px;
+  height: 282px;
+  background: url(../img/concept2_h/bubble1.png) no-repeat center / 100%;
+}
+.screen2 .click_obj.c2 .bubble {
+  background: url(../img/concept2_h/bubble2.png) no-repeat center / 100%;
+}
+.screen2 .on .click_obj.c2 .bubble {
+  background: url(../img/concept2_h/bubble2_o.png) no-repeat center / 100%;
+}

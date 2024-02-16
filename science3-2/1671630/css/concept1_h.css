@@ -1,0 +1,118 @@
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept1_h/screen1.png) no-repeat center / 100%;
+}
+.screen1 .page_title span {
+  color: #55edff;
+}
+
+.click_obj.scale .obj {
+  animation: 3s card_scale ease-in infinite;
+}
+
+.screen1 .click_obj {
+  position: absolute;
+  top: 254px;
+  left: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.screen1 .click_obj .bubble {
+  width: 828px;
+  height: 293px;
+  background: url(../img/concept1_h/bubble1.png) no-repeat center / 100%;
+}
+.screen1 .click_obj .obj {
+  margin: -10px 0px 0 -180px;
+}
+.screen1 .click_obj .obj > img {
+  width: 100%;
+}
+.screen1 .click_obj.c2 {
+  left: 972px;
+}
+.screen1 .click_obj.c2 .obj {
+  margin: -51px 0px 0 110px;
+}
+.screen1 .click_obj.c2 .bubble {
+  background: url(../img/concept1_h/bubble2.png) no-repeat center / 100%;
+}
+.screen1 .on .click_obj.c2 .bubble {
+  background-image: url(../img/concept1_h/bubble2_o.png);
+}
+
+/* 정답일때 (임시) */
+.screen1 .click_wrap .click_obj .next {
+  display: none;
+}
+.screen1 .click_wrap.on .click_obj .next {
+  display: block;
+}
+.screen1 .click_wrap.on .click_obj .prev {
+  display: none;
+}
+
+/* 틀렸을때 (임시) */
+.screen1 .click_wrap.off .click_obj.c1 .next {
+  display: block;
+}
+.screen1 .click_wrap.off .click_obj.c1 .prev {
+  display: none;
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+  /* background: url(../img/concept1_h/22.png) no-repeat center / 100%; */
+}
+
+.screen2 .page_title span {
+  color: #fff838;
+}
+.screen2 .click_wrap.scale .obj {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.screen2 .click_wrap {
+  position: relative;
+}
+.screen2 .click_wrap .click_obj {
+  position: absolute;
+  top: 378px;
+  left: 386px;
+}
+.screen2 .click_wrap .click_obj.c2 {
+  top: 624px;
+  left: 984px;
+}
+
+.screen2 .click_obj .tag {
+  width: 301px;
+  height: 183px;
+  position: absolute;
+  top: -196px;
+  left: -18px;
+  background: url(../img/concept1_h/obj_tag3.png) no-repeat center / 100%;
+}
+.screen2 .click_obj.c2 .tag {
+  top: -194px;
+  left: 170px;
+  background: url(../img/concept1_h/obj_tag4.png) no-repeat center / 100%;
+}
+.screen2 .on .click_obj.c2 .tag {
+  background-image: url(../img/concept1_h/obj_tag4_x.png);
+}
+
+/* 정답일때 */
+.screen2 .click_wrap .click_obj .next {
+  display: none;
+}
+.screen2 .click_wrap.on .click_obj .next {
+  display: block;
+}
+.screen2 .click_wrap.on .click_obj .prev {
+  display: none;
+}

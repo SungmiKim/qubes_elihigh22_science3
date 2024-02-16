@@ -1,0 +1,108 @@
+.screen {
+  background: url(../img/explore3/bg.png) no-repeat center / 100%;
+}
+
+.touch_area {
+  position: absolute;
+  top: 202px;
+  left: 692px;
+  z-index: 1;
+  width: 596px;
+  height: 596px;
+}
+.touch_area::before {
+  content: "";
+  width: 488px;
+  height: 488px;
+  background: url(../img/explore3/circle_inner.png) no-repeat center / 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.has_guide {
+  position: absolute;
+  top: 61%;
+  left: 69%;
+  transform: translate(-50%, -50%);
+}
+
+.circle_progress_wrap {
+  width: 596px;
+  height: 596px;
+  background: url(../img/explore3/circle_bg.png) no-repeat center / 100%;
+}
+
+.circle_progress {
+  transform: rotate(-90deg);
+}
+.bar {
+  fill: none;
+  stroke: #fde542;
+  stroke-linecap: round;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background: url(../img/explore3/circle_point.png) no-repeat center / 47px 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* animation: circle 2s linear forwards; */
+}
+@keyframes circle {
+  0% {
+    transform: rotate(90deg) translate(-288px) rotate(-90deg);
+  }
+  100% {
+    transform: rotate(450deg) translate(-288px) rotate(-450deg);
+  }
+}
+.w1920 .circle {
+  opacity: 1;
+  transition: opacity 0s;
+  transition-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.ani_area {
+  position: absolute;
+  bottom: 0;
+  left: 814px;
+}
+
+.ani_area .next {
+  display: none;
+}
+.ani_area.on {
+  top: 0 !important;
+  left: 0 !important;
+}
+.ani_area.on .prev {
+  display: none;
+}
+.ani_area.on .next {
+  display: block;
+}
+
+.ani_area .tag {
+  width: 254px;
+  height: 91px;
+  position: absolute;
+  top: 555px;
+  left: 1082px;
+  background: url(../img/explore3/tag1.png) no-repeat center / 100%;
+}
+.ani_area.on .tag {
+  display: none;
+}

@@ -1,0 +1,17 @@
+.screen {
+  background: url(../img/explore4/bg.png) no-repeat center/100%;
+}
+
+.ani {
+  position: absolute;
+  top: 142px;
+  left: 370px;
+  display: flex;
+  align-items: flex-start;
+}
+.ani .gif {
+  width: 160px;
+}
+.ani .txt {
+  margin: 16px 0 0 4px;
+}

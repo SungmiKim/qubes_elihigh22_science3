@@ -1,0 +1,229 @@
+.quiz_area.scale .drag_box img:not(.tag1) {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.content {
+  background: url(../img/explore5/bg.png) no-repeat center / 100%;
+  /* background: url(../img/explore5/22.png) no-repeat center / 100%; */
+}
+
+/* screen1 */
+.screen1 .center {
+  position: absolute;
+  top: 616px;
+  left: 834px;
+}
+.screen1 .box_wrap {
+  width: 708px;
+  height: 708px;
+  position: absolute;
+  top: 480px;
+  left: 644px;
+  background: url(../img/explore5/drop.png) no-repeat center/100%;
+}
+.screen1 .box_wrap .drop_box.prev {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.screen1 .box_wrap .drop_box.next {
+  position: absolute;
+  top: -478px;
+  left: -646px;
+}
+
+.screen1 .box_wrap .next {
+  display: none;
+}
+.screen1 .box_wrap.on {
+  background: none;
+}
+
+.screen1 .box_wrap.on .prev {
+  display: none;
+}
+.screen1 .box_wrap .next.on {
+  display: block;
+}
+
+.screen1 .drag_box {
+  position: absolute;
+  top: 904px;
+  left: 172px;
+}
+.screen1 .drag_box .name_tag {
+  position: absolute;
+  top: 188px;
+  left: 182px;
+}
+
+.screen1 .quiz_area.finish .center,
+.screen1 .quiz_area.finish .drag_area {
+  display: none;
+}
+
+.screen1 .has_guide {
+  position: absolute;
+  top: 950px;
+  left: 388px;
+  display: none;
+}
+.screen1 .has_guide.on {
+  display: block;
+  animation: guideHand1 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand1 {
+  0% {
+    left: 388px;
+  }
+  100% {
+    left: 962px;
+  }
+}
+
+.drag_box.ui-draggable.ui-draggable-dragging .name_tag {
+  display: none;
+}
+
+/* screen2 */
+.screen2 .box_wrap {
+  position: absolute;
+}
+.screen2 .box_wrap {
+  width: 608px;
+  height: 608px;
+  position: absolute;
+  top: 240px;
+  left: 670px;
+  z-index: 2;
+}
+.screen2 .box_wrap.d2 {
+  left: 1296px;
+}
+.screen2 .box_wrap .drop_box.prev {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/explore5/drop2.png) no-repeat center/100%;
+}
+.screen2 .box_wrap .drop_box.next.n1 {
+  position: absolute;
+  top: -178px;
+  left: -420px;
+}
+.screen2 .box_wrap .drop_box.next.n2 {
+  position: absolute;
+  top: -260px;
+  left: -635px;
+}
+.screen2 .box_wrap.d2 .drop_box.next.n1 {
+  left: -412px;
+}
+.screen2 .box_wrap.d2 .drop_box.next.n2 {
+  left: -626px;
+}
+
+.screen2 .box_wrap .drop_box.next.n2 .ani2 > img {
+  width: 1228px;
+  height: 1218px;
+}
+
+.screen2 .center.off {
+  background: none;
+}
+.screen2 .center {
+  width: 342px;
+  height: 722px;
+  position: absolute;
+  top: 420px;
+  left: 803px;
+  z-index: 0;
+  background: url(../img/explore5/center2.png) no-repeat center/100%;
+}
+.screen2 .center.c2 {
+  left: 1438px;
+}
+.screen2 .box_wrap.on1 .drop_box,
+.screen2 .box_wrap.on2 .drop_box {
+  background: none;
+}
+.screen2 .box_wrap.on .prev {
+  display: none;
+}
+
+.screen2 .next_wrap .area {
+  position: absolute;
+  top: 62px;
+  left: 250px;
+  display: none;
+}
+.screen2 .next_wrap .area.a2 {
+  top: -22px;
+  left: 41px;
+}
+.screen2 .next_wrap .area.a2 img {
+  width: 111%;
+  height: 111%;
+}
+.screen2 .next_wrap.n2 .area {
+  left: 885px;
+}
+.screen2 .next_wrap.n2 .area.a2 {
+  top: -21px;
+  left: 677px;
+}
+
+.screen2 .next_wrap.on1 .area.a1 {
+  display: block;
+}
+.screen2 .next_wrap.on2 .area.a2 {
+  display: block;
+}
+
+.screen2 .drag_box {
+  position: absolute !important;
+  top: 963px;
+  left: 204px;
+  z-index: 4;
+}
+.screen2 .drag_box.d2 {
+  top: 843px;
+  left: 106px;
+  z-index: 3;
+}
+
+.screen2 .quiz_area.finish .center,
+.screen2 .quiz_area.finish .drag_area {
+  display: none;
+}
+
+.screen2 .has_guide {
+  position: absolute;
+  top: 80px;
+  left: 272px;
+  display: none;
+}
+.screen2 .has_guide.on {
+  display: block;
+  animation: guideHand2 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand2 {
+  0% {
+    top: 80px;
+    left: 272px;
+  }
+  100% {
+    top: -322px;
+    left: 736px;
+  }
+}
+.drag_box.ui-draggable-dragging {
+  z-index: 5 !important;
+}

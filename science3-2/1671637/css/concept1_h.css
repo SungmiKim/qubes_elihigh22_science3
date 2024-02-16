@@ -1,0 +1,153 @@
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept1_h/screen1.png) no-repeat center / 100%;
+}
+.screen1 .page_title span {
+  color: #1aff91;
+}
+
+.screen1 .click_wrap.scale .obj {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes bigAndSmall3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.screen1 .click_wrap {
+  position: relative;
+}
+.screen1 .click_wrap .click_obj {
+  position: absolute;
+  top: 212px;
+  left: 86px;
+}
+.screen1 .click_wrap .click_obj.c2 {
+  left: 1020px;
+}
+
+.screen1 .click_obj .obj {
+  position: absolute;
+  top: 97px;
+  left: -26px;
+}
+.screen1 .click_obj.c1 .obj > img {
+  width: 95%;
+}
+.screen1 .click_obj.c2 .obj {
+  top: 200px;
+  left: 228px;
+}
+
+.screen1 .click_obj .bubble {
+  width: 889px;
+  height: 263px;
+  background: url(../img/concept1_h/bubble1.png) no-repeat center / 100%;
+}
+.screen1 .click_obj.c2 .bubble {
+  background: url(../img/concept1_h/bubble2.png) no-repeat center / 100%;
+}
+.screen1 .on .click_obj.c1 .bubble {
+  background-image: url(../img/concept1_h/bubble1_o.png);
+}
+
+.screen1 .table {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+.screen1 .play {
+  position: absolute;
+  bottom: 80px;
+  left: 580px;
+  opacity: 0;
+}
+.screen1 .img_wrap.on .play {
+  opacity: 1;
+}
+
+/* 활동 2 */
+.top_area.not_title {
+  pointer-events: none;
+}
+.ui-draggable-dragging {
+  z-index: 5 !important;
+}
+
+.screen2 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+}
+
+.screen2 .page_title span {
+  color: #fffd70;
+}
+
+.screen2 .quiz_area.scale .drag_box {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.screen2 .box_wrap {
+  width: 524px;
+  height: 710px;
+  position: absolute;
+  top: 413px;
+  left: 143px;
+}
+.screen2 .box_wrap.d2 {
+  left: 738px;
+}
+.screen2 .box_wrap.d3 {
+  left: 1333px;
+}
+.screen2 .box_wrap .next {
+  display: none;
+}
+.screen2 .box_wrap.on .next {
+  display: block;
+}
+.screen2 .box_wrap.on .prev {
+  display: none;
+}
+
+.screen2 .drag_area {
+  width: 100%;
+  height: 358px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/concept1_h/tone.png) no-repeat center/100%;
+}
+
+.screen2 .drag_box {
+  position: absolute;
+  top: 178px;
+  left: 330px;
+}
+.screen2 .drag_box.d2 {
+  left: 808px;
+}
+.screen2 .drag_box.d3 {
+  left: 1286px;
+}
+
+.quiz_area.finish .drag_area {
+  background: none;
+}
+
+.drop_box {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 54px;
+}

@@ -1,0 +1,159 @@
+/* 활동1 */
+.screen1 {
+  background: url(../img/explore2/screen1.png) no-repeat center / 100%;
+}
+
+.screen1 .quiz_area.scale .drag_box img {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.screen1 .quiz_area.finish .drag_area {
+  display: none;
+}
+.screen1 .quiz_area.finish .center {
+  display: none;
+}
+
+.screen1 .center {
+  position: absolute;
+  top: 396px;
+  left: 818px;
+}
+
+.screen1 .box_wrap {
+  width: 466px;
+  height: 465px;
+  position: absolute;
+  top: 510px;
+  left: 766px;
+  background: url(../img/explore2/drop1.png) no-repeat center / 100%;
+}
+.screen1 .box_wrap .drop_box.prev {
+  width: 100%;
+  height: 120%;
+  position: absolute;
+  top: -49px;
+  left: 0px;
+}
+.screen1 .box_wrap .drop_box.next {
+  position: absolute;
+  top: -510px;
+  left: -765px;
+}
+.screen1 .box_wrap .next {
+  display: none;
+}
+.screen1 .box_wrap.on {
+  background: none;
+}
+.screen1 .box_wrap.on .prev {
+  display: none;
+}
+.screen1 .box_wrap.on .next {
+  display: block;
+}
+.screen1 .drop_area .tag {
+  position: absolute;
+  top: 1052px;
+  left: 814px;
+}
+
+.screen1 .drag_area {
+  width: 340px;
+  height: 290px;
+  position: absolute;
+  top: 176px;
+  left: 110px;
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.screen1 .drag_box {
+  position: absolute;
+  top: 46px;
+  left: 54px;
+}
+.screen1 .drag_area .tag {
+  width: 234px;
+  height: 92px;
+  position: absolute;
+  top: 260px;
+  left: 0px;
+  background: url(../img/explore2/tag1.png) no-repeat center/100%;
+  pointer-events: none;
+}
+
+.screen1 .ani_img {
+  position: absolute;
+  top: 160px;
+  left: 354px;
+}
+.screen1 .has_guide {
+  position: absolute;
+  top: 146px;
+  left: 208px;
+  display: none;
+  pointer-events: none;
+}
+.screen1 .has_guide.on {
+  display: block;
+  animation: guideHand1 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand1 {
+  0% {
+    top: 146px;
+    left: 208px;
+  }
+  100% {
+    top: 446px;
+    left: 768px;
+  }
+}
+.drag_box.ui-draggable.ui-draggable-dragging .tag {
+  display: none;
+}
+
+/* 활동2 */
+
+.screen2 .has_guide {
+  position: absolute;
+  top: 404px;
+  left: 156px;
+  pointer-events: none;
+}
+
+.screen2 .click_obj.scale .obj.speaker {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.screen2 .click_obj {
+  position: absolute;
+  top: 395px;
+  left: 817px;
+}
+.screen2 .click_obj .obj.prev {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.screen2 .click_obj .obj.box {
+  pointer-events: none;
+}
+.screen2 .click_obj .obj.speaker {
+  top: 374px;
+  left: 40px;
+}
+
+.screen2 .click_wrap .next {
+  display: none;
+}
+.screen2 .click_wrap.on .next {
+  display: block;
+  position: absolute;
+  top: -395px;
+  left: -818px;
+}
+.screen2 .click_wrap.on .prev {
+  display: none;
+}

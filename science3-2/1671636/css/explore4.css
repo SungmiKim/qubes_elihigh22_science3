@@ -1,0 +1,120 @@
+.content {
+  background: url(../img/explore4/bg.png) no-repeat center / 100%;
+}
+
+.has_guide {
+  position: absolute;
+  top: 222px;
+  left: 44px;
+}
+
+.click_wrap .center {
+  position: absolute;
+  top: 348px;
+  left: 327px;
+}
+.click_obj.off {
+  animation: none;
+  pointer-events: none;
+}
+.click_obj.scale .obj {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.click_obj {
+  position: absolute;
+  top: 365px;
+  left: 441px;
+}
+.click_obj.c2 {
+  top: 469px;
+  left: 1475px;
+}
+.click_obj .obj {
+  top: 0;
+  left: 0;
+}
+
+.click_obj .tag {
+  position: absolute;
+  top: -141px;
+  left: -62px;
+}
+.click_obj.c2 .tag {
+  top: -136px;
+  left: -69px;
+}
+.click_obj.on .tag {
+  display: none;
+}
+
+/* 클릭활동후 블러처리 */
+.click_obj .next {
+  display: none;
+}
+.click_obj.off .prev {
+  display: none;
+}
+.click_obj.off .next {
+  display: block;
+}
+.click_obj.off .obj {
+  animation: none;
+  pointer-events: none;
+}
+
+/* 레이어 */
+.ani_area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.ani_area .ani_img {
+  display: none;
+}
+.ani_area.on .ani_img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 1px;
+  left: 25px;
+  z-index: 2;
+}
+.ani_area.on .ani_img .point {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.ani_area.on .ani_img[data-num="1"] .long {
+  opacity: 1;
+}
+.ani_area.on .ani_img[data-num="2"] .short {
+  opacity: 1;
+}
+
+.ani_area .a2 {
+  display: none;
+}
+.ani_area.on .on2 .a1 {
+  display: none;
+}
+.ani_area.on .on2 .a2 {
+  display: block;
+}
+
+.ani_area .tag {
+  position: absolute;
+  top: 223px;
+  left: 354px;
+}
+.ani_area .short .tag {
+  top: 332px;
+  left: 1381px;
+}

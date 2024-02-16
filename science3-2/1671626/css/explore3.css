@@ -1,0 +1,67 @@
+.screen1 {
+  background: url(../img/explore3/bg.png) no-repeat center / 100%;
+}
+
+.screen1 .center {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.guide_ani .txt {
+  position: absolute;
+  top: 810px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.screen2 {
+  background: url(../img/explore3/bg.png) no-repeat center / 100%;
+}
+.screen2 .center {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.screen2 .point {
+  position: absolute;
+}
+.screen2 .point.p1 {
+  width: 206px;
+  height: 271px;
+  top: 268px;
+  left: 1008px;
+  background: url(../img/explore3/effect1.png);
+  opacity: 0;
+}
+.screen2 .point.p2 {
+  width: 291px;
+  height: 209px;
+  top: 684px;
+  left: 170px;
+  background: url(../img/explore3/effect2.png);
+  opacity: 0;
+}
+
+.screen2 .point.off {
+  opacity: 0;
+}
+.screen2 .point.on {
+  animation: blink-effect 2s 1s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes blink-effect {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

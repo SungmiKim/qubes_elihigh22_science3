@@ -1,0 +1,46 @@
+.content {
+  background: url(../img/explore6/bg.png) no-repeat center / 100%;
+  /* background: url(../img/explore6/11.png) no-repeat center / 100%; */
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.time {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.time .ani {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.time.on {
+  display: block;
+}
+
+.result {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.result.r1 {
+  background: url(../img/explore6/after_bg.png) no-repeat center / 100%;
+}
+.result.r2 {
+  background: url(../img/explore6/after_bg2.png) no-repeat center / 100%;
+}

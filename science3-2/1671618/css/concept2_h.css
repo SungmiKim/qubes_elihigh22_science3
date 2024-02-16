@@ -1,0 +1,126 @@
+.box_wrap .drop_box {
+  width: 100%;
+  height: 100%;
+}
+
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept2_h/screen1.png) no-repeat center / 100%;
+}
+.screen1 .page_title span {
+  color: #ffa9a5;
+}
+
+.screen1 .click_wrap {
+  position: relative;
+}
+.screen1 .click_wrap .click_obj {
+  position: absolute;
+  top: 369px;
+  left: 130px;
+}
+.screen1 .click_wrap .click_obj.c2 {
+  left: 722px;
+  top: 772px;
+}
+.screen1 .click_wrap .click_obj.c3 {
+  left: 1454px;
+  top: 682px;
+}
+
+.screen1 .click_obj .tag {
+  position: absolute;
+  width: 275px;
+  height: 91px;
+  top: 553px;
+  left: 72px;
+  background: url(../img/concept2_h/tag1.png) no-repeat center / 100%;
+}
+.screen1 .click_obj.c2 .tag {
+  width: 255px;
+  top: 150px;
+  left: 134px;
+  background: url(../img/concept2_h/tag2.png) no-repeat center / 100%;
+}
+.screen1 .click_obj.c3 .tag {
+  width: 255px;
+  top: 240px;
+  left: 90px;
+  background: url(../img/concept2_h/tag3.png) no-repeat center / 100%;
+}
+.screen1 .click_wrap .click_obj.c1 .obj_o,
+.screen1 .click_wrap .click_obj.c3 .obj_o {
+  display: none;
+}
+/* 정답 클릭시 오답부분 이미지 변경 */
+.screen1 .click_wrap.finish .click_obj.c1 .obj_o,
+.screen1 .click_wrap.finish .click_obj.c3 .obj_o {
+  display: block;
+}
+.screen1 .click_wrap.finish .click_obj.c1 .tag,
+.screen1 .click_wrap.finish .click_obj.c3 .tag {
+  opacity: 0.4;
+}
+.screen1 .click_wrap.finish .click_obj.c1 .obj,
+.screen1 .click_wrap.finish .click_obj.c3 .obj {
+  display: none;
+}
+
+.click_wrap.scale .obj {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept2_h/screen2.png) no-repeat center / 100%;
+}
+.screen2 .page_title span {
+  color: #ffd75e;
+}
+
+.screen2 .box_wrap {
+  background: url(../img/concept2_h/drop2.png) no-repeat center / 100%;
+  position: absolute;
+  width: 205px;
+  height: 131px;
+  top: 504px;
+  left: 1589px;
+}
+.screen2 .box_wrap.on {
+  background-image: url(../img/concept2_h/drag2_2.png);
+}
+
+.screen2 .drag_area {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 306px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.screen2 .drag_box {
+  position: absolute;
+  width: 205px;
+  height: 131px;
+  top: 143px;
+  left: 490px;
+}
+.screen2 .drag_box.d2 {
+  left: 892px;
+}
+.screen2 .drag_box.d3 {
+  left: 1300px;
+}
+.quiz_area.finish .drag_area {
+  display: none;
+}
+
+.screen2 .quiz_area.on .drag_box {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.top_area.not_title {
+  pointer-events: none;
+}

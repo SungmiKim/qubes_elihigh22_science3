@@ -1,0 +1,48 @@
+/* 사회와 과학 별도 적용 */
+.completeStamp {
+  position: absolute;
+  top: 829px;
+  left: 1619px;
+  z-index: 10;
+  display: none;
+}
+
+.completeStamp img {
+  width: 261px;
+  animation: completeStamp 3s infinite;
+}
+
+.btn_intro {
+  width: 323px;
+  height: 138px;
+  background: url(../images/btn/btn_intro_start.png) no-repeat center / 100%;
+  text-indent: -9999px;
+  animation: 2s zoom_in_out ease-in infinite;
+}
+.single .header .lecture_step .step,
+.single .header .lecture_step .arrow {
+  display: flex;
+  order: 2;
+  opacity: 0;
+  pointer-events: none;
+}
+.single .header .lecture_step .step1 {
+  display: flex;
+  order: 1;
+  opacity: 1;
+  pointer-events: all;
+}
+.single .header .lecture_step .step1.ing {
+  background-image: url(../images/header/step03_02.png);
+}
+
+.single .header .lecture_step .step1.ing::before {
+  width: 90px;
+  height: 88px;
+  background: url(../images/header/step03_ani.png) no-repeat center / 100%;
+  top: -5px;
+  left: -10px;
+}
+.single .header .lecture_step .step1 {
+  background-image: url(../images/header/step03_01.png);
+}

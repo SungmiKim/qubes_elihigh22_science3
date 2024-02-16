@@ -1,0 +1,141 @@
+/* 활동 1 */
+
+.screen1 {
+  background: url(../img/concept1_h/screen1.png) no-repeat center / 100%;
+  /* background: url(../img/concept1_h/22.png) no-repeat center / 100%; */
+}
+.screen1 .page_title span {
+  color: #ffd34e;
+}
+
+.screen1 .click_wrap.scale .obj {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.screen1 .click_wrap {
+  position: relative;
+}
+.screen1 .click_wrap .click_obj {
+  position: absolute;
+  top: 242px;
+  left: 175px;
+}
+.screen1 .click_obj .obj {
+  margin: -34px 0px 0 78px;
+}
+.screen1 .click_wrap .click_obj.c2 {
+  left: 1116px;
+}
+.screen1 .click_obj.c2 .obj {
+  margin: -32px 0 0 98px;
+}
+
+.screen1 .click_obj .bubble {
+  width: 708px;
+  height: 263px;
+  background: url(../img/concept1_h/bubble1.png) no-repeat center / 100%;
+}
+.screen1 .click_obj.c2 .bubble {
+  background: url(../img/concept1_h/bubble2.png) no-repeat center / 100%;
+}
+.screen1 .on .click_obj.c1 .bubble {
+  background-image: url(../img/concept1_h/bubble1_o.png);
+}
+
+/* 정답일때 (임시) */
+.screen1 .click_wrap .click_obj .next {
+  display: none;
+}
+.screen1 .click_wrap.on .click_obj .next {
+  display: block;
+}
+.screen1 .click_wrap.on .click_obj .prev {
+  display: none;
+}
+
+/* 틀렸을때 (임시) */
+.screen1 .click_wrap.off .click_obj.c2 .next {
+  display: block;
+}
+.screen1 .click_wrap.off .click_obj.c2 .prev {
+  display: none;
+}
+
+/* 활동 2 */
+.ui-draggable-dragging {
+  z-index: 5 !important;
+}
+
+.screen2 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+  /* background: url(../img/concept1_h/11.png) no-repeat center / 100%; */
+}
+.screen2 .page_title span {
+  color: #b8ff4c;
+}
+
+.screen2 .box_wrap {
+  position: absolute;
+  top: 274px;
+  left: 210px;
+  width: 569px;
+  height: 568px;
+  background: url(../img/concept1_h/drop.png) no-repeat center / 100%;
+}
+.screen2 .box_wrap.d2 {
+  left: 1210px;
+}
+.screen2 .box_wrap.on {
+  background: none;
+}
+.screen2 .drop_box {
+  height: 100%;
+}
+.screen2 .box_wrap .drop_box.next {
+  display: none;
+}
+.screen2 .box_wrap.on .drop_box.prev {
+  display: none;
+}
+.screen2 .box_wrap.on .drop_box.next {
+  display: block;
+}
+
+.screen2 .drag_area {
+  width: 301px;
+  height: 310px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 804px;
+  left: 843px;
+  border-radius: 40px;
+}
+
+.screen2 .drag_box {
+  position: absolute;
+  width: 196px;
+  height: 201px;
+  top: 67px;
+  left: 57px;
+}
+
+.screen2 .quiz_area .box_wrap.on {
+  width: 366px;
+  height: 503px;
+  top: 272px;
+  left: 168px;
+}
+
+.quiz_area.finish .drag_area {
+  display: none;
+}
+
+.screen2 .quiz_area.scale .drag_box {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.screen2 .click_wrap.on .obj {
+  animation: none;
+}

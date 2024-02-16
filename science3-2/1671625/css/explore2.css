@@ -1,0 +1,87 @@
+.quiz_area.scale .drag_box img:not(.tag1) {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.content {
+  background: url(../img/explore2/bg.png) no-repeat center / 100%;
+  /* background: url(../img/explore2/11.png) no-repeat center / 100%; */
+}
+
+/* screen1 */
+.screen1 .center {
+  position: absolute;
+  top: 554px;
+  left: 872px;
+}
+.screen1 .box_wrap {
+  width: 708px;
+  height: 708px;
+  position: absolute;
+  top: 446px;
+  left: 710px;
+  background: url(../img/explore2/drop.png) no-repeat center/100%;
+}
+.screen1 .box_wrap .drop_box.prev {
+  width: 118%;
+  height: 94%;
+  position: absolute;
+  top: 16px;
+  left: -54px;
+}
+.screen1 .box_wrap .drop_box.next {
+  position: absolute;
+  top: -444px;
+  left: -710px;
+}
+.screen1 .box_wrap .drop_box.next .ani2 {
+  position: absolute;
+  top: -6px;
+  left: -10px;
+}
+
+.screen1 .box_wrap .next {
+  display: none;
+}
+.screen1 .box_wrap.on {
+  background: none;
+}
+.screen1 .box_wrap.on .prev {
+  display: none;
+}
+.screen1 .box_wrap.on .next {
+  display: block;
+}
+
+.screen1 .drag_box {
+  position: absolute;
+  top: 938px;
+  left: 188px;
+}
+
+.screen1 .quiz_area.finish .center,
+.screen1 .quiz_area.finish .drag_area {
+  display: none;
+}
+
+.screen1 .has_guide {
+  position: absolute;
+  top: 1014px;
+  left: 572px;
+  display: none;
+}
+.screen1 .has_guide.on {
+  display: block;
+  animation: guideHand1 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand1 {
+  0% {
+    top: 1014px;
+    left: 572px;
+  }
+  100% {
+    top: 914px;
+    left: 1028px;
+  }
+}

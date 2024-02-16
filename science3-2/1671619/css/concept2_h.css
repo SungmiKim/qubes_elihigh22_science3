@@ -1,0 +1,194 @@
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept2_h/screen1.png) no-repeat center / 100%;
+  /* background: url(../img/concept2_h/111.png) no-repeat center / 100%; */
+}
+.screen1 .page_title span {
+  color: #f1d64d;
+}
+
+.screen1 .click_wrap {
+  position: relative;
+}
+.screen1 .click_wrap .click_obj {
+  position: absolute;
+  top: 222px;
+  left: 216px;
+}
+.screen1 .click_obj .obj {
+  margin: -54px 0px 0 -65px;
+}
+.screen1 .click_wrap .click_obj.c2 {
+  left: 1226px;
+}
+.screen1 .click_obj.c2 .obj {
+  margin: -50px 0 0 -162px;
+}
+
+.screen1 .click_obj .bubble {
+  width: 558px;
+  height: 223px;
+  background: url(../img/concept2_h/bubble1.png) no-repeat center / 100%;
+}
+.screen1 .click_obj.c2 .bubble {
+  background: url(../img/concept2_h/bubble2.png) no-repeat center / 100%;
+}
+.screen1 .on .click_obj.c1 .bubble {
+  background-image: url(../img/concept2_h/bubble1_o.png);
+}
+
+/* 정답일때 (임시) */
+.screen1 .click_wrap .click_obj .next {
+  display: none;
+}
+.screen1 .click_wrap.on .click_obj .next {
+  display: block;
+}
+.screen1 .click_wrap.on .click_obj .prev {
+  display: none;
+}
+
+/* 틀렸을때 (임시) */
+.screen1 .click_wrap.off .click_obj.c2 .next {
+  display: block;
+}
+.screen1 .click_wrap.off .click_obj.c2 .prev {
+  display: none;
+}
+
+.screen1 .click_wrap.scale .click_obj {
+  animation: bigAnd_small 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes bigAnd_small {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* 활동 2 */
+.drag_box {
+  position: absolute;
+}
+
+.screen2 .quiz_area.on .drag_box {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.box_wrap .drop_box {
+  width: 100%;
+  height: 100%;
+}
+.screen2 .quiz_area.on .drag_box.on {
+  animation: none;
+}
+
+.screen2 {
+  background: url(../img/concept2_h/screen2.png) no-repeat center / 100%;
+}
+.screen2 .page_title span {
+  color: #90d1ff;
+}
+
+.screen2 .box_wrap {
+  width: 808px;
+  height: 446px;
+  position: absolute;
+  top: 372px;
+  left: 155px;
+  background: url(../img/concept2_h/drop2_1.png) no-repeat center / 100%;
+}
+.screen2 .box_wrap.d2 {
+  left: 1030px;
+  background-image: url(../img/concept2_h/drop2_2.png);
+}
+.screen2 .box_wrap.on {
+  background-image: url(../img/concept2_h/drop2_1_o.png);
+}
+.screen2 .box_wrap.d2.on {
+  background-image: url(../img/concept2_h/drop2_2_o.png);
+}
+
+.screen2 .drag_area {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 348px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.screen2 .drag_box {
+  position: absolute;
+  bottom: 72px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.screen2 .drag_box.d1 {
+  left: 244px;
+  width: 343px;
+  height: 199px;
+  background-image: url(../img/concept2_h/drag2_1.png);
+}
+.screen2 .drag_box.d2 {
+  left: 682px;
+  width: 316px;
+  height: 222px;
+  background-image: url(../img/concept2_h/drag2_2.png);
+}
+.screen2 .drag_box.d3 {
+  left: 1090px;
+  width: 295px;
+  height: 241px;
+  background-image: url(../img/concept2_h/drag2_3.png);
+}
+.screen2 .drag_box.d4 {
+  left: 1518px;
+  width: 232px;
+  height: 227px;
+  background-image: url(../img/concept2_h/drag2_4.png);
+}
+.screen2 .drag_box.on {
+  animation: none;
+}
+.screen2 .drag_box.d1.on {
+  left: 233px !important;
+  top: -300px !important;
+  width: 356px;
+  height: 238px;
+  background-image: url(../img/concept2_h/drag2_1_o.png);
+}
+.screen2 .drag_box.d2.on {
+  left: 1110px !important;
+  top: -332px !important;
+  width: 353px;
+  height: 244px;
+  background-image: url(../img/concept2_h/drag2_2_o.png);
+}
+.screen2 .drag_box.d3.on {
+  left: 571px !important;
+  top: -351px !important;
+  width: 321px;
+  height: 285px;
+  background-image: url(../img/concept2_h/drag2_3_o.png);
+}
+.screen2 .drag_box.d4.on {
+  left: 1460px !important;
+  top: -364px !important;
+  width: 303px;
+  height: 315px;
+  background-image: url(../img/concept2_h/drag2_4_o.png);
+}
+
+.screen2 .drop_box {
+  height: 100%;
+}
+
+.screen2 .quiz_area.finish .drag_area {
+  background: none;
+}

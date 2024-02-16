@@ -1,0 +1,158 @@
+.screen {
+  background: url(../img/explore6/bg.png) no-repeat center / 100%;
+}
+
+.touch_area {
+  width: 498px;
+  height: 498px;
+  position: absolute;
+  top: 282px;
+  left: 751px;
+  z-index: 1;
+}
+.touch_area::before {
+  content: "";
+  width: 408px;
+  height: 408px;
+  background: url(../img/explore6/circle_inner.png) no-repeat center / 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.has_guide {
+  position: absolute;
+  top: 50%;
+  left: 56%;
+  transform: translate(-50%, -50%);
+}
+
+.circle_progress_wrap {
+  width: 498px;
+  height: 498px;
+  background: url(../img/explore6/circle_bg.png) no-repeat center / 100%;
+}
+
+.circle_progress {
+  transform: rotate(-90deg);
+}
+.bar {
+  fill: none;
+  stroke: #fde542;
+  stroke-linecap: round;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background: url(../img/explore6/circle_point.png) no-repeat center / 47px 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* animation: circle 2s linear forwards; */
+}
+@keyframes circle {
+  0% {
+    transform: rotate(90deg) translate(-288px) rotate(-90deg);
+  }
+  100% {
+    transform: rotate(450deg) translate(-288px) rotate(-450deg);
+  }
+}
+.w1920 .circle {
+  opacity: 1;
+  transition: opacity 0s;
+  transition-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.ani_area {
+  position: absolute;
+  bottom: 0;
+  left: 190px;
+}
+
+.ani_area .next {
+  display: none;
+}
+.ani_area.on {
+  top: 0 !important;
+  left: 0 !important;
+}
+.ani_area.on .prev {
+  display: none;
+}
+.ani_area.on .next {
+  display: block;
+}
+
+/* screen2 */
+.screen2 {
+  background: url(../img/explore6/bg.png) no-repeat center / 100%;
+  /* background: url(../img/explore6/22.png) no-repeat center / 100%; */
+}
+
+.screen2 .obj {
+  position: absolute;
+}
+.screen2 .off .ani {
+  opacity: 0;
+}
+
+.screen2 .left .obj {
+  left: 0;
+  top: 0px;
+}
+.screen2 .left.off .obj {
+  top: 138px;
+  left: 4px;
+  background: url(../img/explore6/left_off.png) no-repeat center/100%;
+}
+.screen2 .left.off .tag {
+  background: url(../img/explore6/tag1_off.png) no-repeat center/100%;
+}
+
+.screen2 .right .obj {
+  right: 0;
+}
+.screen2 .right.on .obj {
+  bottom: 0;
+}
+.screen2 .right.off .obj {
+  top: 138px;
+  right: 4px;
+  background: url(../img/explore6/right_off.png) no-repeat center/100%;
+}
+.screen2 .right.off .tag {
+  background: url(../img/explore6/tag2_off.png) no-repeat center/100%;
+}
+
+.screen2 .tag {
+  width: 526px;
+  height: 101px;
+  position: absolute;
+  top: 158px;
+  left: 236px;
+  background: url(../img/explore6/tag1.png) no-repeat center/100%;
+}
+.screen2 .right .tag {
+  width: 566px;
+  left: 1216px;
+  background: url(../img/explore6/tag2.png) no-repeat center/100%;
+}
+
+.screen2 .line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

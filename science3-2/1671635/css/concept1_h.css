@@ -1,0 +1,143 @@
+/* 활동 1 */
+
+.screen1 {
+  background: url(../img/concept1_h/screen1.png) no-repeat center / 100%;
+}
+.screen1 .page_title span {
+  color: #93ff52;
+}
+.screen1 .quiz_area.on .drag_box {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.screen1 .quiz_area.on .drag_box.on {
+  animation: none;
+}
+
+.screen1 .box_wrap {
+  width: 608px;
+  height: 142px;
+  position: absolute;
+  top: 567px;
+  left: 1222px;
+  background: url(../img/concept1_h/drop.png) no-repeat center / 100%;
+}
+.screen1 .box_wrap.on {
+  background: url(../img/concept1_h/drag2.png) no-repeat center / 100%;
+}
+.screen1 .arrow {
+  width: 117px;
+  height: 76px;
+  position: absolute;
+  top: 14px;
+  left: -108px;
+  background: url(../img/concept1_h/arrow.png) no-repeat center/100%;
+}
+.screen1 .box_wrap.on .arrow {
+  background: url(../img/concept1_h/arrow_o.png) no-repeat center/100%;
+}
+.screen1 .box_wrap .drop_box {
+  width: 120%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -60px;
+}
+
+.screen1 .drag_area {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 255px;
+  background: rgba(0, 0, 0, 0.25);
+}
+.screen1 .drag_box {
+  position: absolute;
+  top: 60px;
+}
+.screen1 .drag_box.d1 {
+  left: 226px;
+}
+.screen1 .drag_box.d2 {
+  left: 1146px;
+}
+
+.screen1 .drag_box.on {
+  animation: none;
+}
+.screen1 .quiz_area.finish .drag_area {
+  display: none;
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+}
+.screen2 .page_title span {
+  color: #55edff;
+}
+
+.screen2 .click_wrap {
+  position: relative;
+}
+.screen2 .click_wrap .click_obj {
+  position: absolute;
+  top: 224px;
+  left: 88px;
+}
+.screen2 .click_obj .obj {
+  margin: -68px 0px 0 54px;
+}
+.screen2 .click_wrap .click_obj.c2 {
+  left: 1024px;
+}
+.screen2 .click_obj.c2 .obj {
+  margin: -8px 0 0 112px;
+}
+
+.screen2 .click_obj .bubble {
+  width: 888px;
+  height: 293px;
+  background: url(../img/concept1_h/bubble1.png) no-repeat center / 100%;
+}
+.screen2 .click_obj.c2 .bubble {
+  background: url(../img/concept1_h/bubble2.png) no-repeat center / 100%;
+}
+.screen2 .on .click_obj.c1 .bubble {
+  background-image: url(../img/concept1_h/bubble1_o.png);
+}
+
+/* 정답일때 (임시) */
+/* .screen2 .click_wrap .click_obj .next {
+  display: none;
+}
+.screen2 .click_wrap.on .click_obj .next {
+  display: block;
+}
+.screen2 .click_wrap.on .click_obj .prev {
+  display: none;
+} */
+
+/* 틀렸을때 (임시) */
+/* .screen2 .click_wrap.off .click_obj.c2 .next {
+  display: block;
+}
+.screen2 .click_wrap.off .click_obj.c2 .prev {
+  display: none;
+} */
+
+.screen2 .click_wrap.scale .click_obj .obj {
+  animation: bigAnd_small 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes bigAnd_small {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

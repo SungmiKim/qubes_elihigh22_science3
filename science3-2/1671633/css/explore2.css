@@ -1,0 +1,260 @@
+.quiz_area.scale .drag_box img {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.quiz_area.finish .drag_area {
+  display: none;
+}
+.quiz_area.finish .center,
+.quiz_area.finish .tag {
+  display: none;
+}
+
+/* 활동1 */
+.screen1 {
+  background: url(../img/explore2/bg.png) no-repeat center / 100%;
+}
+
+.screen1 .center {
+  position: absolute;
+  top: 448px;
+  left: 898px;
+}
+
+.screen1 .box_wrap {
+  width: 438px;
+  height: 438px;
+  position: absolute;
+  top: 184px;
+  left: 782px;
+  background: url(../img/explore2/drop1.png) no-repeat center / 100%;
+}
+.screen1 .box_wrap .drop_box.prev {
+  width: 100%;
+  height: 120%;
+  position: absolute;
+  top: -49px;
+  left: 0px;
+}
+.screen1 .box_wrap .drop_box.next {
+  position: absolute;
+  top: -184px;
+  left: -780px;
+}
+.screen1 .box_wrap .next {
+  display: none;
+}
+.screen1 .box_wrap.on {
+  background: none;
+}
+.screen1 .box_wrap.on .prev {
+  display: none;
+}
+.screen1 .box_wrap.on .next {
+  display: block;
+}
+.screen1 .tag {
+  position: absolute;
+  height: 91px;
+}
+.screen1 .tag.t1 {
+  width: 356px;
+  top: 370px;
+  left: -4px;
+  background: url(../img/explore2/tag1.png) no-repeat center/100%;
+}
+.screen1 .tag.t2 {
+  width: 234px;
+  top: 1052px;
+  left: 883px;
+  background: url(../img/explore2/tag2.png) no-repeat center/100%;
+}
+
+.screen1 .drag_area {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: 176px;
+  left: 153px;
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.screen1 .drag_box {
+  position: absolute;
+  top: 58px;
+  left: 86px;
+}
+
+.screen1 .ani_img {
+  position: absolute;
+  top: 160px;
+  left: 354px;
+}
+.screen1 .has_guide {
+  position: absolute;
+  top: 164px;
+  left: 142px;
+  display: none;
+}
+.screen1 .has_guide.on {
+  display: block;
+  animation: guideHand1 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand1 {
+  0% {
+    top: 164px;
+    left: 142px;
+  }
+  100% {
+    top: 264px;
+    left: 830px;
+  }
+}
+
+/* 활동2 */
+.screen2 {
+  background: url(../img/explore2/bg.png) no-repeat center / 100%;
+}
+
+.screen2 .center {
+  position: absolute;
+  top: 774px;
+  left: 622px;
+}
+
+.screen2 .box_wrap {
+  width: 658px;
+  height: 658px;
+  position: absolute;
+  top: 176px;
+  left: 670px;
+  background: url(../img/explore2/drop2.png) no-repeat center / 100%;
+}
+.screen2 .box_wrap .drop_box.prev {
+  width: 100%;
+  height: 120%;
+  position: absolute;
+  top: -49px;
+  left: 0px;
+}
+.screen2 .box_wrap .drop_box.next {
+  position: absolute;
+  top: -176px;
+  left: -671px;
+}
+.screen2 .box_wrap .next {
+  display: none;
+}
+.screen2 .box_wrap.on {
+  background: none;
+}
+.screen2 .box_wrap.on .prev {
+  display: none;
+}
+.screen2 .box_wrap.on .next {
+  display: block;
+}
+.screen2 .box_wrap .shape,
+.screen2 .box_wrap .display {
+  opacity: 0;
+}
+.screen2 .box_wrap.on .shape {
+  opacity: 1;
+  position: absolute;
+  top: 732px;
+  left: -2px;
+}
+.screen2 .box_wrap.on .display {
+  opacity: 1;
+  width: 936px;
+  height: 606px;
+  position: absolute;
+  top: 206px;
+  left: 178px;
+  transform: scale(0.01);
+  top: 490px;
+  left: -312px;
+  background: url(../img/explore2/scale11.png) no-repeat center/100%;
+  animation: scaleIn 5s forwards ease-in-out;
+  animation-iteration-count: 1;
+}
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.01);
+    top: 490px;
+    left: -312px;
+  }
+  30% {
+    transform: scale(1);
+    top: 204px;
+    left: 170px;
+  }
+  100% {
+    transform: scale(1);
+    top: 204px;
+    left: 170px;
+    background: url(../img/explore2/scale22.png) no-repeat center/100%;
+  }
+}
+
+.screen2 .drag_area {
+  width: 350px;
+  height: 525px;
+  position: absolute;
+  top: 176px;
+  left: 154px;
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.screen2 .drag_box {
+  position: absolute;
+  top: 40px;
+  left: 118px;
+}
+
+.screen2 .ani_img {
+  position: absolute;
+  top: 160px;
+  left: 354px;
+}
+.screen2 .has_guide {
+  position: absolute;
+  top: 132px;
+  left: 178px;
+  display: none;
+}
+
+.screen2 .tag {
+  position: absolute;
+}
+.screen2 .tag.t1 {
+  width: 356px;
+  height: 141px;
+  top: 550px;
+  left: -4px;
+  background: url(../img/explore2/tag3.png) no-repeat center/100%;
+}
+.screen2 .tag.t2 {
+  width: 254px;
+  height: 91px;
+  top: 1052px;
+  left: 817px;
+  background: url(../img/explore2/tag4.png) no-repeat center/100%;
+}
+
+.screen2 .has_guide.on {
+  display: block;
+  animation: guideHand2 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand2 {
+  0% {
+    top: 132px;
+    left: 178px;
+  }
+  100% {
+    top: 428px;
+    left: 820px;
+  }
+}

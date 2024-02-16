@@ -1,0 +1,147 @@
+.content {
+  background: url(../img/explore2/bg.png) no-repeat center / 100%;
+}
+
+.page_title > span {
+  color: #fff838;
+}
+
+.has_guide {
+  position: absolute;
+  top: 314px;
+  left: 100px;
+}
+
+.click_obj.off {
+  animation: none;
+  pointer-events: none;
+}
+
+.click_obj.scale .obj {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.click_obj {
+  position: absolute;
+  top: 316px;
+  left: 454px;
+}
+.click_obj.c2 {
+  left: 1248px;
+}
+.click_obj .obj {
+  top: 0;
+  left: 0;
+}
+
+.click_obj.on.c1 {
+  animation: moveToCenter1 2s forwards;
+  animation-iteration-count: 1;
+}
+@keyframes moveToCenter1 {
+  0% {
+    top: 316px;
+    left: 454px;
+  }
+  100% {
+    top: 240px;
+    left: 1264px;
+  }
+}
+.click_obj.on.c2 {
+  animation: moveToCenter2 2s forwards;
+  animation-iteration-count: 1;
+}
+@keyframes moveToCenter2 {
+  0% {
+    top: 316px;
+    left: 1248px;
+  }
+  100% {
+    top: 239px;
+    left: 1254px;
+  }
+}
+
+.click_obj .tag {
+  position: absolute;
+  width: 167px;
+  height: 91px;
+  top: 752px;
+  left: 72px;
+  background: url(../img/explore2/tag1.png) no-repeat center / 100%;
+}
+.click_obj.c2 .tag {
+  left: 84px;
+  background: url(../img/explore2/tag2.png) no-repeat center / 100%;
+}
+.click_obj.on .tag {
+  display: none;
+}
+
+/* 클릭활동후 블러처리 */
+.click_obj .next {
+  display: none;
+}
+.click_obj.off .prev {
+  display: none;
+}
+.click_obj.off .next {
+  display: block;
+}
+.click_obj.off .obj {
+  animation: none;
+  pointer-events: none;
+}
+
+/* 레이어 */
+.ani_area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.ani_area .ani_img {
+  display: none;
+}
+.ani_area.on .ani_img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: url(../img/explore2/bg.png) no-repeat center / 100%;
+}
+
+.ani_area.on .ani_img .point {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.ani_area.on .ani_img[data-num="1"] .water {
+  opacity: 1;
+}
+.ani_area.on .ani_img[data-num="2"] .juice {
+  opacity: 1;
+}
+
+.ani_area .tag {
+  width: 138px;
+  height: 168px;
+  position: absolute;
+  top: 84px;
+  left: 146px;
+  background: url(../img/explore2/tag1_2.png) no-repeat center / 100%;
+}
+.ani_area .juice .tag {
+  width: 234px;
+  height: 163px;
+  background: url(../img/explore2/tag2_2.png) no-repeat center / 100%;
+}

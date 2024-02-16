@@ -1,0 +1,273 @@
+.click_obj.scale .obj {
+  animation: 1.5s bigAndSmall ease-in infinite;
+}
+
+.click_obj.on {
+  pointer-events: none;
+}
+.click_obj.on .obj {
+  animation: none;
+}
+
+.has_guide {
+  position: absolute;
+  top: 116px;
+  left: 128px;
+  pointer-events: none;
+}
+
+/* screen1 */
+.screen {
+  background: url(../img/explore2/bg.png) no-repeat center / 100%;
+  /* background: url(../img/explore2/22.png) no-repeat center / 100%; */
+}
+.page_title.title4 > img {
+  display: inline-block;
+  margin: 4px;
+}
+
+/* start */
+.click_wrap .start .click_obj {
+  position: absolute;
+  top: 174px;
+  left: 194px;
+}
+.click_wrap .start .click_obj.c2 {
+  top: 144px;
+  left: 888px;
+}
+.click_wrap .start .click_obj.c3 {
+  top: 194px;
+  left: 1390px;
+}
+.click_wrap .start .click_obj.on .obj {
+  opacity: 0.5;
+}
+
+.click_wrap .start .click_obj .line {
+  opacity: 0;
+  position: absolute;
+  top: 207px;
+  left: 0;
+}
+.click_wrap .start .click_obj.c2 .line {
+  top: 236px;
+  left: -693px;
+}
+.click_wrap .start .click_obj.c3 .line {
+  top: 186px;
+  left: -1195px;
+}
+.click_wrap .start .click_obj.on .line {
+  opacity: 1;
+}
+
+/* .click_wrap .start .click_obj .move {
+  opacity: 0;
+  position: absolute;
+  top: 208px;
+  left: 51px;
+}
+.click_wrap .start .click_obj.c2 .move {
+  top: 258px;
+  left: 37px;
+}
+.click_wrap .start .click_obj.c3 .move {
+  top: 180px;
+  left: 77px;
+}
+.click_wrap .start .click_obj.on .move {
+  opacity: 1;
+} */
+/* .click_wrap .start .click_obj.c1.on .move {
+  animation: move1 8s forwards, fadeOut 0.5s forwards 8.5s;
+  animation-iteration-count: 1;
+}
+@keyframes move1 {
+  0% {
+    top: 212px;
+    left: 51px;
+  }
+  8% {
+    top: 265px;
+    left: 51px;
+  }
+  26% {
+    top: 265px;
+    left: 661px;
+  }
+  36% {
+    top: 350px;
+    left: 661px;
+  }
+  56% {
+    top: 308px;
+    left: 1299px;
+  }
+  70% {
+    top: 552px;
+    left: 1299px;
+  }
+  88% {
+    top: 552px;
+    left: 661px;
+  }
+  100% {
+    top: 698px;
+    left: 661px;
+  }
+} */
+
+/* .click_wrap .start .click_obj.c2.on .move {
+  animation: move2 8s forwards, fadeOut 0.5s forwards 8.5s;
+  animation-iteration-count: 1;
+}
+@keyframes move2 {
+  0% {
+    top: 258px;
+    left: 37px;
+  }
+  8% {
+    top: 312px;
+    left: 37px;
+  }
+  30% {
+    top: 312px;
+    left: -573px;
+  }
+  40% {
+    top: 440px;
+    left: -573px;
+  }
+  62% {
+    top: 507px;
+    left: 37px;
+  }
+  72% {
+    top: 600px;
+    left: 37px;
+  }
+  90% {
+    top: 600px;
+    left: 675px;
+  }
+  100% {
+    top: 748px;
+    left: 675px;
+  }
+}
+
+.click_wrap .start .click_obj.c3.on .move {
+  animation: move3 8s forwards, fadeOut 0.5s forwards 8.5s;
+  animation-iteration-count: 1;
+}
+@keyframes move3 {
+  0% {
+    top: 195px;
+    left: 77px;
+  }
+  10% {
+    top: 296px;
+    left: 77px;
+  }
+  38% {
+    top: 338px;
+    left: -562px;
+  }
+  50% {
+    top: 446px;
+    left: -562px;
+  }
+  75% {
+    top: 380px;
+    left: -1174px;
+  }
+  100% {
+    top: 688px;
+    left: -1174px;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+} */
+
+.click_wrap .start .click_obj .tag {
+  position: absolute;
+  width: 83px;
+  height: 52px;
+  top: 221px;
+  left: 133px;
+  background: url(../img/explore2/tag1.png) no-repeat center / 100%;
+}
+.click_wrap .start .click_obj.c2 .tag {
+  top: 250px;
+  left: 50px;
+  background: url(../img/explore2/tag2.png) no-repeat center / 100%;
+}
+.click_wrap .start .click_obj.c3 .tag {
+  top: 200px;
+  left: 186px;
+  background: url(../img/explore2/tag3.png) no-repeat center / 100%;
+}
+
+/* end */
+.click_wrap .end .obj {
+  width: 190px;
+  height: 191px;
+  position: absolute;
+  top: 987px;
+  left: 274px;
+  background: url(../img/explore2/q_mark2.png) no-repeat center / 100%;
+}
+.click_wrap .end .obj.c2 {
+  left: 882px;
+}
+.click_wrap .end .obj.c3 {
+  left: 1523px;
+}
+.click_wrap .end .obj.on {
+  width: 115px;
+  height: 169px;
+  top: 1006px;
+  left: 316px;
+  background: url(../img/explore2/end1.png) no-repeat center / 100%;
+}
+.click_wrap .end .obj.c2.on {
+  width: 134px;
+  height: 170px;
+  left: 914px;
+  background: url(../img/explore2/end2.png) no-repeat center / 100%;
+}
+.click_wrap .end .obj.c3.on {
+  width: 199px;
+  height: 171px;
+  top: 1000px;
+  left: 1518px;
+  background: url(../img/explore2/end3.png) no-repeat center / 100%;
+}
+
+.pop_ct.pop_card {
+  background: none;
+}
+
+/* .canvas_wrap {
+  width: 100%;
+  height: 100%;
+} */
+
+.screen1 .mid {
+  position: absolute;
+  top: 457px;
+  left: 359px;
+  opacity: 0.5;
+}
+
+.screen1 .mid > img {
+  position: absolute;
+  display: none;
+}

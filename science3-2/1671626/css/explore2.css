@@ -1,0 +1,115 @@
+.quiz_area.scale .drag_box > img {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.content {
+  background: url(../img/explore2/bg.png) no-repeat center / 100%;
+  /* background: url(../img/explore2/11.png) no-repeat center / 100%; */
+}
+
+.center {
+  position: absolute;
+  top: 468px;
+  left: 486px;
+}
+.box_wrap {
+  width: 568px;
+  height: 568px;
+  position: absolute;
+  top: 246px;
+  left: 714px;
+  background: url(../img/explore2/drop.png) no-repeat center/100%;
+}
+.box_wrap .drop_box.next {
+  position: absolute;
+  top: -246px;
+  left: -714px;
+}
+.box_wrap .next {
+  display: none;
+}
+.box_wrap.on {
+  background: none;
+}
+.box_wrap.on .prev {
+  display: none;
+}
+.box_wrap.on .next {
+  display: block;
+}
+
+.drag_area {
+  width: 531px;
+  height: 230px;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 200px;
+  left: 140px;
+  border-radius: 38px;
+}
+.drag_box {
+  position: absolute;
+  top: 32px;
+  left: 36px;
+}
+.drop_box {
+  width: 120%;
+  height: 100%;
+  position: absolute;
+  left: -56px;
+  top: 0;
+}
+
+.name_tag {
+  width: 210px;
+  height: 80px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 42px;
+  font-family: "NanumSquareRoundEB";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  position: absolute;
+}
+.center .name_tag {
+  top: 536px;
+  left: 405px;
+}
+.drag_box .name_tag {
+  top: 220px;
+  left: 122px;
+}
+
+.quiz_area.finish .center,
+.quiz_area.finish .drag_area {
+  display: none;
+}
+
+.has_guide {
+  position: absolute;
+  top: 300px;
+  left: 372px;
+  display: none;
+}
+.has_guide.on {
+  display: block;
+  animation: guideHand1 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand1 {
+  0% {
+    top: 300px;
+    left: 372px;
+  }
+  100% {
+    top: 500px;
+    left: 960px;
+  }
+}
+
+.drag_box.ui-draggable.ui-draggable-dragging .name_tag {
+  display: none;
+}

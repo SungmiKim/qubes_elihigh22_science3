@@ -1,0 +1,106 @@
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept1_h/screen1.png) no-repeat center / 100%;
+}
+
+.screen1 .page_title span {
+  color: #48e7ff;
+}
+.screen1 .click_obj.scale .obj {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.screen1 .click_wrap .click_obj {
+  position: absolute;
+  top: 506px;
+  left: 160px;
+}
+.screen1 .click_wrap .click_obj.c2 {
+  left: 1066px;
+}
+.screen1 .click_obj .tag {
+  position: absolute;
+  top: -234px;
+  left: 188px;
+}
+.screen1 .click_obj.c2 .tag {
+  left: 164px;
+}
+
+.screen1 .click_obj .next {
+  display: none;
+}
+.screen1 .on .click_obj .next {
+  display: block;
+}
+.screen1 .on .click_obj .prev {
+  display: none;
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+}
+.screen2 .page_title span {
+  color: #ffad38;
+}
+
+.screen2 .box_wrap {
+  width: 446px;
+  height: 161px;
+  position: absolute;
+  top: 188px;
+  left: 776px;
+  background: url(../img/concept1_h/drop.png) no-repeat center / 100%;
+}
+.screen2 .box_wrap.on {
+  background: url(../img/concept1_h/drag1.png) no-repeat center / 100%;
+}
+.screen2 .arrow {
+  width: 81px;
+  height: 97px;
+  position: absolute;
+  top: 160px;
+  left: 202px;
+  background: url(../img/concept1_h/arrow.png) no-repeat center / 100%;
+}
+.screen2 .box_wrap.on .arrow {
+  background: url(../img/concept1_h/arrow_o.png) no-repeat center / 100%;
+}
+
+.screen2 .drag_area {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 266px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.screen2 .drag_box {
+  position: absolute;
+  top: 40px;
+  left: 438px;
+}
+.screen2 .drag_box.d2 {
+  left: 1112px;
+}
+
+.quiz_area.finish .drag_area {
+  display: none;
+}
+
+.screen2 .quiz_area.scale .drag_box {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.top_area.not_title {
+  pointer-events: none;
+}
+.drop_box {
+  height: 130%;
+  width: 120%;
+  position: absolute;
+  top: -24px;
+  left: -40px;
+}

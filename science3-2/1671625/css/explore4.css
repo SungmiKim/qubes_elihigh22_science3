@@ -1,0 +1,50 @@
+.content {
+  background: url(../img/explore4/bg.png) no-repeat center / 100%;
+  /* background: url(../img/explore4/11.png) no-repeat center / 100%; */
+}
+
+.has_guide {
+  position: absolute;
+  left: 418px;
+  top: 480px;
+}
+.click_area.scale .click_box > img {
+  animation: 3s card_scale ease-in infinite;
+}
+
+.drop_bg {
+  position: absolute;
+  top: 140px;
+  left: 102px;
+}
+
+.click_box {
+  position: absolute;
+  top: 238px;
+  left: 100px;
+}
+
+.name_tag {
+  position: absolute;
+  top: 710px;
+  left: 280px;
+}
+.answer_box .name_tag {
+  top: 728px;
+  left: 282px;
+}
+
+.quiz_area.finish .click_area {
+  display: none;
+}
+
+.answer_box {
+  position: absolute;
+  top: 222px;
+  left: 1036px;
+  opacity: 0;
+}
+
+.answer_box.on {
+  opacity: 1;
+}

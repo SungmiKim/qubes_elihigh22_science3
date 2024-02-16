@@ -1,0 +1,73 @@
+.w1920 .page_title {
+  width: calc(100% - 80px - 80px);
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+}
+
+.click_obj.scale .obj {
+  animation: 1.5s bigAndSmall3 ease-in infinite;
+}
+
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept2_h/screen1.png) no-repeat center / 100%;
+  /* background: url(../img/concept2_h/11.png) no-repeat center / 100%; */
+}
+.screen1 .page_title span {
+  color: #ffabbf;
+}
+.screen1 .click_obj {
+  position: absolute;
+  top: 402px;
+  left: 210px;
+}
+.screen1 .click_obj.c2 {
+  left: 1073px;
+}
+
+.screen1 .click_obj .tag {
+  position: absolute;
+  top: -183px;
+  left: 36px;
+}
+.screen1 .click_wrap.on .click_obj.c1 {
+  opacity: 0.5;
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept2_h/screen2.png) no-repeat center / 100%;
+  /* background: url(../img/concept2_h/22.png) no-repeat center / 100%; */
+}
+
+.screen2 .page_title > span {
+  color: #ffbd55;
+}
+
+.screen2 .click_obj {
+  position: absolute;
+  top: 246px;
+  left: 136px;
+}
+.screen2 .click_obj.c2 {
+  left: 1060px;
+}
+
+.screen2 .click_obj .tag {
+  position: absolute;
+  top: 722px;
+  left: 236px;
+}
+
+.screen2 .click_wrap .click_obj .next {
+  display: none;
+}
+.screen2 .click_wrap.on .click_obj .prev {
+  display: none;
+}
+.screen2 .click_wrap.on .click_obj .next {
+  display: block;
+}

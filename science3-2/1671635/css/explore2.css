@@ -1,0 +1,56 @@
+.content {
+  background: url(../img/explore2/bg.png) no-repeat center / 100%;
+  /* background: url(../img/explore2/11.png) no-repeat center / 100%; */
+}
+.has_guide {
+  position: absolute;
+  top: 150px;
+  left: 980px;
+  pointer-events: none;
+}
+
+.click_obj.scale .obj.prev {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.click_obj {
+  position: absolute;
+  top: 394px;
+  left: 192px;
+}
+
+.click_wrap .img {
+  position: absolute;
+  top: 124px;
+  left: 321px;
+}
+.click_wrap .next {
+  display: none;
+}
+.click_wrap.on .next {
+  display: block;
+  position: absolute;
+  top: -395px;
+  left: -191px;
+}
+.click_wrap.on .prev {
+  display: none;
+}
+.click_wrap.on .img {
+  display: none;
+}
+
+.click_box .box {
+  width: 100px;
+  height: 1194px;
+  position: absolute;
+  top: 210px;
+  left: 1396px;
+  transform: rotate(-43deg);
+  opacity: 0.5;
+}
+.click_box .box.b2 {
+  left: 548px;
+  transform: rotate(43deg);
+}

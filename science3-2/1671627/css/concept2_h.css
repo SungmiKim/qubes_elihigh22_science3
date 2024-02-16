@@ -1,0 +1,116 @@
+/* 활동 1 */
+.ui-draggable-dragging {
+  z-index: 5 !important;
+}
+.top_area.not_title {
+  pointer-events: none;
+}
+
+.screen1 {
+  background: url(../img/concept2_h/screen1.png) no-repeat center / 100%;
+}
+
+.screen1 .page_title span {
+  color: #76d7ff;
+}
+
+.screen1 .quiz_area.scale .drag_box img {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.screen1 .box_wrap {
+  width: 725px;
+  height: 505px;
+  position: absolute;
+  top: 576px;
+  left: 204px;
+  background: url(../img/concept2_h/drop1.png) no-repeat center / 100%;
+}
+.screen1 .box_wrap.d2 {
+  left: 1065px;
+  background: url(../img/concept2_h/drop2.png) no-repeat center / 100%;
+}
+
+.screen1 .quiz_area .box_wrap.on {
+  background: url(../img/concept2_h/drop1_o.png) no-repeat center / 100%;
+}
+.screen1 .quiz_area .box_wrap.d2.on {
+  background: url(../img/concept2_h/drop2_o.png) no-repeat center / 100%;
+}
+
+.screen1 .drag_area {
+  width: 100%;
+  height: 534px;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute;
+}
+
+.screen1 .drag_box {
+  position: absolute;
+  top: 152px;
+  left: 360px;
+}
+.screen1 .drag_box.d2 {
+  left: 1094px;
+}
+.screen1 .drag_box .img {
+  width: 100%;
+  height: 100%;
+  background: url(../img/concept2_h/drag1.png) no-repeat center / 100%;
+}
+.screen1 .drag_box.d2 .img {
+  background: url(../img/concept2_h/drag2.png) no-repeat center / 100%;
+}
+
+.quiz_area.finish .drag_area {
+  display: none;
+}
+.drop_box {
+  height: 100%;
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept2_h/screen2.png) no-repeat center / 100%;
+}
+.screen2 .page_title span {
+  color: #ffd34e;
+}
+
+.click_obj.scale {
+  animation: 3s card_scale ease-in infinite;
+}
+
+.screen2 .click_obj {
+  position: absolute;
+  top: 250px;
+  left: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.screen2 .click_obj .bubble {
+  width: 859px;
+  height: 263px;
+  background: url(../img/concept2_h/bubble1.png) no-repeat center / 100%;
+}
+.screen2 .click_obj .obj {
+  margin: -119px 0px 0 18px;
+}
+.screen2 .click_obj.c2 {
+  left: 1038px;
+}
+.screen2 .click_obj.c2 .obj {
+  margin: -54px -62px 0 0;
+}
+.screen2 .click_obj.c2 .obj > img {
+  width: 90%;
+}
+.screen2 .click_obj.c2 .bubble {
+  background: url(../img/concept2_h/bubble2.png) no-repeat center / 100%;
+}
+.screen2 .on .click_obj.c2 .bubble {
+  background-image: url(../img/concept2_h/bubble2_o.png);
+}

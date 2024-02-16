@@ -1,0 +1,173 @@
+/* 활동 1 */
+
+.ui-draggable-dragging {
+  z-index: 5 !important;
+}
+.top_area.not_title {
+  pointer-events: none;
+}
+
+.screen1 {
+  background: url(../img/concept1_h/screen1.png) no-repeat center / 100%;
+}
+
+.screen1 .page_title span {
+  color: #fcff0e;
+}
+
+.screen1 .quiz_area.scale .drag_box img {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.screen1 .point {
+  width: 222px;
+  height: 262px;
+  position: absolute;
+  top: 508px;
+  left: 600px;
+  background: url(../img/concept1_h/point1.png) no-repeat center / 100%;
+}
+.screen1 .point.p2 {
+  width: 211px;
+  height: 243px;
+  top: 792px;
+  left: 1190px;
+  background: url(../img/concept1_h/point2.png) no-repeat center / 100%;
+}
+.screen1 .point.on {
+  background: url(../img/concept1_h/point1_o.png) no-repeat center / 100%;
+}
+.screen1 .point.p2.on {
+  background: url(../img/concept1_h/point2_o.png) no-repeat center / 100%;
+}
+
+.screen1 .box_wrap {
+  width: 468px;
+  height: 502px;
+  position: absolute;
+  top: 492px;
+  left: 138px;
+  background: url(../img/concept1_h/drop1_1.png) no-repeat center / 100%;
+}
+.screen1 .box_wrap.d2 {
+  top: 510px;
+  left: 1396px;
+  background: url(../img/concept1_h/drop1_2.png) no-repeat center / 100%;
+}
+.screen1 .quiz_area .box_wrap.on {
+  background: url(../img/concept1_h/drop1_1_o.png) no-repeat center / 100%;
+}
+.screen1 .quiz_area .box_wrap.d2.on {
+  background: url(../img/concept1_h/drop1_2_o.png) no-repeat center / 100%;
+}
+
+.screen1 .drag_area {
+  width: 100%;
+  height: 464px;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute;
+}
+
+.screen1 .drag_box {
+  position: absolute;
+  top: 150px;
+  left: 692px;
+}
+.screen1 .drag_box.d2 {
+  left: 1038px;
+}
+.screen1 .drag_box .img {
+  width: 100%;
+  height: 100%;
+  background: url(../img/concept1_h/drag1.png) no-repeat center / 100%;
+}
+.screen1 .drag_box.d2 .img {
+  background: url(../img/concept1_h/drag2.png) no-repeat center / 100%;
+}
+
+.screen1 .quiz_area.finish .drag_area {
+  background: none;
+}
+.screen .drop_box {
+  height: 100%;
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+}
+
+.screen2 .page_title span {
+  color: #fff665;
+}
+
+.screen2 .box_wrap {
+  position: absolute;
+  width: 760px;
+  height: 510px;
+  top: 383px;
+  left: 158px;
+}
+.screen2 .box_wrap.d2 {
+  left: 1078px;
+}
+
+.screen2 .drag_area {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.screen2 .drag_box {
+  position: absolute;
+  width: 517px;
+  height: 201px;
+  top: 150px;
+  left: 338px;
+}
+.screen2 .drag_box.d2 {
+  left: 1256px;
+}
+
+.screen2 .quiz_area.scale .drag_box:not(.on) {
+  animation: bigAndSmall 1.5s forwards infinite;
+}
+
+.screen2 .quiz_area.finish .drag_area {
+  display: none;
+}
+
+.screen2 .box_wrap .drop_box:first-child {
+  height: 110%;
+}
+.screen2 .box_wrap .drop_box:last-child {
+  width: 484px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 510px;
+  left: 139px;
+  /* background-color: yellowgreen; */
+}
+
+.screen2 .drop_box.drop2 > img {
+  width: 406px;
+  height: 111px;
+}
+.screen2 .drop_box .next {
+  display: none;
+}
+.screen2 .d1.on .drop_box .n1 {
+  display: block;
+}
+.screen2 .d1.on .drop_box .p1 {
+  display: none;
+}
+.screen2 .d2.on .drop_box .n2 {
+  display: block;
+}
+.screen2 .d2.on .drop_box .p2 {
+  display: none;
+}

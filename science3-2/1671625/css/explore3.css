@@ -1,0 +1,15 @@
+.screen1 {
+  background: url(../img/explore3/bg.png) no-repeat center / 100%;
+  /* background: url(../img/explore3/11.png) no-repeat center / 100%; */
+}
+
+.screen2 {
+  background: url(../img/explore3/bg2.png) no-repeat center / 100%;
+  /* background: url(../img/explore3/11.png) no-repeat center / 100%; */
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

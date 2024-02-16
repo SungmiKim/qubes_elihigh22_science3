@@ -1,0 +1,190 @@
+/* 활동 1 */
+.ui-draggable-dragging {
+  z-index: 5 !important;
+}
+
+.screen1 {
+  background: url(../img/concept1_h/screen1.png) no-repeat center / 100%;
+}
+
+.screen1 .page_title span {
+  color: #eac1ff;
+}
+.screen1 .quiz_area.scale .drag_box {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.quiz_area .drag_box.on {
+  animation: none;
+  pointer-events: none;
+}
+
+.screen1 .box_wrap {
+  width: 548px;
+  height: 413px;
+  position: absolute;
+  top: 260px;
+  left: 695px;
+  background: url(../img/concept1_h/drop.png) no-repeat center / 100%;
+}
+.screen1 .box_wrap.d2 {
+  display: none;
+}
+.screen1 .box_wrap.d2.start {
+  display: block;
+  width: 548px;
+  height: 210px;
+  position: absolute;
+  top: 462px;
+  left: 695px;
+  background: url(../img/concept1_h/drop2.png) no-repeat center / 100%;
+}
+
+.screen1 .box_wrap .arrow {
+  width: 110px;
+  height: 93px;
+  position: absolute;
+  top: 3px;
+  left: -113px;
+  background: url(../img/concept1_h/arrow1.png) no-repeat center / 100%;
+}
+.screen1 .box_wrap .arrow.a2 {
+  top: 324px;
+  left: 556px;
+  background: url(../img/concept1_h/arrow2.png) no-repeat center / 100%;
+}
+.screen1 .box_wrap.d1.on1 .arrow.a2,
+.screen1 .box_wrap.d1.on2 .arrow.a2 {
+  display: none;
+}
+.screen1 .box_wrap.d2 .arrow {
+  top: 124px;
+  left: 556px;
+  background: url(../img/concept1_h/arrow2.png) no-repeat center / 100%;
+}
+
+.screen1 .drag_area {
+  width: 100%;
+  height: 380px;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  bottom: 0;
+}
+.screen1 .drag_box {
+  position: absolute;
+  width: 526px;
+  height: 141px;
+  top: 88px;
+  left: 138px;
+}
+.screen1 .drag_box.d2 {
+  left: 724px;
+}
+.screen1 .drag_box.d3 {
+  left: 1314px;
+}
+
+.screen1 .quiz_area .box_wrap.d1.on1,
+.screen1 .quiz_area .box_wrap.d1.on2 {
+  width: 546px;
+  height: 221px;
+  top: 252px;
+}
+.screen1 .quiz_area .box_wrap.d2.on1,
+.screen1 .quiz_area .box_wrap.d2.on2 {
+  top: 457px;
+}
+.screen1 .quiz_area .box_wrap.on1 {
+  background: url(../img/concept1_h/drag1_o.png) no-repeat center / 100%;
+}
+.screen1 .quiz_area .box_wrap.on2 {
+  background: url(../img/concept1_h/drag2_o.png) no-repeat center / 100%;
+}
+.screen1 .quiz_area .box_wrap.on1 .arrow {
+  background: url(../img/concept1_h/arrow1_1.png) no-repeat center / 100%;
+}
+.screen1 .quiz_area .box_wrap.on2 .arrow {
+  background: url(../img/concept1_h/arrow1_2.png) no-repeat center / 100%;
+}
+.screen1 .quiz_area .box_wrap.d2.on1 .arrow {
+  background: url(../img/concept1_h/arrow2_1.png) no-repeat center / 100%;
+}
+.screen1 .quiz_area .box_wrap.d2.on2 .arrow {
+  background: url(../img/concept1_h/arrow2_2.png) no-repeat center / 100%;
+}
+.screen1 .drop_box {
+  height: 100%;
+}
+.screen1 .box_wrap.d2 .drop_box {
+  width: 100%;
+  position: absolute;
+}
+.screen1 .quiz_area.finish .drag_area {
+  display: none;
+}
+
+/* 정답 사이 점선 */
+/* .screen1 .quiz_area .shape {
+  display: none;
+}
+.screen1 .quiz_area.finish .shape {
+  display: block;
+  position: absolute;
+  top: 455px;
+  left: 730px;
+} */
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+}
+
+.screen2 .page_title span {
+  color: #ffd34e;
+}
+.screen2 .click_wrap.scale .obj {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.screen2 .click_wrap {
+  position: relative;
+}
+.screen2 .click_wrap .click_obj {
+  position: absolute;
+  top: 754px;
+  left: 342px;
+}
+.screen2 .click_wrap .click_obj.c2 {
+  top: 532px;
+  left: 1258px;
+}
+
+.screen2 .click_obj .tag {
+  width: 301px;
+  height: 183px;
+  position: absolute;
+  top: -246px;
+  left: 176px;
+  background: url(../img/concept1_h/obj_tag1.png) no-repeat center / 100%;
+}
+.screen2 .click_obj.c2 .tag {
+  top: -214px;
+  left: 66px;
+  background: url(../img/concept1_h/obj_tag2.png) no-repeat center / 100%;
+}
+.screen2 .on .click_obj.c2 .tag {
+  background-image: url(../img/concept1_h/obj_tag2_x.png);
+}
+
+/* 정답일때 */
+.screen2 .click_wrap .click_obj .next {
+  display: none;
+}
+.screen2 .click_wrap.on .click_obj .next {
+  display: block;
+}
+.screen2 .click_wrap.on .click_obj .prev {
+  display: none;
+}

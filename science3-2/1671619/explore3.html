@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>[과학] 32_2단원 03</title>
+    <!--공통 -->
+    <link href="../common/css/font.css" rel="stylesheet" />
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="./css/page.css" rel="stylesheet" />
+    <link href="./css/explore3.css" rel="stylesheet" />
+    <script src="./js/pageInfo.js"></script>
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap" data-page="explore3">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <header class="header"></header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <div class="screen screen1">
+            <div class="page_title title4">엘라나 하로를 눌러 마음속으로 정한 동물을 알아맞혀 봅시다.</div>
+
+            <div class="click_wrap">
+              <div class="click_obj c1" data-num="2">
+                <!-- <div class="obj"></div> -->
+              </div>
+
+              <div class="click_obj c2" data-num="3">
+                <!-- <div class="obj"></div> -->
+              </div>
+            </div>
+            <div class="has_guide hide">
+              <img src="../common/images/icon/icon_hand.png" alt="guide" />
+            </div>
+          </div>
+
+          <div class="screen screen2 hide">
+            <div class="page_title title4 tit1">엘라가 마음속으로 정한 동물에 대해 궁금한 점을 눌러 봅시다.</div>
+            <div class="page_title title4 tit2">엘라가 마음속으로 정한 동물의 이름을 눌러 봅시다.</div>
+            <div class="inner">
+              <div class="img_wrap">
+                <div class="seq_img center" id="seqGif1" data-option="gif10//60//once//40">
+                  <img src="./img/explore3/gif10/1.webp" class="gif" />
+                </div>
+                <div class="seq_img center" id="seqGif2" data-option="gif9//60//once//40">
+                  <img src="./img/explore3/gif9/1.webp" class="gif" />
+                </div>
+                <!-- <div class="q_mark">
+                  <img src="./img/explore3/q_mark1.png" alt="q_mark1" />
+                </div> -->
+                <div class="cha_back hide">
+                  <img src="./img/explore3/back_haro.png" alt="back" />
+                </div>
+              </div>
+
+              <div class="chat_area">
+                <div class="hide chat chat1 chat1-0">
+                  <div class="bubble question q1">
+                    <img src="./img/explore3/q_txt1.png" alt="q1" />
+                    <img src="./img/explore3/r_tail.png" alt="r_tail" class="r_tail t1" />
+                    <img src="./img/explore3/l_tail.png" alt="l_tail" class="l_tail t1" />
+                  </div>
+                </div>
+                <div class="hide chat chat2 chat2-0">
+                  <div class="bubble answer a1">
+                    <img src="./img/explore3/a_txt1.png" alt="a1" />
+                    <img src="./img/explore3/r_tail_obj1.png" alt="r_tail" class="l_tail t2" />
+                    <img src="./img/explore3/l_tail_obj1.png" alt="l_tail" class="r_tail t2" />
+                  </div>
+                </div>
+                <div class="hide chat chat1 chat1-1">
+                  <div class="bubble question q2">
+                    <img src="./img/explore3/q_txt2.png" alt="q2" />
+                    <img src="./img/explore3/r_tail.png" alt="r_tail" class="r_tail t1" />
+                    <img src="./img/explore3/l_tail.png" alt="l_tail" class="l_tail t1" />
+                  </div>
+                </div>
+                <div class="hide chat chat2 chat2-1">
+                  <div class="bubble answer a2">
+                    <img src="./img/explore3/a_txt1.png" alt="a2" />
+                    <img src="./img/explore3/r_tail_obj1.png" alt="r_tail" class="l_tail t2" />
+                    <img src="./img/explore3/l_tail_obj1.png" alt="l_tail" class="r_tail t2" />
+                  </div>
+                </div>
+                <div class="hide chat chat3 chat3-0">
+                  <div class="bubble question q3">
+                    <img src="./img/explore3/q_txt3.png" alt="q3" />
+                    <img src="./img/explore3/r_tail.png" alt="r_tail" class="r_tail t1" />
+                    <img src="./img/explore3/l_tail.png" alt="l_tail" class="l_tail t1" />
+                  </div>
+                </div>
+                <div class="hide chat chat4 chat4-0">
+                  <div class="bubble answer a3">
+                    <img src="./img/explore3/a_txt1.png" alt="a3" />
+                    <img src="./img/explore3/r_tail_obj1.png" alt="r_tail" class="l_tail t2" />
+                    <img src="./img/explore3/l_tail_obj1.png" alt="l_tail" class="r_tail t2" />
+                  </div>
+                </div>
+                <div class="hide chat chat3 chat3-1">
+                  <div class="bubble question q4">
+                    <img src="./img/explore3/q_txt4.png" alt="q4" />
+                    <img src="./img/explore3/r_tail.png" alt="r_tail" class="r_tail t1" />
+                    <img src="./img/explore3/l_tail.png" alt="l_tail" class="l_tail t1" />
+                  </div>
+                </div>
+                <div class="hide chat chat4 chat4-1">
+                  <div class="bubble answer a4">
+                    <img src="./img/explore3/a_txt2.png" alt="a4" />
+                    <img src="./img/explore3/r_tail_obj1.png" alt="r_tail" class="l_tail t2" />
+                    <img src="./img/explore3/l_tail_obj1.png" alt="l_tail" class="r_tail t2" />
+                  </div>
+                </div>
+
+                <!-- 선택지 -->
+                <div class="select_wrap">
+                  <ul class="s1">
+                    <li data-num="0"><img src="./img/explore3/t1_1.png" alt="t1_1" /></li>
+                    <li data-num="1"><img src="./img/explore3/t1_2.png" alt="t1_2" /></li>
+                  </ul>
+                  <ul class="s5">
+                    <li data-num="0"><img src="./img/explore3/t5_1.png" alt="t5_1" /></li>
+                    <li data-num="1"><img src="./img/explore3/t5_2.png" alt="t5_2" /></li>
+                  </ul>
+                  <ul class="s2">
+                    <li><img src="./img/explore3/t2_1.png" alt="t2_1" /></li>
+                    <li class="correct"><img src="./img/explore3/t2_2.png" alt="t2_2" /></li>
+                  </ul>
+                </div>
+
+                <!-- 캐릭터 답안 화면 -->
+                <div class="ani_area hide">
+                  <div class="seq_img" id="seqGif7" data-option="gif3//60//once//50">
+                    <img src="./img/explore3/gif3/1.webp" class="gif" />
+                  </div>
+                  <div class="ani_img" id="seqGif3" data-option="gif11//110//once//48">
+                    <img src="./img/explore3/gif11/1.webp" class="gif obj_img" />
+                    <div class="obj_name"></div>
+                    <div class="obj_qmark"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="screen screen3 hide">
+            <div class="page_title title4 tit1">하로가 마음속으로 정한 동물에 대해 궁금한 점을 눌러 봅시다.</div>
+            <div class="page_title title4 tit2">하로가 마음속으로 정한 동물의 이름을 눌러 봅시다.</div>
+            <div class="inner">
+              <div class="img_wrap">
+                <div class="seq_img center" id="seqGif4" data-option="gif7//60//once//40">
+                  <img src="./img/explore3/gif7/1.webp" class="gif" />
+                </div>
+                <div class="seq_img center" id="seqGif5" data-option="gif6//60//once//40">
+                  <img src="./img/explore3/gif6/1.webp" class="gif" />
+                </div>
+                <!-- <div class="q_mark">
+                  <img src="./img/explore3/q_mark2.png" alt="q_mark2" />
+                </div> -->
+                <div class="cha_back hide">
+                  <img src="./img/explore3/back_ella.png" alt="back" />
+                </div>
+              </div>
+              <div class="chat_area">
+                <div class="hide chat chat1 chat1-0">
+                  <div class="bubble question q1">
+                    <img src="./img/explore3/q_txt6.png" alt="q5" />
+                    <img src="./img/explore3/r_tail.png" alt="r_tail" class="r_tail t1" />
+                    <img src="./img/explore3/l_tail.png" alt="l_tail" class="l_tail t1" />
+                  </div>
+                </div>
+                <div class="hide chat chat2 chat2-0">
+                  <div class="bubble answer a1">
+                    <img src="./img/explore3/a_txt4.png" alt="a5" />
+                    <img src="./img/explore3/r_tail_obj2.png" alt="r_tail" class="l_tail t2" />
+                    <img src="./img/explore3/l_tail_obj2.png" alt="l_tail" class="r_tail t2" />
+                  </div>
+                </div>
+                <div class="hide chat chat1 chat1-1">
+                  <div class="bubble question q2">
+                    <img src="./img/explore3/q_txt3.png" alt="q6" />
+                    <img src="./img/explore3/r_tail.png" alt="r_tail" class="r_tail t1" />
+                    <img src="./img/explore3/l_tail.png" alt="l_tail" class="l_tail t1" />
+                  </div>
+                </div>
+                <div class="hide chat chat2 chat2-1">
+                  <div class="bubble answer a2">
+                    <img src="./img/explore3/a_txt3.png" alt="a6" />
+                    <img src="./img/explore3/r_tail_obj2.png" alt="r_tail" class="l_tail t2" />
+                    <img src="./img/explore3/l_tail_obj2.png" alt="l_tail" class="r_tail t2" />
+                  </div>
+                </div>
+                <div class="hide chat chat3 chat3-0">
+                  <div class="bubble question q3">
+                    <img src="./img/explore3/q_txt7.png" alt="q7" />
+                    <img src="./img/explore3/r_tail.png" alt="r_tail" class="r_tail t1" />
+                    <img src="./img/explore3/l_tail.png" alt="l_tail" class="l_tail t1" />
+                  </div>
+                </div>
+                <div class="hide chat chat4 chat4-0">
+                  <div class="bubble answer a3">
+                    <img src="./img/explore3/a_txt4.png" alt="a7" />
+                    <img src="./img/explore3/r_tail_obj2.png" alt="r_tail" class="l_tail t2" />
+                    <img src="./img/explore3/l_tail_obj2.png" alt="l_tail" class="r_tail t2" />
+                  </div>
+                </div>
+                <div class="hide chat chat3 chat3-1">
+                  <div class="bubble question q4">
+                    <img src="./img/explore3/q_txt8.png" alt="q8" />
+                    <img src="./img/explore3/r_tail.png" alt="r_tail" class="r_tail t1" />
+                    <img src="./img/explore3/l_tail.png" alt="l_tail" class="l_tail t1" />
+                  </div>
+                </div>
+                <div class="hide chat chat4 chat4-1">
+                  <div class="bubble answer a4">
+                    <img src="./img/explore3/a_txt3.png" alt="a8" />
+                    <img src="./img/explore3/r_tail_obj2.png" alt="r_tail" class="l_tail t2" />
+                    <img src="./img/explore3/l_tail_obj2.png" alt="l_tail" class="r_tail t2" />
+                  </div>
+                </div>
+
+                <!-- 선택지 -->
+                <div class="select_wrap">
+                  <ul class="s3">
+                    <li data-num="0"><img src="./img/explore3/t3_1.png" alt="t3_1" /></li>
+                    <li data-num="1"><img src="./img/explore3/t3_2.png" alt="t3_2" /></li>
+                  </ul>
+                  <ul class="s6">
+                    <li data-num="0"><img src="./img/explore3/t6_1.png" alt="t6_1" /></li>
+                    <li data-num="1"><img src="./img/explore3/t6_2.png" alt="t6_2" /></li>
+                  </ul>
+                  <ul class="s4">
+                    <li class="correct"><img src="./img/explore3/t4_1.png" alt="t4_1" /></li>
+                    <li><img src="./img/explore3/t4_2.png" alt="t4_2" /></li>
+                  </ul>
+                </div>
+
+                <!--  캐릭터 답안 화면 -->
+                <div class="ani_area hide">
+                  <!-- <img src="./img/explore3/particle.png" class="gif seq_img" style="width: 100%; height: 100%" /> -->
+                  <div class="seq_img" id="seqGif7" data-option="gif3//60//once//50">
+                    <img src="./img/explore3/gif3/1.webp" class="gif" />
+                  </div>
+                  <div class="ani_img" id="seqGif6" data-option="gif8//120//once//45">
+                    <img src="./img/explore3/gif8/1.webp" class="gif obj_img" />
+                    <div class="obj_name"></div>
+                    <div class="obj_qmark"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="completeStamp">
+            <img src="" alt="stamp" />
+          </div>
+        </div>
+        <div class="blank"></div>
+        <!-- 가변 컨텐츠 End -->
+
+        <div class="fixed bottom">
+          <!-- 페이지 이동 버튼 -->
+          <a class="btn move btn_prev"> </a>
+          <a class="btn move btn_next"> </a>
+          <!-- 페이지 이동 버튼 End -->
+        </div>
+
+        <!-- 10초 Popup -->
+        <div class="pop_ct pop_next">
+          <img src="../common/images/pop/pop_next.png" alt="pop_next" />
+        </div>
+        <!-- 30초 Popup -->
+        <div class="pop_ct pop_wait">
+          <img src="../common/images/pop/pop_wait.png" alt="pop_wait" />
+        </div>
+      </div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="./js/explore3.js"></script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+/* 활동 1 */
+
+.screen1 .page_title span {
+  color: #93ff52;
+}
+.top_area.not_title {
+  pointer-events: none;
+}
+.screen1 .quiz_area.on .drag_box > img {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.screen1 .quiz_area.on .drag_box.on {
+  animation: none;
+}
+.drag_box.ui-draggable.ui-draggable-dragging .tag {
+  display: none;
+}
+
+.screen1 .box_wrap {
+  width: 781px;
+  height: 245px;
+  position: absolute;
+  top: 874px;
+  left: 264px;
+  z-index: 2;
+  background: url(../img/concept1_h/drop.png) no-repeat center / 100%;
+}
+.screen1 .box_wrap.on {
+  background: none;
+}
+.screen1 .box_wrap .drop_box {
+  width: 110%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -36px;
+}
+
+.screen1 .drag_area {
+  width: 649px;
+  height: 764px;
+  position: absolute;
+  top: 274px;
+  right: 145px;
+  border-radius: 28px;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+.screen1 .drag_box {
+  position: absolute;
+}
+.screen1 .drag_box.d1 {
+  top: 76px;
+  left: 52px;
+}
+.screen1 .drag_box.d2 {
+  top: 414px;
+  left: 68px;
+}
+
+.screen1 .drag_box .tag {
+  position: absolute;
+  top: 188px;
+  left: 108px;
+}
+.screen1 .drag_box.d2 .tag {
+  left: 92px;
+}
+
+.screen1 .drag_box.on {
+  animation: none;
+}
+.screen1 .quiz_area.finish .drag_area {
+  display: none;
+}
+
+.screen1 .obj,
+.screen1 .table,
+.screen1 .bubble {
+  position: absolute;
+}
+.screen1 .bubble {
+  display: none;
+  bottom: 637px;
+  left: 954px;
+  background: url(../img/concept1_h/bubble.png) no-repeat center/100%;
+}
+.screen1 .quiz_area.finish .bubble {
+  display: block;
+}
+.screen1 .obj {
+  width: 581px;
+  height: 788px;
+  left: 380px;
+  bottom: 223px;
+  background: url(../img/concept1_h/obj.png) no-repeat center/100%;
+}
+.quiz_area.finish .obj {
+  left: 380px;
+  bottom: 223px;
+  background: url(../img/concept1_h/obj.png) no-repeat center/100%;
+}
+.screen1 .table {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+.quiz_area.finish .table {
+  display: none;
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+}
+.screen2 .page_title span {
+  color: #fff838;
+}
+
+.screen2 .click_obj .obj {
+  position: absolute;
+  top: 160px;
+  left: 166px;
+}
+.screen2 .click_obj.c2 .obj {
+  top: 200px;
+  left: 1058px;
+}
+
+.screen2 .click_wrap .next {
+  display: none;
+}
+.screen2 .click_wrap.on .next {
+  display: block;
+}
+.screen2 .click_wrap.on .prev {
+  display: none;
+}
+
+.screen2 .rope {
+  position: absolute;
+  top: 132px;
+  left: 0;
+}
+
+.screen2 .click_wrap.scale .obj {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
