@@ -1,0 +1,38 @@
+.content {
+  background: url(../img/explore4/bg.png) no-repeat center / 100%;
+}
+.img_wrap img {
+  position: absolute;
+}
+.ani {
+  top: 183px;
+  left: 141px;
+}
+.txt {
+  top: 245px;
+  left: 344px;
+}
+
+.clip {
+  position: absolute;
+  top: 718px;
+  left: 927px;
+}
+.clip img {
+  opacity: 0;
+}
+
+.hand {
+  top: 0;
+  right: 0;
+}
+
+.img_wrap[data-num="1"] .clip .c1 {
+  opacity: 1;
+}
+.img_wrap[data-num="2"] .clip .c2 {
+  opacity: 1;
+}
+.img_wrap[data-num="3"] .clip .c3 {
+  opacity: 1;
+}

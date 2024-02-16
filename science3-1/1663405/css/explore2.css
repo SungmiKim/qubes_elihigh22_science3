@@ -1,0 +1,60 @@
+.map {
+  overflow: hidden;
+  background: url(../img/explore2/bg2.png) no-repeat center / cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page_title.title5 {
+  background-image: url(../img/explore2/tit_bg.png);
+}
+.content .img_wrap {
+  position: relative;
+  display: none;
+}
+.content .img_wrap.on {
+  pointer-events: none;
+  display: block;
+}
+.content .arrow {
+  width: 454px;
+  height: 177px;
+  position: absolute;
+  top: 564px;
+  left: 426px;
+}
+.img_wrap .has_guide {
+  top: 674px;
+  left: 809px;
+  z-index: 1;
+}
+.img_wrap.on .has_guide {
+  animation: guideHand1 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand1 {
+  0% {
+    top: 674px;
+    left: 809px;
+  }
+
+  100% {
+    left: 1200px;
+  }
+}
+
+.btn_wrap {
+  position: absolute;
+  bottom: 109px;
+  right: 240px;
+}
+
+.guide_ani > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

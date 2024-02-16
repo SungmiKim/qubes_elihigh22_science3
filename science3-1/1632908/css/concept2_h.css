@@ -1,0 +1,116 @@
+.quiz_area.on .drag_box img {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.quiz_area.on .drag_box.on img {
+  animation: none;
+}
+
+/* screen1 */
+.screen1 {
+  background: url(../img/concept2_h/screen1.png) no-repeat center / 100%;
+}
+.screen1 .page_title span {
+  color: #87e4ff;
+}
+.screen1 .seq_img {
+  position: absolute;
+  top: 520px;
+  left: 235px;
+}
+.screen1 .seq_img.s2 {
+  top: 500px;
+  left: 1221px;
+}
+.screen1 .click_wrap {
+  position: absolute;
+  top: 280px;
+  left: 218px;
+  display: flex;
+}
+.screen1 .click_wrap .click_obj {
+  width: 568px;
+  height: 800px;
+  background: url(../img/concept2_h/bubble1_1.png) no-repeat top center / 100% 263px;
+}
+.screen1 .click_wrap .click_obj.off {
+  pointer-events: none;
+}
+.screen1 .click_wrap .click_obj.c2 {
+  width: 568px;
+  background: url(../img/concept2_h/bubble1_2.png) no-repeat top center / 100% 263px;
+  margin-left: 431px;
+}
+
+.screen1 .click_wrap.on .click_obj.c2 {
+  width: 568px;
+  height: 263px;
+  background: url(../img/concept2_h/bubble1_2_o.png) no-repeat center / 100%;
+}
+.screen1.scale .click_obj {
+  animation: 3s card_scale ease-in infinite;
+}
+.screen1.scale .seq_img {
+  animation: 3s card_scale ease-in infinite;
+}
+
+/* screen2 */
+.screen2 {
+  background: url(../img/concept2_h/screen2.png) no-repeat center / 100%;
+}
+.screen2 .page_title {
+  letter-spacing: -0.03em;
+}
+.screen2 .page_title span {
+  color: #a7dfff;
+}
+.screen2 .eo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.screen2 .eo.e2 {
+  opacity: 0;
+}
+.screen2 .drop_area.on .eo.e1 {
+  opacity: 0;
+}
+.screen2 .drop_area.on .eo.e2 {
+  opacity: 1;
+}
+
+.screen2 .box_wrap {
+  position: absolute;
+  width: 664px;
+  height: 245px;
+  top: 675px;
+  left: 1164px;
+  background: url(../img/concept2_h/drop2_1.png) no-repeat center / 100%;
+}
+.screen2 .box_wrap.on {
+  background-image: url(../img/concept2_h/drop2_1_o.png);
+}
+.screen2 .drag_area::before {
+  content: "";
+  background-color: rgb(15, 58, 26);
+  width: 100%;
+  height: 376px;
+  opacity: 0.302;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.screen2 .drag_box {
+  position: absolute;
+  top: 156px;
+  left: 378px;
+}
+
+.screen2 .drag_box.d2 {
+  left: 1078px;
+}
+
+.screen2 .drop_box {
+  height: 100%;
+}

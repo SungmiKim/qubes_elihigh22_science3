@@ -1,0 +1,42 @@
+.content {
+  background: url(../img/explore/bg1.png) no-repeat center / 100%;
+}
+.quiz_area.on .drag_box img {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.box_wrap {
+  top: 262px;
+  left: 448px;
+  width: 1113px;
+  height: 312px;
+  background: url(../img/explore3/drop.png) no-repeat center / 100%;
+}
+
+.box_wrap.on {
+  background: url(../img/explore3/drop_o.png) no-repeat center / 100%;
+}
+.drag_area {
+  top: 954px;
+  left: 709px;
+}
+
+.has_guide {
+  top: 989px;
+  left: 974px;
+  display: none;
+}
+.has_guide.on {
+  display: block;
+  animation: guideHand 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand {
+  0% {
+    top: 989px;
+  }
+
+  100% {
+    top: 389px;
+  }
+}

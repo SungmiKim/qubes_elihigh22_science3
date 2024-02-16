@@ -1,0 +1,78 @@
+.content {
+  background: url(../img/explore4/bg.png) no-repeat center / 100%;
+}
+.drawing_area {
+  position: absolute;
+  top: 140px;
+  left: 95px;
+}
+.drawing_area .canvas_wrap {
+  display: block;
+  width: 1538px;
+  height: 857px;
+}
+.drawing_area .canvas_wrap canvas {
+  margin: 95px 0 0 7px;
+  width: 1555px;
+  height: 755px;
+}
+.drawing_area .drawing_controller {
+  position: absolute;
+  top: 94px;
+  left: 1582px;
+  width: 222px;
+  height: 773px;
+  margin: 0;
+  background-size: cover;
+}
+.drawing_controller .select_btn {
+  width: 170px;
+  height: 170px;
+  margin: 0;
+}
+
+.drawing_controller .box_wrap ul {
+  padding: 0 58px 0 25px;
+}
+.drawing_controller .box_wrap.pen ul {
+  padding: 0 62px 0 38px;
+}
+
+.drawing_controller .sticker .select_box li:nth-child(1) img {
+  width: 88px;
+}
+.drawing_controller .sticker .select_box li:nth-child(2) img {
+  width: 103px;
+}
+.drawing_controller .sticker .select_box li:nth-child(3) img {
+  width: 84px;
+}
+.drawing_controller .sticker .select_box li:nth-child(4) img {
+  width: 90px;
+}
+.drawing_controller .sticker .select_box li:nth-child(5) img {
+  width: 102px;
+}
+.drawing_controller .sticker .select_box li:nth-child(6) img {
+  width: 106px;
+}
+.drawing_controller .sticker .select_box li:nth-child(7) img {
+  width: 88px;
+}
+.drawing_controller .sticker .select_box li:nth-child(8) img {
+  width: 106px;
+}
+.drawing_controller .sticker .select_box li:nth-child(9) img {
+  width: 112px;
+}
+
+.drawing_controller .box_wrap.sticker ul.active {
+  background: none;
+}
+.drawing_controller .box_wrap.sticker ul.active .ui-draggable-handle:not(.ui-draggable-dragging) {
+  display: none;
+}
+.drawing_area .btn_wrap {
+  margin-top: 12px;
+  margin-left: 273px;
+}

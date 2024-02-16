@@ -1,0 +1,101 @@
+.content {
+  background: url(../img/explore3/bg.png) no-repeat center / 100%;
+}
+
+.has_guide {
+  position: absolute;
+  top: 60%;
+  left: 55%;
+}
+.click_area li {
+  position: absolute;
+  top: 153px;
+  left: 100px;
+  width: 805px;
+  height: 901px;
+}
+.click_area li.c2 {
+  left: 1067px;
+}
+.click_area li.scale {
+  animation: 3s card_scale ease-in infinite;
+}
+
+.click_area li.on {
+  pointer-events: none;
+  animation: none;
+}
+.click_area .flip {
+  width: 828px;
+  height: 554px;
+  position: absolute;
+  top: 379px;
+  left: 14px;
+  transition: 0.4s;
+  background: url(../img/explore3/cha1.png) no-repeat center / 100%;
+  perspective: 1100px;
+}
+
+.click_area .c2.flip {
+  top: 379px;
+  left: 0px;
+  background: url(../img/explore3/cha2.png) no-repeat center / 100%;
+}
+.c2.ani_area {
+  position: absolute;
+  top: -10px;
+  left: -14px;
+}
+
+.click_area li.on .card {
+  animation: none;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 0.4s;
+  transform-style: preserve-3d;
+}
+.front,
+.back {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  width: 198px;
+  height: 203px;
+  top: 174px;
+  left: 302px;
+  background: url(../img/explore3/obj1_1.png) no-repeat center / 100% 100%;
+}
+
+.back {
+  width: 828px;
+  height: 554px;
+  top: 0;
+  left: -3px;
+  background: url(../img/explore3/obj2_1.png) no-repeat center / 100%;
+}
+.bot .back {
+  transform: rotateY(180deg);
+}
+.flip.bot.on .card {
+  transform: rotateY(180deg);
+}
+
+.c2 .front {
+  width: 391px;
+  height: 222px;
+  top: 173px;
+  left: 205px;
+  background: url(../img/explore3/obj1_2.png) no-repeat center / 100% 100%;
+}
+
+.c2 .back {
+  top: 0px;
+  left: 0px;
+  background: url(../img/explore3/obj2_2.png) no-repeat center / 100%;
+}

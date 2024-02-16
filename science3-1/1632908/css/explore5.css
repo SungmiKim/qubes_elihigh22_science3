@@ -1,0 +1,46 @@
+.content {
+  background: url(../img/explore5/bg.png) no-repeat center / 100%;
+}
+.seq_dim,
+.seq_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.seq_dim::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.seq_dim .gif {
+  position: relative;
+  margin: 158px auto 0;
+  display: block;
+}
+.seq_dim .txt {
+  position: absolute;
+  top: 835px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.magnet {
+  position: absolute;
+  width: 641px;
+  top: 148px;
+  left: 688px;
+}
+
+.content.on .magnet {
+  top: 225px;
+  transform: scale(1.35);
+  transition: all 2s;
+}
+.content.on .seq_img {
+  opacity: 0;
+}

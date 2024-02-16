@@ -1,0 +1,50 @@
+.content {
+  background: url(../img/summary3/bg.png) no-repeat center / 100%;
+}
+
+.page_title span {
+  color: #37faef;
+}
+
+.name_list li {
+  position: absolute;
+  top: 380px;
+  left: 210px;
+}
+.name_list li.name2 {
+  top: 509px;
+  left: 1238px;
+}
+
+.name_list .name_tag {
+  width: 348px;
+  background: url(../img/summary3/name1_off.png) no-repeat center / 100%;
+}
+
+.name_list .name1.on .name_tag {
+  background-image: url(../img/summary3/name1_on.png);
+}
+.name_list .name2 .name_tag {
+  background: url(../img/summary3/name2_off.png) no-repeat center / 100%;
+}
+
+.name_list .name2.on .name_tag {
+  background-image: url(../img/summary3/name2_on.png);
+}
+.name_list .name2 .txt {
+  top: -24px;
+  left: -184px;
+}
+
+.img_wrap img {
+  position: absolute;
+}
+
+.img_wrap .img1 {
+  top: 820px;
+  left: 86px;
+}
+.img_wrap .img2 {
+  top: 876px;
+  left: 1200px;
+}

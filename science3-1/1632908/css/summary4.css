@@ -1,0 +1,33 @@
+.content {
+  background: url(../img/summary4/bg.png) no-repeat center / 100%;
+}
+
+.page_title span {
+  color: #5cd3ff;
+}
+
+.name_list li {
+  position: absolute;
+  top: 220px;
+  left: 308px;
+}
+.name_list li.name2 {
+  top: 874px;
+  left: 854px;
+}
+
+.name_list .name_tag {
+  width: 288px;
+  background: url(../img/summary4/name1_off.png) no-repeat center / 100%;
+}
+
+.name_list .name1.on .name_tag {
+  background-image: url(../img/summary4/name1_on.png);
+}
+.name_list .name2 .name_tag {
+  background: url(../img/summary4/name2_off.png) no-repeat center / 100%;
+}
+
+.name_list .name2.on .name_tag {
+  background-image: url(../img/summary4/name2_on.png);
+}

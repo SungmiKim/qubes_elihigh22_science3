@@ -1,0 +1,278 @@
+.content {
+  background: url(../img/explore2/bg.png) no-repeat center / 100%;
+}
+
+.drop_area {
+  position: absolute;
+  width: 984px;
+  height: 690px;
+  top: 310px;
+  left: 514px;
+  background-image: url(../img/explore2/frame.png);
+}
+.box_area {
+  width: 824px;
+  height: 548px;
+  position: absolute;
+  top: 63px;
+  left: 73px;
+  border-radius: 81px;
+  overflow: hidden;
+}
+.box_area .box_wrap {
+  width: 266px;
+  height: 366px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/explore2/drop1_x.png) no-repeat center / 100%;
+}
+.box_area .box_wrap.b1 {
+  top: -1px;
+}
+.box_area .box_wrap.b2 {
+  width: 464px;
+  height: 283px;
+  left: 172px;
+  background: url(../img/explore2/drop2_x.png) no-repeat center / 100%;
+}
+.box_area .box_wrap.b3 {
+  width: 289px;
+  height: 366px;
+  left: 535px;
+  background: url(../img/explore2/drop3_x.png) no-repeat center / 100%;
+}
+.box_area .box_wrap.b4 {
+  width: 352px;
+  height: 280px;
+  top: 269px;
+  left: 0;
+  background: url(../img/explore2/drop4_x.png) no-repeat center / 100%;
+}
+.box_area .box_wrap.b5 {
+  width: 301px;
+  height: 365px;
+  top: 184px;
+  left: 253px;
+  background: url(../img/explore2/drop5_x.png) no-repeat center / 100%;
+}
+.box_area .box_wrap.b6 {
+  width: 368px;
+  height: 281px;
+  top: 268px;
+  left: 456px;
+  background: url(../img/explore2/drop6_x.png) no-repeat center / 100%;
+}
+
+.box_area .drop_box {
+  width: 230px;
+  height: 240px;
+  position: absolute;
+  top: 19px;
+  left: 14px;
+}
+
+.box_area .drop_box:nth-child(n + 4) {
+  top: 291px;
+}
+.box_area .drop_box:nth-child(3n -1) {
+  left: 289px;
+}
+.box_area .drop_box:nth-child(3n) {
+  left: 573px;
+}
+.box_wrap.on {
+  background: url(../img/explore2/drop1.png) no-repeat center / 100%;
+}
+.box_wrap.b2.on {
+  background-image: url(../img/explore2/drop2.png);
+}
+.box_wrap.b3.on {
+  background-image: url(../img/explore2/drop3.png);
+}
+.box_wrap.b4.on {
+  background-image: url(../img/explore2/drop4.png);
+}
+.box_wrap.b5.on {
+  background-image: url(../img/explore2/drop5.png);
+}
+.box_wrap.b6.on {
+  background-image: url(../img/explore2/drop6.png);
+}
+
+.drag_wrap {
+  position: relative;
+}
+.drag_wrap .drag_area {
+  position: absolute;
+  width: 475px;
+  height: 1200px;
+  top: 0px;
+  left: 0px;
+  background-image: url(../img/explore2/shape.png);
+}
+.drag_wrap .drag_area:nth-child(2) {
+  position: absolute;
+  left: 1526px;
+  background-image: url(../img/explore2/shape.png);
+}
+
+.drag_box {
+  width: 393px;
+  height: 247px;
+  position: absolute;
+  top: 169px;
+  left: 67px;
+}
+.drag_box.d2 {
+  width: 252px;
+  height: 314px;
+  top: 464px;
+  left: 138px;
+}
+.drag_box.d3 {
+  width: 318px;
+  height: 247px;
+  top: 829px;
+  left: 68px;
+}
+.drag_box.d4 {
+  width: 305px;
+  height: 246px;
+  top: 168px;
+  left: 103px;
+}
+.drag_box.d5 {
+  width: 232px;
+  height: 311px;
+  top: 435px;
+  left: 103px;
+}
+.drag_box.d6 {
+  width: 262px;
+  height: 314px;
+  top: 763px;
+  left: 87px;
+}
+
+.has_guide {
+  display: none;
+  top: 309px;
+  left: 244px;
+  z-index: 1;
+}
+.has_guide.on {
+  display: block;
+  animation: guideHand1 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand1 {
+  0% {
+    top: 309px;
+    left: 244px;
+  }
+
+  100% {
+    top: 502px;
+    left: 944px;
+  }
+}
+
+.quiz_area.on .drag_box {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.quiz_area.finish .drop_area {
+  background: url(../img/explore2/frame_o.png) no-repeat center / 100%;
+}
+
+.quiz_area.finish .drop_area.on {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../img/explore2/bg2.png) no-repeat center / 100%;
+  transition: all 1s;
+}
+.quiz_area.finish .drop_area .box_wrap {
+  opacity: 0;
+  transition: opacity 2s;
+}
+.quiz_area.finish .drop_box {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.quiz_area.finish .drag_wrap {
+  display: none;
+}
+
+.ani_area .fanfare {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  pointer-events: none;
+}
+.ani_area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.ani_area .ani_img {
+  display: none;
+}
+.ani_area.on .seq_img {
+  display: none;
+}
+.ani_area.on .ani_img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: url(../img/explore2/bg2.png) no-repeat center / 100%; */
+}
+.ani_area.on .ani_img > .point {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ani_area.on .ani_img .point::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.ani_area.on .ani_img .point > img {
+  position: absolute;
+  z-index: 1;
+}
+.ani_area.on .ani_img[data-num="1"] .mountain {
+  opacity: 1;
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: 1;
+}
+.ani_area.on .ani_img[data-num="2"] .river {
+  opacity: 1;
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: 1;
+}
+.ani_area.on .ani_img[data-num="3"] .ground {
+  opacity: 1;
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: 1;
+}

@@ -1,0 +1,33 @@
+.content {
+  background: url(../img/explore/bg1.png) no-repeat center / 100%;
+}
+
+.name_list li {
+  position: absolute;
+  top: 874px;
+  left: 391px;
+}
+
+.name_list li.n2 {
+  left: 1041px;
+}
+.img_list img {
+  position: absolute;
+}
+.img_list .clip {
+  left: 458px;
+  top: 498px;
+}
+
+.img_list .hand {
+  top: 335px;
+  left: 894px;
+}
+
+.content.on .img_list .hand {
+  left: 652px;
+  transition: all 1.5s ease;
+}
+.content.on .name_list {
+  display: none;
+}

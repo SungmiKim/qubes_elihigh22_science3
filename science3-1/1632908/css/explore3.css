@@ -1,0 +1,49 @@
+.seq_dim,
+.seq_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.seq_dim::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.seq_dim .gif {
+  position: relative;
+  margin: 158px auto 0;
+  display: block;
+}
+.seq_dim .txt {
+  position: absolute;
+  top: 835px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.obj_name {
+  position: absolute;
+  top: 1072px;
+  left: 189px;
+}
+.seq_img {
+  opacity: 0;
+}
+.seq_img.on {
+  opacity: 1;
+}
+
+/* screen1 */
+.screen1 {
+  background: url(../img/explore3/ani1/1.webp) no-repeat center / 100%;
+}
+
+/* screen2 */
+.screen2 {
+  background: url(../img/explore3/ani2/1.webp) no-repeat center / 100%;
+}

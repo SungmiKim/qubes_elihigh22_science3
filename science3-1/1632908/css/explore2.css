@@ -1,0 +1,57 @@
+.content {
+  background: url(../img/explore2/bg.png) no-repeat center / 100%;
+}
+.img_wrap img {
+  position: absolute;
+}
+.ani {
+  top: 184px;
+  left: 122px;
+}
+.txt {
+  top: 245px;
+  left: 324px;
+}
+
+.spoon {
+  top: 970px;
+  left: 961px;
+}
+.img_wrap[data-num="2"] .spoon {
+  opacity: 0;
+}
+.plate {
+  top: 718px;
+  left: 960px;
+  opacity: 0;
+}
+.img_wrap[data-num="2"] .plate {
+  opacity: 1;
+}
+.hand {
+  top: -446px;
+  left: 1216px;
+}
+.img_wrap[data-num="1"] .hand {
+  animation: 1.8s handAni1 linear forwards;
+}
+.img_wrap[data-num="2"] .hand {
+  animation: 2s handAni2 linear forwards;
+}
+@keyframes handAni1 {
+  0% {
+    top: -446px;
+  }
+  100% {
+    top: -337px;
+  }
+}
+
+@keyframes handAni2 {
+  0% {
+    top: -446px;
+  }
+  100% {
+    top: -362px;
+  }
+}

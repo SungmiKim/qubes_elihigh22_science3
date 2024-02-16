@@ -1,0 +1,119 @@
+.content {
+  background: url(../img/explore/bg2.png) no-repeat center / 100%;
+}
+
+.quiz_area.on .drag_box img {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.ani_area img {
+  position: absolute;
+  top: 215px;
+  left: 58px;
+}
+
+.box_wrap {
+  top: 476px;
+  left: 1559px;
+  width: 365px;
+  height: 364px;
+  background: url(../img/explore7/drop.png) no-repeat center / 100%;
+}
+
+.box_wrap.on {
+  background: url(../img/explore7/drop_o.png) no-repeat center / 100%;
+}
+.box_wrap .after {
+  display: none;
+}
+.box_wrap .after,
+.box_wrap .after img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.box_wrap .after .pin {
+  top: 70px;
+  left: 80px;
+}
+.box_wrap.on .after {
+  display: block;
+}
+.box_wrap.on .after .pin {
+  animation: vibration1 5s infinite;
+  animation-iteration-count: 1;
+}
+@keyframes vibration1 {
+  0% {
+    transform: rotate(-45deg);
+  }
+  9% {
+    transform: rotate(45deg);
+  }
+  18% {
+    transform: rotate(-32deg);
+  }
+  27% {
+    transform: rotate(32deg);
+  }
+  36% {
+    transform: rotate(-15deg);
+  }
+  45% {
+    transform: rotate(15deg);
+  }
+  54% {
+    transform: rotate(-8deg);
+  }
+  63% {
+    transform: rotate(8deg);
+  }
+  72% {
+    transform: rotate(-3deg);
+  }
+  81% {
+    transform: rotate(3deg);
+  }
+  90% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.drag_area {
+  top: 657px;
+  left: 1008px;
+  width: 436px;
+  height: 417px;
+  border-radius: 40px;
+  background-color: rgba(0, 0, 0, 0.051);
+}
+.drag_area .drag_box {
+  position: absolute;
+  top: 29px;
+  left: 43px;
+}
+.has_guide {
+  top: 958px;
+  left: 1247px;
+  display: none;
+}
+.has_guide.on {
+  display: block;
+  animation: guideHand 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand {
+  0% {
+    top: 958px;
+    left: 1247px;
+  }
+
+  100% {
+    top: 658px;
+    left: 1730px;
+  }
+}

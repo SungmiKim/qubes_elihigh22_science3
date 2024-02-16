@@ -1,0 +1,17 @@
+.content {
+  background: #fff;
+}
+
+.screen {
+  background: url(../img/explore/bg.png) no-repeat center / 100%;
+}
+.screen.zoom {
+  opacity: 0;
+  transition: all 2s;
+}
+
+/* .screen.zoom_out{
+  opacity: 1;
+  transition: all 2s;
+} */
+

@@ -1,0 +1,101 @@
+.content {
+  background: url(../img/explore4/bg.jpg) no-repeat center / 100%;
+}
+.page_title span {
+  margin-top: 14px;
+}
+
+.name_area .name {
+  /* opacity: 0.5; */
+  position: absolute;
+  top: 83px;
+  left: 168px;
+}
+
+.name_area .name.bottom {
+  top: 1050px;
+}
+.name_area .tag_wrap {
+  display: flex;
+  gap: 12.7px;
+}
+
+.map_area {
+  width: 1716px;
+  height: 871px;
+  position: absolute;
+  top: 176px;
+  left: 146px;
+  overflow: visible;
+}
+.map_area .map {
+  display: flex;
+  margin-left: 14px;
+}
+.map_area .map.bottom {
+  margin-top: -3px;
+}
+
+.map_area .map .tag[data-num="2"],
+.map_area .map .tag[data-num="3"],
+.map_area .map .tag[data-num="4"],
+.map_area .map .tag[data-num="6"],
+.map_area .map .tag[data-num="12"] {
+  margin-left: -3px;
+}
+.map_area .map .tag[data-num="5"],
+.map_area .map .tag[data-num="8"],
+.map_area .map .tag[data-num="9"],
+.map_area .map .tag[data-num="10"],
+.map_area .map .tag[data-num="11"] {
+  margin-left: -2px;
+}
+.map_area .map .tag[data-num="7"] {
+  margin-left: -1px;
+}
+
+.name_area .tag1.on,
+.name_area .tag2.on {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: 1;
+}
+
+/* .map_area .top .tag1.on,
+.map_area .top .tag2.on {
+  animation: topBig 1.5s forwards;
+  animation-iteration-count: 1;
+  transform-origin: 0 100%;
+}
+@keyframes topBig {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.05);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.map_area .bottom .tag2.on {
+  animation: bottomBig 1.5s forwards;
+  animation-iteration-count: 1;
+  transform-origin: 100% 0;
+}
+@keyframes bottomBig {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.05);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+} */
+
+.map_area .tag1.off,
+.map_area .tag2.off {
+  filter: brightness(60%);
+}

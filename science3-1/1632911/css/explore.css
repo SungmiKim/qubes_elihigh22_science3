@@ -1,0 +1,283 @@
+.content * {
+  position: absolute;
+}
+
+.quiz_area.on .drag_box img {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.drop_box {
+  width: 100%;
+  height: 100%;
+}
+.drag_box > img {
+  position: relative;
+}
+.has_guide {
+  position: absolute;
+  top: 820px;
+  left: 1496px;
+  /* display: none; */
+}
+.has_guide.on {
+  display: block;
+  animation: guideHand1 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand1 {
+  0% {
+    left: 1496px;
+  }
+
+  100% {
+    left: 623px;
+  }
+}
+.seq_img {
+  z-index: -1;
+}
+.seq_img.on {
+  z-index: 0;
+}
+/* explore2 */
+.screen1 {
+  background: url(../img/explore2/bg.png) no-repeat center / 100%;
+}
+
+.screen1 .drop_area {
+  top: 568px;
+  left: 116px;
+  width: 1021px;
+  height: 500px;
+  background: url(../img/explore2/plate.png) no-repeat center / 100%;
+}
+.screen1 .box_wrap {
+  top: 102px;
+  left: 148px;
+  width: 699px;
+  height: 314px;
+  background: url(../img/explore2/drop.png) no-repeat center / 100%;
+}
+
+.screen1 .drag_box {
+  top: 743px;
+  left: 1260px;
+}
+.screen1 .seq_img .ani {
+  position: absolute;
+  top: 568px;
+  left: 116px;
+  opacity: 0;
+}
+.screen1 .seq_img.finish .gif {
+  opacity: 0;
+}
+.screen1 .seq_img.finish .ani {
+  opacity: 1;
+  left: 500px;
+  transition: left 2s;
+}
+/* explore3 */
+.screen2 {
+  background: url(../img/explore3/bg.png) no-repeat center / 100%;
+}
+
+.screen2 .drop_area {
+  top: 214px;
+  left: 212px;
+  width: 864px;
+  height: 899px;
+  background: url(../img/explore3/water.png) no-repeat center / 100%;
+}
+.screen2 .box_wrap {
+  top: 201px;
+  left: 158px;
+  width: 522px;
+  height: 521px;
+  background: url(../img/explore3/drop.png) no-repeat center / 100%;
+}
+.screen2 .drag_box {
+  top: 409px;
+  left: 1246px;
+}
+
+.screen2 .seq_img .ani {
+  position: absolute;
+  top: 213px;
+  left: 210px;
+  opacity: 0;
+}
+.screen2 .seq_img.finish .gif {
+  opacity: 0;
+}
+.screen2 .seq_img.finish .ani {
+  opacity: 1;
+  left: 582px;
+  transition: left 2s;
+}
+/* explore4 */
+.screen3 {
+  background: url(../img/explore3/bg.png) no-repeat center / 100%;
+}
+.screen3 .ani {
+  top: 213px;
+  left: 581px;
+}
+.screen3 .input_wrap {
+  top: 333px;
+  left: 982px;
+}
+#shape .rs-handle {
+  background: url(../img/explore4/gauge_btn.png) no-repeat center / 100%;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+#shape .rs-transition.rs-range {
+  stroke: url(#grad1) !important;
+}
+.screen3 .has_guide {
+  position: absolute;
+  top: 358px;
+  left: 982px;
+  display: none;
+  z-index: 2;
+}
+.screen3 .has_guide.on {
+  display: block;
+  offset: path("M1 1C92.6667 0.333336 277.2 56.6 282 287") 0deg;
+  animation: moveto 1s linear forwards;
+  animation-iteration-count: 2;
+}
+@keyframes moveto {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+/* explore5 */
+.screen4 {
+  background: url(../img/explore5/bg.png) no-repeat center / 100%;
+}
+.screen4 .bucket {
+  top: -273px;
+  left: -954px;
+}
+
+.screen4 .drop_area {
+  width: 356px;
+  height: 356px;
+  top: 487px;
+  left: 1534px;
+}
+.screen4 .box_wrap {
+  width: 356px;
+  height: 356px;
+  background: url(../img/explore5/drop.png) no-repeat center / 100%;
+}
+.screen4 .drop_box {
+  width: 100%;
+  height: 100%;
+}
+.screen4 .drag_area {
+  position: absolute;
+  bottom: -594px;
+  left: 92px;
+  border-radius: 40px;
+  width: 436px;
+  height: 414px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.screen4 .drag_box {
+  top: 30px;
+  left: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+.screen4 .has_guide {
+  position: absolute;
+  top: 498px;
+  left: 306px;
+  /* display: none; */
+}
+.screen4 .has_guide.on {
+  display: block;
+  animation: guideHand4 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand4 {
+  0% {
+    left: 306px;
+  }
+  100% {
+    top: 720px;
+    left: 1640px;
+  }
+}
+.screen4 .quiz_area.finish {
+  animation: finishMotion 2s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+@keyframes finishMotion {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: -238px;
+  }
+}
+
+.screen4 .quiz_area .sticker img {
+  opacity: 0;
+}
+.screen4 .quiz_area .sticker {
+  width: 176px;
+  height: 180px;
+  left: -618px;
+  top: -350px;
+}
+
+.screen4 .quiz_area.finish .sticker img {
+  opacity: 1;
+  transition: opacity 0s;
+  transition-delay: 3s;
+}
+.screen4 .quiz_area.finish .sticker img.s2 {
+  transition-delay: 3.1s;
+}
+.screen4 .quiz_area.finish .sticker img.s3 {
+  transition-delay: 3.15s;
+}
+.screen4 .quiz_area.finish .sticker_n {
+  width: 100%;
+  height: 100%;
+}
+
+.screen4 .quiz_area.finish .sticker_s {
+  width: 100%;
+  height: 100%;
+  top: 812px;
+  animation-delay: 4s;
+}
+.screen4 .quiz_area.finish .sticker_s img {
+  opacity: 1;
+  transition: opacity 0s;
+  transition-delay: 4s;
+}
+.screen4 .quiz_area.finish .sticker_s img.s2 {
+  transition-delay: 4.1s;
+}
+.screen4 .quiz_area.finish .sticker_s img.s3 {
+  transition-delay: 4.15s;
+}
+
+.screen4 .quiz_area.finish .drag_area {
+  display: none;
+}
+.screen4 .quiz_area.finish .box_wrap {
+  background: url(../img/explore5/conpass.png) no-repeat center / 100%;
+}

@@ -1,0 +1,132 @@
+.quiz_area.on .drag_box img {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.quiz_area.on .drag_box.on img {
+  animation: none;
+}
+
+.box_wrap .drop_box {
+  width: 100%;
+  height: 100%;
+}
+
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept1_h/screen1.png) no-repeat center / 100%;
+}
+.screen1 .page_title span {
+  color: #ffd05f;
+}
+
+.screen1 .box_wrap {
+  position: absolute;
+  width: 580px;
+  height: 443px;
+  top: 186px;
+  left: 105px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.screen1 .box_wrap.d1 {
+  background-image: url(../img/concept1_h/drop1_1.png);
+}
+.screen1 .box_wrap.d2 {
+  left: 710px;
+  background-image: url(../img/concept1_h/drop1_2.png);
+}
+.screen1 .box_wrap.d3 {
+  width: 598px;
+  height: 447px;
+  left: 1306px;
+  background-image: url(../img/concept1_h/drop1_3.png);
+}
+.screen1 .box_wrap.d1.on {
+  background-image: url(../img/concept1_h/drop1_1_o.png);
+}
+.screen1 .box_wrap.d2.on {
+  background-image: url(../img/concept1_h/drop1_2_o.png);
+}
+.screen1 .box_wrap.d3.on {
+  background-image: url(../img/concept1_h/drop1_3_o.png);
+}
+
+.screen1 .drag_box {
+  position: absolute;
+  top: 689px;
+  left: 278px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screen1 .drag_box.d2 {
+  top: 660px;
+  left: 658px;
+}
+.screen1 .drag_box.d3 {
+  top: 883px;
+  left: 1421px;
+}
+.screen1 .drag_box .obj_name {
+  border-radius: 80px;
+  width: auto;
+  display: inline-flex;
+  padding: 0 38px;
+  margin: -12px 0 0 0;
+}
+
+.screen1 .drag_box.d2 .obj_name {
+  margin: -26px 0 0 0;
+}
+.screen1 .drag_box.d3 .obj_name {
+  margin: 16px 0 0 0;
+}
+
+.screen1 .ui-draggable-dragging .obj_name {
+  display: none;
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+}
+.screen2 .page_title span {
+  color: #96eaff;
+}
+.screen2 .click_obj {
+  position: absolute;
+  top: 423px;
+  left: 217px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.screen2 .click_obj.c2 {
+  top: 248px;
+  left: 742px;
+}
+.screen2 .click_obj.c3 {
+  top: 421px;
+  left: 1400px;
+}
+
+.screen2 .click_obj .obj {
+  margin: -11px -28px 0 0;
+}
+.screen2 .click_obj.c2 .obj_name {
+  margin: 11px -72px 0 0;
+}
+.screen2 .click_obj.c3 .obj {
+  margin: -23px 0 0 0;
+}
+.click_wrap.on .obj {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.screen2 .click_wrap.finish .click_obj.c2,
+.screen2 .click_wrap.finish .click_obj.c1 {
+  opacity: 0.4;
+}

@@ -1,0 +1,16 @@
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ani {
+  position: absolute;
+  top: 190px;
+  left: 114px;
+  display: flex;
+  align-items: flex-start;
+}
+.ani .txt {
+  margin: 110px 0 0 10px;
+}

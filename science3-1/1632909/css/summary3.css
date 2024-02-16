@@ -1,0 +1,173 @@
+.content {
+  background: url(../img/summary2/summary2_bg.png) no-repeat center / 100%;
+}
+
+.page_title span {
+  color: #b7ff69;
+}
+
+.name_list .has_guide,
+.name_list .obj,
+.name_list .name_tag,
+.name_list .txt,
+.bubble {
+  position: absolute;
+}
+.name_list .has_guide {
+  top: 47px;
+  left: 151px;
+}
+.name_list li {
+  position: absolute;
+  top: 214px;
+  left: 171px;
+}
+
+.name_list .name_tag {
+  width: 268px;
+  height: 94px;
+  background: url(../img/summary3/name1_off.png) no-repeat center / 100%;
+}
+
+.name_list .txt {
+  opacity: 0;
+  top: 112px;
+  left: 26px;
+  pointer-events: none;
+}
+.name_list li.on .txt {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.name_list .name1.on .name_tag {
+  background-image: url(../img/summary3/name1_on.png);
+}
+
+.name_tag.on {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.name_list li.on {
+  pointer-events: none;
+}
+
+.ani_area .magnet {
+  position: absolute;
+  top: 608px;
+  left: 278px;
+}
+
+.ani_area .magnet.right {
+  left: 1040px;
+}
+
+.ani_area.on .magnet.left {
+  animation: magnetLeft 2s forwards cubic-bezier(0.5, 0.1, 0.9, 0.4);
+  animation-iteration-count: 1;
+}
+.ani_area.on .magnet.right {
+  animation: magnetRight 2s forwards cubic-bezier(0.5, 0.1, 0.9, 0.4);
+  animation-iteration-count: 1;
+}
+
+.ani_area.on1 .magnet.left {
+  animation: magnetLeft2 2s forwards cubic-bezier(0.5, 0.1, 0.9, 0.4);
+  animation-iteration-count: 1;
+}
+.ani_area.on1 .magnet.right {
+  animation: magnetRight2 2s forwards cubic-bezier(0.5, 0.1, 0.9, 0.4);
+  animation-iteration-count: 1;
+}
+
+@keyframes magnetLeft {
+  0% {
+    left: 278px;
+  }
+  90% {
+    left: 346px;
+  }
+  100% {
+    left: 346px;
+  }
+}
+@keyframes magnetRight {
+  0% {
+    left: 1040px;
+  }
+  90% {
+    left: 975px;
+  }
+  100% {
+    left: 975px;
+  }
+}
+@keyframes magnetLeft2 {
+  0% {
+    left: 278px;
+  }
+  90% {
+    left: 346px;
+  }
+  100% {
+    left: 346px;
+  }
+}
+@keyframes magnetRight2 {
+  0% {
+    left: 1040px;
+  }
+  90% {
+    left: 975px;
+  }
+  100% {
+    left: 975px;
+  }
+}
+
+.ani_area.finish .magnet.left {
+  left: 346px;
+  animation: none;
+}
+
+.ani_area.finish .magnet.right {
+  left: 975px;
+  animation: none;
+}
+
+.ani_area .arrow {
+  position: absolute;
+  top: 813px;
+  left: 852px;
+  opacity: 0;
+}
+
+.ani_area.on .arrow {
+  animation: arrowEffect 2s forwards cubic-bezier(0.5, 0.1, 0.9, 0.4);
+  animation-iteration-count: 1;
+}
+.ani_area.on1 .arrow {
+  animation: arrowEffect2 2s forwards cubic-bezier(0.5, 0.1, 0.9, 0.4);
+  animation-iteration-count: 1;
+}
+@keyframes arrowEffect {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes arrowEffect2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.ani_area.finish .arrow {
+  opacity: 1;
+  animation: none;
+}

@@ -1,0 +1,108 @@
+.content {
+  background: url(../img/summary2/bg.png) no-repeat center / 100%;
+}
+
+.page_title span {
+  color: #ffc74e;
+}
+
+.name_list .has_guide,
+.name_list .obj,
+.name_list .name_tag,
+.name_list .arrow_left,
+.name_list .arrow_right,
+.name_list .sticker,
+.name_list .txt {
+  position: absolute;
+}
+
+.name_list .has_guide {
+  top: 54px;
+  left: 106px;
+}
+.name_list li {
+  position: absolute;
+  top: 246px;
+  left: 208px;
+}
+.name_list .name2 {
+  top: 791px;
+  left: 235px;
+}
+.name_list .name3 {
+  top: 519px;
+  left: 1555px;
+}
+
+.name_list .name_tag {
+  width: 210px;
+  height: 95px;
+  background: url(../img/summary2/name1_off.png) no-repeat center / 100%;
+}
+.name_list .name2 .name_tag {
+  background-image: url(../img/summary2/name2_off.png);
+}
+.name_list .name3 .name_tag {
+  background-image: url(../img/summary2/name3_off.png);
+}
+
+.name_list .txt {
+  opacity: 0;
+  top: 120px;
+  left: 9px;
+}
+.name_list .sticker {
+  opacity: 0;
+}
+.name_list li.on .txt {
+  opacity: 1;
+  transition: all 1s;
+}
+.name_list .name1.on .name_tag {
+  background-image: url(../img/summary2/name1_on.png);
+}
+.name_list .name2.on .name_tag {
+  background-image: url(../img/summary2/name2_on.png);
+}
+.name_list .name2.on .arrow_left {
+  top: 18px;
+  left: 229px;
+  width: 456px;
+  height: 39px;
+  background-image: url(../img/summary2/arrow_left.png);
+}
+.name_list .name2.on .sticker {
+  opacity: 1;
+  width: 164px;
+  height: 164px;
+  top: 182px;
+  left: 682px;
+  background-image: url(../img/summary2/sticker_S.png);
+}
+.name_list .name3.on .name_tag {
+  background-image: url(../img/summary2/name3_on.png);
+}
+.name_list .name3.on .arrow_right {
+  top: 29px;
+  left: -484px;
+  width: 466px;
+  height: 41px;
+  background-image: url(../img/summary2/arrow_right.png);
+}
+.name_list .name3.on .sticker {
+  opacity: 1;
+  width: 164px;
+  height: 164px;
+  top: -340px;
+  left: -638px;
+  background-image: url(../img/summary2/sticker_N.png);
+}
+
+.name_tag.on {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.name_list li.on {
+  pointer-events: none;
+}

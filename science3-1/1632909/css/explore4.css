@@ -1,0 +1,171 @@
+.screen1 {
+  position: relative;
+  background: url(../img/explore4/screen1.png) no-repeat center / 100%;
+}
+.screen1.bg::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.screen1 .ani {
+  position: absolute;
+  top: 118px;
+  left: 214px;
+  display: flex;
+  align-items: flex-start;
+}
+.screen1.bg .ani {
+  display: none;
+}
+.screen1 .ani .txt {
+  margin: 65px 0 0 11px;
+}
+.screen1 .magnet {
+  top: 554px;
+  left: 604px;
+}
+.screen1 .magnet .cover {
+  top: 14px;
+  left: 13px;
+  width: 791px;
+  height: 160px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+[data-num="1"] .screen1 .magnet .cover {
+  background-image: url(../img/explore4/cover1.png);
+}
+[data-num="2"] .screen1 .magnet .cover {
+  background-image: url(../img/explore4/cover2.png);
+}
+[data-num="3"] .screen1 .magnet .cover {
+  background-image: url(../img/explore4/cover3.png);
+}
+[data-num="4"] .screen1 .magnet .cover {
+  background-image: url(../img/explore4/cover4.png);
+}
+[data-num="5"] .screen1 .magnet .cover {
+  background-image: url(../img/explore4/cover5.png);
+}
+.screen1 .paper_list li {
+  position: absolute;
+  bottom: 0;
+  left: 360px;
+}
+.screen1 .paper_list li.scale {
+  animation: 3s zoom_in_out ease-in infinite;
+}
+.screen1 .paper_list li.on {
+  animation: none;
+  /* transition: all 1s; */
+  transform: scale(1.1);
+}
+.screen1 .paper_list li.p2 {
+  left: 584px;
+}
+.screen1 .paper_list li.p3 {
+  left: 848px;
+}
+.screen1 .paper_list li.p4 {
+  left: 1108px;
+}
+.screen1 .paper_list li.p5 {
+  left: 1304px;
+}
+
+#seqGif1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.finish #seqGif1 {
+  opacity: 1;
+  z-index: 6;
+}
+/* screen2 */
+.screen2 {
+  background: url(../img/explore4/screen2.png) no-repeat center / 100%;
+}
+
+.ani_magnet {
+  top: 514px;
+  left: 192px;
+}
+.screen2 .ani_magnet.on {
+  left: 60px;
+  transition: all 2s;
+}
+
+.hand_wrap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.hand_wrap.on {
+  right: 100px;
+  transition: all 2s;
+}
+.hand_wrap .hand.h2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.click_magnet {
+  position: absolute;
+  top: 126px;
+  left: -378px;
+}
+.has_guide {
+  position: absolute;
+  top: 50%;
+  left: 58%;
+}
+
+.click_magnet .cover {
+  position: absolute;
+  top: -3px;
+  left: 10px;
+  width: 582px;
+  height: 151px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.click_magnet .cover.scale {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+[data-num="1"] .click_magnet .cover {
+  background-image: url(../img/explore4/coverd_mgn1.png);
+}
+[data-num="2"] .click_magnet .cover {
+  background-image: url(../img/explore4/coverd_mgn2.png);
+}
+[data-num="3"] .click_magnet .cover {
+  background-image: url(../img/explore4/coverd_mgn3.png);
+}
+[data-num="4"] .click_magnet .cover {
+  background-image: url(../img/explore4/coverd_mgn4.png);
+}
+[data-num="5"] .click_magnet .cover {
+  background-image: url(../img/explore4/coverd_mgn5.png);
+}
+
+.screen3 {
+  background: url(../img/explore4/screen2.png) no-repeat center / 100%;
+}
+.screen3 .ani_magnet {
+  left: 90px;
+}
+.screen3 .ani_magnet.on {
+  left: 192px;
+  transition: all 1.5s cubic-bezier(0.5, 0.1, 0.9, 0.4);
+}

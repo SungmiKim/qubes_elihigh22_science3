@@ -1,0 +1,94 @@
+.content {
+  background: url(../img/explore/bg2.png) no-repeat center / 100%;
+}
+
+.quiz_area.on .drag_box img {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.ani_area img {
+  position: absolute;
+  top: 192px;
+  left: 47px;
+}
+
+.ani_area .mgn {
+  top: 230px;
+  left: 1328px;
+}
+.ani_area .mgn.on {
+  left: 2000px;
+  transition: all 1s ease;
+}
+
+.finish .ani_area,
+.finish .drop_area {
+  opacity: 0;
+}
+
+#seqGif1 {
+  position: absolute;
+  top: 216px;
+  left: 60px;
+  opacity: 0;
+}
+.finish #seqGif1 {
+  opacity: 1;
+}
+.box_wrap {
+  top: 640px;
+  left: 1403px;
+  width: 437px;
+  height: 436px;
+  background: url(../img/explore6/drop.png) no-repeat center / 100%;
+}
+
+.box_wrap.on {
+  top: 327px;
+  left: 1395px;
+  width: 2214px;
+  height: 740px;
+  background: url(../img/explore6/drop_o.png) no-repeat center / 100%;
+  animation: moveObj 2s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+@keyframes moveObj {
+  0% {
+    top: 327px;
+    left: 1395px;
+  }
+
+  100% {
+    top: 123px;
+    left: 272px;
+  }
+}
+
+.drag_area {
+  top: 288px;
+  left: 1594px;
+}
+
+.has_guide {
+  top: 295px;
+  left: 1704px;
+  display: none;
+}
+.has_guide.on {
+  display: block;
+  animation: guideHand 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand {
+  0% {
+    top: 295px;
+    left: 1704px;
+  }
+
+  100% {
+    top: 844px;
+    left: 1605px;
+  }
+}

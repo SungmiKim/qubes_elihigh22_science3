@@ -1,0 +1,68 @@
+.content {
+  background: url(../img/summary4/summary4_bg.png) no-repeat center / 100%;
+}
+
+.page_title.title4{
+  background-image: url(../img/summary4/tit_bg.png);
+}
+
+.page_title span {
+  color: #3cf8a3;
+}
+
+.name_list .has_guide,
+.name_list .obj,
+.name_list .name_tag,
+.name_list .txt,
+.bubble {
+  position: absolute;
+}
+.name_list .has_guide {
+  top: 47px;
+  left: 151px;
+}
+.name_list li {
+  position: absolute;
+  top: 228px;
+  left: 185px;
+}
+.name_list .name2 {
+  top: 844px;
+  left: 1240px;
+}
+.name_list .name_tag {
+  width: 209px;
+  height: 94px;
+  background: url(../img/summary4/name1_off.png) no-repeat center / 100%;
+}
+
+.name_list .name2 .name_tag {
+  background-image: url(../img/summary4/name2_off.png);
+}
+
+.name_list .txt {
+  opacity: 0;
+  top: 120px;
+  left: 4px;
+}
+.name_list li.on .txt {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.name_list .name1.on .name_tag {
+  background-image: url(../img/summary4/name1_on.png);
+}
+
+.name_list .name2.on .name_tag {
+  background-image: url(../img/summary4/name2_on.png);
+}
+
+.name_tag.on {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.name_list li.on {
+  pointer-events: none;
+}

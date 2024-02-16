@@ -1,0 +1,119 @@
+.quiz_area.on .drag_box img {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.quiz_area.on .drag_box.on img {
+  animation: none;
+}
+
+.box_wrap .drop_box {
+  width: 100%;
+  height: 100%;
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept1_h/screen1.png) no-repeat center / 100%;
+}
+.screen2 .page_title.title4{
+  background-image: url(../img/explore4/tit_bg.png);
+}
+.screen2 .page_title span {
+  color: #51c4ff;
+}
+
+.screen2 .box_wrap {
+  position: absolute;
+  width: 407px;
+  height: 112px;
+  top: 936px;
+  left: 335px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.screen2 .box_wrap.d1 {
+  background-image: url(../img/concept1_h/drop.png);
+}
+.screen2 .box_wrap.d2 {
+  left: 1255px;
+  background-image: url(../img/concept1_h/drop.png);
+}
+.screen2 .box_wrap.d1.on {
+  background-image: url(../img/concept1_h/drag2.png);
+}
+.screen2 .box_wrap.d2.on {
+  background-image: url(../img/concept1_h/drag1.png);
+}
+
+.screen2 .drag_box {
+  position: absolute;
+  top: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screen2 .drag_box.d1 {
+  top: 150px;
+  left: 526px;
+}
+.screen2 .drag_box.d2 {
+  top: 150px;
+  left: 1066px;
+}
+
+.screen2 .drag_area{
+  position: relative;
+  z-index: 5;
+}
+
+.screen2 .drag_area::before {
+  content: "";
+  background-color: #ffffff40;
+  width: 100%;
+  height: 300px;
+  opacity: 0.302;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+}
+.screen1 .page_title span {
+  color: #ff8bb7;
+}
+.screen1 .click_obj {
+  position: absolute;
+  top: 313px;
+  left: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.screen1 .click_obj.c2 {
+  top: 618px;
+  left: 1331px;
+}
+
+.screen1 .click_obj .obj {
+  margin: -11px -28px 0 0;
+}
+.screen1 .click_obj.c2 .obj_name {
+  margin: 11px -72px 0 0;
+}
+.click_wrap.on .obj {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.screen1 .click_wrap.finish .click_obj.c2{
+  opacity: 0.4;
+}
+
+

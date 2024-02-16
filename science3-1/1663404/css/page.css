@@ -1,0 +1,48 @@
+/* 공통 */
+.drop_box {
+  height: 100%;
+}
+.box_wrap,
+.drag_area,
+.has_guide {
+  position: absolute;
+}
+
+/* 인트로 */
+#wrap[data-page="intro"] .txt {
+  top: 118px;
+  left: 141px;
+  opacity: 0;
+}
+
+#wrap[data-page="intro"] .txt.on {
+  opacity: 1;
+  transition: opacity 1s;
+}
+#wrap[data-page="intro"] .btn_intro {
+  top: 965px;
+  left: 123px;
+  display: none;
+  background: url(../img/intro/btn.png) no-repeat center / 100%;
+}
+/* 탐구하이 - 간지 */
+#wrap[data-page="explore1"] .bubble {
+  top: 156px;
+  left: 129px;
+}
+
+#wrap[data-page="explore1"] .txt {
+  top: 173px;
+  left: 761px;
+}
+
+/* 정리하이 - 간지 */
+#wrap[data-page="summary1"] .bubble {
+  top: 156px;
+  left: 129px;
+}
+
+#wrap[data-page="summary1"] .txt {
+  top: 173px;
+  left: 689px;
+}

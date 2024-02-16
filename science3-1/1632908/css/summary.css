@@ -1,0 +1,34 @@
+.name_list .has_guide,
+.name_list .obj,
+.name_list .name_tag,
+.name_list .txt,
+.bubble {
+  position: absolute;
+}
+.name_list .has_guide {
+  top: 47px;
+  left: 151px;
+}
+.name_list .name_tag {
+  width: 248px;
+  height: 94px;
+}
+.name_list .txt {
+  opacity: 0;
+  top: 120px;
+  left: 8px;
+  pointer-events: none;
+}
+.name_list li.on .txt {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.name_tag.on {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.name_list li.on {
+  pointer-events: none;
+}

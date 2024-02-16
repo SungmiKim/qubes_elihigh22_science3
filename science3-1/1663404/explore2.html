@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>[과학] 31_3단원 19</title>
+    <!--공통 -->
+    <link href="../common/css/font.css" rel="stylesheet" />
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="./css/page.css" rel="stylesheet" />
+    <link href="./css/explore2.css" rel="stylesheet" />
+    <script src="./js/pageInfo.js"></script>
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap" data-page="explore2">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <header class="header"></header>
+          <div class="page_title title4">퍼즐 조각을 끌어 놓아 사진을 완성해 봅시다.</div>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <div class="quiz_area fix">
+            <div class="drop_area">
+              <div class="box_area">
+                <div class="box_wrap b1" data-name="5"></div>
+                <div class="box_wrap b2" data-name="1"></div>
+                <div class="box_wrap b3" data-name="2"></div>
+                <div class="box_wrap b4" data-name="4"></div>
+                <div class="box_wrap b5" data-name="6"></div>
+                <div class="box_wrap b6" data-name="3"></div>
+              </div>
+              <div class="box_area">
+                <div class="drop_box d1" data-name="5"></div>
+                <div class="drop_box d2" data-name="1"></div>
+                <div class="drop_box d3" data-name="2"></div>
+                <div class="drop_box d4" data-name="4"></div>
+                <div class="drop_box d5" data-name="6"></div>
+                <div class="drop_box d6" data-name="3"></div>
+              </div>
+            </div>
+
+            <div class="drag_wrap">
+              <div class="drag_area">
+                <div class="drag_box d1" data-name="1"><img src="./img/explore2/drag1.png " /></div>
+                <div class="drag_box d2" data-name="2"><img src="./img/explore2/drag2.png " /></div>
+                <div class="drag_box d3" data-name="3"><img src="./img/explore2/drag3.png " /></div>
+              </div>
+              <div class="drag_area">
+                <div class="drag_box d4" data-name="4"><img src="./img/explore2/drag4.png " /></div>
+                <div class="drag_box d5" data-name="5"><img src="./img/explore2/drag5.png " /></div>
+                <div class="drag_box d6" data-name="6"><img src="./img/explore2/drag6.png " /></div>
+              </div>
+              <div class="has_guide">
+                <img src="../common/images/icon/icon_hand.png" alt="guide" />
+              </div>
+            </div>
+            <div class="ani_area hide">
+              <div class="seq_img" id="seqGif1" data-option="gif3//60//once//50">
+                <img src="./img/explore2/gif3/1.webp" class="gif" />
+              </div>
+              <div class="ani_img" data-num="0">
+                <img src="./img/explore2/bg2.png" class="bg2" />
+                <div class="point mountain">
+                  <img src="./img/explore2/mountain.png" />
+                </div>
+                <div class="point river">
+                  <img src="./img/explore2/river.png" />
+                </div>
+                <div class="point ground">
+                  <img src="./img/explore2/ground.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blank"></div>
+        <!-- 가변 컨텐츠 End -->
+
+        <div class="fixed bottom">
+          <!-- 페이지 이동 버튼 -->
+          <a class="btn move btn_prev"> </a>
+          <a class="btn move btn_next"> </a>
+          <!-- 페이지 이동 버튼 End -->
+        </div>
+
+        <!-- 10초 Popup -->
+        <div class="pop_ct pop_next">
+          <img src="../common/images/pop/pop_next.png" alt="pop_next" />
+        </div>
+        <!-- 30초 Popup -->
+        <div class="pop_ct pop_wait">
+          <img src="../common/images/pop/pop_wait.png" alt="pop_wait" />
+        </div>
+      </div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/jquery-ui.js"></script>
+    <script src="../common/js/jquery.ui.touch-punch.min.js"></script>
+    <!-- <script src="../common/js/drag.js"></script> -->
+    <script src="./js/explore2.js"></script>
+  </body>
+</html>

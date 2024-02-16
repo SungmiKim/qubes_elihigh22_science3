@@ -1,0 +1,194 @@
+.page_title.title4{
+  background-image: url(../img/explore4/tit_bg.png);
+}
+
+.screen1 {
+  background: url(../img/explore4/screen1.png) no-repeat center / 100%;
+}
+
+.has_guide {
+  position: absolute;
+  top: 530px;
+  left: 590px;
+}
+
+.screen .obj_name.t1 {
+  top: 100px;
+  left: 150px;
+  z-index: 1;
+}
+
+.screen1 .obj_list li > img {
+  position: absolute;
+}
+.screen1 .obj_list .obj1.on::before{
+  content: "";
+  display: block;
+  background-color: #000;
+  border-radius: 50%;
+  width: 918px;
+  height: 918px;
+  position: absolute;
+  top: 192px;
+  left: 199px;
+}
+.screen1 .obj_list .obj2.on::before{
+  content: "";
+  display: block;
+  background-color: #000;
+  border-radius: 50%;
+  width: 262px;
+  height: 262px;
+  position: absolute;
+  top: 271px;
+  left: 1569px;
+}
+
+/* .obj_list.on li img.on {
+  animation: none !important;
+} */
+.obj_list.on li .img_ani.scale {
+  animation: 3s zoom_in_out ease-in infinite;
+}
+.obj_list li .click_box {
+  position: absolute;
+}
+.obj_list li.on .click_box {
+  display: none;
+}
+.obj_list li.obj1 img {
+  top: 170px;
+  left: 181px;
+}
+.obj_list li.obj1 .click_box {
+  width: 959px;
+  height: 959px;
+  top: 170px;
+  left: 181px;
+}
+.obj_list li.obj2 img {
+  top: 166px;
+  left: 1428px;
+}
+.obj_list li.obj2 img.line {
+  top: 166px;
+  left: 1450px;
+}
+.obj_list li.obj2 .click_box {
+  width: 300px;
+  height: 300px;
+  top: 255px;
+  left: 1550px;
+}
+.obj_list li .click_box.on{
+  pointer-events: none;
+}
+
+.screen .obj_name {
+  position: absolute;
+  display: none;
+}
+.screen .obj_name.on {
+  display: flex;
+}
+
+.screen1 .obj_list .obj {
+  position: absolute;
+}
+.screen .obj_list .obj.scale {
+  animation: bigAndSmall 1s;
+  animation-iteration-count: 2;
+}
+
+.screen .obj_list.n1{
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  transform: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.screen .obj_list.n1.on{
+  background: rgba(0, 0, 0, 0.6) url(../img/explore4/screen1_4_o.png) ;
+}
+
+.screen .obj_list .obj{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.screen .obj_list .obj img.dog{
+  top: 743px;
+  left: 405px;
+}
+
+.screen .obj_list .obj.o1,
+.screen .obj_list .obj.o2 .water,
+.screen3 .obj_list .obj.o2,
+.screen .obj_list .obj.o3{
+  opacity: 1;
+  animation: bigAndSmall3 1s forwards;
+  animation-iteration-count: 1;
+}
+.screen .obj_list .obj.o2{
+  opacity: 1;
+}
+
+.screen .obj_list .obj img{
+  position: absolute;
+  z-index: 1;
+}
+
+
+
+
+.click_box {
+  z-index: 1;
+}
+
+.obj_list li.obj1 .img_ani.ani1.on {
+  transition: all 2s;
+  animation: earth1 2s forwards;
+  z-index: 1;
+}
+
+
+@keyframes earth1{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(3);
+    left: 500px;
+  }
+}
+
+@keyframes moon1{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(10);
+    left: 700px;
+    top: 500px;
+  }
+}
+
+
+.obj_list li.obj2 .img_ani.ani2.on {
+  transition: all 2s;
+  animation: moon1 2s forwards;
+  z-index: 1;
+}
+
+.screen2.on{
+  transition: all 2s;
+  animation: earth1 2s forwards;
+}

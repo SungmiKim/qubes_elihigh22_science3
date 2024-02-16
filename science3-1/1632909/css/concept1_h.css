@@ -1,0 +1,120 @@
+.quiz_area.on .drag_box img {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.magnet,
+.box_wrap,
+.drag_box,
+.drag_area,
+.drop_area {
+  position: absolute;
+}
+.drop_box {
+  width: 100%;
+  height: 100%;
+}
+
+.quiz_area.finish .drag_box img {
+  animation: none;
+}
+.drop_area {
+  top: 380px;
+}
+
+.magnet {
+  left: 96px;
+}
+.box_wrap {
+  width: 845px;
+  height: 266px;
+  background: url(../img/concept1_h/drop1.png) no-repeat center / 100%;
+  left: 1030px;
+}
+.drag_area {
+  top: 895px;
+}
+.drag_box {
+  left: 238px;
+}
+.drag_box.d2 {
+  left: 1054px;
+}
+
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept1_h/screen1.png) no-repeat center / 100%;
+}
+.screen1 .page_title span {
+  color: #ffb266;
+}
+
+.screen1 .quiz_area.finish .drag_box.d2 {
+  /* display: none; */
+}
+
+.screen1 .quiz_area.finish .box_wrap {
+  background: url(../img/concept1_h/drop1_o.png) no-repeat center / 100%;
+  left: 960px;
+  transition: left 1s ease-in;
+  transition-delay: 0.5s;
+}
+.screen1 .quiz_area.finish .magnet {
+  left: 168px;
+  transition: left 1s ease-in;
+  transition-delay: 0.5s;
+}
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+}
+.screen2 .page_title span {
+  color: #dc97ff;
+}
+.screen2 .drop_area {
+  top: 338px;
+}
+.screen2 .magnet {
+  left: 0;
+}
+.screen2 .magnet_bg {
+  width: 890px;
+  height: 278px;
+  background-image: url(../img/concept1_h/magnet2_2.png);
+  top: 6px;
+  left: 1110px;
+}
+.screen2 .box_wrap {
+  width: 224px;
+  height: 224px;
+  background: url(../img/concept1_h/drop2.png) no-repeat center / 100%;
+  position: absolute;
+  top: 32px;
+  left: 52px;
+}
+
+.screen2 .drag_area {
+  top: 758px;
+}
+.screen2 .drag_box {
+  left: 542px;
+}
+.screen2 .drag_box.d2 {
+  left: 1124px;
+}
+.screen2 .quiz_area.finish .box_wrap {
+  background: url(../img/concept1_h/drop2_o.png) no-repeat center / 100%;
+}
+.screen2 .quiz_area.finish .drag_box.d2 {
+  /* display: none; */
+}
+.screen2 .quiz_area.finish .magnet {
+  left: -190px;
+  transition: left 1.5s ease;
+  transition-delay: 0.5s;
+}
+.screen2 .quiz_area.finish .magnet_bg {
+  left: 1310px;
+  transition: left 1.5s ease;
+  transition-delay: 0.5s;
+}

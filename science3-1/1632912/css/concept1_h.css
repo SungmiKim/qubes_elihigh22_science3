@@ -1,0 +1,121 @@
+.quiz_area.on .drag_box {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.quiz_area.on .drag_box.on {
+  animation: none;
+}
+.click_obj.scale {
+  animation: 3s card_scale ease-in infinite;
+}
+
+.drop_box {
+  height: 100%;
+}
+
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept1_h/screen1.png) no-repeat center / 100%;
+}
+.screen1 .page_title span {
+  color: #ffdf01;
+}
+
+.screen1 .click_obj {
+  position: absolute;
+  top: 516px;
+  left: 242px;
+  height: 100%;
+}
+.screen1 .click_obj .bubble {
+  width: 853px;
+  height: 328px;
+  background: url(../img/concept1_h/bubble1_1.png) no-repeat center / 100%;
+  position: absolute;
+  top: -301px;
+  left: -134px;
+}
+.screen1 .click_obj .obj {
+  margin: -32px 0 0 -43px;
+}
+.screen1 .click_obj.c2 .obj {
+  margin: -72px 0 0 -15px;
+}
+.screen1 .on .click_obj.c1 .bubble {
+  background-image: url(../img/concept1_h/bubble1_1_o.png);
+}
+
+.screen1 .click_obj.c2 {
+  top: 585px;
+  left: 1358px;
+}
+.screen1 .click_obj.c2 .bubble {
+  background: url(../img/concept1_h/bubble1_2.png) no-repeat center / 100%;
+  top: -372px;
+  left: -321px;
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+  /* background: url(../img/concept1_h/22.png) no-repeat center / 100%; */
+}
+.screen2 .page_title span {
+  color: #ffb35a;
+}
+
+.screen2 .drop_area,
+.screen2 .box_wrap,
+.screen2 .conpass {
+  position: absolute;
+}
+.screen2 .drop_area {
+  top: 225px;
+  left: 50px;
+  width: 920px;
+  height: 900px;
+  background: url(../img/concept1_h/bucket.png) no-repeat center / 100%;
+}
+.screen2 .box_wrap {
+  top: 180px;
+  left: 232px;
+  width: 468px;
+  height: 486px;
+  background: url(../img/concept1_h/drop1.png) no-repeat center / 100%;
+}
+
+.screen2 .drag_area {
+  position: absolute;
+  bottom: 264px;
+  left: 1067px;
+  border-radius: 40px;
+  width: 355px;
+  height: 503px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.screen2 .drag_box {
+  position: absolute;
+  width: 273px;
+  height: 101px;
+  top: 52px;
+  left: 46px;
+}
+.screen2 .drag_box.d2 {
+  width: 101px;
+  height: 275px;
+  top: 200px;
+  left: 132px;
+}
+.screen2 .conpass {
+  top: 476px;
+  left: 1564px;
+}
+
+.screen2 .quiz_area.finish .drag_area {
+  display: none;
+}
+.screen2 .quiz_area.finish .box_wrap {
+  background: url(../img/concept1_h/drop1_o.png) no-repeat center / 100%;
+  top: 216px;
+  left: 236px;
+}

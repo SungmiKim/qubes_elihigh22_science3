@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>[과학] 31_3단원 11</title>
+    <!--공통 -->
+    <link href="../common/css/font.css" rel="stylesheet" />
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="./css/explore2.css" rel="stylesheet" />
+    <script src="./js/pageInfo.js"></script>
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap" data-page="explore2">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <header class="header"></header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <!-- 내용 -->
+          <div class="screen screen1">
+            <img src="./img/explore2/start.png" alt="시작하기" class="start" />
+            <div class="has_guide hide">
+              <img src="../common/images/icon/icon_hand.png" alt="guide" />
+            </div>
+          </div>
+
+          <div class="screen screen2 hide">
+            <div class="page_title title4">대화에 참여하기 전에 사진을 찍거나 마음에 드는 얼굴을 골라 주세요.</div>
+            <div class="inner">
+              <div class="camera_wrap">
+                <div id="camera">
+                  <div class="cover"></div>
+                  <video id="camera--view" autoplay playsinline></video>
+                </div>
+
+                <button class="btn pic" id="picStartBtn">사진 찍기</button>
+              </div>
+              <ul class="cha_list">
+                <li><img src="./img/explore2/cha1.png" alt="프로필" /></li>
+                <li><img src="./img/explore2/cha2.png" alt="프로필" /></li>
+                <li><img src="./img/explore2/cha3.png" alt="프로필" /></li>
+                <li><img src="./img/explore2/cha4.png" alt="프로필" /></li>
+              </ul>
+            </div>
+          </div>
+          <div class="screen screen3 hide">
+            <div class="page_title title4">아래 사진으로 대화에 참여할까요?</div>
+            <div class="inner">
+              <div class="profile">
+                <img src="./img/explore2/camera.png" alt="프로필" />
+                <canvas width="940" height="705"></canvas>
+              </div>
+              <img src="./img/explore2/camera_line.png" alt="카메라 커버" class="cover" />
+              <div class="btn_wrap">
+                <button class="btn_reply"><img src="./img/explore2/btn_replay.png" alt="" /></button>
+                <button class="btn_finish"><img src="./img/explore2/btn_chk.png" alt="" /></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="screen screen4 hide">
+            <div class="chat_area">
+              <div class="hide chat chat1 haro">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">친구 안녕~ 반가워!</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat2 eo">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble r2">나도 반가워~ 우리 집에서 키우는 개가 새끼를 <br />낳았는데 보여 줄까?</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat3 chat3-0 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">오! 귀엽겠다! 좋아!</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+              <div class="hide chat chat3 chat3-1 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">우와~ 갓 태어난 강아지야?</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+
+              <div class="hide chat chat4 eo">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble pop" onclick="openPop(1);">
+                      <img src="./img/explore2/dog1.png" alt="강아지" />
+                    </div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat5 lizzy">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">정말 귀엽다!</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat6 chat6-0 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">정말 작고 귀여워!!</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+              <div class="hide chat chat6 chat6-1 user img">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble"><img src="./img/explore2/t_img1.png" alt="" /></div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+
+              <div class="hide chat chat7 chat7-0 eo">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">태어난 지 얼마 안 된 강아지라서 그래.</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat7 chat7-1 eo">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">귀엽지? 태어난 지 얼마 안 된 작은 강아지라고~</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat8 lizzy">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">그래? 개의 한살이 과정은 어떤데?</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat9 eo">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble pop" onclick="openPop(2);">
+                      <img src="./img/explore2/dog2.png" alt="강아지" />
+                    </div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat10 ella">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">귀여워~~~</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat11 chat11-0 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">눈도 뜨지 못한 갓 태어난 강아지 같은데?</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+
+              <div class="hide chat chat11 chat11-1 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">아직 걷지도 못하는 갓 태어난 강아지네!</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+
+              <div class="hide chat chat12 chat12-0 haro">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">그러게~ 아직 걷지도 못하겠다!</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat12 chat12-1 haro">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">귀여워! 아직 눈도 못 떴어!</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat13 eo">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble r2">맞아~ 이런 갓 태어난 강아지가 어미젖을 먹고 자라면 <br />큰 강아지가 돼.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat13 eo ing mt19">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble pop" onclick="openPop(3);">
+                      <img src="./img/explore2/dog3.png" alt="강아지" />
+                    </div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat14 lizzy">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">오! 큰 강아지네.</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat15 chat15-0 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">이 강아지는 걸을 수 있나 보다!</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+              <div class="hide chat chat15 chat15-1 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">그러게~ 이건 큰 강아지라 눈도 떴네.</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+
+              <div class="hide chat chat16 chat16-0 eo">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">응~ 그리고 눈도 떴어.</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat16 chat16-1 eo">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">맞아. 그리고 큰 강아지는 걸을 수도 있어.</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat17 ella">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">이오~ 그다음에는?</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat18 eo">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble pop" onclick="openPop(4);">
+                      <img src="./img/explore2/dog4.png" alt="강아지" />
+                    </div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat19 haro">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">우와! 정말 커졌구나!</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat20 chat20-0 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">이건 다 자란 개네.</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+              <div class="hide chat chat20 chat20-1 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">이렇게 자라다니 신기하다~</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+
+              <div class="hide chat chat21 chat21-0 eo">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">오~ 잘 알고 있네.</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat21 chat21-0 eo ing">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble r2">그리고 다 자란 개는 암컷이 새끼를 낳는데, <br />새끼의 모습이 어미랑 비슷해.</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat21 chat21-1 eo">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">큰 강아지가 다 자란 개가 된 거야.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat21 chat21-1 eo ing">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble r2">그리고 다 자란 개는 암컷이 새끼를 낳는데, <br />새끼의 모습이 어미랑 비슷해.</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat22 lizzy">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">새끼를 낳는 동물들은 한살이가 다 비슷해?</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat23 chat23-0 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">난 토끼의 한살이가 궁금해!</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+              <div class="hide chat chat23 chat23-1 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">난 고양이의 한살이가 궁금해!</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+
+              <div class="hide chat chat24 ella rabbit">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble pop" onclick="openPop(5);">
+                      <img src="./img/explore2/rabbit1.png" alt="토끼" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat24 ella ing mt19 rabbit">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble pop" onclick="openPop(6);">
+                      <img src="./img/explore2/rabbit2.png" alt="토끼" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat24 ella ing mt19 rabbit">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">갓 태어난 토끼도 어미젖을 먹으며 자라.</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat24 haro cat">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble pop" onclick="openPop(8);">
+                      <img src="./img/explore2/cat1.png" alt="고양이" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat24 haro ing mt19 cat">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble pop" onclick="openPop(9);">
+                      <img src="./img/explore2/cat2.png" alt="고양이" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat24 haro ing mt19 cat">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">갓 태어난 고양이도 어미젖을 먹으며 자라.</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat25 chat25-0 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">젖을 먹고 자라는 게 개의 한살이랑 똑같구나.</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+
+              <div class="hide chat chat25 chat25-1 user rabbit">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">새끼 토끼도 어미 토끼와 비슷하게 생겼네.</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+
+              <div class="hide chat chat25 chat25-1 user cat">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">새끼 고양이도 어미 고양이와 비슷하게 생겼네.</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+
+              <div class="hide chat chat26 ella rabbit">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble pop" onclick="openPop(7);">
+                      <img src="./img/explore2/rabbit3.png" alt="토끼" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat26 ella ing mt19 rabbit">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">다 자란 토끼는 토끼풀, 배춧잎 같은 것을 먹게 돼.</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat26 haro cat">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble pop" onclick="openPop(10);">
+                      <img src="./img/explore2/cat3.png" alt="고양이" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat26 haro ing mt19 cat">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble r2">다 자란 고양이는 작은 새, 개구리, 사료 같은 것을<br />먹게 돼.</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide chat chat27 chat27-0 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">다 자랐을 때 먹는 먹이는 개와 다르네.</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+              <div class="hide chat chat27 chat27-1 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">오! 이게 차이점이구나.</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+
+              <div class="hide chat chat28 lizzy">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">친구, 잘 알려 줘서 고마워~</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat29 haro">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">덕분에 즐거운 시간이었어!</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat30 ella">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="bubble">안녕~</div>
+                    <div class="time"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hide chat chat31 chat31-0 user">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble">나도 즐거웠어~ 안녕~</div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+              <div class="hide chat chat31 chat31-1 user img">
+                <div class="right">
+                  <div class="nick"></div>
+                  <div class="txt">
+                    <div class="time"></div>
+                    <div class="bubble"><img src="./img/explore2/t_img2.png" alt="" /></div>
+                  </div>
+                </div>
+                <div class="left"></div>
+              </div>
+
+              <!-- 선택지 -->
+              <div class="select_wrap">
+                <ul class="s1">
+                  <li><img src="./img/explore2/t1_1.png" alt="" /></li>
+                  <li><img src="./img/explore2/t1_2.png" alt="" /></li>
+                </ul>
+                <ul class="s2">
+                  <li><img src="./img/explore2/t2_1.png" alt="" /></li>
+                  <li><img src="./img/explore2/t2_2.png" alt="" /></li>
+                </ul>
+                <ul class="s3">
+                  <li><img src="./img/explore2/t3_1.png" alt="" /></li>
+                  <li><img src="./img/explore2/t3_2.png" alt="" /></li>
+                </ul>
+                <ul class="s4">
+                  <li><img src="./img/explore2/t4_1.png" alt="" /></li>
+                  <li><img src="./img/explore2/t4_2.png" alt="" /></li>
+                </ul>
+                <ul class="s5">
+                  <li><img src="./img/explore2/t5_1.png" alt="" /></li>
+                  <li><img src="./img/explore2/t5_2.png" alt="" /></li>
+                </ul>
+                <ul class="s6">
+                  <li><img src="./img/explore2/t6_1.png" alt="" /></li>
+                  <li><img src="./img/explore2/t6_2.png" alt="" /></li>
+                </ul>
+                <ul class="s7 rabbit">
+                  <li><img src="./img/explore2/t7_1.png" alt="" /></li>
+                  <li><img src="./img/explore2/t7_2.png" alt="" /></li>
+                </ul>
+                <ul class="s7 cat">
+                  <li><img src="./img/explore2/t7_1.png" alt="" /></li>
+                  <li><img src="./img/explore2/t7_3.png" alt="" /></li>
+                </ul>
+                <ul class="s8">
+                  <li><img src="./img/explore2/t8_1.png" alt="" /></li>
+                  <li><img src="./img/explore2/t8_2.png" alt="" /></li>
+                </ul>
+                <ul class="s9">
+                  <li><img src="./img/explore2/t9_1.png" alt="" /></li>
+                  <li><img src="./img/explore2/t9_2.png" alt="" /></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="completeStamp">
+            <img src="" alt="stamp" />
+          </div>
+        </div>
+        <div class="blank hide"></div>
+        <!-- 가변 컨텐츠 End -->
+
+        <div class="fixed bottom">
+          <!-- 페이지 이동 버튼 -->
+          <a class="btn move btn_prev"> </a>
+          <a class="btn move btn_next"> </a>
+          <!-- 페이지 이동 버튼 End -->
+        </div>
+
+        <!-- 10초 Popup -->
+        <div class="pop_ct pop_next">
+          <img src="../common/images/pop/pop_next.png" alt="pop_next" />
+        </div>
+        <!-- 30초 Popup -->
+        <div class="pop_ct pop_wait">
+          <img src="../common/images/pop/pop_wait.png" alt="pop_wait" />
+        </div>
+
+        <!-- Layer Popup -->
+        <div class="pop_bg"></div>
+        <div class="pop_ct pop_card pop_ct1">
+          <div class="close" data-num="1">
+            <img src="./img/explore2/icon_close.png" alt="닫기" />
+          </div>
+          <img src="./img/explore2/pop1.png" alt="강아지1" />
+        </div>
+        <div class="pop_ct pop_card pop_ct2">
+          <div class="close" data-num="2">
+            <img src="./img/explore2/icon_close.png" alt="닫기" />
+          </div>
+          <img src="./img/explore2/pop2.png" alt="강아지2" />
+        </div>
+        <div class="pop_ct pop_card pop_ct3">
+          <div class="close" data-num="3">
+            <img src="./img/explore2/icon_close.png" alt="닫기" />
+          </div>
+          <img src="./img/explore2/pop3.png" alt="강아지3" />
+        </div>
+        <div class="pop_ct pop_card pop_ct4">
+          <div class="close" data-num="4">
+            <img src="./img/explore2/icon_close.png" alt="닫기" />
+          </div>
+          <img src="./img/explore2/pop4.png" alt="강아지4" />
+        </div>
+        <div class="pop_ct pop_card pop_ct5">
+          <div class="close" data-num="5">
+            <img src="./img/explore2/icon_close.png" alt="닫기" />
+          </div>
+          <img src="./img/explore2/pop5.png" alt="토끼1" />
+        </div>
+        <div class="pop_ct pop_card pop_ct6">
+          <div class="close" data-num="6">
+            <img src="./img/explore2/icon_close.png" alt="닫기" />
+          </div>
+          <img src="./img/explore2/pop6.png" alt="토끼2" />
+        </div>
+        <div class="pop_ct pop_card pop_ct7">
+          <div class="close" data-num="7">
+            <img src="./img/explore2/icon_close.png" alt="닫기" />
+          </div>
+          <img src="./img/explore2/pop7.png" alt="토끼3" />
+        </div>
+        <div class="pop_ct pop_card pop_ct8">
+          <div class="close" data-num="8">
+            <img src="./img/explore2/icon_close.png" alt="닫기" />
+          </div>
+          <img src="./img/explore2/pop8.png" alt="고양이1" />
+        </div>
+        <div class="pop_ct pop_card pop_ct9">
+          <div class="close" data-num="9">
+            <img src="./img/explore2/icon_close.png" alt="닫기" />
+          </div>
+          <img src="./img/explore2/pop9.png" alt="고양이2" />
+        </div>
+        <div class="pop_ct pop_card pop_ct10">
+          <div class="close" data-num="10">
+            <img src="./img/explore2/icon_close.png" alt="닫기" />
+          </div>
+          <img src="./img/explore2/pop10.png" alt="고양이3" />
+        </div>
+      </div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="./js/explore2.js"></script>
+  </body>
+</html>

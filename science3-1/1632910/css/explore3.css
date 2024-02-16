@@ -1,0 +1,292 @@
+.content {
+  background: url(../img/explore3/bg.png) no-repeat center / 100%;
+}
+
+.quiz_area * {
+  position: absolute;
+}
+
+.quiz_area.on .drag_box img {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.screen2 .quiz_area.on .drag_box img {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.drag_box.ui-draggable-dragging {
+  z-index: 5 !important;
+}
+.obj {
+  top: 485px;
+  left: 132px;
+}
+
+.compass {
+  background: url(../img/explore3/compass.png) no-repeat center / 100%;
+  width: 337px;
+  height: 354px;
+}
+
+.compass.c1 {
+  top: 203px;
+  left: 376px;
+}
+
+.compass.c2 {
+  top: 203px;
+  left: 1284px;
+}
+.compass.c3 {
+  top: 771px;
+  left: 376px;
+}
+.compass.c4 {
+  top: 771px;
+  left: 1284px;
+}
+.compass.on[data-num="1"] {
+  background: url(../img/explore3/drop1_1_o.png) no-repeat center / 100%;
+}
+
+.compass.on[data-num="2"] {
+  background: url(../img/explore3/drop1_2_o.png) no-repeat center / 100%;
+}
+
+.box_wrap {
+  background: url(../img/explore3/drop.png) no-repeat center / 100%;
+  width: 371px;
+  height: 372px;
+  top: -18px;
+  left: -16px;
+}
+.compass.on .box_wrap {
+  display: none;
+}
+.drop_box {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.drag_area {
+  border-radius: 30px;
+  background-color: rgba(163, 141, 112, 0.349);
+  position: absolute;
+  left: 100px;
+  top: 140px;
+  width: 242px;
+  height: 221px;
+}
+.screen1 .drag_box {
+  top: 20px;
+  left: 6px;
+}
+
+.screen1 .drag_box.d2 {
+  left: 122px;
+}
+
+.has_guide {
+  position: absolute;
+  top: 300px;
+  left: 173px;
+  display: none;
+}
+.has_guide.on {
+  display: block;
+  animation: guideHand1 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand1 {
+  0% {
+    top: 300px;
+    left: 173px;
+  }
+
+  100% {
+    top: 380px;
+    left: 536px;
+  }
+}
+.screen2 .drag_box {
+  top: 25px;
+  left: 32px;
+}
+.screen2 .compass {
+  background: none;
+}
+.screen2 .compass::before {
+  content: "";
+  position: absolute;
+  top: 73px;
+  left: 76px;
+  width: 184px;
+  height: 184px;
+  background: url(../img/explore3/pin.png) no-repeat center / 100%;
+  opacity: 0;
+}
+.screen2 .compass::after {
+  content: "";
+  position: absolute;
+  top: 141px;
+  left: 144px;
+  width: 48px;
+  height: 48px;
+  background: url(../img/explore3/ball.png) no-repeat center / 100%;
+  opacity: 0;
+}
+.screen2 .compass.on {
+  background: url(../img/explore3/drop2_1_o.png) no-repeat center / 100%;
+}
+.screen2 .compass.on::before {
+  transition: all 0.2s linear;
+  opacity: 1;
+}
+.screen2 .compass.on::after {
+  opacity: 1;
+}
+.screen2 .compass.c1.on::before {
+  transform: rotate(63deg);
+  animation: vibration1 0.5s infinite;
+  animation-iteration-count: 1;
+  animation-delay: 0.2s;
+}
+
+@keyframes vibration1 {
+  0% {
+    transform: rotate(65deg);
+  }
+  17% {
+    transform: rotate(59deg);
+  }
+  33% {
+    transform: rotate(64deg);
+  }
+  50% {
+    transform: rotate(60deg);
+  }
+  67% {
+    transform: rotate(63deg);
+  }
+  83% {
+    transform: rotate(61deg);
+  }
+  100% {
+    transform: rotate(62deg);
+  }
+}
+
+.screen2 .compass.c2.on::before {
+  transform: rotate(-60deg);
+  animation: vibration2 0.5s infinite;
+  animation-iteration-count: 1;
+  animation-delay: 0.2s;
+}
+
+@keyframes vibration2 {
+  0% {
+    transform: rotate(-63deg);
+  }
+  17% {
+    transform: rotate(-57deg);
+  }
+  33% {
+    transform: rotate(-62deg);
+  }
+  50% {
+    transform: rotate(-58deg);
+  }
+  67% {
+    transform: rotate(-61deg);
+  }
+  83% {
+    transform: rotate(-59deg);
+  }
+  100% {
+    transform: rotate(-60deg);
+  }
+}
+
+.screen2 .compass.c3.on::before {
+  transform: rotate(-63deg);
+  animation: vibration3 0.5s infinite;
+  animation-iteration-count: 1;
+  animation-delay: 0.2s;
+}
+
+@keyframes vibration3 {
+  0% {
+    transform: rotate(-65deg);
+  }
+  17% {
+    transform: rotate(-59deg);
+  }
+  33% {
+    transform: rotate(-64deg);
+  }
+  50% {
+    transform: rotate(-60deg);
+  }
+  67% {
+    transform: rotate(-63deg);
+  }
+  83% {
+    transform: rotate(-61deg);
+  }
+  100% {
+    transform: rotate(-62deg);
+  }
+}
+
+.screen2 .compass.c4.on::before {
+  transform: rotate(60deg);
+  animation: vibration4 0.5s infinite;
+  animation-iteration-count: 1;
+  animation-delay: 0.2s;
+}
+
+@keyframes vibration4 {
+  0% {
+    transform: rotate(63deg);
+  }
+  17% {
+    transform: rotate(57deg);
+  }
+  33% {
+    transform: rotate(62deg);
+  }
+  50% {
+    transform: rotate(58deg);
+  }
+  67% {
+    transform: rotate(61deg);
+  }
+  83% {
+    transform: rotate(59deg);
+  }
+  100% {
+    transform: rotate(60deg);
+  }
+}
+
+.has_guide[data-num="2"] {
+  top: 253px;
+  left: 203px;
+}
+.has_guide.on[data-num="2"] {
+  display: block;
+  animation: guideHand2 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand2 {
+  0% {
+    top: 253px;
+    left: 203px;
+  }
+
+  100% {
+    top: 354px;
+    left: 528px;
+  }
+}

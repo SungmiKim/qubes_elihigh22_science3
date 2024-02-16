@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>[과학] 31_3단원 16</title>
+    <!--공통 -->
+    <link href="../common/css/font.css" rel="stylesheet" />
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="./css/roundslider.min.css" rel="stylesheet" />
+    <link href="./css/explore.css" rel="stylesheet" />
+    <script src="./js/pageInfo.js"></script>
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap" data-page="explore4">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <header class="header"></header>
+          <div class="page_title title4">플라스틱 접시를 다른 방향으로 돌려 봅시다.</div>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <div class="screen screen3">
+            <div class="ani">
+              <img src="./img/explore4/ani.png" />
+            </div>
+            <div class="input_wrap">
+              <div id="shape"></div>
+            </div>
+            <div class="seq_img" id="seqGif4" data-option="gif5//120//once//50">
+              <img src="./img/explore4/gif5/1.webp" class="gif" />
+            </div>
+            <div class="has_guide">
+              <img src="../common/images/icon/hand/1.png" alt="guide" />
+            </div>
+          </div>
+        </div>
+        <div class="blank"></div>
+        <!-- 가변 컨텐츠 End -->
+
+        <div class="fixed bottom">
+          <!-- 페이지 이동 버튼 -->
+          <a class="btn move btn_prev"> </a>
+          <a class="btn move btn_next"> </a>
+          <!-- 페이지 이동 버튼 End -->
+        </div>
+
+        <!-- 10초 Popup -->
+        <div class="pop_ct pop_next">
+          <img src="../common/images/pop/pop_next.png" alt="pop_next" />
+        </div>
+        <!-- 30초 Popup -->
+        <div class="pop_ct pop_wait">
+          <img src="../common/images/pop/pop_wait.png" alt="pop_wait" />
+        </div>
+      </div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="./js/roundslider.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#shape").roundSlider({
+          radius: 330,
+          width: 26,
+          circleShape: "quarter-top-right",
+          sliderType: "min-range",
+          showTooltip: false,
+          value: 0,
+          handleSize: "57",
+          borderWidth: 6,
+          borderColor: "#fff",
+          pathColor: "#d8d8d8",
+          rangeColor: "red",
+          lineCap: "round",
+        });
+      });
+    </script>
+    <script src="./js/explore4.js"></script>
+  </body>
+</html>

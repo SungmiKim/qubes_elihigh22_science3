@@ -1,0 +1,206 @@
+.page_title.title4{
+  background-image: url(../img/explore2/tit_bg.png);
+}
+
+.screen .obj_name {
+  position: absolute;
+  display: none;
+}
+.screen .obj_name.on {
+  display: flex;
+}
+.screen .obj_list .obj {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.screen3 .obj {
+  position: absolute;
+  top: 150px;
+  left: 1300px;
+}
+.screen .obj_list .obj.scale {
+  animation: bigAndSmall 1s;
+  animation-iteration-count: 1;
+}
+.screen3 .obj.on{
+  animation: opacity 1s;
+  animation-iteration-count: infinite;
+}
+
+.screen .obj_list.on{
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 2000px;
+  height: 100%;
+  transform: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.screen .obj_list .obj.o1,
+.screen .obj_list .obj.o2{
+  animation: card_scale2 2s;
+  animation-iteration-count: 1;
+}
+
+canvas {
+  border-radius: 100%;
+  /* box-shadow: 5px 8.66px 10px 0px rgba(0, 0, 0, 0.3); */
+}
+.has_guide {
+  position: absolute;
+  display: none;
+}
+/* screen1 */
+/* .screen1 {
+  background: url(../img/explore2/bg2.png) no-repeat center / 100%;
+} */
+.screen1 .moon{
+  position: absolute;
+  top: 188px;
+  left: 540px;
+}
+.screen1 .scratch_content.s2 {
+  top: 586px;
+  left: 934px;
+}
+
+.screen .obj_name.t1 {
+  top: 108px;
+  left: 128px;
+  z-index: 1;
+}
+
+.screen1 .scratch_content.s1 .scratch_background{
+  position: absolute; 
+  top: 280px;
+  left: 635px;
+}
+.screen1 .scratch_content.s2 .scratch_background{
+  position: absolute;
+  top: 630px;
+  left: 984px;
+}
+.screen1 .scratch_content.s1 .scratch_background .scratch1{
+  /* background: url(../img/explore2/scratch1_2.png) no-repeat center / 100%;
+  width: 431px;
+  height: 431px; */
+  display: none;
+  position: absolute;
+  top: -31px;
+  left: -235px;
+  border-radius: 100%;
+  box-shadow: 5px 8.66px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.screen1 .scratch_content.s1 .scratch_background.on .scratch1,
+.screen1 .scratch_content.s2 .scratch_background.on .scratch2{
+  display: block;
+}
+.screen1 .scratch_content.s2 .scratch_background .scratch2{
+  /* background: url(../img/explore2/scratch1_4.png) no-repeat center / 100%;
+  width: 398px;
+  height: 399px; */
+  display: none;
+  position: absolute;
+  top: 34px;
+  left: 194px;
+  border-radius: 100%;
+  box-shadow: 5px 8.66px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* screen2 */
+.screen2 {
+  background: url(../img/explore2/screen2.png) no-repeat center / 100%;
+}
+.screen2 .scratch_content {
+  position: absolute;
+  top: 761px;
+  left: 860px;
+}
+.screen2 .scratch_content.s2 {
+  top: 221px;
+  left: 1269px;
+}
+/* .screen2 canvas {
+  background: url(../img/explore2/scratch2_1.png) no-repeat center / 100%;
+}
+.screen2 .scratch_content.s2 canvas {
+  background: url(../img/explore2/scratch2_2.png) no-repeat center / 100%;
+} */
+
+
+.screen1 .has_guide {
+  top: 300px;
+  left: 850px;
+}
+.screen2 .has_guide {
+  top: 835px;
+  left: 1115px;
+}
+
+.screen1 .has_guide.on {
+  animation: scratchGuide1 1.5s forwards;
+  animation-iteration-count: 2;
+  display: block;
+}
+@-webkit-keyframes scratchGuide1 {
+  0% {
+    top: 300px;
+    left: 850px;
+  }
+  33% {
+    top: 420px;
+    left: 690px;
+  }
+  66% {
+    top: 454px;
+    left: 912px;
+  }
+  100% {
+    top: 604px;
+    left: 738px;
+  }
+}
+
+.screen2 .has_guide.on {
+  animation: scratchGuide2 1.5s forwards;
+  animation-iteration-count: 2;
+  display: block;
+}
+@-webkit-keyframes scratchGuide2 {
+  0% {
+    top: 835px;
+    left: 1115px;
+  }
+  33% {
+    top: 933px;
+    left: 955px;
+  }
+  66% {
+    top: 899px;
+    left: 1177px;
+  }
+  100% {
+    top: 1048px;
+    left: 1040px;
+  }
+}
+
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,59 @@
+.content {
+  background: url(../img/explore/bg1.png) no-repeat center / 100%;
+}
+
+.img_list img {
+  position: absolute;
+}
+.img_list .clip {
+  top: 561px;
+  left: 229px;
+}
+.img_list .mgn {
+  top: 253px;
+  left: 588px;
+}
+.img_list.st2 .mgn {
+  left: 2000px;
+  transition: all 1s ease;
+  transition-delay: 1s;
+}
+
+.img_list .pin {
+  top: 361px;
+  left: 1089px;
+}
+.img_list.st1 .pin {
+  opacity: 0;
+  transition-delay: 0.3s;
+}
+.img_list .hand {
+  opacity: 0;
+  top: 106px;
+  left: 1091px;
+}
+.img_list.st1 .hand {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.img_list.st2 .hand {
+  top: 397px;
+  left: 812px;
+  transition: all 1s ease;
+}
+.img_list.st3 .hand {
+  top: 396px;
+  left: 523px;
+  transition: all 1s ease;
+}
+
+#seqGif1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+#seqGif1.on {
+  opacity: 1;
+}

@@ -1,0 +1,128 @@
+.quiz_area.on .drag_box {
+  animation: bigAndSmall 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.quiz_area.on .drag_box.on {
+  animation: none;
+}
+.click_obj.scale {
+  animation: 3s card_scale ease-in infinite;
+}
+
+.drop_box {
+  height: 100%;
+}
+
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept1_h/bg1.png) no-repeat center / 100%;
+}
+.screen1 .page_title span {
+  color: #74dba9;
+}
+.screen1 .drag_area {
+  position: absolute;
+  bottom: 173px;
+  right: 216px;
+  width: 316px;
+  height: 714px;
+  background: url(../img/concept1_h/drag1.png) no-repeat center/ 100% 100%;
+}
+.screen1 .box_wrap {
+  position: absolute;
+  width: 172px;
+  height: 206px;
+  background: url(../img/concept1_h/drop.png) no-repeat center / 100%;
+  top: 578px;
+  left: 256px;
+}
+.screen1 .box_wrap.d2 {
+  left: 1046px;
+  background: url(../img/concept1_h/drop.png) no-repeat center / 100%;
+}
+.screen1 .box_wrap.d1.on {
+  background: url(../img/concept1_h/drag_S.png) no-repeat center / 100%;
+}
+.screen1 .box_wrap.d2.on {
+  background: url(../img/concept1_h/drag_N.png) no-repeat center / 100%;
+}
+
+.screen1 .drag_box {
+  position: absolute;
+  width: 172px;
+  height: 180px;
+  top: 128px;
+  left: 74px;
+}
+.screen1 .drag_box.d2 {
+  top: 418px;
+}
+.screen1 .has_guide {
+  position: absolute;
+  top: 565px;
+  left: 1594px;
+  display: none;
+  z-index: 2;
+}
+.screen1 .has_guide.on {
+  display: block;
+  animation: moveto 1s linear forwards;
+  animation-iteration-count: 2;
+}
+@keyframes moveto {
+  0% {
+    top: 565px;
+    left: 1594px;
+  }
+  100% {
+    top: 722px;
+    left: 1116px;
+  }
+}
+
+/* 활동 2 */
+.screen2 {
+  background: url(../img/concept1_h/bg2.png) no-repeat center / 100%;
+}
+.screen2 .page_title span {
+  color: #dc97ff;
+}
+.screen2 .click_obj {
+  position: absolute;
+  top: 522px;
+  left: 288px;
+  height: 100%;
+}
+.screen2 .click_obj .bubble {
+  width: 712px;
+  height: 328px;
+  background: url(../img/concept1_h/bubble1_1.png) no-repeat center / 100%;
+  position: absolute;
+  top: -303px;
+  left: -112px;
+}
+
+.screen2 .click_obj .obj {
+  width: 547px;
+  margin: -14px 0 0 -29px;
+}
+.screen2 .click_obj.c2 .obj {
+  width: 478px;
+  margin: -14px 0 0 -36px;
+}
+.screen2 .click_obj .obj img {
+  width: 100%;
+}
+
+.screen2 .click_obj.c2 {
+  top: 634px;
+  left: 1250px;
+}
+.screen2 .click_obj.c2 .bubble {
+  background: url(../img/concept1_h/bubble1_2.png) no-repeat center / 100%;
+  top: -416px;
+  left: -136px;
+}
+.screen2 .on .click_obj.c2 .bubble {
+  background-image: url(../img/concept1_h/bubble2_2_o.png);
+}

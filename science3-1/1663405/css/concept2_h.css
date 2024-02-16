@@ -1,0 +1,116 @@
+.quiz_area.on .drag_box {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.quiz_area .drag_box.on {
+  animation: none;
+}
+
+.box_wrap,
+.drop_box,
+.drag_area,
+.drag_box {
+  position: absolute;
+}
+
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept2_h/screen1.png) no-repeat center / 100%;
+}
+.screen1 .page_title span {
+  color: #ddadff;
+}
+.screen1 .drop_area .bag {
+  position: absolute;
+  top: 63px;
+  left: 577px;
+}
+
+.screen1 .box_wrap {
+  width: 625px;
+  height: 158px;
+  top: 580px;
+  left: 1150px;
+}
+.screen1 .box_wrap .drop_box {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../img/concept2_h/drop.png) no-repeat center / 100%;
+}
+.screen1 .drag_area {
+  width: 100%;
+  height: 161px;
+  top: 950px;
+  left: 0;
+}
+
+.screen1 .drag_box {
+  width: 366px;
+  height: 100%;
+  top: 0;
+  left: 296px;
+}
+.screen1 .drag_box.d2 {
+  left: 814px;
+}
+.screen1 .drag_box.d3 {
+  left: 1336px;
+}
+.screen1 .quiz_area.finish .drop_box {
+  background: url(../img/concept2_h/drop_o.png) no-repeat center / 100%;
+}
+.screen1 .quiz_area.finish .drag_area {
+  display: none;
+}
+
+/* 활동 2 */
+
+.bubble {
+  z-index: 1;
+}
+.screen2 {
+  background: url(../img/concept2_h/screen2.png) no-repeat center / 100%;
+}
+.screen2 .page_title span {
+  color: #c7ff6e;
+}
+.screen2 .click_obj {
+  position: absolute;
+  top: 270px;
+  left: 168px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.screen2 .click_obj.c1 .bubble {
+  width: 508px;
+  height: 263px;
+  background: url(../img/concept2_h/bubble1.png) no-repeat center / 100%;
+}
+.screen2 .click_obj .obj {
+  margin: -54px 8px 0 68px;
+}
+
+.screen2 .click_obj.c2 {
+  top: 269px;
+  left: 1266px;
+}
+
+.screen2 .click_obj.c2 .obj {
+  margin: -62px 8px 0 -83px;
+}
+.screen2 .click_obj.c2 .bubble {
+  width: 508px;
+  height: 263px;
+  background: url(../img/concept2_h/bubble2.png) no-repeat center / 100%;
+}
+.screen2 .on .click_obj.c2 .bubble {
+  background-image: url(../img/concept2_h/bubble2_o.png);
+}
+
+.screen2 .click_obj.scale {
+  animation: 3s card_scale ease-in infinite;
+}

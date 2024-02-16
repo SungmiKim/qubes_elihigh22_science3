@@ -1,0 +1,91 @@
+.quiz_area.on .drag_box img {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+
+.content {
+  background: url(../img/explore3/bg.png) no-repeat center / 100%;
+}
+
+.drop_area {
+  position: absolute;
+  bottom: 0;
+  right: 464px;
+}
+.box_wrap {
+  position: absolute;
+  top: -52px;
+  left: 114px;
+  width: 386px;
+  height: 386px;
+  background: url(../img/explore3/drop.png) no-repeat center / 100%;
+}
+.box_wrap .drop_box {
+  width: 170px;
+  height: 100vh;
+  position: absolute;
+  top: -400px;
+  left: 108px;
+}
+.drag_box {
+  position: absolute;
+  bottom: 0;
+  right: 46px;
+}
+.drag_box.on {
+  right: 456px !important;
+  left: unset !important;
+}
+
+.ani_area {
+  position: absolute;
+  top: 402px;
+  left: 126px;
+}
+.screen2 .ani_area {
+  top: 400px;
+  left: 132px;
+}
+.screen3 .ani_area {
+  top: 397px;
+  left: 127px;
+}
+.has_guide {
+  position: absolute;
+  top: 654px;
+  left: 1626px;
+  display: none;
+}
+.has_guide.on {
+  display: block;
+  animation: guideHand1 1.5s forwards;
+  animation-iteration-count: 2;
+}
+@keyframes guideHand1 {
+  0% {
+    left: 1626px;
+  }
+
+  100% {
+    left: 1066px;
+  }
+}
+
+.ani {
+  position: absolute;
+  top: 453px;
+  left: 20px;
+}
+.screen2 .ani {
+  left: 72px;
+}
+
+.screen3 .ani {
+  top: 456px;
+  left: 189px;
+}
+/* .screen3.finish .ani {
+  left: 127px;
+  transition: all 2s linear;
+  transition-delay: 1s;
+} */

@@ -1,0 +1,21 @@
+.content {
+  background: url(../img/summary2/bg.png) no-repeat center / 100%;
+}
+
+.page_title span {
+  color: #5dceff;
+}
+
+.name_list li {
+  position: absolute;
+  top: 302px;
+  left: 218px;
+}
+
+.name_list .name_tag {
+  background: url(../img/summary2/name1_off.png) no-repeat center / 100%;
+}
+
+.name_list .name1.on .name_tag {
+  background-image: url(../img/summary2/name1_on.png);
+}

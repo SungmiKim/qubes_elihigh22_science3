@@ -1,0 +1,115 @@
+.click_wrap.scale .obj {
+  animation: bigAndSmall3 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+.click_obj {
+  position: absolute;
+}
+
+/* 활동 1 */
+.screen1 {
+  background: url(../img/concept1_h/screen1.png) no-repeat center / 100%;
+}
+.screen1 .page_title span {
+  color: #78ecda;
+}
+.screen1 .click_obj {
+  top: 605px;
+  left: 320px;
+}
+.screen1 .click_obj.c2 {
+  width: 321px;
+  height: 141px;
+  top: 348px;
+  left: 1350px;
+}
+.screen1 .click_obj .arrow {
+  position: absolute;
+  top: 82px;
+  left: 322px;
+  width: 123px;
+  height: 63px;
+  background: url(../img/concept1_h/arrow1.png) no-repeat center / 100%;
+}
+.screen1 .click_obj.c2 .arrow {
+  top: -10px;
+  left: -133px;
+  background: url(../img/concept1_h/arrow2.png) no-repeat center / 100%;
+}
+
+.screen1 .click_obj.c2 .obj {
+  position: absolute;
+}
+.screen1 .click_wrap .click_obj.c2 .obj.n2 {
+  display: none;
+}
+
+.screen1 .click_wrap.on .c2 .arrow {
+  background: url(../img/concept1_h/arrow2_x.png) no-repeat center / 100%;
+}
+.screen1 .click_wrap.on .c2 .obj.n2 {
+  display: block;
+}
+
+/* 활동 2 */
+
+.screen2 {
+  background: url(../img/concept1_h/screen2.png) no-repeat center / 100%;
+}
+.screen2 .page_title span {
+  color: #fff373;
+}
+.screen2 .click_obj {
+  width: 897px;
+  height: 587px;
+  top: 288px;
+  left: 86px;
+}
+.screen2 .click_obj.c2 {
+  top: 280px;
+  left: 1034px;
+}
+.screen2 .click_obj .obj {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.screen2 .click_obj .tag {
+  position: absolute;
+  width: 263px;
+  height: 91px;
+  top: 622px;
+  left: 308px;
+  background: url(../img/concept1_h/obj_tag1.png) no-repeat center / 100%;
+}
+.screen2 .click_obj.c2 .tag {
+  top: 630px;
+  background: url(../img/concept1_h/obj_tag2.png) no-repeat center / 100%;
+}
+
+.screen2 .click_wrap .c1 .obj.no {
+  display: none;
+}
+.screen2 .click_wrap.on .c1 .obj.no {
+  display: block;
+}
+.screen2 .click_wrap.on .c1 .tag {
+  background: url(../img/concept1_h/obj_tag1_x.png) no-repeat center / 100%;
+}
+
+.screen2 .click_wrap.scale .obj {
+  animation: bigAndSmall4 1.5s forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes bigAndSmall4 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
